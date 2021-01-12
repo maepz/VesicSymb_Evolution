@@ -1,0 +1,193 @@
+---
+title: "dnds analysis symbionts vs mitochondria"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# Setup
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+setwd('./')
+library('ggplot2')
+library(RColorBrewer)
+library(dplyr)
+library(reshape2)
+library("data.table")
+R.version
+file.path(R.home("bin"), "R")
+Sys.getenv('R_HOME')
+```
+
+# Introduction
+dN and dS were calculated using the ML method in python
+Goldman and Yang (1994): http://mbe.oxfordjournals.org/content/11/5/725
+
+Gigas = Clade I, Ruthia = Clade II
+#Import data
+
+```{r import data }
+path='./'
+wide<-read.csv('./dNdS_mitoch_vs_nucl_ML_method.txt',header=T,sep='\t')
+Pair=as.factor(wide$X)
+wide$X<-NULL
+wide$Pair=Pair
+wide=as.data.table(wide)
+wide %>% head()
+
+
+long=melt(wide, id.vars = c('Groups','Pair','isolate'),
+          measure.vars = list(c(3,7), c(4,8), c(5,9), c(6,10),c(11,13),c(12,14)),
+          variable.name='genome',
+          value.name=c('dnds','ds','dn','f84','ts','tv'))
+long$genome= ifelse(long$genome == 1,'mito','symb')
+summary(long)
+long$Pair=as.factor(long$Pair)
+long$genome=as.factor(long$genome)
+long$isolate=as.factor(long$isolate)
+long %>% tail()
+```
+
+# Check for substitution saturation
+
+There doesnt seem to be saturation. However FL-symb pairs are close to saturation
+```{r}
+# TSTV vs dS in mito and symb
+
+ggplot(long, aes(color=Groups))+
+  geom_point(aes(x=f84,y=ts,shape='ts'))+
+  geom_point(aes(x=f84,y=tv,shape='tv'))+
+  facet_wrap(genome~., scales='free')
+# TS/TV free-living close to equal; indicates saturation
+
+
+ggplot(long)+
+  geom_point(aes(x=f84,y=ts,color='ts'))+
+  geom_point(aes(x=f84,y=tv,color='tv'))+
+  facet_wrap(genome~., scales='free')
+
+```
+
+# Ds in mito vs symbionts
+The symbionts evolve more slowly than the mitochondria --> Recombination offers a degree of sex mitochondria dont have.
+Amongst the symbionts, the Ruthia does not evolve faster than Gigas but evolution acceleration happened on the branch leading to gigas.
+
+```{r}
+wide %>% head
+
+colors=list(Gi='#606E96',Ru='#68C47F',FL='#E1A79E')
+
+### Symbiont vs mitochondrial divergence highlighting pairs of genomes issued from the same individual hosts, respectively ###
+
+ds_plot=ggplot(subset(wide, Groups %in% c('G-G','G-R','R-R') & isolate == 'known'),
+       aes(x=Mito_dS,y=Symb_dS,color=Groups))+
+  geom_point()+
+  geom_abline(slope=1, linetype=2 )+
+  scale_x_continuous(limits=c(0,3),name = "Mitochondria divergence")+
+  scale_y_continuous(limits=c(0,3), name="Symbionts divergence")+
+  scale_color_manual(name="Holobiont pair:",labels=c("Clade I vs Clade I", "Clade I vs Clade II", "Clade II vs Clade II"),values=c('#606E96','#A5764A','#68C47F'))+
+  theme_bw()
+
+ds_plot
+
+
+#### Plot as in manuscript ####
+
+ds_plot=ggplot(subset(wide, Groups %in% c('G-G','G-R','R-R')),
+       aes(x=Mito_dS,y=Symb_dS))+
+  geom_point(data=subset(wide, Groups %in% c('G-G','G-R','R-R') & isolate=='unknown'),size=2,shape=19,aes(color=Groups))+
+  geom_point(data=subset(wide, Groups %in% c('G-G','G-R','R-R') & isolate=='known'),size=2,shape=21,color='black',aes(fill=Groups))+
+  # geom_smooth(method='lm',se=F,formula = y ~ x)+
+  # geom_text(aes(x=Mito_dS+0.1,label=Pair))+
+  geom_abline(slope=1, linetype=2 )+
+  scale_x_continuous(limits=c(0,3),name = "Mitochondria divergence")+
+  scale_y_continuous(limits=c(0,3), name="Symbionts divergence")+
+  scale_fill_manual(name="Holobiont pair:",labels=c("Clade I vs Clade I", "Clade I vs Clade II", "Clade II vs Clade II"),values=c('#606E96','#A5764A','#68C47F'),guide=FALSE)+
+  scale_color_manual(name="Holobiont pair:",labels=c("Clade I vs Clade I", "Clade I vs Clade II", "Clade II vs Clade II"),values=c('#606E96','#A5764A','#68C47F'))+
+  theme_bw()+
+  theme(text=element_text( family="Arial"))
+
+ds_plot
+
+```
+
+# Other plots
+```{r}
+### Less dnds selection in the symbionts than mitochondria
+dnds_plot=ggplot(subset(wide, Groups %in% c('G-G','G-R','R-R') & isolate == 'known'),
+       aes(x=Mito_dNdS,y=Symb_dNdS,color=Groups))+
+  geom_point()+
+  # geom_smooth(method='lm',se=F,formula = y ~ x)+
+  geom_abline(slope=1, linetype=2 )+
+  scale_x_continuous(limits=c(0,0.2),name = "dNdS of mitochondria")+
+  scale_y_continuous(limits=c(0,0.2), name="dNdS of symbionts")+
+  scale_color_manual(name="Holobiont pair:",labels=c("Gigas vs Gigas", "Gigas vs Ruthia", "Ruthia vs Ruthia"),values=c('#606E96','#A5764A','#68C47F'))+
+  theme_bw()
+dnds_plot
+
+### Less purifyig selection in the symbionts than mitochondria
+dn_plot=ggplot(subset(wide, Groups %in% c('G-G','G-R','R-R') & isolate == 'known'),
+       aes(x=Mito_dN,y=Symb_dN,color=Groups))+
+  geom_point()+
+  # geom_smooth(method='lm',se=F,formula = y ~ x)+
+  geom_abline(slope=1, linetype=2 )+
+  scale_x_continuous(limits=c(0,0.2),name = "Non-synonymous divergence of mitochondria")+
+  scale_y_continuous(limits=c(0,0.2), name="Non-synonymous divergence of symbionts")+
+  scale_color_manual(name="Holobiont pair:",labels=c("Gigas vs Gigas", "Gigas vs Ruthia", "Ruthia vs Ruthia"),values=c('#606E96','#A5764A','#68C47F'))+
+  theme_bw()
+dn_plot  
+
+```
+
+Are the dS in symbiont smaller than than that of mitochondria? ... YES
+```{r}
+levels(long$genome)
+wilcox.test(ds~genome,data=long,alternative = 'greater')
+?wilcox.test
+```
+
+Are the Gigas and Ruthia evolution rates (normalized by that that of their mitochondria) different? ... No
+```{r}
+ggplot(subset(wide, Groups %in% c('G-G','G-R','R-R') & isolate == 'known'))+
+  geom_point(aes(x=Groups,y=Symb_dS/Mito_dS,color=Groups))
+
+dat=subset(wide, Groups %in% c('G-G','R-R') & isolate == 'known')
+dat$ratio=dat$Symb_dS/dat$Mito_dS
+library(coin)
+oneway_test(ratio~Groups,data=dat,distribution="exact") # permutation test
+
+wilcox.test(ratio~Groups,data=dat,alternative = 'greater')
+
+```
+
+Difference mito/symb
+```{r}
+# Difference mito/symb
+ggplot(wide)+
+  geom_jitter(aes(x=Groups,y=Mito_dS-Symb_dS,color=Groups))
+# quotien mito/symb
+ggplot(wide)+
+  geom_jitter(aes(x=Groups,y=Symb_dS/Mito_dS,color=Groups))
+
+```
+# dNdS vs dS
+There is a very good correlation (power relation) between dnds and divergence in both mito and symbionts. 
+Higher dnds in symbionts than mitoch --> More relaxed selection
+```{r}
+##
+ggplot(long, aes(x=ds,y=dnds,color=genome))+
+  geom_point(aes(shape=Groups))
+
+ggplot(long, aes(x=ds,y=dnds,color=Groups))+
+  geom_point(aes(shape=genome))
+
+dnds_plot=ggplot(subset(wide, Groups %in% c('G-G','R-R','G-R')))+
+  geom_point(aes(x=Mito_dS,y=Mito_dNdS,color=Groups, shape='mito'))+
+  geom_point(aes(x=Symb_dS,y=Symb_dNdS,color=Groups, shape='symb'))+
+  scale_x_continuous(limits=c(0,4),name = "Divergence between pairs")+
+  scale_y_continuous(limits=c(0,0.25), name="Genome-wide \u03C9")+
+  scale_color_manual(name="Holobiont pair:",labels=c("Gigas vs Gigas", "Gigas vs Ruthia", "Ruthia vs Ruthia"),values=c('#606E96','#A5764A','#68C47F'))+
+  scale_shape_manual(values=c(21,19), labels=c('mitochondria','symbionts'),name='')+
+  theme_bw()
+dnds_plot
+
+```

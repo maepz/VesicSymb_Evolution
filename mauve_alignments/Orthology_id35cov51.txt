@@ -36,7 +36,7 @@
 34	SP60_00270	MS2017_1243	Rmag_0481	HUE58_RS02100	Rpac_peg_917	Rpha_peg_299	Rpli_peg_1246	Rrec_peg_1137	Rsou_peg_1871	Vdia_peg_532	Vext_peg_520	Vsoy1_peg_473	Vsoy2_peg_672	Vgig1_peg_487	Vgig2_peg_373	COSY_0444	Vmar_0448	17
 35	SP60_00275	MS2017_1244				Rpha_peg_301			Rsou_peg_1870									4
 36	SP60_00280	MS2017_1245	Rmag_0480	HUE58_RS02090	Rpac_peg_922	Rpha_peg_302		Rrec_peg_1135	Rsou_peg_1869	Vdia_peg_533	Vext_peg_521	Vsoy1_peg_472	Vsoy2_peg_671	Vgig1_peg_488	Vgig2_peg_374	COSY_0443	Vmar_0447	16
-37	SP60_00285	MS2017_1246	Rmag_0479	HUE58_RS02085		Rpha_peg_303	Rpli_peg_1252		Rsou_peg_1868	Vdia_peg_534	Vext_peg_522	Vsoy1_peg_471	Vsoy2_peg_670	Vgig1_peg_489	Vgig2_peg_375	COSY_0442	Vmar_0446	15
+37	SP60_00285	MS2017_1246	Rmag_0479			Rpha_peg_303	Rpli_peg_1252		Rsou_peg_1868	Vdia_peg_534	Vext_peg_522	Vsoy1_peg_471	Vsoy2_peg_670	Vgig1_peg_489	Vgig2_peg_375	COSY_0442	Vmar_0446	14
 38	SP60_00290	MS2017_1247	Rmag_0478	HUE58_RS02080	Rpac_peg_925	Rpha_peg_304	Rpli_peg_1253	Rrec_peg_1131	Rsou_peg_1866	Vdia_peg_535	Vext_peg_523	Vsoy1_peg_470	Vsoy2_peg_669	Vgig1_peg_490	Vgig2_peg_376	COSY_0441	Vmar_0445	17
 39	SP60_00295	MS2017_1248	Rmag_0477	HUE58_RS02075	Rpac_peg_926	Rpha_peg_305	Rpli_peg_1254	Rrec_peg_1130	Rsou_peg_1865	Vdia_peg_536	Vext_peg_524	Vsoy1_peg_469	Vsoy2_peg_668	Vgig1_peg_491	Vgig2_peg_377	COSY_0440	Vmar_0444	17
 40	SP60_00300	MS2017_1249	Rmag_0476	HUE58_RS02070	Rpac_peg_927	Rpha_peg_306	Rpli_peg_1255	Rrec_peg_1129	Rsou_peg_1864	Vdia_peg_537	Vext_peg_525	Vsoy1_peg_468	Vsoy2_peg_667	Vgig1_peg_492	Vgig2_peg_378	COSY_0439	Vmar_0443	17
@@ -71,7 +71,7 @@
 69	SP60_00495	MS2017_0876	Rmag_0449	HUE58_RS01825	Rpac_peg_980	Rpha_peg_393	Rpli_peg_1304	Rrec_peg_1075	Rsou_peg_1401	Vdia_peg_560	Vext_peg_548	Vsoy1_peg_442	Vsoy2_peg_641	Vgig1_peg_517	Vgig2_peg_404	COSY_0415	Vmar_0418	17
 70	SP60_00500	MS2017_0874	Rmag_0448	HUE58_RS01820	Rpac_peg_981	Rpha_peg_394	Rpli_peg_1305	Rrec_peg_1074	Rsou_peg_1402	Vdia_peg_561	Vext_peg_549	Vsoy1_peg_441	Vsoy2_peg_640	Vgig1_peg_518	Vgig2_peg_405	COSY_0414	Vmar_0417	17
 71	SP60_00505	MS2017_0873	Rmag_0447	HUE58_RS01815	Rpac_peg_982	Rpha_peg_395	Rpli_peg_1306	Rrec_peg_1073	Rsou_peg_1403	Vdia_peg_562	Vext_peg_550	Vsoy1_peg_440	Vsoy2_peg_639	Vgig1_peg_519	Vgig2_peg_406	COSY_0413	Vmar_0416	17
-72	SP60_00510	MS2017_0872	Rmag_0446	HUE58_RS01810	Rpac_peg_984	Rpha_peg_396	Rpli_peg_1307	Rrec_peg_1072	Rsou_peg_1404	Vdia_peg_563	Vext_peg_551	Vsoy1_peg_439	Vsoy2_peg_638	Vgig1_peg_520	Vgig2_peg_407	COSY_0412	Vmar_0415	17
+72	SP60_00510	MS2017_0872	Rmag_0446		Rpac_peg_984	Rpha_peg_396	Rpli_peg_1307	Rrec_peg_1072	Rsou_peg_1404	Vdia_peg_563	Vext_peg_551	Vsoy1_peg_439	Vsoy2_peg_638	Vgig1_peg_520	Vgig2_peg_407	COSY_0412	Vmar_0415	16
 73	SP60_00515	MS2017_0871	Rmag_0445	HUE58_RS01805	Rpac_peg_985	Rpha_peg_397	Rpli_peg_1308	Rrec_peg_1071	Rsou_peg_1405	Vdia_peg_564	Vext_peg_552	Vsoy1_peg_438	Vsoy2_peg_637	Vgig1_peg_521	Vgig2_peg_408	COSY_0411	Vmar_0414	17
 74	SP60_00530	MS2017_0868	Rmag_0442	HUE58_RS01790	Rpac_peg_988	Rpha_peg_400		Rrec_peg_1068	Rsou_peg_1408									8
 75	SP60_00535	MS2017_0861	Rmag_0441	HUE58_RS01785	Rpac_peg_989	Rpha_peg_404	Rpli_peg_1315	Rrec_peg_1067	Rsou_peg_1414									9
@@ -91,9 +91,9 @@
 89	SP60_00675	MS2017_1266	Rmag_0425	HUE58_RS01695	Rpac_peg_1013	Rpha_peg_428	Rpli_peg_1338	Rrec_peg_1047	Rsou_peg_386	Vdia_peg_582	Vext_peg_570	Vsoy1_peg_422	Vsoy2_peg_621	Vgig1_peg_540	Vgig2_peg_425	COSY_0396	Vmar_0394	17
 90	SP60_00715	MS2017_R024	Rmag_R0017	HUE58_RS01660	Rpac_rna_29	Rpha_rna_6	Rpli_rna_27	Rrec_rna_32	Rsou_rna_4	Vdia_rna_21	Vext_rna_22	Vsoy1_rna_18	Vsoy2_rna_29	Vgig1_rna_19	Vgig2_rna_15	COSY_R0016	Vmar_R0017	17
 91	SP60_00740	MS2017_1392	Rmag_0423	HUE58_RS01645	Rpac_peg_1407	Rpha_peg_451	Rpli_peg_1651	Rrec_peg_1035	Rsou_peg_628	Vdia_peg_585	Vext_peg_573	Vsoy1_peg_419	Vsoy2_peg_618	Vgig1_peg_543	Vgig2_peg_428	COSY_0392	Vmar_0390	17
-92	SP60_00750	MS2017_1394	Rmag_0422	HUE58_RS01635		Rpha_peg_459	Rpli_peg_1649		Rsou_peg_630									7
+92	SP60_00750	MS2017_1394	Rmag_0422			Rpha_peg_459	Rpli_peg_1649		Rsou_peg_630									6
 93	SP60_00755	MS2017_1395	Rmag_0421	HUE58_RS01630	Rpac_peg_1415	Rpha_peg_460	Rpli_peg_1648	Rrec_peg_1027	Rsou_peg_631	Vdia_peg_589	Vext_peg_577	Vsoy1_peg_416	Vsoy2_peg_616	Vgig1_peg_545	Vgig2_peg_430	COSY_0390	Vmar_0388	17
-94	SP60_00760	MS2017_1396	Rmag_0420	HUE58_RS01625	Rpac_peg_1416	Rpha_peg_461	Rpli_peg_1647	Rrec_peg_1026	Rsou_peg_632	Vdia_peg_590	Vext_peg_578	Vsoy1_peg_415	Vsoy2_peg_615	Vgig1_peg_546	Vgig2_peg_431	COSY_0389	Vmar_0387	17
+94	SP60_00760	MS2017_1396	Rmag_0420		Rpac_peg_1416	Rpha_peg_461	Rpli_peg_1647	Rrec_peg_1026	Rsou_peg_632	Vdia_peg_590	Vext_peg_578	Vsoy1_peg_415	Vsoy2_peg_615	Vgig1_peg_546	Vgig2_peg_431	COSY_0389	Vmar_0387	16
 95	SP60_00765	MS2017_1397	Rmag_0419	HUE58_RS01620	Rpac_peg_1417	Rpha_peg_462	Rpli_peg_1646	Rrec_peg_1025	Rsou_peg_633	Vdia_peg_591	Vext_peg_579	Vsoy1_peg_414	Vsoy2_peg_614	Vgig1_peg_547	Vgig2_peg_432	COSY_0388	Vmar_0386	17
 96	SP60_00775	MS2017_1398	Rmag_0417	HUE58_RS01610	Rpac_peg_1419	Rpha_peg_464	Rpli_peg_1644	Rrec_peg_1023	Rsou_peg_635	Vdia_peg_593	Vext_peg_581	Vsoy1_peg_412	Vsoy2_peg_612	Vgig1_peg_549	Vgig2_peg_434	COSY_0386	Vmar_0384	17
 97	SP60_00780	MS2017_1399	Rmag_0416	HUE58_RS01605	Rpac_peg_1420	Rpha_peg_465	Rpli_peg_1643	Rrec_peg_1022	Rsou_peg_636	Vdia_peg_594	Vext_peg_582	Vsoy1_peg_411	Vsoy2_peg_611	Vgig1_peg_550	Vgig2_peg_435	COSY_0385	Vmar_0383	17
@@ -186,13 +186,13 @@
 184	SP60_01470	MS2017_1632	Rmag_0313	HUE58_RS01035	Rpac_peg_473		Rpli_peg_632	Rrec_peg_117	Rsou_peg_608	Vdia_peg_685	Vext_peg_674	Vsoy1_peg_321	Vsoy2_peg_525	Vgig1_peg_635	Vgig2_peg_522	COSY_0294	Vmar_0295	16
 185	SP60_01480	MS2017_1636	Rmag_0312	HUE58_RS01025	Rpac_peg_472	Rpha_peg_1713	Rpli_peg_631	Rrec_peg_120	Rsou_peg_605	Vdia_peg_689	Vext_peg_678	Vsoy1_peg_320	Vsoy2_peg_524	Vgig1_peg_636	Vgig2_peg_523	COSY_0293	Vmar_0294	17
 186	SP60_01485	MS2017_1640	Rmag_0311	HUE58_RS01020	Rpac_peg_469	Rpha_peg_1716	Rpli_peg_210	Rrec_peg_124	Rsou_peg_1712	Vdia_peg_690	Vext_peg_679	Vsoy1_peg_319	Vsoy2_peg_523	Vgig1_peg_637	Vgig2_peg_524	COSY_0292	Vmar_0293	17
-187	SP60_01490	MS2017_1641	Rmag_0310	HUE58_RS01015	Rpac_peg_468	Rpha_peg_1718	Rpli_peg_209	Rrec_peg_125	Rsou_peg_1711									9
+187	SP60_01490	MS2017_1641	Rmag_0310		Rpac_peg_468	Rpha_peg_1718	Rpli_peg_209	Rrec_peg_125	Rsou_peg_1711									8
 188	SP60_01495	MS2017_1642	Rmag_0309	HUE58_RS01010	Rpac_peg_466	Rpha_peg_1720	Rpli_peg_208	Rrec_peg_127	Rsou_peg_1710			Vsoy1_peg_317	Vsoy2_peg_521	Vgig1_peg_638	Vgig2_peg_525	COSY_0291	Vmar_0291	15
 189	SP60_01500	MS2017_1643	Rmag_0308	HUE58_RS01005	Rpac_peg_465	Rpha_peg_1721	Rpli_peg_207	Rrec_peg_128	Rsou_peg_1709	Vdia_peg_694	Vext_peg_683	Vsoy1_peg_316	Vsoy2_peg_520	Vgig1_peg_639	Vgig2_peg_526	COSY_0290	Vmar_0290	17
 190	SP60_01505	MS2017_1644	Rmag_0307	HUE58_RS01000	Rpac_peg_464	Rpha_peg_1722	Rpli_peg_206	Rrec_peg_129	Rsou_peg_1708	Vdia_peg_695	Vext_peg_684	Vsoy1_peg_315	Vsoy2_peg_519	Vgig1_peg_640	Vgig2_peg_527	COSY_0289	Vmar_0289	17
 191	SP60_01515	MS2017_1651	Rmag_0306	HUE58_RS00985	Rpac_peg_462	Rpha_peg_1726	Rpli_peg_204	Rrec_peg_131	Rsou_peg_1701	Vdia_peg_696	Vext_peg_685	Vsoy1_peg_314	Vsoy2_peg_518	Vgig1_peg_641	Vgig2_peg_528	COSY_0288	Vmar_0288	17
 192	SP60_01520	MS2017_1652	Rmag_0305	HUE58_RS00980	Rpac_peg_461	Rpha_peg_1727	Rpli_peg_203	Rrec_peg_132	Rsou_peg_1700	Vdia_peg_697	Vext_peg_686	Vsoy1_peg_313	Vsoy2_peg_517	Vgig1_peg_642	Vgig2_peg_529	COSY_0287	Vmar_0287	17
-193	SP60_01530	MS2017_1654	Rmag_0303	HUE58_RS00970	Rpac_peg_459	Rpha_peg_1729	Rpli_peg_201	Rrec_peg_134	Rsou_peg_1698	Vdia_peg_699	Vext_peg_688	Vsoy1_peg_311	Vsoy2_peg_515	Vgig1_peg_644	Vgig2_peg_531	COSY_0285	Vmar_0285	17
+193	SP60_01530	MS2017_1654	Rmag_0303		Rpac_peg_459	Rpha_peg_1729	Rpli_peg_201	Rrec_peg_134	Rsou_peg_1698	Vdia_peg_699	Vext_peg_688	Vsoy1_peg_311	Vsoy2_peg_515	Vgig1_peg_644	Vgig2_peg_531	COSY_0285	Vmar_0285	16
 194	SP60_01535	MS2017_1658	Rmag_0302	HUE58_RS00965	Rpac_peg_458	Rpha_peg_1730	Rpli_peg_200	Rrec_peg_135	Rsou_peg_1697	Vdia_peg_700	Vext_peg_689	Vsoy1_peg_310	Vsoy2_peg_514	Vgig1_peg_645	Vgig2_peg_532	COSY_0284	Vmar_0284	17
 195	SP60_01545	MS2017_1666	Rmag_0822	HUE58_RS04050	Rpac_peg_565	Rpha_peg_1571	Rpli_peg_751	Rrec_peg_356	Rsou_peg_1265	Vdia_peg_205	Vext_peg_200	Vsoy1_peg_786	Vsoy2_peg_2	Vgig1_peg_767	Vgig2_peg_656	COSY_0749	Vmar_0759	17
 196	SP60_01550	MS2017_1667	Rmag_0824	HUE58_RS04055	Rpac_peg_570	Rpha_peg_1560	Rpli_peg_757	Rrec_peg_358	Rsou_peg_1256	Vdia_peg_204	Vext_peg_199	Vsoy1_peg_787	Vsoy2_peg_3	Vgig1_peg_768	Vgig2_peg_657	COSY_0750	Vmar_0760	17
@@ -204,8 +204,8 @@
 202	SP60_01590	MS2017_1676				Rpha_peg_1551			Rsou_peg_1557									4
 203	SP60_01595	MS2017_1677				Rpha_peg_1550												3
 204	SP60_01600	MS2017_1678		HUE58_RS04075	Rpac_peg_574	Rpha_peg_1549	Rpli_peg_765	Rrec_peg_364	Rsou_peg_1001			Vsoy1_peg_790	Vsoy2_peg_6	Vgig1_peg_771	Vgig2_peg_660	COSY_0752		13
-205	SP60_01605	MS2017_1679	Rmag_0826	HUE58_RS04080		Rpha_peg_1548	Rpli_peg_766		Rsou_peg_1000	Vdia_peg_202	Vext_peg_197	Vsoy1_peg_791	Vsoy2_peg_7	Vgig1_peg_772	Vgig2_peg_661	COSY_0753	Vmar_0763	15
-206	SP60_01610	MS2017_1680	Rmag_0827	HUE58_RS04085		Rpha_peg_1546	Rpli_peg_767		Rsou_peg_999									7
+205	SP60_01605	MS2017_1679	Rmag_0826			Rpha_peg_1548	Rpli_peg_766		Rsou_peg_1000	Vdia_peg_202	Vext_peg_197	Vsoy1_peg_791	Vsoy2_peg_7	Vgig1_peg_772	Vgig2_peg_661	COSY_0753	Vmar_0763	14
+206	SP60_01610	MS2017_1680	Rmag_0827			Rpha_peg_1546	Rpli_peg_767		Rsou_peg_999									6
 207	SP60_01615	MS2017_1682	Rmag_0828	HUE58_RS04090	Rpac_peg_577	Rpha_peg_1542	Rpli_peg_770	Rrec_peg_369	Rsou_peg_997	Vdia_peg_201	Vext_peg_196	Vsoy1_peg_792	Vsoy2_peg_8	Vgig1_peg_773	Vgig2_peg_662	COSY_0754	Vmar_0765	17
 208	SP60_01630	MS2017_1685	Rmag_0832	HUE58_RS04135	Rpac_peg_587	Rpha_peg_1528	Rpli_peg_782	Rrec_peg_379	Rsou_peg_984	Vdia_peg_199	Vext_peg_194	Vsoy1_peg_794	Vsoy2_peg_10	Vgig1_peg_775	Vgig2_peg_664	COSY_0756	Vmar_0767	17
 209	SP60_01635	MS2017_1686	Rmag_0833	HUE58_RS04140	Rpac_peg_588	Rpha_peg_1527	Rpli_peg_783	Rrec_peg_380	Rsou_peg_983	Vdia_peg_198	Vext_peg_193	Vsoy1_peg_795	Vsoy2_peg_11	Vgig1_peg_776	Vgig2_peg_665	COSY_0757	Vmar_0768	17
@@ -281,7 +281,7 @@
 279	SP60_02630	MS2017_0321	Rmag_0917	HUE58_RS04585	Rpac_peg_682	Rpha_peg_1417	Rpli_peg_894	Rrec_peg_480	Rsou_peg_246	Vdia_peg_132	Vext_peg_127	Vsoy1_peg_863	Vsoy2_peg_79	Vgig1_peg_845	Vgig2_peg_732	COSY_0823	Vmar_0833	17
 280	SP60_02635	MS2017_0320	Rmag_0918	HUE58_RS04590	Rpac_peg_683	Rpha_peg_1416	Rpli_peg_895	Rrec_peg_481	Rsou_peg_245	Vdia_peg_131	Vext_peg_126	Vsoy1_peg_864	Vsoy2_peg_80	Vgig1_peg_846	Vgig2_peg_733	COSY_0824	Vmar_0834	17
 281	SP60_02640	MS2017_0319	Rmag_0919	HUE58_RS04595	Rpac_peg_684	Rpha_peg_1415	Rpli_peg_896	Rrec_peg_482	Rsou_peg_244	Vdia_peg_130	Vext_peg_125	Vsoy1_peg_865	Vsoy2_peg_81	Vgig1_peg_847	Vgig2_peg_734	COSY_0825	Vmar_0835	17
-282	SP60_02645	MS2017_0318	Rmag_0920	HUE58_RS04600	Rpac_peg_685	Rpha_peg_1414	Rpli_peg_897		Rsou_peg_243	Vdia_peg_129	Vext_peg_124	Vsoy1_peg_866	Vsoy2_peg_82	Vgig1_peg_848	Vgig2_peg_735	COSY_0826	Vmar_0836	16
+282	SP60_02645	MS2017_0318	Rmag_0920		Rpac_peg_685	Rpha_peg_1414	Rpli_peg_897		Rsou_peg_243	Vdia_peg_129	Vext_peg_124	Vsoy1_peg_866	Vsoy2_peg_82	Vgig1_peg_848	Vgig2_peg_735	COSY_0826	Vmar_0836	15
 283	SP60_02655	MS2017_0316	Rmag_0922	HUE58_RS04610	Rpac_peg_687	Rpha_peg_1412	Rpli_peg_899	Rrec_peg_484	Rsou_peg_241	Vdia_peg_127	Vext_peg_122	Vsoy1_peg_868	Vsoy2_peg_84	Vgig1_peg_850	Vgig2_peg_737	COSY_0828	Vmar_0838	17
 284	SP60_02660	MS2017_0315	Rmag_0923	HUE58_RS04615	Rpac_peg_688	Rpha_peg_1411	Rpli_peg_900	Rrec_peg_485	Rsou_peg_240	Vdia_peg_126	Vext_peg_121	Vsoy1_peg_869	Vsoy2_peg_85	Vgig1_peg_851	Vgig2_peg_738	COSY_0829	Vmar_0839	17
 285	SP60_02665	MS2017_0314	Rmag_0924	HUE58_RS04620	Rpac_peg_689	Rpha_peg_1410	Rpli_peg_901	Rrec_peg_486	Rsou_peg_239	Vdia_peg_125	Vext_peg_120	Vsoy1_peg_870	Vsoy2_peg_86	Vgig1_peg_852	Vgig2_peg_739	COSY_0830	Vmar_0840	17
@@ -387,7 +387,7 @@
 385	SP60_03695	MS2017_2159		HUE58_RS05370	Rpac_peg_837	Rpha_peg_884	Rpli_peg_1076	Rrec_peg_641	Rsou_peg_1575	Vdia_peg_22	Vext_peg_19	Vsoy1_peg_973	Vsoy2_peg_187	Vgig1_peg_962	Vgig2_peg_838		Vmar_0940	15
 386	SP60_03700	MS2017_2150	Rmag_1034	HUE58_RS05375	Rpac_peg_839	Rpha_peg_892	Rpli_peg_1083	Rrec_peg_644	Rsou_peg_1580	Vdia_peg_21	Vext_peg_18	Vsoy1_peg_974	Vsoy2_peg_188	Vgig1_peg_963	Vgig2_peg_839	COSY_0936	Vmar_0941	17
 387	SP60_03705	MS2017_2149	Rmag_1035	HUE58_RS05380	Rpac_peg_840	Rpha_peg_893	Rpli_peg_1084	Rrec_peg_645	Rsou_peg_1581	Vdia_peg_20	Vext_peg_17	Vsoy1_peg_975	Vsoy2_peg_189	Vgig1_peg_964	Vgig2_peg_840	COSY_0937	Vmar_0942	17
-388	SP60_03710	MS2017_2148	Rmag_1036	HUE58_RS05385	Rpac_peg_841	Rpha_peg_896	Rpli_peg_1086	Rrec_peg_646	Rsou_peg_1582									9
+388	SP60_03710	MS2017_2148	Rmag_1036		Rpac_peg_841	Rpha_peg_896	Rpli_peg_1086	Rrec_peg_646	Rsou_peg_1582									8
 389	SP60_03715	MS2017_2147	Rmag_1037	HUE58_RS05390	Rpac_peg_843	Rpha_peg_899	Rpli_peg_1089	Rrec_peg_649	Rsou_peg_1584	Vdia_peg_18	Vext_peg_15	Vsoy1_peg_976	Vsoy2_peg_190	Vgig1_peg_965	Vgig2_peg_841	COSY_0938	Vmar_0943	17
 390	SP60_03720	MS2017_2146	Rmag_1038	HUE58_RS05395	Rpac_peg_844	Rpha_peg_900	Rpli_peg_1090	Rrec_peg_650	Rsou_peg_1585	Vdia_peg_17	Vext_peg_14	Vsoy1_peg_977	Vsoy2_peg_191	Vgig1_peg_966	Vgig2_peg_842	COSY_0939	Vmar_0944	17
 391	SP60_03730	MS2017_2144	Rmag_1040	HUE58_RS05405	Rpac_peg_846	Rpha_peg_902	Rpli_peg_1092	Rrec_peg_652	Rsou_peg_1587	Vdia_peg_15	Vext_peg_12	Vsoy1_peg_979	Vsoy2_peg_193	Vgig1_peg_969	Vgig2_peg_844	COSY_0941	Vmar_0945	17
@@ -443,10 +443,10 @@
 441	SP60_04095	MS2017_0022	Rmag_0015	HUE58_RS05710	Rpac_peg_215	Rpha_peg_1042	Rpli_peg_1575	Rrec_peg_717	Rsou_peg_1785	Vdia_peg_969	Vext_peg_957	Vsoy1_peg_41	Vsoy2_peg_245	Vgig1_peg_25	Vgig2_peg_943	COSY_0015	Vmar_0017	17
 442	SP60_04105	MS2017_0032	Rmag_0017	HUE58_RS05720	Rpac_peg_212	Rpha_peg_1046		Rrec_peg_720	Rsou_peg_1779									8
 443	SP60_04110	MS2017_0033	Rmag_0018	HUE58_RS05725	Rpac_peg_211	Rpha_peg_1047	Rpli_peg_1570	Rrec_peg_721	Rsou_peg_1778	Vdia_peg_967	Vext_peg_955	Vsoy1_peg_43	Vsoy2_peg_247	Vgig1_peg_27	Vgig2_peg_941	COSY_0017	Vmar_0019	17
-444	SP60_04115	MS2017_0034	Rmag_0019	HUE58_RS05730	Rpac_peg_210	Rpha_peg_1048	Rpli_peg_1569	Rrec_peg_722	Rsou_peg_1777	Vdia_peg_966	Vext_peg_954	Vsoy1_peg_44	Vsoy2_peg_248	Vgig1_peg_28	Vgig2_peg_940	COSY_0018	Vmar_0020	17
-445	SP60_04120	MS2017_0035	Rmag_0020	HUE58_RS05735	Rpac_peg_209	Rpha_peg_1049		Rrec_peg_723	Rsou_peg_1776	Vdia_peg_965	Vext_peg_953	Vsoy1_peg_45	Vsoy2_peg_249	Vgig1_peg_29	Vgig2_peg_939	COSY_0019	Vmar_0021	16
+444	SP60_04115	MS2017_0034	Rmag_0019		Rpac_peg_210	Rpha_peg_1048	Rpli_peg_1569	Rrec_peg_722	Rsou_peg_1777	Vdia_peg_966	Vext_peg_954	Vsoy1_peg_44	Vsoy2_peg_248	Vgig1_peg_28	Vgig2_peg_940	COSY_0018	Vmar_0020	16
+445	SP60_04120	MS2017_0035	Rmag_0020		Rpac_peg_209	Rpha_peg_1049		Rrec_peg_723	Rsou_peg_1776	Vdia_peg_965	Vext_peg_953	Vsoy1_peg_45	Vsoy2_peg_249	Vgig1_peg_29	Vgig2_peg_939	COSY_0019	Vmar_0021	15
 446	SP60_04125	MS2017_0037	Rmag_0021	HUE58_RS05740	Rpac_peg_208	Rpha_peg_1050		Rrec_peg_724	Rsou_peg_467	Vdia_peg_964	Vext_peg_952	Vsoy1_peg_46	Vsoy2_peg_250	Vgig1_peg_30	Vgig2_peg_938	COSY_0020	Vmar_0022	16
-447	SP60_04130	MS2017_0038	Rmag_0022	HUE58_RS05745	Rpac_peg_207	Rpha_peg_1051	Rpli_peg_1566	Rrec_peg_725	Rsou_peg_468	Vdia_peg_963	Vext_peg_951	Vsoy1_peg_47	Vsoy2_peg_251	Vgig1_peg_31	Vgig2_peg_937	COSY_0021	Vmar_0023	17
+447	SP60_04130	MS2017_0038	Rmag_0022		Rpac_peg_207	Rpha_peg_1051	Rpli_peg_1566	Rrec_peg_725	Rsou_peg_468	Vdia_peg_963	Vext_peg_951	Vsoy1_peg_47	Vsoy2_peg_251	Vgig1_peg_31	Vgig2_peg_937	COSY_0021	Vmar_0023	16
 448	SP60_04140	MS2017_0063		HUE58_RS05755	Rpac_peg_205	Rpha_peg_1053	Rpli_peg_1564	Rrec_peg_727	Rsou_peg_470	Vdia_peg_961	Vext_peg_949	Vsoy1_peg_49	Vsoy2_peg_253	Vgig1_peg_33	Vgig2_peg_935	COSY_0023	Vmar_0025	16
 449	SP60_04145	MS2017_0066	Rmag_0024	HUE58_RS05760	Rpac_peg_203		Rpli_peg_1563	Rrec_peg_728	Rsou_peg_471	Vdia_peg_960	Vext_peg_948	Vsoy1_peg_50	Vsoy2_peg_254	Vgig1_peg_34	Vgig2_peg_934	COSY_0024	Vmar_0026	16
 450	SP60_04150	MS2017_0067	Rmag_0025	HUE58_RS05765	Rpac_peg_202	Rpha_peg_1056	Rpli_peg_1562	Rrec_peg_729	Rsou_peg_472	Vdia_peg_959	Vext_peg_947	Vsoy1_peg_51	Vsoy2_peg_255	Vgig1_peg_35	Vgig2_peg_933	COSY_0025	Vmar_0027	17
@@ -471,9 +471,9 @@
 469	SP60_04335	MS2017_2107	Rmag_0055	HUE58_RS06005	Rpac_peg_160	Rpha_peg_785	Rpli_peg_1504	Rrec_peg_775	Rsou_peg_581	Vdia_peg_925	Vext_peg_914	Vsoy1_peg_85	Vsoy2_peg_288	Vgig1_peg_67	Vgig2_peg_902	COSY_0060	Vmar_0058	17
 470	SP60_04340	MS2017_2106	Rmag_0056	HUE58_RS06010	Rpac_peg_159		Rpli_peg_1502	Rrec_peg_776	Rsou_peg_579	Vdia_peg_924	Vext_peg_913	Vsoy1_peg_86	Vsoy2_peg_289	Vgig1_peg_68	Vgig2_peg_901	COSY_0061	Vmar_0059	16
 471	SP60_04350	MS2017_2104	Rmag_0057	HUE58_RS06020	Rpac_peg_156		Rpli_peg_1499	Rrec_peg_778	Rsou_peg_577	Vdia_peg_923	Vext_peg_912	Vsoy1_peg_87	Vsoy2_peg_291	Vgig1_peg_69	Vgig2_peg_900	COSY_0062	Vmar_0061	16
-472	SP60_04360	MS2017_2102		HUE58_RS06030		Rpha_peg_770	Rpli_peg_1497	Rrec_peg_781	Rsou_peg_576									7
+472	SP60_04360	MS2017_2102				Rpha_peg_770	Rpli_peg_1497	Rrec_peg_781	Rsou_peg_576									6
 473	SP60_04370	MS2017_2100							Rsou_peg_574									3
-474	SP60_04375	MS2017_2099	Rmag_0059	HUE58_RS06040		Rpha_peg_767			Rsou_peg_573	Vdia_peg_921	Vext_peg_910	Vsoy1_peg_89	Vsoy2_peg_293	Vgig1_peg_71	Vgig2_peg_898	COSY_0064	Vmar_0063	14
+474	SP60_04375	MS2017_2099	Rmag_0059			Rpha_peg_767			Rsou_peg_573	Vdia_peg_921	Vext_peg_910	Vsoy1_peg_89	Vsoy2_peg_293	Vgig1_peg_71	Vgig2_peg_898	COSY_0064	Vmar_0063	13
 475	SP60_04380	MS2017_2098	Rmag_0060			Rpha_peg_766	Rpli_peg_1490		Rsou_peg_572									6
 476	SP60_04385	MS2017_2097	Rmag_0061	HUE58_RS06050	Rpac_peg_145	Rpha_peg_765	Rpli_peg_1489	Rrec_peg_788	Rsou_peg_571	Vdia_peg_920	Vext_peg_909	Vsoy1_peg_90	Vsoy2_peg_294	Vgig1_peg_72	Vgig2_peg_897	COSY_0065	Vmar_0064	17
 477	SP60_04390	MS2017_R039	Rmag_R0004	HUE58_RS06055	Rpac_rna_6	Rpha_rna_10	Rpli_rna_33	Rrec_rna_22	Rsou_rna_11	Vdia_rna_34	Vext_rna_35	Vsoy1_rna_5	Vsoy2_rna_16	Vgig1_rna_5	Vgig2_rna_35	COSY_R0004	Vmar_R0004	17
@@ -505,7 +505,7 @@
 503	SP60_04640	MS2017_2009	Rmag_0096	HUE58_RS06270	Rpac_peg_87		Rpli_peg_1438	Rrec_peg_834	Rsou_peg_1554									8
 504	SP60_04645	MS2017_2008	Rmag_0097	HUE58_RS06275	Rpac_peg_86	Rpha_peg_2160	Rpli_peg_1437	Rrec_peg_835	Rsou_peg_1553	Vdia_peg_884	Vext_peg_873	Vsoy1_peg_124	Vsoy2_peg_328	Vgig1_peg_108	Vgig2_peg_861	COSY_0100	Vmar_0098	17
 505	SP60_04650	MS2017_2007	Rmag_0098	HUE58_RS06280	Rpac_peg_85	Rpha_peg_2161	Rpli_peg_1436	Rrec_peg_836	Rsou_peg_1552	Vdia_peg_883	Vext_peg_872	Vsoy1_peg_125	Vsoy2_peg_329	Vgig1_peg_109	Vgig2_peg_860	COSY_0101	Vmar_0099	17
-506	SP60_04655	MS2017_2005		HUE58_RS06285		Rpha_peg_2162	Rpli_peg_1435		Rsou_peg_1551	Vdia_peg_882	Vext_peg_871	Vsoy1_peg_126	Vsoy2_peg_330	Vgig1_peg_110	Vgig2_peg_859	COSY_0102	Vmar_0100	14
+506	SP60_04655	MS2017_2005				Rpha_peg_2162	Rpli_peg_1435		Rsou_peg_1551	Vdia_peg_882	Vext_peg_871	Vsoy1_peg_126	Vsoy2_peg_330	Vgig1_peg_110	Vgig2_peg_859	COSY_0102	Vmar_0100	13
 507	SP60_04660	MS2017_2004	Rmag_0099	HUE58_RS06290	Rpac_peg_84	Rpha_peg_2163	Rpli_peg_1434	Rrec_peg_837	Rsou_peg_1550	Vdia_peg_881	Vext_peg_870	Vsoy1_peg_127	Vsoy2_peg_331	Vgig1_peg_111	Vgig2_peg_858	COSY_0103	Vmar_0101	17
 508	SP60_04665	MS2017_2003		HUE58_RS06295		Rpha_peg_2164		Rrec_peg_838	Rsou_peg_1549									6
 509	SP60_04685	MS2017_1998		HUE58_RS06300		Rpha_peg_2165	Rpli_peg_1433	Rrec_peg_839	Rsou_peg_1548	Vdia_peg_880	Vext_peg_869	Vsoy1_peg_128	Vsoy2_peg_332	Vgig1_peg_112	Vgig2_peg_857	COSY_0104	Vmar_0102	15
@@ -555,8 +555,8 @@
 553	SP60_05120	MS2017_1881	Rmag_0146	HUE58_RS06610	Rpac_peg_23	Rpha_peg_1971	Rpli_peg_1367	Rrec_peg_903	Rsou_peg_948	Vdia_peg_833	Vext_peg_822	Vsoy1_peg_174	Vsoy2_peg_379	Vgig1_peg_157	Vgig2_peg_46	COSY_0150	Vmar_0147	17
 554	SP60_05125	MS2017_1878	Rmag_0147	HUE58_RS06615	Rpac_peg_18	Rpha_peg_1975	Rpli_peg_1364	Rrec_peg_904	Rsou_peg_949	Vdia_peg_832	Vext_peg_821	Vsoy1_peg_175	Vsoy2_peg_380	Vgig1_peg_158	Vgig2_peg_47	COSY_0151	Vmar_0149	17
 555	SP60_05130	MS2017_1877	Rmag_0148	HUE58_RS06620	Rpac_peg_17	Rpha_peg_1976		Rrec_peg_905	Rsou_peg_950	Vdia_peg_831	Vext_peg_820	Vsoy1_peg_176	Vsoy2_peg_381	Vgig1_peg_159	Vgig2_peg_48	COSY_0152	Vmar_0150	16
-556	SP60_05140	MS2017_1875	Rmag_0150	HUE58_RS06630		Rpha_peg_1978	Rpli_peg_1360		Rsou_peg_952									7
-557	SP60_05145	MS2017_1874		HUE58_RS06635		Rpha_peg_1979	Rpli_peg_1359	Rrec_peg_909	Rsou_peg_953									7
+556	SP60_05140	MS2017_1875	Rmag_0150			Rpha_peg_1978	Rpli_peg_1360		Rsou_peg_952									6
+557	SP60_05145	MS2017_1874				Rpha_peg_1979	Rpli_peg_1359	Rrec_peg_909	Rsou_peg_953									6
 558	SP60_05165	MS2017_R034	Rmag_R0007	HUE58_RS06645	Rpac_rna_3	Rpha_rna_36	Rpli_rna_30	Rrec_rna_25	Rsou_rna_19	Vdia_rna_31	Vext_rna_32	Vsoy1_rna_8	Vsoy2_rna_19	Vgig1_rna_8	Vgig2_rna_3	COSY_R0007	Vmar_R0007	17
 559	SP60_05170	MS2017_R033	Rmag_R0008	HUE58_RS06650	Rpac_rna_2	Rpha_rna_37	Rpli_rna_29	Rrec_rna_26	Rsou_rna_20	Vdia_rna_30	Vext_rna_31	Vsoy1_rna_9	Vsoy2_rna_20	Vgig1_rna_9	Vgig2_rna_4	COSY_R0008	Vmar_R0008	17
 560	SP60_05175	MS2017_1872	Rmag_0152	HUE58_RS06655	Rpac_peg_13	Rpha_peg_1982	Rpli_peg_1357	Rrec_peg_912	Rsou_peg_955	Vdia_peg_828	Vext_peg_817	Vsoy1_peg_179	Vsoy2_peg_384	Vgig1_peg_162	Vgig2_peg_51	COSY_0157	Vmar_0153	17
@@ -609,7 +609,7 @@
 607	SP60_05500	MS2017_1795	Rmag_0216	HUE58_RS00435	Rpac_peg_333	Rpha_peg_2201	Rpli_peg_82	Rrec_peg_246	Rsou_peg_1012	Vdia_peg_774	Vext_peg_763	Vsoy1_peg_233	Vsoy2_peg_438	Vgig1_peg_721	Vgig2_peg_608	COSY_0211	Vmar_0208	17
 608	SP60_05505	MS2017_1794	Rmag_0217	HUE58_RS00440	Rpac_peg_334	Rpha_peg_2200	Rpli_peg_83	Rrec_peg_245	Rsou_peg_1013	Vdia_peg_773	Vext_peg_762	Vsoy1_peg_234	Vsoy2_peg_439	Vgig1_peg_720	Vgig2_peg_607	COSY_0212	Vmar_0209	17
 609	SP60_05515	MS2017_1793	Rmag_0219	HUE58_RS00450	Rpac_peg_335	Rpha_peg_2197	Rpli_peg_84	Rrec_peg_244	Rsou_peg_1015	Vdia_peg_772								10
-610	SP60_05520	MS2017_1792	Rmag_0220	HUE58_RS00455	Rpac_peg_337	Rpha_peg_2196	Rpli_peg_86		Rsou_peg_1016	Vdia_peg_771	Vext_peg_760	Vsoy1_peg_236	Vsoy2_peg_441	Vgig1_peg_717	Vgig2_peg_604	COSY_0214	Vmar_0211	16
+610	SP60_05520	MS2017_1792	Rmag_0220		Rpac_peg_337	Rpha_peg_2196	Rpli_peg_86		Rsou_peg_1016	Vdia_peg_771	Vext_peg_760	Vsoy1_peg_236	Vsoy2_peg_441	Vgig1_peg_717	Vgig2_peg_604	COSY_0214	Vmar_0211	15
 611	SP60_05525	MS2017_1791	Rmag_0221	HUE58_RS00460	Rpac_peg_338	Rpha_peg_2195	Rpli_peg_87	Rrec_peg_242	Rsou_peg_1017	Vdia_peg_770	Vext_peg_759	Vsoy1_peg_237	Vsoy2_peg_442	Vgig1_peg_716	Vgig2_peg_603	COSY_0215	Vmar_0212	17
 612	SP60_05530	MS2017_1790	Rmag_0222	HUE58_RS00465	Rpac_peg_339	Rpha_peg_2194	Rpli_peg_88	Rrec_peg_241	Rsou_peg_1018	Vdia_peg_769	Vext_peg_758	Vsoy1_peg_238	Vsoy2_peg_443	Vgig1_peg_715	Vgig2_peg_602	COSY_0216	Vmar_0213	17
 613	SP60_05540	MS2017_1789	Rmag_0223	HUE58_RS00475	Rpac_peg_342	Rpha_peg_2191	Rpli_peg_90	Rrec_peg_239	Rsou_peg_1022	Vdia_peg_768	Vext_peg_757	Vsoy1_peg_239	Vsoy2_peg_444	Vgig1_peg_713	Vgig2_peg_600	COSY_0217	Vmar_0215	17
@@ -766,10 +766,10 @@
 764	SP60_06585	MS2017_0624	Rmag_0723	HUE58_RS03565	Rpac_peg_1109	Rpha_peg_604	Rpli_peg_273	Rrec_peg_1479	Rsou_peg_663			Vsoy1_peg_709	Vsoy2_peg_910	Vgig1_peg_251	Vgig2_peg_139	COSY_0671		14
 765	SP60_06590	MS2017_0625	Rmag_0722	HUE58_RS03560		Rpha_peg_605	Rpli_peg_272	Rrec_peg_1478	Rsou_peg_662	Vdia_peg_295	Vext_peg_288	Vsoy1_peg_708	Vsoy2_peg_909	Vgig1_peg_252	Vgig2_peg_140	COSY_0670	Vmar_0681	16
 766	SP60_06600	MS2017_0627	Rmag_0721	HUE58_RS03550	Rpac_peg_1112	Rpha_peg_607	Rpli_peg_270	Rrec_peg_1476	Rsou_peg_660	Vdia_peg_298	Vext_peg_290	Vsoy1_peg_707	Vsoy2_peg_908	Vgig1_peg_253	Vgig2_peg_141	COSY_0669	Vmar_0680	17
-767	SP60_06605	MS2017_0628	Rmag_0720	HUE58_RS03545	Rpac_peg_1115	Rpha_peg_608	Rpli_peg_269	Rrec_peg_1475	Rsou_peg_658			Vsoy1_peg_706	Vsoy2_peg_907					11
+767	SP60_06605	MS2017_0628	Rmag_0720		Rpac_peg_1115	Rpha_peg_608	Rpli_peg_269	Rrec_peg_1475	Rsou_peg_658			Vsoy1_peg_706	Vsoy2_peg_907					10
 768	SP60_06610	MS2017_0629	Rmag_0719	HUE58_RS03540	Rpac_peg_1116	Rpha_peg_609	Rpli_peg_268	Rrec_peg_1474	Rsou_peg_657	Vdia_peg_299	Vext_peg_291	Vsoy1_peg_705	Vsoy2_peg_905	Vgig1_peg_254	Vgig2_peg_142	COSY_0668	Vmar_0678	17
 769	SP60_06620	MS2017_0630	Rmag_0717	HUE58_RS03530	Rpac_peg_1118	Rpha_peg_611	Rpli_peg_266	Rrec_peg_1472	Rsou_peg_655	Vdia_peg_301	Vext_peg_293	Vsoy1_peg_703	Vsoy2_peg_903	Vgig1_peg_256	Vgig2_peg_144	COSY_0666	Vmar_0676	17
-770	SP60_06625	MS2017_0631	Rmag_0716	HUE58_RS03525		Rpha_peg_612	Rpli_peg_265		Rsou_peg_654	Vdia_peg_302	Vext_peg_294	Vsoy1_peg_702	Vsoy2_peg_902	Vgig1_peg_257	Vgig2_peg_145	COSY_0665	Vmar_0675	15
+770	SP60_06625	MS2017_0631	Rmag_0716			Rpha_peg_612	Rpli_peg_265		Rsou_peg_654	Vdia_peg_302	Vext_peg_294	Vsoy1_peg_702	Vsoy2_peg_902	Vgig1_peg_257	Vgig2_peg_145	COSY_0665	Vmar_0675	14
 771	SP60_06630	MS2017_0632	Rmag_0715	HUE58_RS03520	Rpac_peg_1119	Rpha_peg_613	Rpli_peg_264	Rrec_peg_1469	Rsou_peg_653									9
 772	SP60_06635	MS2017_0637	Rmag_0714	HUE58_RS03515	Rpac_peg_1120	Rpha_peg_614	Rpli_peg_263	Rrec_peg_1468	Rsou_peg_652	Vdia_peg_303	Vext_peg_295	Vsoy1_peg_701	Vsoy2_peg_901	Vgig1_peg_258	Vgig2_peg_146	COSY_0664	Vmar_0673	17
 773	SP60_06640	MS2017_0638																2
@@ -841,7 +841,7 @@
 839	SP60_07265	MS2017_0921	Rmag_0626	HUE58_RS03040	Rpac_peg_1230	Rpha_peg_50	Rpli_peg_519	Rrec_peg_1346	Rsou_peg_710	Vdia_peg_396	Vext_peg_384	Vsoy1_peg_614	Vsoy2_peg_814	Vgig1_peg_349	Vgig2_peg_234	COSY_0579	Vmar_0584	17
 840	SP60_07270	MS2017_0922	Rmag_0625	HUE58_RS03035	Rpac_peg_1231	Rpha_peg_51	Rpli_peg_520	Rrec_peg_1345	Rsou_peg_711									9
 841	SP60_07275	MS2017_0923	Rmag_0624		Rpac_peg_1232	Rpha_peg_52	Rpli_peg_521	Rrec_peg_1344	Rsou_peg_712	Vdia_peg_397	Vext_peg_385	Vsoy1_peg_612	Vsoy2_peg_812	Vgig1_peg_351	Vgig2_peg_236	COSY_0577	Vmar_0583	16
-842	SP60_07280	MS2017_0924	Rmag_0623	HUE58_RS03030	Rpac_peg_1233	Rpha_peg_53	Rpli_peg_522	Rrec_peg_1343	Rsou_peg_713	Vdia_peg_398	Vext_peg_386	Vsoy1_peg_611	Vsoy2_peg_811	Vgig1_peg_352	Vgig2_peg_237	COSY_0576	Vmar_0582	17
+842	SP60_07280	MS2017_0924	Rmag_0623		Rpac_peg_1233	Rpha_peg_53	Rpli_peg_522	Rrec_peg_1343	Rsou_peg_713	Vdia_peg_398	Vext_peg_386	Vsoy1_peg_611	Vsoy2_peg_811	Vgig1_peg_352	Vgig2_peg_237	COSY_0576	Vmar_0582	16
 843	SP60_07285	MS2017_0925	Rmag_0622	HUE58_RS03025	Rpac_peg_1234	Rpha_peg_60	Rpli_peg_523	Rrec_peg_1342	Rsou_peg_714	Vdia_peg_399	Vext_peg_387	Vsoy1_peg_610	Vsoy2_peg_810	Vgig1_peg_353	Vgig2_peg_238	COSY_0575	Vmar_0581	17
 844	SP60_07290	MS2017_0926	Rmag_0621	HUE58_RS03020	Rpac_peg_1235	Rpha_peg_61	Rpli_peg_524	Rrec_peg_1341	Rsou_peg_715	Vdia_peg_400	Vext_peg_388	Vsoy1_peg_609	Vsoy2_peg_809	Vgig1_peg_354	Vgig2_peg_239	COSY_0574	Vmar_0580	17
 845	SP60_07305	MS2017_0929	Rmag_0620	HUE58_RS03010	Rpac_peg_1237	Rpha_peg_64	Rpli_peg_527	Rrec_peg_1338	Rsou_peg_720	Vdia_peg_401	Vext_peg_389	Vsoy1_peg_608	Vsoy2_peg_808	Vgig1_peg_355	Vgig2_peg_240	COSY_0573	Vmar_0579	17
@@ -871,7 +871,7 @@
 869	SP60_07455	MS2017_0788	Rmag_0596	HUE58_RS02870	Rpac_peg_1266	Rpha_peg_98	Rpli_peg_559	Rrec_peg_1310	Rsou_peg_755			Vsoy1_peg_582	Vsoy2_peg_781	Vgig1_peg_378	Vgig2_peg_263	COSY_0551	Vmar_0557	15
 870	SP60_07460	MS2017_0789	Rmag_0595	HUE58_RS02865	Rpac_peg_1267	Rpha_peg_99	Rpli_peg_560	Rrec_peg_1309	Rsou_peg_756	Vdia_peg_425	Vext_peg_413	Vsoy1_peg_581	Vsoy2_peg_780	Vgig1_peg_379	Vgig2_peg_264	COSY_0550	Vmar_0556	17
 871	SP60_07465	MS2017_0790		HUE58_RS02860	Rpac_peg_1268	Rpha_peg_100	Rpli_peg_562	Rrec_peg_1308	Rsou_peg_757									8
-872	SP60_07470	MS2017_0791		HUE58_RS02855			Rpli_peg_563		Rsou_peg_758									5
+872	SP60_07470	MS2017_0791					Rpli_peg_563		Rsou_peg_758									4
 873	SP60_07475	MS2017_0792	Rmag_0594	HUE58_RS02850	Rpac_peg_1270	Rpha_peg_102	Rpli_peg_564	Rrec_peg_1307	Rsou_peg_759	Vdia_peg_426	Vext_peg_414	Vsoy1_peg_579	Vsoy2_peg_778	Vgig1_peg_381	Vgig2_peg_266	COSY_0549	Vmar_0555	17
 874	SP60_07480	MS2017_0794	Rmag_0593	HUE58_RS02840	Rpac_peg_1272	Rpha_peg_104	Rpli_peg_566	Rrec_peg_1305	Rsou_peg_761	Vdia_peg_427	Vext_peg_415	Vsoy1_peg_578	Vsoy2_peg_777	Vgig1_peg_382	Vgig2_peg_267	COSY_0548	Vmar_0553	17
 875	SP60_07485	MS2017_0795	Rmag_0592	HUE58_RS02835	Rpac_peg_1273	Rpha_peg_105	Rpli_peg_567	Rrec_peg_1304	Rsou_peg_762	Vdia_peg_428	Vext_peg_416	Vsoy1_peg_577	Vsoy2_peg_776	Vgig1_peg_383	Vgig2_peg_268	COSY_0547	Vmar_0552	17
@@ -900,12 +900,12 @@
 898	SP60_07675	MS2017_0995	Rmag_0572	HUE58_RS02685	Rpac_peg_1303	Rpha_peg_136	Rpli_peg_627	Rrec_peg_1267	Rsou_peg_806	Vdia_peg_448	Vext_peg_435	Vsoy1_peg_557	Vsoy2_peg_756	Vgig1_peg_402	Vgig2_peg_287	COSY_0527	Vmar_0533	17
 899	SP60_07680	MS2017_0997			Rpac_peg_1305	Rpha_peg_141	Rpli_peg_1144		Rsou_peg_922									6
 900	SP60_07685	MS2017_0998	Rmag_0571	HUE58_RS02670	Rpac_peg_1306	Rpha_peg_142	Rpli_peg_1145	Rrec_peg_1263	Rsou_peg_921	Vdia_peg_449	Vext_peg_436	Vsoy1_peg_556	Vsoy2_peg_755	Vgig1_peg_403	Vgig2_peg_288	COSY_0526	Vmar_0532	17
-901	SP60_07690	MS2017_0999	Rmag_0570	HUE58_RS02665	Rpac_peg_1307	Rpha_peg_143	Rpli_peg_1146	Rrec_peg_1262	Rsou_peg_920	Vdia_peg_450	Vext_peg_437	Vsoy1_peg_555	Vsoy2_peg_754	Vgig1_peg_404	Vgig2_peg_289	COSY_0525	Vmar_0531	17
+901	SP60_07690	MS2017_0999	Rmag_0570		Rpac_peg_1307	Rpha_peg_143	Rpli_peg_1146	Rrec_peg_1262	Rsou_peg_920	Vdia_peg_450	Vext_peg_437	Vsoy1_peg_555	Vsoy2_peg_754	Vgig1_peg_404	Vgig2_peg_289	COSY_0525	Vmar_0531	16
 902	SP60_07825	MS2017_1001	Rmag_0568	HUE58_RS02655	Rpac_peg_1310	Rpha_peg_144	Rpli_peg_1147	Rrec_peg_1260	Rsou_peg_919	Vdia_peg_451	Vext_peg_438	Vsoy1_peg_554	Vsoy2_peg_753	Vgig1_peg_405	Vgig2_peg_290	COSY_0523	Vmar_0530	17
 903	SP60_07830	MS2017_1002	Rmag_0567	HUE58_RS02650	Rpac_peg_1311	Rpha_peg_145	Rpli_peg_1148	Rrec_peg_1259	Rsou_peg_918	Vdia_peg_452	Vext_peg_439	Vsoy1_peg_553	Vsoy2_peg_752	Vgig1_peg_406	Vgig2_peg_291	COSY_0522	Vmar_0529	17
 904	SP60_07835	MS2017_1003	Rmag_0566	HUE58_RS02645	Rpac_peg_1312	Rpha_peg_146	Rpli_peg_1149	Rrec_peg_1258	Rsou_peg_917	Vdia_peg_453	Vext_peg_440	Vsoy1_peg_552	Vsoy2_peg_751	Vgig1_peg_407	Vgig2_peg_292	COSY_0521	Vmar_0528	17
 905	SP60_07840	MS2017_1004	Rmag_0565	HUE58_RS02640	Rpac_peg_1313	Rpha_peg_147	Rpli_peg_1150	Rrec_peg_1257	Rsou_peg_916	Vdia_peg_454	Vext_peg_441	Vsoy1_peg_551	Vsoy2_peg_750	Vgig1_peg_408	Vgig2_peg_293	COSY_0520	Vmar_0527	17
-906	SP60_07845	MS2017_1005	Rmag_0564	HUE58_RS02635		Rpha_peg_148	Rpli_peg_1151		Rsou_peg_915	Vdia_peg_455	Vext_peg_442	Vsoy1_peg_550	Vsoy2_peg_749	Vgig1_peg_409	Vgig2_peg_294	COSY_0519	Vmar_0526	15
+906	SP60_07845	MS2017_1005	Rmag_0564			Rpha_peg_148	Rpli_peg_1151		Rsou_peg_915	Vdia_peg_455	Vext_peg_442	Vsoy1_peg_550	Vsoy2_peg_749	Vgig1_peg_409	Vgig2_peg_294	COSY_0519	Vmar_0526	14
 907	SP60_07860	MS2017_1008	Rmag_0561	HUE58_RS02615	Rpac_peg_1318	Rpha_peg_151	Rpli_peg_1154	Rrec_peg_1251	Rsou_peg_912	Vdia_peg_459	Vext_peg_446	Vsoy1_peg_546	Vsoy2_peg_745	Vgig1_peg_413	Vgig2_peg_298	COSY_0515	Vmar_0521	17
 908	SP60_07865	MS2017_1009	Rmag_0560	HUE58_RS02610	Rpac_peg_1319	Rpha_peg_152	Rpli_peg_1155	Rrec_peg_1250	Rsou_peg_911	Vdia_peg_460	Vext_peg_447	Vsoy1_peg_545	Vsoy2_peg_744	Vgig1_peg_414	Vgig2_peg_299	COSY_0514	Vmar_0520	17
 909	SP60_07870	MS2017_1010	Rmag_0559	HUE58_RS02605	Rpac_peg_1320	Rpha_peg_153	Rpli_peg_1156	Rrec_peg_1249	Rsou_peg_910	Vdia_peg_461	Vext_peg_448	Vsoy1_peg_544	Vsoy2_peg_743	Vgig1_peg_415	Vgig2_peg_300	COSY_0513	Vmar_0519	17
@@ -926,8 +926,8 @@
 924	SP60_07950	MS2017_1027	Rmag_0543	HUE58_RS02525	Rpac_peg_1336	Rpha_peg_169	Rpli_peg_1172	Rrec_peg_1233	Rsou_peg_894	Vdia_peg_479	Vext_peg_466	Vsoy1_peg_528	Vsoy2_peg_727	Vgig1_peg_430	Vgig2_peg_315	COSY_0498	Vmar_0504	17
 925	SP60_07955	MS2017_1028	Rmag_0542	HUE58_RS02520	Rpac_peg_1337	Rpha_peg_170	Rpli_peg_1173	Rrec_peg_1232	Rsou_peg_893	Vdia_peg_480	Vext_peg_467	Vsoy1_peg_527	Vsoy2_peg_726	Vgig1_peg_431	Vgig2_peg_316	COSY_0497	Vmar_0503	17
 926	SP60_07960	MS2017_1029	Rmag_0541	HUE58_RS02515	Rpac_peg_1338	Rpha_peg_171	Rpli_peg_1174	Rrec_peg_1231	Rsou_peg_892			Vsoy1_peg_526	Vsoy2_peg_725	Vgig1_peg_432	Vgig2_peg_317	COSY_0496	Vmar_0502	15
-927	SP60_07965	MS2017_1030	Rmag_0540	HUE58_RS02510		Rpha_peg_172	Rpli_peg_1175	Rrec_peg_1229	Rsou_peg_891			Vsoy1_peg_525	Vsoy2_peg_724	Vgig1_peg_433	Vgig2_peg_318	COSY_0495	Vmar_0500	14
-928	SP60_07980	MS2017_1034	Rmag_0539	HUE58_RS02500		Rpha_peg_178	Rpli_peg_1180	Rrec_peg_1227	Rsou_peg_887			Vsoy1_peg_524	Vsoy2_peg_723	Vgig1_peg_434	Vgig2_peg_319	COSY_0494	Vmar_0499	14
+927	SP60_07965	MS2017_1030	Rmag_0540			Rpha_peg_172	Rpli_peg_1175	Rrec_peg_1229	Rsou_peg_891			Vsoy1_peg_525	Vsoy2_peg_724	Vgig1_peg_433	Vgig2_peg_318	COSY_0495	Vmar_0500	13
+928	SP60_07980	MS2017_1034	Rmag_0539			Rpha_peg_178	Rpli_peg_1180	Rrec_peg_1227	Rsou_peg_887			Vsoy1_peg_524	Vsoy2_peg_723	Vgig1_peg_434	Vgig2_peg_319	COSY_0494	Vmar_0499	13
 929	SP60_08000	MS2017_1235	Rmag_0535	HUE58_RS02440	Rpac_peg_1360	Rpha_peg_194	Rpli_peg_1186	Rrec_peg_1213	Rsou_peg_872	Vdia_peg_484	Vext_peg_471	Vsoy1_peg_521	Vsoy2_peg_720	Vgig1_peg_437	Vgig2_peg_322	COSY_0491	Vmar_0495	17
 930	SP60_08010	MS2017_1230	Rmag_0533	HUE58_RS02430	Rpac_peg_1362	Rpha_peg_196	Rpli_peg_1188	Rrec_peg_1211	Rsou_peg_870	Vdia_peg_486	Vext_peg_473	Vsoy1_peg_519	Vsoy2_peg_718	Vgig1_peg_439	Vgig2_peg_324	COSY_0489	Vmar_0493	17
 931	SP60_08015	MS2017_1229	Rmag_0532	HUE58_RS02425	Rpac_peg_1363	Rpha_peg_197	Rpli_peg_1189	Rrec_peg_1210	Rsou_peg_869	Vdia_peg_487	Vext_peg_474	Vsoy1_peg_518	Vsoy2_peg_717	Vgig1_peg_440	Vgig2_peg_325	COSY_0488	Vmar_0492	17
@@ -967,7 +967,7 @@
 965	SP60_01235	MS2017_1523	Rmag_0349	HUE58_RS01240	Rpac_peg_516	Rpha_peg_1650	Rpli_peg_678	Rrec_peg_78	Rsou_peg_1295	Vdia_peg_649	Vext_peg_638	Vsoy1_peg_354	Vsoy2_peg_558	Vgig1_peg_601	Vgig2_peg_489	COSY_0330	Vmar_0330	17
 966	SP60_01240	MS2017_1524	Rmag_0348	HUE58_RS01235	Rpac_peg_515	Rpha_peg_1651	Rpli_peg_677	Rrec_peg_79	Rsou_peg_1296	Vdia_peg_650	Vext_peg_639	Vsoy1_peg_353	Vsoy2_peg_557	Vgig1_peg_602	Vgig2_peg_490	COSY_0329	Vmar_0329	17
 967	SP60_01250		Rmag_0346			Rpha_peg_1653	Rpli_peg_675		Rsou_peg_1298									5
-968	SP60_01295	MS2017_1577	Rmag_0337	HUE58_RS01180	Rpac_peg_505	Rpha_peg_1664	Rpli_peg_666	Rrec_peg_90	Rsou_peg_1309	Vdia_peg_660	Vext_peg_649	Vsoy1_peg_343	Vsoy2_peg_547	Vgig1_peg_612	Vgig2_peg_500	COSY_0319	Vmar_0319	17
+968	SP60_01295	MS2017_1577	Rmag_0337		Rpac_peg_505	Rpha_peg_1664	Rpli_peg_666	Rrec_peg_90	Rsou_peg_1309	Vdia_peg_660	Vext_peg_649	Vsoy1_peg_343	Vsoy2_peg_547	Vgig1_peg_612	Vgig2_peg_500	COSY_0319	Vmar_0319	16
 969	SP60_01395	MS2017_1594	Rmag_0324	HUE58_RS01105	Rpac_peg_487		Rpli_peg_650	Rrec_peg_102	Rsou_peg_1325	Vdia_peg_674	Vext_peg_663	Vsoy1_peg_330	Vsoy2_peg_534	Vgig1_peg_625	Vgig2_peg_513	COSY_0305	Vmar_0305	16
 970	SP60_01625	MS2017_1684	Rmag_0831	HUE58_RS04130	Rpac_peg_586	Rpha_peg_1529	Rpli_peg_781	Rrec_peg_378	Rsou_peg_985	Vdia_peg_200	Vext_peg_195	Vsoy1_peg_793	Vsoy2_peg_9	Vgig1_peg_774	Vgig2_peg_663	COSY_0755	Vmar_0766	17
 971	SP60_01780	MS2017_1732	Rmag_0853	HUE58_RS04280	Rpac_peg_616	Rpha_peg_1492	Rpli_peg_817	Rrec_peg_409	Rsou_peg_22	Vdia_peg_178	Vext_peg_173	Vsoy1_peg_816	Vsoy2_peg_32	Vgig1_peg_797	Vgig2_peg_686	COSY_0778	Vmar_0788	17
@@ -1048,24 +1048,24 @@
 1046	SP60_08005	MS2017_1231	Rmag_0534	HUE58_RS02435	Rpac_peg_1361	Rpha_peg_195	Rpli_peg_1187	Rrec_peg_1212	Rsou_peg_871	Vdia_peg_485	Vext_peg_472	Vsoy1_peg_520	Vsoy2_peg_719	Vgig1_peg_438	Vgig2_peg_323	COSY_0490	Vmar_0494	17
 1047	SP60_00095			HUE58_RS02265	Rpac_peg_1401	Rpha_peg_257		Rrec_peg_1177	Rsou_peg_1823									6
 1048	SP60_00330	MS2017_0849		HUE58_RS02035	Rpac_peg_935	Rpha_peg_312	Rpli_peg_1267	Rrec_peg_1122	Rsou_peg_1852									8
-1049	SP60_00485	MS2017_0878	Rmag_0451	HUE58_RS01835		Rpha_peg_391	Rpli_peg_1301		Rsou_peg_1399	Vdia_peg_558	Vext_peg_546	Vsoy1_peg_444	Vsoy2_peg_643	Vgig1_peg_515	Vgig2_peg_402	COSY_0417	Vmar_0420	15
+1049	SP60_00485	MS2017_0878	Rmag_0451			Rpha_peg_391	Rpli_peg_1301		Rsou_peg_1399	Vdia_peg_558	Vext_peg_546	Vsoy1_peg_444	Vsoy2_peg_643	Vgig1_peg_515	Vgig2_peg_402	COSY_0417	Vmar_0420	14
 1050	SP60_00580			HUE58_RS01740	Rpac_peg_1001	Rpha_peg_415		Rrec_peg_1058	Rsou_peg_1425									6
 1051	SP60_00930			HUE58_RS01510	Rpac_rna_37	Rpha_rna_9	Rpli_rna_38	Rrec_rna_29	Rsou_rna_30	Vdia_rna_24	Vext_rna_25	Vsoy1_rna_15	Vsoy2_rna_26	Vgig1_rna_22	Vgig2_rna_18	COSY_R0013	Vmar_R0014	15
-1052	SP60_01450			HUE58_RS01055			Rpli_peg_636		Rsou_peg_621									4
-1053	SP60_01910			HUE58_RS02455					Rsou_peg_875									3
+1052	SP60_01450						Rpli_peg_636		Rsou_peg_621									3
+1053	SP60_01910								Rsou_peg_875									2
 1054	SP60_03480			HUE58_RS05180	Rpac_peg_793	Rpha_peg_842	Rpli_peg_1034	Rrec_peg_602	Rsou_peg_430	Vdia_peg_47	Vext_peg_44	Vsoy1_peg_947	Vsoy2_peg_163	Vgig1_peg_927	Vgig2_peg_814	COSY_0907	Vmar_0916	15
 1055	SP60_04190			HUE58_RS05860	Rpac_rna_9			Rrec_rna_19										4
-1056	SP60_04615			HUE58_RS06220		Rpha_peg_2142			Rsou_peg_1673			Vsoy1_peg_120	Vsoy2_peg_324	Vgig1_peg_104	Vgig2_peg_865			8
+1056	SP60_04615					Rpha_peg_2142			Rsou_peg_1673			Vsoy1_peg_120	Vsoy2_peg_324	Vgig1_peg_104	Vgig2_peg_865			7
 1057	SP60_04860			HUE58_RS06445	Rpac_peg_50	Rpha_peg_1937	Rpli_peg_1404	Rrec_peg_871	Rsou_peg_1949	Vdia_peg_855	Vext_peg_844	Vsoy1_peg_152	Vsoy2_peg_357	Vgig1_peg_135	Vgig2_peg_24	COSY_0128	Vmar_0125	15
-1058	SP60_04880			HUE58_RS06465	Rpac_peg_46		Rpli_peg_1399	Rrec_peg_875										5
+1058	SP60_04880				Rpac_peg_46		Rpli_peg_1399	Rrec_peg_875										4
 1059	SP60_04895			HUE58_RS06480	Rpac_peg_44	Rpha_peg_1942	Rpli_peg_1397	Rrec_peg_877	Rsou_peg_1944	Vdia_peg_850	Vext_peg_839	Vsoy1_peg_157	Vsoy2_peg_362	Vgig1_peg_140	Vgig2_peg_29	COSY_0133	Vmar_0130	15
-1060	SP60_05390			HUE58_RS03825	Rpac_peg_1057		Rpli_peg_30		Rsou_peg_1214									5
+1060	SP60_05390				Rpac_peg_1057		Rpli_peg_30		Rsou_peg_1214									4
 1061	SP60_05480	MS2017_1799		HUE58_RS00415	Rpac_peg_328	Rpha_peg_2205	Rpli_peg_78	Rrec_peg_250	Rsou_peg_1008									8
 1062	SP60_05600			HUE58_RS00560		Rpha_peg_1114		Rrec_peg_222	Rsou_peg_1046									5
 1063	SP60_05855	MS2017_0429	Rmag_0286	HUE58_RS00870	Rpac_peg_427	Rpha_peg_1778	Rpli_peg_170	Rrec_peg_156	Rsou_peg_286	Vdia_peg_711	Vext_peg_700	Vsoy1_peg_296	Vsoy2_peg_501	Vgig1_peg_658	Vgig2_peg_545	COSY_0272	Vmar_0272	17
 1064	SP60_05880	MS2017_0433	Rmag_0290	HUE58_RS00900	Rpac_peg_437	Rpha_peg_1760	Rpli_peg_179	Rrec_peg_150	Rsou_peg_299	Vdia_peg_707	Vext_peg_696	Vsoy1_peg_300	Vsoy2_peg_505	Vgig1_peg_654	Vgig2_peg_541	COSY_0276	Vmar_0276	17
-1065	SP60_05930			HUE58_RS00960		Rpha_peg_1737		Rrec_peg_136										4
-1066	SP60_05965			HUE58_RS04015		Rpha_peg_1577		Rrec_peg_345	Rsou_peg_1801									5
+1065	SP60_05930					Rpha_peg_1737		Rrec_peg_136										3
+1066	SP60_05965					Rpha_peg_1577		Rrec_peg_345	Rsou_peg_1801									4
 1067	SP60_06095			HUE58_RS00115	Rpac_peg_260	Rpha_peg_2021	Rpli_peg_394	Rrec_peg_323	Rsou_peg_1160									7
 1068	SP60_06170			HUE58_RS00175	Rpac_peg_272	Rpha_peg_2041	Rpli_peg_375	Rrec_peg_309										6
 1069	SP60_06225			HUE58_RS00215		Rpha_peg_2057	Rpli_peg_365	Rrec_peg_298	Rsou_peg_1125									6
@@ -1076,7 +1076,7 @@
 1074	SP60_06935			HUE58_RS01930	Rpac_peg_957	Rpha_peg_358		Rrec_peg_1103	Rsou_peg_1364									6
 1075	SP60_08050			HUE58_RS02390		Rpha_peg_205		Rrec_peg_1204	Rsou_peg_110									5
 1076	SP60_08055			HUE58_RS02385		Rpha_peg_206		Rrec_peg_1203	Rsou_peg_109									5
-1077	SP60_08105			HUE58_RS02375		Rpha_peg_208			Rsou_peg_107									4
+1077	SP60_08105					Rpha_peg_208			Rsou_peg_107									3
 1078	SP60_00735			HUE58_RS01650	Rpac_peg_1459	Rpha_peg_450	Rpli_peg_1652	Rrec_peg_1036	Rsou_peg_627									7
 1079	SP60_06930				Rpac_peg_958	Rpha_peg_359			Rsou_peg_1366									4
 1080	SP60_00585					Rpha_peg_417			Rsou_peg_1426									3
@@ -1116,24 +1116,24 @@
 1114	SP60_03205	MS2017_0205	Rmag_0976	HUE58_RS04925	Rpac_peg_756	Rpha_peg_1323	Rpli_peg_985	Rrec_peg_547	Rsou_peg_598	Vdia_peg_79	Vext_peg_75	Vsoy1_peg_916	Vsoy2_peg_132	Vgig1_peg_897	Vgig2_peg_784	COSY_0876	Vmar_0886	17
 1115	SP60_05675	MS2017_0372	Rmag_0249	HUE58_RS00650	Rpac_peg_374	Rpha_peg_1097	Rpli_peg_121	Rrec_peg_204	Rsou_peg_1068	Vdia_peg_744	Vext_peg_733	Vsoy1_peg_264	Vsoy2_peg_469	Vgig1_peg_688	Vgig2_peg_576	COSY_0241	Vmar_0239	17
 1116	SP60_01350	MS2017_1585	Rmag_0329	HUE58_RS01150	Rpac_peg_493	Rpha_peg_1676	Rpli_peg_657	Rrec_peg_97	Rsou_peg_1319	Vdia_peg_667	Vext_peg_656	Vsoy1_peg_336	Vsoy2_peg_540	Vgig1_peg_619	Vgig2_peg_507	COSY_0312	Vmar_0312	17
-1117		MS2017_2101	Rmag_0058	HUE58_RS06035	Rpac_peg_148	Rpha_peg_768	Rpli_peg_1496	Rrec_peg_782	Rsou_peg_575	Vdia_peg_922	Vext_peg_911	Vsoy1_peg_88	Vsoy2_peg_292	Vgig1_peg_70	Vgig2_peg_899	COSY_0063	Vmar_0062	16
+1117		MS2017_2101	Rmag_0058		Rpac_peg_148	Rpha_peg_768	Rpli_peg_1496	Rrec_peg_782	Rsou_peg_575	Vdia_peg_922	Vext_peg_911	Vsoy1_peg_88	Vsoy2_peg_292	Vgig1_peg_70	Vgig2_peg_899	COSY_0063	Vmar_0062	15
 1118		MS2017_0071	Rmag_0029	HUE58_RS05785	Rpac_peg_198	Rpha_peg_1060	Rpli_peg_1558	Rrec_peg_733	Rsou_peg_476	Vdia_peg_955	Vext_peg_943	Vsoy1_peg_55	Vsoy2_peg_259	Vgig1_peg_39	Vgig2_peg_929	COSY_0029	Vmar_0031	16
 1119		MS2017_0072	Rmag_0030	HUE58_RS05790	Rpac_peg_197	Rpha_peg_1061	Rpli_peg_1557	Rrec_peg_734	Rsou_peg_477	Vdia_peg_954	Vext_peg_942	Vsoy1_peg_56	Vsoy2_peg_260	Vgig1_peg_40	Vgig2_peg_927	COSY_0030	Vmar_0032	16
 1120		MS2017_0073	Rmag_0031	HUE58_RS05795	Rpac_peg_196	Rpha_peg_1062	Rpli_peg_1556	Rrec_peg_735	Rsou_peg_478	Vdia_peg_953	Vext_peg_941	Vsoy1_peg_57	Vsoy2_peg_261	Vgig1_peg_41	Vgig2_peg_926	COSY_0031	Vmar_0033	16
-1121		MS2017_0074	Rmag_0032	HUE58_RS05800	Rpac_peg_194	Rpha_peg_1064	Rpli_peg_1553	Rrec_peg_737	Rsou_peg_480	Vdia_peg_952	Vext_peg_940	Vsoy1_peg_58	Vsoy2_peg_262	Vgig1_peg_42	Vgig2_peg_925	COSY_0032	Vmar_0034	16
+1121		MS2017_0074	Rmag_0032		Rpac_peg_194	Rpha_peg_1064	Rpli_peg_1553	Rrec_peg_737	Rsou_peg_480	Vdia_peg_952	Vext_peg_940	Vsoy1_peg_58	Vsoy2_peg_262	Vgig1_peg_42	Vgig2_peg_925	COSY_0032	Vmar_0034	15
 1122		MS2017_0075	Rmag_0034	HUE58_RS05810	Rpac_peg_192	Rpha_peg_1066	Rpli_peg_1551	Rrec_peg_739	Rsou_peg_482	Vdia_peg_950	Vext_peg_938	Vsoy1_peg_60	Vsoy2_peg_264	Vgig1_peg_44	Vgig2_peg_923	COSY_0034	Vmar_0036	16
 1123		MS2017_0076	Rmag_0035	HUE58_RS05815	Rpac_peg_191	Rpha_peg_1067	Rpli_peg_1550	Rrec_peg_740	Rsou_peg_483	Vdia_peg_949	Vext_peg_937	Vsoy1_peg_61	Vsoy2_peg_265	Vgig1_peg_45	Vgig2_peg_922	COSY_0035	Vmar_0037	16
 1124		MS2017_0078	Rmag_0036	HUE58_RS05820	Rpac_peg_190	Rpha_peg_1068	Rpli_peg_1549	Rrec_peg_741	Rsou_peg_484	Vdia_peg_948	Vext_peg_936	Vsoy1_peg_63	Vsoy2_peg_266	Vgig1_peg_47	Vgig2_peg_921	COSY_0036	Vmar_0038	16
 1125		MS2017_0081	Rmag_0038	HUE58_RS05835	Rpac_peg_187	Rpha_peg_1071	Rpli_peg_1546	Rrec_peg_744	Rsou_peg_487	Vdia_peg_945	Vext_peg_933	Vsoy1_peg_66	Vsoy2_peg_269	Vgig1_peg_50	Vgig2_peg_918	COSY_0039	Vmar_0041	16
 1126		MS2017_0101	Rmag_1057	HUE58_RS05495	Rpac_peg_864	Rpha_peg_959	Rpli_peg_1122	Rrec_peg_673	Rsou_peg_536	Vdia_peg_1006	Vext_peg_993	Vsoy1_peg_4	Vsoy2_peg_209	Vgig1_peg_988	Vgig2_peg_980	COSY_0956	Vmar_0961	16
-1127		MS2017_0262	Rmag_0943	HUE58_RS04720		Rpha_peg_1381			Rsou_peg_1472									5
+1127		MS2017_0262	Rmag_0943			Rpha_peg_1381			Rsou_peg_1472									4
 1128		MS2017_0440	Rmag_0296	HUE58_RS00935	Rpac_peg_447	Rpha_peg_1747	Rpli_peg_191	Rrec_peg_142	Rsou_peg_1922									8
 1129		MS2017_0538	Rmag_0778	HUE58_RS00240	Rpac_peg_290	Rpha_peg_2067	Rpli_peg_360	Rrec_peg_289	Rsou_peg_1113									8
 1130		MS2017_0614	Rmag_0735	HUE58_RS03620	Rpac_peg_1098	Rpha_peg_592	Rpli_peg_285	Rrec_peg_1490	Rsou_peg_675	Vdia_peg_283	Vext_peg_277	Vsoy1_peg_719	Vsoy2_peg_919	Vgig1_peg_242	Vgig2_peg_130	COSY_0680	Vmar_0693	16
 1131		MS2017_0733	Rmag_0660	HUE58_RS03235				Rrec_peg_1394										4
 1132		MS2017_0766	Rmag_0646	HUE58_RS03135		Rpha_peg_1176	Rpli_peg_491	Rrec_peg_1370	Rsou_peg_822	Vdia_peg_382	Vext_peg_370	Vsoy1_peg_628	Vsoy2_peg_828	Vgig1_peg_333	Vgig2_peg_219	COSY_0593	Vmar_0599	15
 1133		MS2017_R017	Rmag_R0022	HUE58_RS02825	Rpac_rna_34	Rpha_rna_2	Rpli_rna_9	Rrec_rna_36	Rsou_rna_14	Vdia_rna_17	Vext_rna_18	Vsoy1_rna_22	Vsoy2_rna_33	Vgig1_rna_15	Vgig2_rna_11	COSY_R0020	Vmar_R0021	16
-1134		MS2017_0920	Rmag_0627	HUE58_RS03045		Rpha_peg_49	Rpli_peg_518	Rrec_peg_1347	Rsou_peg_709	Vdia_peg_395	Vext_peg_383	Vsoy1_peg_615	Vsoy2_peg_815	Vgig1_peg_348	Vgig2_peg_233	COSY_0580	Vmar_0585	15
+1134		MS2017_0920	Rmag_0627			Rpha_peg_49	Rpli_peg_518	Rrec_peg_1347	Rsou_peg_709	Vdia_peg_395	Vext_peg_383	Vsoy1_peg_615	Vsoy2_peg_815	Vgig1_peg_348	Vgig2_peg_233	COSY_0580	Vmar_0585	14
 1135		MS2017_R020	Rmag_R0021	HUE58_RS02660		Rpha_rna_3	Rpli_rna_24	Rrec_rna_35	Rsou_rna_18	Vdia_rna_18	Vext_rna_19	Vsoy1_rna_21	Vsoy2_rna_32	Vgig1_rna_16	Vgig2_rna_12	COSY_R0019	Vmar_R0020	15
 1136		MS2017_1007	Rmag_0562	HUE58_RS02620	Rpac_peg_1317	Rpha_peg_150	Rpli_peg_1153	Rrec_peg_1252	Rsou_peg_913	Vdia_peg_458	Vext_peg_445	Vsoy1_peg_547	Vsoy2_peg_746	Vgig1_peg_412	Vgig2_peg_297	COSY_0516	Vmar_0522	16
 1137		MS2017_R021	Rmag_R0024	HUE58_RS03090	Rpac_rna_32	Rpha_rna_20	Rpli_rna_7	Rrec_rna_38	Rsou_rna_15	Vdia_rna_15	Vext_rna_16	Vsoy1_rna_24	Vsoy2_rna_35	Vgig1_rna_13	Vgig2_rna_9	COSY_R0022	Vmar_R0023	16
@@ -1146,7 +1146,7 @@
 1144		MS2017_1501	Rmag_0255	HUE58_RS00690	Rpac_peg_384	Rpha_peg_28		Rrec_peg_195	Rsou_peg_1904									7
 1145		MS2017_1513	Rmag_0357	HUE58_RS01280		Rpha_peg_1642	Rpli_peg_686	Rrec_peg_70	Rsou_peg_1286									7
 1146		MS2017_1653	Rmag_0304	HUE58_RS00975	Rpac_peg_460	Rpha_peg_1728	Rpli_peg_202	Rrec_peg_133	Rsou_peg_1699	Vdia_peg_698	Vext_peg_687	Vsoy1_peg_312	Vsoy2_peg_516	Vgig1_peg_643	Vgig2_peg_530	COSY_0286	Vmar_0286	16
-1147		MS2017_1661	Rmag_0821	HUE58_RS04025	Rpac_peg_564	Rpha_peg_1572	Rpli_peg_750	Rrec_peg_352										7
+1147		MS2017_1661	Rmag_0821		Rpac_peg_564	Rpha_peg_1572	Rpli_peg_750	Rrec_peg_352										6
 1148		MS2017_1694	Rmag_0985	HUE58_RS05020	Rpac_peg_767	Rpha_peg_1638	Rpli_peg_1003	Rrec_peg_570	Rsou_peg_1745									8
 1149		MS2017_1717	Rmag_0842	HUE58_RS04205	Rpac_peg_599	Rpha_peg_1510	Rpli_peg_798	Rrec_peg_393	Rsou_peg_969	Vdia_peg_189	Vext_peg_184	Vsoy1_peg_804	Vsoy2_peg_20	Vgig1_peg_785	Vgig2_peg_674	COSY_0767	Vmar_0777	16
 1150		MS2017_1858	Rmag_0158	HUE58_RS06690	Rpac_peg_6	Rpha_peg_1991	Rpli_peg_1344	Rrec_peg_920	Rsou_peg_1962	Vdia_peg_822	Vext_peg_811	Vsoy1_peg_184	Vsoy2_peg_389	Vgig1_peg_167	Vgig2_peg_57	COSY_0163	Vmar_0159	16
@@ -1159,9 +1159,9 @@
 1157		MS2017_1575		HUE58_RS01190		Rpha_peg_1662		Rrec_peg_88										4
 1158		MS2017_1693	Rmag_0986	HUE58_RS05025	Rpac_peg_768	Rpha_peg_1637	Rpli_peg_1004	Rrec_peg_571	Rsou_peg_1744									8
 1159		MS2017_1695		HUE58_RS01885	Rpac_peg_968	Rpha_peg_379		Rrec_peg_1085										5
-1160		MS2017_1813		HUE58_RS00905	Rpac_peg_438	Rpha_peg_1759	Rpli_peg_180	Rrec_peg_149	Rsou_peg_300									7
-1161		MS2017_1819	Rmag_0195	HUE58_RS03815			Rpli_peg_28		Rsou_peg_1211									5
-1162		MS2017_1860		HUE58_RS06680		Rpha_peg_1989			Rsou_peg_963			Vsoy1_peg_183	Vsoy2_peg_388				Vmar_0158	7
+1160		MS2017_1813			Rpac_peg_438	Rpha_peg_1759	Rpli_peg_180	Rrec_peg_149	Rsou_peg_300									6
+1161		MS2017_1819	Rmag_0195				Rpli_peg_28		Rsou_peg_1211									4
+1162		MS2017_1860				Rpha_peg_1989			Rsou_peg_963			Vsoy1_peg_183	Vsoy2_peg_388				Vmar_0158	6
 1163		MS2017_R035		HUE58_RS06510														2
 1164		MS2017_2010		HUE58_RS06265	Rpac_peg_88	Rpha_peg_2158	Rpli_peg_1439	Rrec_peg_833	Rsou_peg_1555	Vdia_peg_885	Vext_peg_874	Vsoy1_peg_123	Vsoy2_peg_327	Vgig1_peg_107	Vgig2_peg_862	COSY_0099	Vmar_0097	15
 1165		MS2017_2138			Rpac_peg_850													2
@@ -1232,7 +1232,7 @@
 1230			Rmag_0687	HUE58_RS03400	Rpac_peg_1155	Rpha_peg_682	Rpli_peg_214	Rrec_peg_1433	Rsou_peg_174	Vdia_peg_332	Vext_peg_324	Vsoy1_peg_672	Vsoy2_peg_872	Vgig1_peg_286	Vgig2_peg_174	COSY_0637	Vmar_0645	15
 1231			Rmag_0688	HUE58_RS03405	Rpac_peg_1154	Rpha_peg_681	Rpli_peg_215	Rrec_peg_1434	Rsou_peg_175	Vdia_peg_331	Vext_peg_323	Vsoy1_peg_673	Vsoy2_peg_873	Vgig1_peg_285	Vgig2_peg_173	COSY_0638	Vmar_0646	15
 1232			Rmag_0761	HUE58_RS00375	Rpac_peg_318	Rpha_peg_2113	Rpli_peg_328	Rrec_peg_258	Rsou_peg_1079									7
-1233			Rmag_0776	HUE58_RS00250	Rpac_peg_292	Rpha_peg_2069	Rpli_peg_358	Rrec_peg_287	Rsou_peg_1111									7
+1233			Rmag_0776		Rpac_peg_292	Rpha_peg_2069	Rpli_peg_358	Rrec_peg_287	Rsou_peg_1111									6
 1234			Rmag_0777	HUE58_RS00245	Rpac_peg_291	Rpha_peg_2068	Rpli_peg_359	Rrec_peg_288	Rsou_peg_1112									7
 1235			Rmag_0905	HUE58_RS04525	Rpac_peg_668	Rpha_peg_1439	Rpli_peg_869	Rrec_peg_468	Rsou_peg_453	Vdia_peg_143	Vext_peg_138	Vsoy1_peg_851	Vsoy2_peg_68	Vgig1_peg_833	Vgig2_peg_721	COSY_0812	Vmar_0822	15
 1236			Rmag_0907	HUE58_RS04540	Rpac_peg_670	Rpha_peg_1435	Rpli_peg_873	Rrec_peg_470	Rsou_peg_264	Vdia_peg_141	Vext_peg_136	Vsoy1_peg_854	Vsoy2_peg_70	Vgig1_peg_836	Vgig2_peg_723	COSY_0814	Vmar_0824	15
@@ -1243,7 +1243,7 @@
 1241			Rmag_0114		Rpac_peg_59													2
 1242			Rmag_0154		Rpac_peg_11	Rpha_peg_1984			Rsou_peg_957									4
 1243			Rmag_0202		Rpac_peg_1067	Rpha_peg_7	Rpli_peg_20		Rsou_peg_1201									5
-1244			Rmag_0702	HUE58_RS03485	Rpac_peg_1132			Rrec_peg_1458	Rsou_peg_213	Vdia_peg_314	Vext_peg_306	Vsoy1_peg_691	Vsoy2_peg_891	Vgig1_peg_268	Vgig2_peg_156	COSY_0654	Vmar_0663	13
+1244			Rmag_0702	HUE58_RS03485	Rpac_peg_1132			Rrec_peg_1458	Rsou_peg_213	Vdia_peg_314	Vext_peg_306	Vsoy1_peg_691	Vsoy2_peg_891	Vgig1_peg_268	Vgig2_peg_156		Vmar_0663	12
 1245			Rmag_0713		Rpac_peg_1122	Rpha_peg_620			Rsou_peg_230									4
 1246			Rmag_R0001			Rpha_rna_19	Rpli_rna_36		Rsou_rna_10	Vdia_rna_37	Vext_rna_38	Vsoy1_rna_2	Vsoy2_rna_13	Vgig1_rna_2	Vgig2_rna_38	COSY_R0001	Vmar_R0001	12
 1247			Rmag_0375			Rpha_peg_541												2
@@ -1266,7 +1266,7 @@
 1264			Rmag_0291				Rpli_peg_185		Rsou_peg_1927									3
 1265			Rmag_0603	HUE58_RS02910		Rpha_peg_89		Rrec_peg_1319	Rsou_peg_744									5
 1266			Rmag_0829					Rrec_peg_371	Rsou_peg_994									3
-1267			Rmag_0886	HUE58_RS04520					Rsou_peg_1991									3
+1267			Rmag_0886						Rsou_peg_1991									2
 1268			Rmag_0888						Rsou_peg_1993									2
 1269			Rmag_0889						Rsou_peg_1994									2
 1270			Rmag_0902						Rsou_peg_456									2
@@ -1276,7 +1276,7 @@
 1274			Rmag_1074							Vdia_peg_988	Vext_peg_976	Vsoy1_peg_21	Vsoy2_peg_225	Vgig1_peg_4	Vgig2_peg_963	COSY_0973	Vmar_0979	9
 1275				HUE58_RS00195	Rpac_peg_277	Rpha_peg_2049	Rpli_peg_370	Rrec_peg_302	Rsou_peg_1133									6
 1276				HUE58_RS00310	Rpac_peg_305			Rrec_peg_274										3
-1277				HUE58_RS00315	Rpac_peg_306			Rrec_peg_273										3
+1277					Rpac_peg_306			Rrec_peg_273										2
 1278				HUE58_RS00365	Rpac_peg_315			Rrec_peg_261		Vdia_peg_259	Vext_peg_254		Vsoy2_peg_941	Vgig1_peg_218	Vgig2_peg_106			8
 1279				HUE58_RS00370	Rpac_peg_316			Rrec_peg_260										3
 1280				HUE58_RS00665	Rpac_peg_378	Rpha_peg_1093		Rrec_peg_201	Rsou_peg_1072									5
@@ -1295,8 +1295,8 @@
 1293				HUE58_RS01945	Rpac_peg_954	Rpha_peg_356		Rrec_peg_1106	Rsou_peg_1362									5
 1294				HUE58_RS02625	Rpac_peg_1316			Rrec_peg_1253		Vdia_peg_457	Vext_peg_444	Vsoy1_peg_548	Vsoy2_peg_747	Vgig1_peg_411	Vgig2_peg_296	COSY_0517	Vmar_0524	11
 1295				HUE58_RS02815	Rpac_peg_1277	Rpha_peg_113	Rpli_peg_572	Rrec_peg_1300	Rsou_peg_769									6
-1296				HUE58_RS02905	Rpac_peg_1258	Rpha_peg_90	Rpli_peg_546	Rrec_peg_1318	Rsou_peg_745									6
-1297				HUE58_RS02930	Rpac_peg_1255	Rpha_peg_84			Rsou_peg_740									4
+1296					Rpac_peg_1258	Rpha_peg_90	Rpli_peg_546	Rrec_peg_1318	Rsou_peg_745									5
+1297					Rpac_peg_1255	Rpha_peg_84			Rsou_peg_740									3
 1298				HUE58_RS03060	Rpac_peg_1227		Rpli_peg_513	Rrec_peg_1351										4
 1299				HUE58_RS03465	Rpac_peg_1137	Rpha_peg_645		Rrec_peg_1454	Rsou_peg_209	Vdia_peg_318	Vext_peg_310	Vsoy1_peg_687	Vsoy2_peg_887	Vgig1_peg_272	Vgig2_peg_160		Vmar_0659	12
 1300				HUE58_RS03690	Rpac_peg_1086			Rrec_peg_1504										3
@@ -1314,8 +1314,8 @@
 1312				HUE58_RS05915	Rpac_peg_178			Rrec_peg_758										3
 1313				HUE58_RS06235	Rpac_peg_95		Rpli_peg_1449	Rrec_peg_826										4
 1314				HUE58_RS06320	Rpac_peg_75	Rpha_peg_1910		Rrec_peg_844										4
-1315				HUE58_RS06485	Rpac_peg_43			Rrec_peg_879										3
-1316				HUE58_RS06555	Rpac_peg_35			Rrec_peg_891										3
+1315					Rpac_peg_43			Rrec_peg_879										2
+1316					Rpac_peg_35			Rrec_peg_891										2
 1317				HUE58_RS00630		Rpha_peg_1100	Rpli_peg_118	Rrec_peg_207	Rsou_peg_1065									5
 1318				HUE58_RS00660		Rpha_peg_1095	Rpli_peg_123	Rrec_peg_202	Rsou_peg_1070									5
 1319				HUE58_RS01030		Rpha_peg_1712		Rrec_peg_118	Rsou_peg_607									4
@@ -1327,11 +1327,11 @@
 1325				HUE58_RS02325		Rpha_peg_241		Rrec_peg_1189										3
 1326				HUE58_RS02505		Rpha_peg_173	Rpli_peg_1176	Rrec_peg_1228										4
 1327				HUE58_RS02675		Rpha_peg_140		Rrec_peg_1264										3
-1328				HUE58_RS02925		Rpha_peg_85		Rrec_peg_1322	Rsou_peg_741									4
-1329				HUE58_RS03015		Rpha_peg_63	Rpli_peg_526		Rsou_peg_717									4
-1330				HUE58_RS03345		Rpha_peg_707		Rrec_peg_1421										3
+1328						Rpha_peg_85		Rrec_peg_1322	Rsou_peg_741									3
+1329						Rpha_peg_63	Rpli_peg_526		Rsou_peg_717									3
+1330						Rpha_peg_707		Rrec_peg_1421										2
 1331				HUE58_RS03445		Rpha_peg_660		Rrec_peg_1447										3
-1332				HUE58_RS03450		Rpha_peg_656			Rsou_peg_198									3
+1332						Rpha_peg_656			Rsou_peg_198									2
 1333				HUE58_RS04095		Rpha_peg_1541	Rpli_peg_771	Rrec_peg_370										4
 1334				HUE58_RS04685		Rpha_peg_1397												2
 1335				HUE58_RS04860		Rpha_peg_1336	Rpli_peg_976	Rrec_peg_535	Rsou_peg_1509									5
@@ -1355,7 +1355,7 @@
 1353				HUE58_RS06565			Rpli_peg_1378											2
 1354				HUE58_RS00095		Rpha_peg_2013		Rrec_peg_327										3
 1355				HUE58_RS00225				Rrec_peg_295										2
-1356				HUE58_RS00270				Rrec_peg_282					Vsoy2_peg_949					3
+1356								Rrec_peg_282					Vsoy2_peg_949					2
 1357				HUE58_RS00305				Rrec_peg_275										2
 1358				HUE58_RS00320				Rrec_peg_272										2
 1359				HUE58_RS00325				Rrec_peg_271										2
@@ -1363,7 +1363,7 @@
 1361				HUE58_RS00350	Rpac_peg_314			Rrec_peg_263		Vdia_peg_258	Vext_peg_253			Vgig1_peg_217	Vgig2_peg_105			7
 1362				HUE58_RS00355				Rrec_peg_262										2
 1363				HUE58_RS00490				Rrec_peg_236										2
-1364				HUE58_RS00500				Rrec_peg_234										2
+1364								Rrec_peg_234										1
 1365				HUE58_RS00505				Rrec_peg_233										2
 1366				HUE58_RS00510				Rrec_peg_231										2
 1367				HUE58_RS00515				Rrec_peg_230										2
@@ -1375,7 +1375,7 @@
 1373				HUE58_RS00685				Rrec_peg_197										2
 1374				HUE58_RS00845		Rpha_peg_1784		Rrec_peg_161	Rsou_peg_281									4
 1375				HUE58_RS00910				Rrec_peg_147										2
-1376				HUE58_RS00955				Rrec_peg_137										2
+1376								Rrec_peg_137										1
 1377				HUE58_RS01080				Rrec_peg_107										2
 1378				HUE58_RS01330				Rrec_peg_59										2
 1379				HUE58_RS01335				Rrec_peg_58										2
@@ -1388,7 +1388,7 @@
 1386				HUE58_RS01675				Rrec_peg_1041										2
 1387				HUE58_RS01680				Rrec_peg_1043										2
 1388				HUE58_RS01690				Rrec_peg_1046										2
-1389				HUE58_RS01705		Rpha_peg_423		Rrec_peg_1051	Rsou_peg_1957									4
+1389						Rpha_peg_423		Rrec_peg_1051	Rsou_peg_1957									3
 1390				HUE58_RS01735				Rrec_peg_1056										2
 1391				HUE58_RS01910				Rrec_peg_1097										2
 1392				HUE58_RS01920				Rrec_peg_1101										2
@@ -1398,11 +1398,11 @@
 1396				HUE58_RS01955				Rrec_peg_1108										2
 1397				HUE58_RS01965				Rrec_peg_1109										2
 1398				HUE58_RS02060				Rrec_peg_1127										2
-1399				HUE58_RS02095	Rpac_peg_918	Rpha_peg_300	Rpli_peg_1247	Rrec_peg_1136										5
+1399					Rpac_peg_918	Rpha_peg_300	Rpli_peg_1247	Rrec_peg_1136										4
 1400				HUE58_RS02235				Rrec_peg_1164										2
 1401				HUE58_RS02245				Rrec_peg_1170										2
 1402				HUE58_RS02250				Rrec_peg_1171										2
-1403				HUE58_RS02255				Rrec_peg_1172										2
+1403								Rrec_peg_1172										1
 1404				HUE58_RS02350				Rrec_peg_1194										2
 1405				HUE58_RS02370				Rrec_peg_1198										2
 1406				HUE58_RS02470				Rrec_peg_1222										2
@@ -1423,7 +1423,7 @@
 1421				HUE58_RS03250				Rrec_peg_1397										2
 1422				HUE58_RS03330				Rrec_peg_1419										2
 1423				HUE58_RS03340				Rrec_peg_1420										2
-1424				HUE58_RS03455	Rpac_peg_1142	Rpha_peg_654		Rrec_peg_1451	Rsou_peg_202									5
+1424					Rpac_peg_1142	Rpha_peg_654		Rrec_peg_1451	Rsou_peg_202									4
 1425				HUE58_RS03675				Rrec_peg_1502										2
 1426				HUE58_RS03795				Rrec_peg_968										2
 1427				HUE58_RS03800				Rrec_peg_967										2
@@ -1454,12 +1454,12 @@
 1452				HUE58_RS04960				Rrec_peg_555										2
 1453				HUE58_RS04965				Rrec_peg_557										2
 1454				HUE58_RS04970				Rrec_peg_559										2
-1455				HUE58_RS04980		Rpha_peg_1309		Rrec_peg_560										3
+1455						Rpha_peg_1309		Rrec_peg_560										2
 1456				HUE58_RS04985				Rrec_peg_561										2
-1457				HUE58_RS05075				Rrec_peg_580	Rsou_peg_1735									3
+1457								Rrec_peg_580	Rsou_peg_1735									2
 1458				HUE58_RS05080				Rrec_peg_581										2
 1459				HUE58_RS05085				Rrec_peg_583										2
-1460				HUE58_RS05090				Rrec_peg_584										2
+1460								Rrec_peg_584										1
 1461				HUE58_RS05105				Rrec_peg_587	Rsou_peg_445									3
 1462				HUE58_RS05270				Rrec_peg_617										2
 1463				HUE58_RS05340				Rrec_peg_632										2
@@ -1477,7 +1477,7 @@
 1475				HUE58_RS05965				Rrec_peg_768										2
 1476				HUE58_RS05970				Rrec_peg_769										2
 1477				HUE58_RS06045				Rrec_peg_787										2
-1478				HUE58_RS06150				Rrec_peg_809										2
+1478								Rrec_peg_809										1
 1479				HUE58_RS06240				Rrec_peg_828										2
 1480				HUE58_RS06250				Rrec_peg_830										2
 1481				HUE58_RS06255				Rrec_peg_831										2
@@ -1488,12 +1488,12 @@
 1486				HUE58_RS06490				Rrec_peg_880										2
 1487				HUE58_RS06500				Rrec_peg_881										2
 1488				HUE58_RS06560				Rrec_peg_892	Rsou_peg_934									3
-1489				HUE58_RS00005					Rsou_peg_1734									2
-1490				HUE58_RS02465		Rpha_peg_185		Rrec_peg_1221	Rsou_peg_880									4
+1489									Rsou_peg_1734									1
+1490						Rpha_peg_185		Rrec_peg_1221	Rsou_peg_880									3
 1491				HUE58_RS02490					Rsou_peg_885									2
 1492				HUE58_RS03835					Rsou_peg_1220									2
 1493				HUE58_RS05605			Rpli_peg_1600		Rsou_peg_1448	Vdia_peg_987	Vext_peg_975	Vsoy1_peg_22	Vsoy2_peg_226	Vgig1_peg_5	Vgig2_peg_962	COSY_0974	Vmar_0980	11
-1494				HUE58_RS06550					Rsou_peg_1769									2
+1494									Rsou_peg_1769									1
 1495					Rpac_peg_173	Rpha_peg_797			Rsou_peg_595									3
 1496					Rpac_peg_158	Rpha_peg_780							Vsoy2_peg_290					3
 1497					Rpac_peg_153	Rpha_peg_773												2
@@ -3689,37 +3689,37 @@
 3687			Rmag_0979															1
 3688			Rmag_1056															1
 3689				HUE58_RS00010														1
-3690				HUE58_RS00120														1
-3691				HUE58_RS00255														1
+3690																		0
+3691																		0
 3692				HUE58_RS00360														1
 3693				HUE58_RS00550														1
 3694				HUE58_RS00635														1
 3695				HUE58_RS00700														1
-3696				HUE58_RS00810														1
+3696																		0
 3697				HUE58_RS00990														1
 3698				HUE58_RS01495														1
 3699				HUE58_RS01505														1
 3700				HUE58_RS01880														1
-3701				HUE58_RS01905														1
-3702				HUE58_RS01915														1
+3701																		0
+3702																		0
 3703				HUE58_RS01960														1
-3704				HUE58_RS02240														1
-3705				HUE58_RS02260														1
-3706				HUE58_RS02400														1
+3704																		0
+3705																		0
+3706																		0
 3707				HUE58_RS02485														1
 3708				HUE58_RS03055														1
-3709				HUE58_RS03150														1
-3710				HUE58_RS03160														1
-3711				HUE58_RS03320														1
-3712				HUE58_RS03325														1
-3713				HUE58_RS03335														1
-3714				HUE58_RS03440														1
-3715				HUE58_RS03510														1
-3716				HUE58_RS03695														1
-3717				HUE58_RS04020														1
+3709																		0
+3710																		0
+3711																		0
+3712																		0
+3713																		0
+3714																		0
+3715																		0
+3716																		0
+3717																		0
 3718				HUE58_RS04035														1
 3719				HUE58_RS04045														1
-3720				HUE58_RS04105														1
+3720																		0
 3721				HUE58_RS04270														1
 3722				HUE58_RS04395														1
 3723				HUE58_RS04530														1
@@ -3730,17 +3730,17 @@
 3728				HUE58_RS04945														1
 3729				HUE58_RS04975														1
 3730				HUE58_RS05345														1
-3731				HUE58_RS05475														1
+3731																		0
 3732				HUE58_RS05575														1
 3733				HUE58_RS05865														1
 3734				HUE58_RS05885														1
 3735				HUE58_RS05900														1
 3736				HUE58_RS06160														1
-3737				HUE58_RS06245														1
-3738				HUE58_RS06470														1
+3737																		0
+3738																		0
 3739				HUE58_RS06495														1
-3740				HUE58_RS06505														1
-3741				HUE58_RS06595														1
+3740																		0
+3741																		0
 3742					Rpac_peg_223													1
 3743					Rpac_peg_214													1
 3744					Rpac_peg_204													1
@@ -6046,7 +6046,7 @@
 6044																COSY_0045		1
 6045																COSY_0068		1
 6046																COSY_0069		1
-6047																COSY_0299		1
+6047																		0
 6048																COSY_0333		1
 6049																	Vmar_0015	1
 6050																	Vmar_0016	1

@@ -1,0 +1,1611 @@
+R.magnifica	Branch	p_Holm	KH_pval
+Rmag_0012	R.phaseoliformis	1	
+Rmag_0012	SUP05	1	
+Rmag_0012	R.southwardae	1	
+Rmag_0012	R.rectimargo	1	
+Rmag_0012	Node21	1	
+Rmag_0012	V.extenta	1	
+Rmag_0012	R.magnifica	1	
+Rmag_0012	V.gigas	1	
+Rmag_0012	R.pacifica	1	
+Rmag_0012	R.kilmeri	1	
+Rmag_0012	V.okutanii	1	
+Rmag_0012	Node9	1	
+Rmag_0012	R.pleocardia	1	
+Rmag_0012	Node1	1	
+Rmag_0012	Node15	1	
+Rmag_0012	Node3	1	
+Rmag_0012	Node2	1	
+Rmag_0012	Node7	1	
+Rmag_0012	Node6	1	
+Rmag_0012	Node10	1	
+Rmag_0012	V.diagonalis	1	
+Rmag_0012	Node18	1	
+Rmag_0012	Bathy	1	
+Rmag_0013	R.phaseoliformis	1	
+Rmag_0013	SUP05	0.7690304214540785	
+Rmag_0013	R.southwardae	1	
+Rmag_0013	R.rectimargo	1	
+Rmag_0013	Node21	1	
+Rmag_0013	V.extenta	1	
+Rmag_0013	R.magnifica	1	
+Rmag_0013	V.gigas	1	
+Rmag_0013	R.pacifica	1	
+Rmag_0013	R.kilmeri	1	
+Rmag_0013	V.okutanii	1	
+Rmag_0013	R.pleocardia	1	
+Rmag_0013	Node1	1	
+Rmag_0013	Node3	1	
+Rmag_0013	Node2	1	
+Rmag_0013	Node4	0.1773047423078702	
+Rmag_0013	Node7	1	
+Rmag_0013	Node11	1	
+Rmag_0013	Node12	1	
+Rmag_0013	V.diagonalis	1	
+Rmag_0013	Node17	1	
+Rmag_0013	Node8	1	
+Rmag_0013	Bathy	0.3813999686591197	
+Rmag_0046	R.phaseoliformis	1	
+Rmag_0046	SUP05	1	
+Rmag_0046	R.southwardae	1	
+Rmag_0046	R.rectimargo	1	
+Rmag_0046	Node20	1	
+Rmag_0046	V.extenta	1	
+Rmag_0046	R.magnifica	1	
+Rmag_0046	V.gigas	1	
+Rmag_0046	R.pacifica	1	
+Rmag_0046	R.kilmeri	1	
+Rmag_0046	V.okutanii	1	
+Rmag_0046	R.pleocardia	1	
+Rmag_0046	Node1	1	
+Rmag_0046	Node3	0.08430626613082692	
+Rmag_0046	Node2	1	
+Rmag_0046	Node7	1	
+Rmag_0046	Node6	1	
+Rmag_0046	Node11	1	
+Rmag_0046	Node10	1	
+Rmag_0046	V.diagonalis	1	
+Rmag_0046	Node16	1	
+Rmag_0046	Node19	1	
+Rmag_0046	Bathy	1	
+Rmag_0052	R.phaseoliformis	1	
+Rmag_0052	SUP05	1	
+Rmag_0052	R.southwardae	1	
+Rmag_0052	R.rectimargo	1	
+Rmag_0052	Node21	1	
+Rmag_0052	V.extenta	1	
+Rmag_0052	R.magnifica	1	
+Rmag_0052	V.gigas	1	
+Rmag_0052	R.pacifica	1	
+Rmag_0052	R.kilmeri	1	
+Rmag_0052	V.okutanii	1	
+Rmag_0052	R.pleocardia	1	
+Rmag_0052	Node1	1	
+Rmag_0052	Node2	0.6695703932360244	
+Rmag_0052	Node5	1	
+Rmag_0052	Node7	1	
+Rmag_0052	Node6	1	
+Rmag_0052	Node11	1	
+Rmag_0052	V.diagonalis	1	
+Rmag_0052	Node14	1	
+Rmag_0052	Node17	1	
+Rmag_0052	Node16	1	
+Rmag_0052	Bathy	1	
+Rmag_0077	R.phaseoliformis	1	0.1
+Rmag_0077	SUP05	1	0.1
+Rmag_0077	R.southwardae	1	0.1
+Rmag_0077	R.rectimargo	1	0.1
+Rmag_0077	Node21	1	0.1
+Rmag_0077	V.extenta	1	0.1
+Rmag_0077	R.magnifica	1	0.1
+Rmag_0077	V.gigas	1	0.1
+Rmag_0077	R.pacifica	1	0.1
+Rmag_0077	R.kilmeri	1	0.1
+Rmag_0077	V.okutanii	1	0.1
+Rmag_0077	Node9	1	0.1
+Rmag_0077	R.pleocardia	1	0.1
+Rmag_0077	Node1	1	0.1
+Rmag_0077	Node3	1	0.1
+Rmag_0077	Node2	1	0.1
+Rmag_0077	Node7	1	0.1
+Rmag_0077	Node6	1	0.1
+Rmag_0077	Node10	1	0.1
+Rmag_0077	V.diagonalis	1	0.1
+Rmag_0077	Node14	1	0.1
+Rmag_0077	Node18	1	0.1
+Rmag_0077	Bathy	1	0.1
+Rmag_0116	R.phaseoliformis	1	
+Rmag_0116	SUP05	1	
+Rmag_0116	R.southwardae	1	
+Rmag_0116	R.rectimargo	1	
+Rmag_0116	Node21	1	
+Rmag_0116	V.extenta	1	
+Rmag_0116	R.magnifica	1	
+Rmag_0116	V.gigas	1	
+Rmag_0116	R.pacifica	1	
+Rmag_0116	R.kilmeri	1	
+Rmag_0116	V.okutanii	0.05462374513029999	
+Rmag_0116	R.pleocardia	1	
+Rmag_0116	Node1	1	
+Rmag_0116	Node3	1	
+Rmag_0116	Node2	1	
+Rmag_0116	Node7	1	
+Rmag_0116	Node6	1	
+Rmag_0116	Node11	1	
+Rmag_0116	Node10	1	
+Rmag_0116	V.diagonalis	1	
+Rmag_0116	Node16	1	
+Rmag_0116	Node19	1	
+Rmag_0116	Bathy	1	
+Rmag_0117	R.phaseoliformis	1	
+Rmag_0117	SUP05	1	
+Rmag_0117	R.southwardae	1	
+Rmag_0117	R.rectimargo	1	
+Rmag_0117	V.extenta	1	
+Rmag_0117	R.magnifica	1	
+Rmag_0117	V.gigas	1	
+Rmag_0117	R.pacifica	1	
+Rmag_0117	R.kilmeri	1	
+Rmag_0117	V.okutanii	0.1612799650514268	
+Rmag_0117	R.pleocardia	1	
+Rmag_0117	Node1	1	
+Rmag_0117	Node3	1	
+Rmag_0117	Node2	1	
+Rmag_0117	Node4	0.2743131234386532	
+Rmag_0117	Node7	0.04818089467012188	
+Rmag_0117	Node6	1	
+Rmag_0117	Node11	1	
+Rmag_0117	Node13	1	
+Rmag_0117	Node12	1	
+Rmag_0117	V.diagonalis	1	
+Rmag_0117	Node8	1	
+Rmag_0117	Bathy	1	
+Rmag_0126	R.phaseoliformis	1	
+Rmag_0126	SUP05	1	
+Rmag_0126	R.southwardae	1	
+Rmag_0126	R.rectimargo	1	
+Rmag_0126	Node20	1	
+Rmag_0126	V.extenta	1	
+Rmag_0126	R.magnifica	1	
+Rmag_0126	V.gigas	1	
+Rmag_0126	R.pacifica	1	
+Rmag_0126	R.kilmeri	1	
+Rmag_0126	V.okutanii	1	
+Rmag_0126	Node8	1	
+Rmag_0126	Node1	1	
+Rmag_0126	Node15	1	
+Rmag_0126	Node3	1	
+Rmag_0126	Node2	1	
+Rmag_0126	Node7	1	
+Rmag_0126	Node6	1	
+Rmag_0126	Node11	1	
+Rmag_0126	V.diagonalis	1	
+Rmag_0126	Node17	1	
+Rmag_0126	R.pleocardia	1	
+Rmag_0126	Bathy	1	
+Rmag_0142	R.phaseoliformis	1	
+Rmag_0142	SUP05	1	
+Rmag_0142	R.southwardae	1	
+Rmag_0142	R.rectimargo	1	
+Rmag_0142	Node21	1	
+Rmag_0142	V.extenta	1	
+Rmag_0142	R.magnifica	1	
+Rmag_0142	V.gigas	1	
+Rmag_0142	R.pacifica	1	
+Rmag_0142	R.kilmeri	1	
+Rmag_0142	V.okutanii	1	
+Rmag_0142	R.pleocardia	1	
+Rmag_0142	Node3	1	
+Rmag_0142	Node2	1	
+Rmag_0142	Node5	1	
+Rmag_0142	Node4	1	
+Rmag_0142	Node6	1	
+Rmag_0142	Node10	1	
+Rmag_0142	Node13	1	
+Rmag_0142	V.diagonalis	1	
+Rmag_0142	Node16	1	
+Rmag_0142	Node18	1	
+Rmag_0142	Bathy	1	
+Rmag_0146	R.phaseoliformis	1	0.05
+Rmag_0146	SUP05	1	0.05
+Rmag_0146	R.southwardae	1	0.05
+Rmag_0146	R.rectimargo	1	0.05
+Rmag_0146	V.extenta	1	0.05
+Rmag_0146	R.magnifica	1	0.05
+Rmag_0146	V.gigas	1	0.05
+Rmag_0146	R.pacifica	1	0.05
+Rmag_0146	R.kilmeri	1	0.05
+Rmag_0146	V.okutanii	1	0.05
+Rmag_0146	Node9	1	0.05
+Rmag_0146	R.pleocardia	1	0.05
+Rmag_0146	Node1	1	0.05
+Rmag_0146	Node3	1	0.05
+Rmag_0146	Node2	1	0.05
+Rmag_0146	Node5	0.001141556575217528	0.05
+Rmag_0146	Node4	1	0.05
+Rmag_0146	Node13	1	0.05
+Rmag_0146	Node12	1	0.05
+Rmag_0146	V.diagonalis	1	0.05
+Rmag_0146	Node17	1	0.05
+Rmag_0146	Node8	0.1534722982863643	0.05
+Rmag_0146	Bathy	1	0.05
+Rmag_0160	R.phaseoliformis	1	
+Rmag_0160	SUP05	1	
+Rmag_0160	R.southwardae	1	
+Rmag_0160	R.rectimargo	1	
+Rmag_0160	V.extenta	1	
+Rmag_0160	R.magnifica	1	
+Rmag_0160	V.gigas	1	
+Rmag_0160	R.pacifica	1	
+Rmag_0160	R.kilmeri	1	
+Rmag_0160	V.okutanii	1	
+Rmag_0160	Node9	1	
+Rmag_0160	R.pleocardia	1	
+Rmag_0160	Node1	1	
+Rmag_0160	Node3	1	
+Rmag_0160	Node2	1	
+Rmag_0160	Node4	1	
+Rmag_0160	Node7	1	
+Rmag_0160	Node11	1	
+Rmag_0160	Node10	1	
+Rmag_0160	V.diagonalis	1	
+Rmag_0160	Node17	1	
+Rmag_0160	Node16	1	
+Rmag_0160	Bathy	1	
+Rmag_0169	R.phaseoliformis	1	
+Rmag_0169	SUP05	0.006556715295904958	
+Rmag_0169	R.southwardae	1	
+Rmag_0169	R.rectimargo	1	
+Rmag_0169	Node21	1	
+Rmag_0169	V.extenta	1	
+Rmag_0169	R.magnifica	1	
+Rmag_0169	V.gigas	1	
+Rmag_0169	R.pacifica	1	
+Rmag_0169	R.kilmeri	1	
+Rmag_0169	V.okutanii	1	
+Rmag_0169	R.pleocardia	1	
+Rmag_0169	Node1	1	
+Rmag_0169	Node3	0.1159986693889842	
+Rmag_0169	Node2	1	
+Rmag_0169	Node7	1	
+Rmag_0169	Node6	1	
+Rmag_0169	Node11	1	
+Rmag_0169	Node10	1	
+Rmag_0169	V.diagonalis	1	
+Rmag_0169	Node16	1	
+Rmag_0169	Node19	1	
+Rmag_0169	Bathy	1	
+Rmag_0178	R.phaseoliformis	1	
+Rmag_0178	SUP05	1	
+Rmag_0178	R.southwardae	1	
+Rmag_0178	R.rectimargo	1	
+Rmag_0178	V.extenta	1	
+Rmag_0178	R.magnifica	1	
+Rmag_0178	V.gigas	1	
+Rmag_0178	R.pacifica	1	
+Rmag_0178	R.kilmeri	1	
+Rmag_0178	V.okutanii	1	
+Rmag_0178	R.pleocardia	1	
+Rmag_0178	Node1	1	
+Rmag_0178	Node15	1	
+Rmag_0178	Node2	0.7106659794099746	
+Rmag_0178	Node5	1	
+Rmag_0178	Node7	1	
+Rmag_0178	Node6	1	
+Rmag_0178	Node10	1	
+Rmag_0178	V.diagonalis	1	
+Rmag_0178	Node14	1	
+Rmag_0178	Node19	1	
+Rmag_0178	Node18	1	
+Rmag_0178	Bathy	1	
+Rmag_0224	R.phaseoliformis	1	
+Rmag_0224	SUP05	0.08379662493998863	
+Rmag_0224	R.southwardae	1	
+Rmag_0224	R.rectimargo	1	
+Rmag_0224	Node21	1	
+Rmag_0224	V.extenta	1	
+Rmag_0224	R.magnifica	1	
+Rmag_0224	V.gigas	1	
+Rmag_0224	R.pacifica	1	
+Rmag_0224	R.kilmeri	1	
+Rmag_0224	V.okutanii	1	
+Rmag_0224	Node9	1	
+Rmag_0224	R.pleocardia	1	
+Rmag_0224	Node1	1	
+Rmag_0224	Node3	0.5330639989650672	
+Rmag_0224	Node2	1	
+Rmag_0224	Node4	1	
+Rmag_0224	Node7	1	
+Rmag_0224	Node13	1	
+Rmag_0224	V.diagonalis	1	
+Rmag_0224	Node8	1	
+Rmag_0224	Node16	1	
+Rmag_0224	Bathy	1	
+Rmag_0241	R.phaseoliformis	1	
+Rmag_0241	SUP05	1	
+Rmag_0241	R.southwardae	1	
+Rmag_0241	R.rectimargo	1	
+Rmag_0241	Node20	1	
+Rmag_0241	V.extenta	1	
+Rmag_0241	R.magnifica	1	
+Rmag_0241	V.gigas	1	
+Rmag_0241	R.pacifica	1	
+Rmag_0241	R.kilmeri	1	
+Rmag_0241	V.okutanii	1	
+Rmag_0241	Node8	1	
+Rmag_0241	Node1	1	
+Rmag_0241	Node2	1	
+Rmag_0241	Node5	1	
+Rmag_0241	Node6	1	
+Rmag_0241	Node11	1	
+Rmag_0241	Node12	0.2196665667672675	
+Rmag_0241	V.diagonalis	1	
+Rmag_0241	Node17	1	
+Rmag_0241	Node16	1	
+Rmag_0241	R.pleocardia	1	
+Rmag_0241	Bathy	1	
+Rmag_0267	R.phaseoliformis	1	
+Rmag_0267	SUP05	0.1183395212605984	
+Rmag_0267	R.southwardae	1	
+Rmag_0267	R.rectimargo	1	
+Rmag_0267	Node21	1	
+Rmag_0267	V.extenta	1	
+Rmag_0267	R.magnifica	1	
+Rmag_0267	V.gigas	1	
+Rmag_0267	R.pacifica	1	
+Rmag_0267	R.kilmeri	1	
+Rmag_0267	V.okutanii	1	
+Rmag_0267	R.pleocardia	1	
+Rmag_0267	Node1	1	
+Rmag_0267	Node2	1	
+Rmag_0267	Node5	1	
+Rmag_0267	Node7	1	
+Rmag_0267	Node6	1	
+Rmag_0267	Node11	1	
+Rmag_0267	V.diagonalis	1	
+Rmag_0267	Node14	1	
+Rmag_0267	Node17	1	
+Rmag_0267	Node16	1	
+Rmag_0267	Bathy	1	
+Rmag_0286	R.phaseoliformis	1	
+Rmag_0286	SUP05	1	
+Rmag_0286	R.southwardae	1.750792618482322e-05	
+Rmag_0286	R.rectimargo	1	
+Rmag_0286	V.extenta	1	
+Rmag_0286	R.magnifica	1	
+Rmag_0286	V.gigas	1	
+Rmag_0286	R.pacifica	1	
+Rmag_0286	R.kilmeri	1	
+Rmag_0286	V.okutanii	1	
+Rmag_0286	Node9	1	
+Rmag_0286	Node8	1	
+Rmag_0286	Node1	1	
+Rmag_0286	Node3	1	
+Rmag_0286	Node2	1	
+Rmag_0286	Node5	1	
+Rmag_0286	Node4	1	
+Rmag_0286	Node13	1	
+Rmag_0286	Node12	1	
+Rmag_0286	V.diagonalis	1	
+Rmag_0286	Node17	1	
+Rmag_0286	R.pleocardia	1	
+Rmag_0286	Bathy	1	
+Rmag_0289	R.phaseoliformis	1	
+Rmag_0289	SUP05	1	
+Rmag_0289	R.southwardae	1	
+Rmag_0289	R.rectimargo	1	
+Rmag_0289	Node20	1	
+Rmag_0289	V.extenta	1	
+Rmag_0289	R.magnifica	1	
+Rmag_0289	V.gigas	1	
+Rmag_0289	R.pacifica	1	
+Rmag_0289	R.kilmeri	1	
+Rmag_0289	V.okutanii	1	
+Rmag_0289	R.pleocardia	1	
+Rmag_0289	Node1	1	
+Rmag_0289	Node3	1	
+Rmag_0289	Node2	1	
+Rmag_0289	Node7	1	
+Rmag_0289	Node6	1	
+Rmag_0289	Node11	1	
+Rmag_0289	Node10	1	
+Rmag_0289	V.diagonalis	1	
+Rmag_0289	Node14	1	
+Rmag_0289	Node17	1	
+Rmag_0289	Bathy	1	
+Rmag_0302	R.phaseoliformis	1	
+Rmag_0302	SUP05	1	
+Rmag_0302	R.southwardae	1	
+Rmag_0302	R.rectimargo	1	
+Rmag_0302	Node21	1	
+Rmag_0302	V.extenta	1	
+Rmag_0302	R.magnifica	1	
+Rmag_0302	V.gigas	1	
+Rmag_0302	R.pacifica	1	
+Rmag_0302	R.kilmeri	1	
+Rmag_0302	V.okutanii	1	
+Rmag_0302	R.pleocardia	1	
+Rmag_0302	Node1	1	
+Rmag_0302	Node3	0.5627329492821014	
+Rmag_0302	Node2	1	
+Rmag_0302	Node7	1	
+Rmag_0302	Node6	0.0004578127842558288	
+Rmag_0302	Node11	1	
+Rmag_0302	V.diagonalis	1	
+Rmag_0302	Node17	1	
+Rmag_0302	Node16	1	
+Rmag_0302	Node8	1	
+Rmag_0302	Bathy	0.2661155887480151	
+Rmag_0319	R.phaseoliformis	1	
+Rmag_0319	SUP05	1	
+Rmag_0319	R.southwardae	1	
+Rmag_0319	R.rectimargo	1	
+Rmag_0319	V.extenta	1	
+Rmag_0319	R.magnifica	1	
+Rmag_0319	V.gigas	1	
+Rmag_0319	R.pacifica	0.317675465534208	
+Rmag_0319	R.kilmeri	1	
+Rmag_0319	V.okutanii	1	
+Rmag_0319	Node9	1	
+Rmag_0319	R.pleocardia	1	
+Rmag_0319	Node1	1	
+Rmag_0319	Node3	1	
+Rmag_0319	Node2	1	
+Rmag_0319	Node5	0.7051063370065803	
+Rmag_0319	Node4	1	
+Rmag_0319	Node10	1	
+Rmag_0319	V.diagonalis	1	
+Rmag_0319	Node14	1	
+Rmag_0319	Node17	1	
+Rmag_0319	Node8	1	
+Rmag_0319	Bathy	1	
+Rmag_0321	R.phaseoliformis	1	
+Rmag_0321	SUP05	0.2939725792919461	
+Rmag_0321	R.southwardae	1	
+Rmag_0321	R.rectimargo	1	
+Rmag_0321	Node21	1	
+Rmag_0321	V.extenta	1	
+Rmag_0321	R.magnifica	1	
+Rmag_0321	V.gigas	1	
+Rmag_0321	R.pacifica	1	
+Rmag_0321	R.kilmeri	1	
+Rmag_0321	V.okutanii	1	
+Rmag_0321	R.pleocardia	1	
+Rmag_0321	Node1	1	
+Rmag_0321	Node2	1	
+Rmag_0321	Node5	1	
+Rmag_0321	Node6	1	
+Rmag_0321	Node11	1	
+Rmag_0321	Node10	1	
+Rmag_0321	Node13	1	
+Rmag_0321	V.diagonalis	1	
+Rmag_0321	Node16	1	
+Rmag_0321	Node19	1	
+Rmag_0321	Bathy	1	
+Rmag_0329	R.phaseoliformis	1	
+Rmag_0329	SUP05	0.482963386314939	
+Rmag_0329	R.southwardae	1	
+Rmag_0329	R.rectimargo	1	
+Rmag_0329	Node20	1	
+Rmag_0329	V.extenta	1	
+Rmag_0329	R.magnifica	1	
+Rmag_0329	V.gigas	1	
+Rmag_0329	R.pacifica	1	
+Rmag_0329	R.kilmeri	1	
+Rmag_0329	V.okutanii	1	
+Rmag_0329	R.pleocardia	1	
+Rmag_0329	Node1	1	
+Rmag_0329	Node3	1	
+Rmag_0329	Node2	1	
+Rmag_0329	Node7	1	
+Rmag_0329	Node6	1	
+Rmag_0329	Node12	1	
+Rmag_0329	V.diagonalis	1	
+Rmag_0329	Node8	1	
+Rmag_0329	Node16	1	
+Rmag_0329	Node19	0.5307545102118967	
+Rmag_0329	Bathy	1	
+Rmag_0419	R.phaseoliformis	1	
+Rmag_0419	SUP05	1	
+Rmag_0419	R.southwardae	1	
+Rmag_0419	R.rectimargo	1	
+Rmag_0419	Node21	1	
+Rmag_0419	V.extenta	1	
+Rmag_0419	R.magnifica	1	
+Rmag_0419	V.gigas	1	
+Rmag_0419	R.pacifica	1	
+Rmag_0419	R.kilmeri	1	
+Rmag_0419	V.okutanii	1	
+Rmag_0419	Node9	1	
+Rmag_0419	R.pleocardia	1	
+Rmag_0419	Node1	1	
+Rmag_0419	Node15	1	
+Rmag_0419	Node2	0.1322440781259866	
+Rmag_0419	Node5	1	
+Rmag_0419	Node6	1	
+Rmag_0419	Node10	1	
+Rmag_0419	V.diagonalis	1	
+Rmag_0419	Node17	1	
+Rmag_0419	Node16	1	
+Rmag_0419	Bathy	1	
+Rmag_0420	R.phaseoliformis	1	
+Rmag_0420	SUP05	1	
+Rmag_0420	R.southwardae	1	
+Rmag_0420	R.rectimargo	1	
+Rmag_0420	Node21	1	
+Rmag_0420	V.extenta	1	
+Rmag_0420	R.magnifica	1	
+Rmag_0420	V.gigas	1	
+Rmag_0420	R.pacifica	1	
+Rmag_0420	R.kilmeri	1	
+Rmag_0420	V.okutanii	1	
+Rmag_0420	R.pleocardia	1	
+Rmag_0420	Node1	1	
+Rmag_0420	Node3	1	
+Rmag_0420	Node2	1	
+Rmag_0420	Node7	1	
+Rmag_0420	Node6	1	
+Rmag_0420	Node12	1	
+Rmag_0420	V.diagonalis	1	
+Rmag_0420	Node17	1	
+Rmag_0420	Node16	1	
+Rmag_0420	Node8	1	
+Rmag_0420	Bathy	1	
+Rmag_0434	R.phaseoliformis	1	
+Rmag_0434	SUP05	1	
+Rmag_0434	R.southwardae	1	
+Rmag_0434	R.rectimargo	1	
+Rmag_0434	Node20	1	
+Rmag_0434	V.extenta	1	
+Rmag_0434	R.magnifica	1	
+Rmag_0434	V.gigas	1	
+Rmag_0434	R.pacifica	1	
+Rmag_0434	R.kilmeri	1	
+Rmag_0434	V.okutanii	1	
+Rmag_0434	Node9	1	
+Rmag_0434	R.pleocardia	1	
+Rmag_0434	Node1	1	
+Rmag_0434	Node3	1	
+Rmag_0434	Node2	1	
+Rmag_0434	Node4	1	
+Rmag_0434	Node7	1	
+Rmag_0434	Node12	1	
+Rmag_0434	V.diagonalis	1	
+Rmag_0434	Node8	1	
+Rmag_0434	Node16	1	
+Rmag_0434	Bathy	1	
+Rmag_0497	R.phaseoliformis	1	
+Rmag_0497	SUP05	1	
+Rmag_0497	R.southwardae	1	
+Rmag_0497	R.rectimargo	1	
+Rmag_0497	Node21	1	
+Rmag_0497	V.extenta	1	
+Rmag_0497	R.magnifica	1	
+Rmag_0497	V.gigas	1	
+Rmag_0497	R.pacifica	1	
+Rmag_0497	R.kilmeri	1	
+Rmag_0497	V.okutanii	1	
+Rmag_0497	R.pleocardia	1	
+Rmag_0497	Node1	1	
+Rmag_0497	Node3	1	
+Rmag_0497	Node2	1	
+Rmag_0497	Node4	0.06205836543957455	
+Rmag_0497	Node7	1	
+Rmag_0497	Node11	1	
+Rmag_0497	Node12	1	
+Rmag_0497	V.diagonalis	1	
+Rmag_0497	Node17	1	
+Rmag_0497	Node8	1	
+Rmag_0497	Bathy	1	
+Rmag_0498	R.phaseoliformis	1	0.1
+Rmag_0498	SUP05	0.4484470465806059	0.1
+Rmag_0498	R.southwardae	1	0.1
+Rmag_0498	R.rectimargo	1	0.1
+Rmag_0498	V.extenta	1	0.1
+Rmag_0498	R.magnifica	1	0.1
+Rmag_0498	V.gigas	1	0.1
+Rmag_0498	R.pacifica	1	0.1
+Rmag_0498	R.kilmeri	1	0.1
+Rmag_0498	V.okutanii	1	0.1
+Rmag_0498	Node9	1	0.1
+Rmag_0498	R.pleocardia	1	0.1
+Rmag_0498	Node1	1	0.1
+Rmag_0498	Node3	1	0.1
+Rmag_0498	Node2	1	0.1
+Rmag_0498	Node4	0.4361396373974414	0.1
+Rmag_0498	Node7	1	0.1
+Rmag_0498	Node12	1	0.1
+Rmag_0498	V.diagonalis	1	0.1
+Rmag_0498	Node17	1	0.1
+Rmag_0498	Node16	1	0.1
+Rmag_0498	Node8	1	0.1
+Rmag_0498	Bathy	1	0.1
+Rmag_0534	R.phaseoliformis	1	
+Rmag_0534	SUP05	0.1200610332503165	
+Rmag_0534	R.southwardae	1	
+Rmag_0534	R.rectimargo	1	
+Rmag_0534	Node21	1	
+Rmag_0534	V.extenta	1	
+Rmag_0534	R.magnifica	1	
+Rmag_0534	V.gigas	1	
+Rmag_0534	R.pacifica	1	
+Rmag_0534	R.kilmeri	1	
+Rmag_0534	V.okutanii	1	
+Rmag_0534	R.pleocardia	1	
+Rmag_0534	Node1	1	
+Rmag_0534	Node3	1	
+Rmag_0534	Node2	1	
+Rmag_0534	Node7	1	
+Rmag_0534	Node6	1	
+Rmag_0534	Node11	1	
+Rmag_0534	Node10	1	
+Rmag_0534	V.diagonalis	1	
+Rmag_0534	Node17	1	
+Rmag_0534	Node16	1	
+Rmag_0534	Bathy	1	
+Rmag_0537	R.phaseoliformis	1	
+Rmag_0537	SUP05	1	
+Rmag_0537	R.southwardae	1	
+Rmag_0537	R.rectimargo	1	
+Rmag_0537	Node20	1	
+Rmag_0537	V.extenta	1	
+Rmag_0537	R.magnifica	1	
+Rmag_0537	V.gigas	1	
+Rmag_0537	R.pacifica	1	
+Rmag_0537	R.kilmeri	1	
+Rmag_0537	V.okutanii	1	
+Rmag_0537	Node9	1	
+Rmag_0537	Node8	1	
+Rmag_0537	Node1	1	
+Rmag_0537	Node3	1	
+Rmag_0537	Node2	1	
+Rmag_0537	Node4	1	
+Rmag_0537	Node7	1	
+Rmag_0537	Node12	1	
+Rmag_0537	V.diagonalis	1	
+Rmag_0537	Node16	1	
+Rmag_0537	R.pleocardia	1	
+Rmag_0537	Bathy	1	
+Rmag_0542	R.phaseoliformis	1	
+Rmag_0542	SUP05	1	
+Rmag_0542	R.southwardae	1	
+Rmag_0542	R.rectimargo	1	
+Rmag_0542	Node21	1	
+Rmag_0542	V.extenta	1	
+Rmag_0542	R.magnifica	1	
+Rmag_0542	V.gigas	1	
+Rmag_0542	R.pacifica	1	
+Rmag_0542	R.kilmeri	1	
+Rmag_0542	V.okutanii	1	
+Rmag_0542	Node8	1	
+Rmag_0542	Node1	1	
+Rmag_0542	Node2	0.9914832723002567	
+Rmag_0542	Node5	1	
+Rmag_0542	Node6	1	
+Rmag_0542	Node11	1	
+Rmag_0542	Node12	1	
+Rmag_0542	V.diagonalis	1	
+Rmag_0542	Node17	1	
+Rmag_0542	Node16	1	
+Rmag_0542	R.pleocardia	1	
+Rmag_0542	Bathy	1	
+Rmag_0547	R.phaseoliformis	1	
+Rmag_0547	SUP05	1	
+Rmag_0547	R.southwardae	1	
+Rmag_0547	R.rectimargo	1	
+Rmag_0547	Node20	1	
+Rmag_0547	V.extenta	1	
+Rmag_0547	R.magnifica	1	
+Rmag_0547	V.gigas	1	
+Rmag_0547	R.pacifica	1	
+Rmag_0547	R.kilmeri	1	
+Rmag_0547	V.okutanii	1	
+Rmag_0547	R.pleocardia	1	
+Rmag_0547	Node1	1	
+Rmag_0547	Node2	1	
+Rmag_0547	Node5	1	
+Rmag_0547	Node7	1	
+Rmag_0547	Node6	1	
+Rmag_0547	Node10	1	
+Rmag_0547	V.diagonalis	1	
+Rmag_0547	Node14	1	
+Rmag_0547	Node16	1	
+Rmag_0547	Node19	1	
+Rmag_0547	Bathy	1	
+Rmag_0548	R.phaseoliformis	1	
+Rmag_0548	SUP05	1	
+Rmag_0548	R.southwardae	1	
+Rmag_0548	R.rectimargo	1	
+Rmag_0548	Node20	1	
+Rmag_0548	V.extenta	1	
+Rmag_0548	R.magnifica	1	
+Rmag_0548	V.gigas	1	
+Rmag_0548	R.pacifica	1	
+Rmag_0548	R.kilmeri	1	
+Rmag_0548	V.okutanii	1	
+Rmag_0548	R.pleocardia	1	
+Rmag_0548	Node1	1	
+Rmag_0548	Node15	1	
+Rmag_0548	Node3	1	
+Rmag_0548	Node2	1	
+Rmag_0548	Node7	1	
+Rmag_0548	Node6	0.4484136485262917	
+Rmag_0548	Node11	1	
+Rmag_0548	Node10	1	
+Rmag_0548	V.diagonalis	1	
+Rmag_0548	Node19	1	
+Rmag_0548	Bathy	1	
+Rmag_0560	R.phaseoliformis	1	
+Rmag_0560	SUP05	1	
+Rmag_0560	R.southwardae	1	
+Rmag_0560	R.rectimargo	1	
+Rmag_0560	Node20	1	
+Rmag_0560	V.extenta	1	
+Rmag_0560	R.magnifica	1	
+Rmag_0560	V.gigas	1	
+Rmag_0560	R.pacifica	1	
+Rmag_0560	R.kilmeri	1	
+Rmag_0560	V.okutanii	1	
+Rmag_0560	Node9	1	
+Rmag_0560	R.pleocardia	1	
+Rmag_0560	Node1	1	
+Rmag_0560	Node2	1	
+Rmag_0560	Node5	1	
+Rmag_0560	Node7	1	
+Rmag_0560	Node6	1	
+Rmag_0560	V.diagonalis	1	
+Rmag_0560	Node14	1	
+Rmag_0560	Node16	1	
+Rmag_0560	Node19	1	
+Rmag_0560	Bathy	1	
+Rmag_0570	R.phaseoliformis	1	
+Rmag_0570	SUP05	1	
+Rmag_0570	R.southwardae	1	
+Rmag_0570	R.rectimargo	1.441162352255887e-05	
+Rmag_0570	Node21	1	
+Rmag_0570	V.extenta	1	
+Rmag_0570	R.magnifica	1	
+Rmag_0570	V.gigas	1	
+Rmag_0570	R.pacifica	1	
+Rmag_0570	R.kilmeri	1	
+Rmag_0570	V.okutanii	1	
+Rmag_0570	Node9	1	
+Rmag_0570	R.pleocardia	1	
+Rmag_0570	Node1	1	
+Rmag_0570	Node15	1	
+Rmag_0570	Node3	1	
+Rmag_0570	Node2	1	
+Rmag_0570	Node7	1	
+Rmag_0570	Node6	1	
+Rmag_0570	Node10	1	
+Rmag_0570	V.diagonalis	1	
+Rmag_0570	Node16	0.1158587431142535	
+Rmag_0570	Bathy	1	
+Rmag_0574	R.phaseoliformis	1	0.01
+Rmag_0574	SUP05	1	0.01
+Rmag_0574	R.southwardae	1	0.01
+Rmag_0574	R.rectimargo	1	0.01
+Rmag_0574	Node20	1.272780740002588e-05	0.01
+Rmag_0574	V.extenta	1	0.01
+Rmag_0574	R.magnifica	1	0.01
+Rmag_0574	V.gigas	1	0.01
+Rmag_0574	R.pacifica	1	0.01
+Rmag_0574	R.kilmeri	1	0.01
+Rmag_0574	V.okutanii	1	0.01
+Rmag_0574	Node9	1	0.01
+Rmag_0574	R.pleocardia	1	0.01
+Rmag_0574	Node1	1	0.01
+Rmag_0574	Node3	1	0.01
+Rmag_0574	Node2	1	0.01
+Rmag_0574	Node4	1	0.01
+Rmag_0574	Node7	0.003170374735488646	0.01
+Rmag_0574	Node13	1	0.01
+Rmag_0574	V.diagonalis	1	0.01
+Rmag_0574	Node17	1	0.01
+Rmag_0574	Node8	1	0.01
+Rmag_0574	Bathy	1	0.01
+Rmag_0576	R.phaseoliformis	1	
+Rmag_0576	SUP05	1	
+Rmag_0576	R.southwardae	1	
+Rmag_0576	R.rectimargo	1	
+Rmag_0576	V.extenta	1	
+Rmag_0576	R.magnifica	1	
+Rmag_0576	V.gigas	1	
+Rmag_0576	R.pacifica	1	
+Rmag_0576	R.kilmeri	1	
+Rmag_0576	V.okutanii	1	
+Rmag_0576	Node9	1	
+Rmag_0576	R.pleocardia	1	
+Rmag_0576	Node1	1	
+Rmag_0576	Node3	1	
+Rmag_0576	Node2	1	
+Rmag_0576	Node4	1	
+Rmag_0576	Node7	1	
+Rmag_0576	Node10	1	
+Rmag_0576	Node13	1	
+Rmag_0576	V.diagonalis	1	
+Rmag_0576	Node17	1	
+Rmag_0576	Node8	1	
+Rmag_0576	Bathy	1	
+Rmag_0588	R.phaseoliformis	1	
+Rmag_0588	SUP05	1	
+Rmag_0588	R.southwardae	1	
+Rmag_0588	R.rectimargo	1	
+Rmag_0588	Node21	1	
+Rmag_0588	V.extenta	1	
+Rmag_0588	R.magnifica	1	
+Rmag_0588	V.gigas	1	
+Rmag_0588	R.pacifica	1	
+Rmag_0588	R.kilmeri	1	
+Rmag_0588	V.okutanii	1	
+Rmag_0588	R.pleocardia	1	
+Rmag_0588	Node1	1	
+Rmag_0588	Node5	1	
+Rmag_0588	Node4	1	
+Rmag_0588	Node7	1	
+Rmag_0588	Node6	1	
+Rmag_0588	Node11	1	
+Rmag_0588	Node12	1	
+Rmag_0588	V.diagonalis	1	
+Rmag_0588	Node17	1	
+Rmag_0588	Node8	1	
+Rmag_0588	Bathy	1	
+Rmag_0595	R.phaseoliformis	1	
+Rmag_0595	SUP05	1	
+Rmag_0595	R.southwardae	1	
+Rmag_0595	R.rectimargo	1	
+Rmag_0595	V.extenta	1	
+Rmag_0595	R.magnifica	1	
+Rmag_0595	V.gigas	1	
+Rmag_0595	R.pacifica	1	
+Rmag_0595	R.kilmeri	1	
+Rmag_0595	V.okutanii	1	
+Rmag_0595	R.pleocardia	1	
+Rmag_0595	Node1	1	
+Rmag_0595	Node15	1	
+Rmag_0595	Node2	1	
+Rmag_0595	Node5	1	
+Rmag_0595	Node7	1	
+Rmag_0595	Node11	1	
+Rmag_0595	Node10	1	
+Rmag_0595	Node13	1	
+Rmag_0595	Node12	0.09544128697343357	
+Rmag_0595	V.diagonalis	1	
+Rmag_0595	Node14	1	
+Rmag_0595	Bathy	1	
+Rmag_0659	R.phaseoliformis	1	
+Rmag_0659	SUP05	0.0001857751482794434	
+Rmag_0659	R.southwardae	1	
+Rmag_0659	R.rectimargo	1	
+Rmag_0659	Node21	1	
+Rmag_0659	V.extenta	1	
+Rmag_0659	R.magnifica	1	
+Rmag_0659	V.gigas	1	
+Rmag_0659	R.pacifica	1	
+Rmag_0659	R.kilmeri	1	
+Rmag_0659	V.okutanii	1	
+Rmag_0659	R.pleocardia	1	
+Rmag_0659	Node1	1	
+Rmag_0659	Node15	1	
+Rmag_0659	Node3	1	
+Rmag_0659	Node2	1	
+Rmag_0659	Node7	1	
+Rmag_0659	Node6	1	
+Rmag_0659	Node12	1	
+Rmag_0659	V.diagonalis	1	
+Rmag_0659	Node8	1	
+Rmag_0659	Node18	1	
+Rmag_0659	Bathy	1	
+Rmag_0668	R.phaseoliformis	1	
+Rmag_0668	SUP05	0.1644488431965762	
+Rmag_0668	R.southwardae	1	
+Rmag_0668	R.rectimargo	1	
+Rmag_0668	Node21	1	
+Rmag_0668	V.extenta	1	
+Rmag_0668	R.magnifica	1	
+Rmag_0668	V.gigas	1	
+Rmag_0668	R.pacifica	1	
+Rmag_0668	R.kilmeri	1	
+Rmag_0668	V.okutanii	1	
+Rmag_0668	R.pleocardia	1	
+Rmag_0668	Node1	1	
+Rmag_0668	Node2	1	
+Rmag_0668	Node5	1	
+Rmag_0668	Node7	1	
+Rmag_0668	Node6	1	
+Rmag_0668	Node10	1	
+Rmag_0668	V.diagonalis	1	
+Rmag_0668	Node14	0.006470562892765486	
+Rmag_0668	Node16	1	
+Rmag_0668	Node19	1	
+Rmag_0668	Bathy	1	
+Rmag_0692	R.phaseoliformis	1	0.05
+Rmag_0692	SUP05	1	0.05
+Rmag_0692	R.southwardae	1	0.05
+Rmag_0692	R.rectimargo	1	0.05
+Rmag_0692	Node20	1	0.05
+Rmag_0692	V.extenta	1	0.05
+Rmag_0692	R.magnifica	1	0.05
+Rmag_0692	V.gigas	1	0.05
+Rmag_0692	R.pacifica	2.488120376398228e-09	0.05
+Rmag_0692	R.kilmeri	1	0.05
+Rmag_0692	V.okutanii	1	0.05
+Rmag_0692	Node9	1	0.05
+Rmag_0692	Node8	1	0.05
+Rmag_0692	Node1	1	0.05
+Rmag_0692	Node3	1	0.05
+Rmag_0692	Node2	1	0.05
+Rmag_0692	Node5	0.9217119601338346	0.05
+Rmag_0692	Node6	1	0.05
+Rmag_0692	Node10	0.001415443015656825	0.05
+Rmag_0692	V.diagonalis	1	0.05
+Rmag_0692	Node14	1	0.05
+Rmag_0692	R.pleocardia	1	0.05
+Rmag_0692	Bathy	1	0.05
+Rmag_0694	R.phaseoliformis	1	
+Rmag_0694	SUP05	1	
+Rmag_0694	R.southwardae	1	
+Rmag_0694	R.rectimargo	1	
+Rmag_0694	Node20	1	
+Rmag_0694	V.extenta	1	
+Rmag_0694	R.magnifica	1	
+Rmag_0694	V.gigas	1	
+Rmag_0694	R.pacifica	1	
+Rmag_0694	R.kilmeri	1	
+Rmag_0694	V.okutanii	1	
+Rmag_0694	Node9	1	
+Rmag_0694	Node8	1	
+Rmag_0694	Node1	1	
+Rmag_0694	Node15	1	
+Rmag_0694	Node2	1	
+Rmag_0694	Node5	1	
+Rmag_0694	Node7	1	
+Rmag_0694	V.diagonalis	1	
+Rmag_0694	Node16	1	
+Rmag_0694	Node19	1	
+Rmag_0694	R.pleocardia	1	
+Rmag_0694	Bathy	1	
+Rmag_0699	R.phaseoliformis	1	
+Rmag_0699	SUP05	1	
+Rmag_0699	R.southwardae	1	
+Rmag_0699	R.rectimargo	1	
+Rmag_0699	Node21	1	
+Rmag_0699	V.extenta	1	
+Rmag_0699	R.magnifica	1	
+Rmag_0699	V.gigas	1	
+Rmag_0699	R.pacifica	0.0001569689604936642	
+Rmag_0699	R.kilmeri	1	
+Rmag_0699	V.okutanii	1	
+Rmag_0699	Node9	1	
+Rmag_0699	R.pleocardia	1	
+Rmag_0699	Node1	1	
+Rmag_0699	Node3	1	
+Rmag_0699	Node2	1	
+Rmag_0699	Node7	1	
+Rmag_0699	Node10	1	
+Rmag_0699	Node13	1	
+Rmag_0699	V.diagonalis	1	
+Rmag_0699	Node17	1	
+Rmag_0699	Node16	1	
+Rmag_0699	Bathy	1	
+Rmag_0700	R.phaseoliformis	1	
+Rmag_0700	SUP05	1	
+Rmag_0700	R.southwardae	1	
+Rmag_0700	R.rectimargo	1	
+Rmag_0700	Node20	0.2226728205660909	
+Rmag_0700	V.extenta	1	
+Rmag_0700	R.magnifica	1	
+Rmag_0700	V.gigas	1	
+Rmag_0700	R.pacifica	1	
+Rmag_0700	R.kilmeri	1	
+Rmag_0700	V.okutanii	0.4970428700197472	
+Rmag_0700	Node8	0.08024809554625145	
+Rmag_0700	Node1	1	
+Rmag_0700	Node3	1	
+Rmag_0700	Node2	1	
+Rmag_0700	Node4	0.3808680183373007	
+Rmag_0700	Node11	1	
+Rmag_0700	Node10	1	
+Rmag_0700	Node12	1	
+Rmag_0700	V.diagonalis	1	
+Rmag_0700	Node17	1	
+Rmag_0700	R.pleocardia	1	
+Rmag_0700	Bathy	1	
+Rmag_0701	R.phaseoliformis	1	
+Rmag_0701	SUP05	0.07753112270526674	
+Rmag_0701	R.southwardae	1	
+Rmag_0701	R.rectimargo	1	
+Rmag_0701	Node21	1	
+Rmag_0701	V.extenta	1	
+Rmag_0701	R.magnifica	1	
+Rmag_0701	V.gigas	1	
+Rmag_0701	R.pacifica	1	
+Rmag_0701	R.kilmeri	1	
+Rmag_0701	V.okutanii	1	
+Rmag_0701	Node9	1	
+Rmag_0701	Node8	1	
+Rmag_0701	Node1	1	
+Rmag_0701	Node3	1	
+Rmag_0701	Node2	1	
+Rmag_0701	Node5	2.475189261252897e-05	
+Rmag_0701	Node4	2.604557998608925e-06	
+Rmag_0701	V.diagonalis	1	
+Rmag_0701	Node14	2.573394726873568e-05	
+Rmag_0701	R.pleocardia	1	
+Rmag_0701	Node18	1	
+Rmag_0701	Bathy	0.2309883404600943	
+Rmag_0704	R.phaseoliformis	1	
+Rmag_0704	SUP05	1	
+Rmag_0704	R.southwardae	1	
+Rmag_0704	R.rectimargo	0.3113160454951313	
+Rmag_0704	Node21	1	
+Rmag_0704	V.extenta	1	
+Rmag_0704	R.magnifica	1	
+Rmag_0704	V.gigas	1	
+Rmag_0704	R.pacifica	1	
+Rmag_0704	R.kilmeri	1	
+Rmag_0704	V.okutanii	1	
+Rmag_0704	R.pleocardia	1	
+Rmag_0704	Node1	1	
+Rmag_0704	Node3	0.07031906347829459	
+Rmag_0704	Node2	1	
+Rmag_0704	Node7	1	
+Rmag_0704	Node6	1	
+Rmag_0704	Node12	0.007128020794420653	
+Rmag_0704	V.diagonalis	1	
+Rmag_0704	Node8	1	
+Rmag_0704	Node16	1	
+Rmag_0704	Node18	1	
+Rmag_0704	Bathy	1	
+Rmag_0741	R.phaseoliformis	1	
+Rmag_0741	SUP05	1	
+Rmag_0741	R.southwardae	1	
+Rmag_0741	R.rectimargo	1	
+Rmag_0741	Node20	1	
+Rmag_0741	V.extenta	1	
+Rmag_0741	R.magnifica	1	
+Rmag_0741	V.gigas	1	
+Rmag_0741	R.pacifica	1	
+Rmag_0741	R.kilmeri	1	
+Rmag_0741	V.okutanii	1	
+Rmag_0741	Node9	1	
+Rmag_0741	Node8	1	
+Rmag_0741	Node1	1	
+Rmag_0741	Node3	1	
+Rmag_0741	Node2	1	
+Rmag_0741	Node5	1	
+Rmag_0741	Node4	1	
+Rmag_0741	Node13	1	
+Rmag_0741	Node12	1	
+Rmag_0741	V.diagonalis	1	
+Rmag_0741	R.pleocardia	1	
+Rmag_0741	Bathy	1	
+Rmag_0767	R.phaseoliformis	1	
+Rmag_0767	SUP05	1	
+Rmag_0767	R.southwardae	1	
+Rmag_0767	R.rectimargo	1	
+Rmag_0767	Node20	1	
+Rmag_0767	V.extenta	1	
+Rmag_0767	R.magnifica	1	
+Rmag_0767	V.gigas	0.7908045207230021	
+Rmag_0767	R.pacifica	1	
+Rmag_0767	R.kilmeri	1	
+Rmag_0767	V.okutanii	1	
+Rmag_0767	Node9	1	
+Rmag_0767	R.pleocardia	1	
+Rmag_0767	Node1	1	
+Rmag_0767	Node3	1	
+Rmag_0767	Node2	1	
+Rmag_0767	Node4	1	
+Rmag_0767	Node7	1	
+Rmag_0767	Node13	1	
+Rmag_0767	V.diagonalis	1	
+Rmag_0767	Node8	1	
+Rmag_0767	Node16	1	
+Rmag_0767	Bathy	1	
+Rmag_0774	R.phaseoliformis	1	
+Rmag_0774	SUP05	1	
+Rmag_0774	R.southwardae	1	
+Rmag_0774	R.rectimargo	1	
+Rmag_0774	Node21	1	
+Rmag_0774	V.extenta	1	
+Rmag_0774	R.magnifica	1	
+Rmag_0774	V.gigas	1	
+Rmag_0774	R.pacifica	1	
+Rmag_0774	R.kilmeri	1	
+Rmag_0774	V.okutanii	1	
+Rmag_0774	Node9	1	
+Rmag_0774	R.pleocardia	1	
+Rmag_0774	Node1	1	
+Rmag_0774	Node3	1	
+Rmag_0774	Node2	1	
+Rmag_0774	Node7	1	
+Rmag_0774	Node6	1	
+Rmag_0774	Node13	1	
+Rmag_0774	Node12	1	
+Rmag_0774	V.diagonalis	1	
+Rmag_0774	Node18	1	
+Rmag_0774	Bathy	1	
+Rmag_0800	R.phaseoliformis	1	
+Rmag_0800	SUP05	1	
+Rmag_0800	R.southwardae	1	
+Rmag_0800	R.rectimargo	1	
+Rmag_0800	Node20	1	
+Rmag_0800	V.extenta	1	
+Rmag_0800	R.magnifica	1	
+Rmag_0800	V.gigas	1	
+Rmag_0800	R.pacifica	1	
+Rmag_0800	R.kilmeri	1	
+Rmag_0800	V.okutanii	1	
+Rmag_0800	R.pleocardia	1	
+Rmag_0800	Node1	0.1883393183275177	
+Rmag_0800	Node2	1	
+Rmag_0800	Node5	1	
+Rmag_0800	Node7	1	
+Rmag_0800	Node6	1	
+Rmag_0800	Node10	1	
+Rmag_0800	V.diagonalis	1	
+Rmag_0800	Node14	1	
+Rmag_0800	Node16	1	
+Rmag_0800	Node19	1	
+Rmag_0800	Bathy	1	
+Rmag_0801	R.phaseoliformis	1	
+Rmag_0801	SUP05	1	
+Rmag_0801	R.southwardae	1	
+Rmag_0801	R.rectimargo	1	
+Rmag_0801	Node21	1	
+Rmag_0801	V.extenta	1	
+Rmag_0801	R.magnifica	1	
+Rmag_0801	V.gigas	1	
+Rmag_0801	R.pacifica	1	
+Rmag_0801	R.kilmeri	1	
+Rmag_0801	V.okutanii	1	
+Rmag_0801	R.pleocardia	1	
+Rmag_0801	Node1	1	
+Rmag_0801	Node15	1	
+Rmag_0801	Node3	1	
+Rmag_0801	Node2	1	
+Rmag_0801	Node7	0.2285767147524647	
+Rmag_0801	Node6	1	
+Rmag_0801	Node11	1	
+Rmag_0801	V.diagonalis	1	
+Rmag_0801	Node8	1	
+Rmag_0801	Node16	1	
+Rmag_0801	Bathy	1	
+Rmag_0806	R.phaseoliformis	1	
+Rmag_0806	SUP05	0.1846102535677715	
+Rmag_0806	R.southwardae	1	
+Rmag_0806	R.rectimargo	1	
+Rmag_0806	Node20	1	
+Rmag_0806	V.extenta	1	
+Rmag_0806	R.magnifica	0.1256247876044432	
+Rmag_0806	V.gigas	1	
+Rmag_0806	R.pacifica	1	
+Rmag_0806	R.kilmeri	1	
+Rmag_0806	V.okutanii	1	
+Rmag_0806	Node9	1	
+Rmag_0806	R.pleocardia	0.6768418120157342	
+Rmag_0806	Node1	1	
+Rmag_0806	Node3	1	
+Rmag_0806	Node2	1	
+Rmag_0806	Node4	1	
+Rmag_0806	Node7	1	
+Rmag_0806	Node12	1	
+Rmag_0806	V.diagonalis	1	
+Rmag_0806	Node17	1	
+Rmag_0806	Node8	1	
+Rmag_0806	Bathy	1	
+Rmag_0807	R.phaseoliformis	1	
+Rmag_0807	SUP05	0.4822229049908444	
+Rmag_0807	R.southwardae	1	
+Rmag_0807	R.rectimargo	1	
+Rmag_0807	Node20	1	
+Rmag_0807	V.extenta	1	
+Rmag_0807	R.magnifica	1	
+Rmag_0807	V.gigas	1	
+Rmag_0807	R.pacifica	1	
+Rmag_0807	R.kilmeri	1	
+Rmag_0807	V.okutanii	1	
+Rmag_0807	R.pleocardia	1	
+Rmag_0807	Node1	1	
+Rmag_0807	Node2	0.2110052805508347	
+Rmag_0807	Node5	1	
+Rmag_0807	Node7	1	
+Rmag_0807	Node11	1	
+Rmag_0807	Node10	1	
+Rmag_0807	Node12	1	
+Rmag_0807	V.diagonalis	1	
+Rmag_0807	Node16	1	
+Rmag_0807	Node19	1	
+Rmag_0807	Bathy	0.08705315663038116	
+Rmag_0833	R.phaseoliformis	1	0.05
+Rmag_0833	SUP05	1	0.05
+Rmag_0833	R.southwardae	0.06017501927912433	0.05
+Rmag_0833	R.rectimargo	1	0.05
+Rmag_0833	V.extenta	1	0.05
+Rmag_0833	R.magnifica	1	0.05
+Rmag_0833	V.gigas	1	0.05
+Rmag_0833	R.pacifica	1	0.05
+Rmag_0833	R.kilmeri	1	0.05
+Rmag_0833	V.okutanii	1	0.05
+Rmag_0833	Node8	1	0.05
+Rmag_0833	Node1	1	0.05
+Rmag_0833	Node3	1	0.05
+Rmag_0833	Node2	1	0.05
+Rmag_0833	Node5	1	0.05
+Rmag_0833	Node7	1	0.05
+Rmag_0833	Node6	1	0.05
+Rmag_0833	Node11	1	0.05
+Rmag_0833	V.diagonalis	1	0.05
+Rmag_0833	Node16	1	0.05
+Rmag_0833	Node19	1	0.05
+Rmag_0833	R.pleocardia	0.007208673695895396	0.05
+Rmag_0833	Bathy	1	0.05
+Rmag_0853	R.phaseoliformis	1	
+Rmag_0853	SUP05	1	
+Rmag_0853	R.southwardae	1	
+Rmag_0853	R.rectimargo	1	
+Rmag_0853	Node20	1	
+Rmag_0853	V.extenta	1	
+Rmag_0853	R.magnifica	1	
+Rmag_0853	V.gigas	1	
+Rmag_0853	R.pacifica	1	
+Rmag_0853	R.kilmeri	1	
+Rmag_0853	V.okutanii	1	
+Rmag_0853	Node9	1	
+Rmag_0853	R.pleocardia	1	
+Rmag_0853	Node1	0.8870729440779814	
+Rmag_0853	Node3	1	
+Rmag_0853	Node2	1	
+Rmag_0853	Node5	1	
+Rmag_0853	Node4	1	
+Rmag_0853	Node10	1	
+Rmag_0853	Node13	1	
+Rmag_0853	V.diagonalis	1	
+Rmag_0853	Node8	1	
+Rmag_0853	Bathy	1	
+Rmag_0865	R.phaseoliformis	1	
+Rmag_0865	SUP05	0.399911985808822	
+Rmag_0865	R.southwardae	1	
+Rmag_0865	R.rectimargo	1	
+Rmag_0865	Node21	1	
+Rmag_0865	V.extenta	1	
+Rmag_0865	R.magnifica	1	
+Rmag_0865	V.gigas	1	
+Rmag_0865	R.pacifica	1	
+Rmag_0865	R.kilmeri	1	
+Rmag_0865	V.okutanii	1	
+Rmag_0865	Node9	1	
+Rmag_0865	R.pleocardia	1	
+Rmag_0865	Node1	1	
+Rmag_0865	Node3	1	
+Rmag_0865	Node2	1	
+Rmag_0865	Node4	1	
+Rmag_0865	Node7	0.4580594292740763	
+Rmag_0865	Node12	1	
+Rmag_0865	V.diagonalis	1	
+Rmag_0865	Node8	1	
+Rmag_0865	Node18	1	
+Rmag_0865	Bathy	1	
+Rmag_0884	R.phaseoliformis	1	
+Rmag_0884	SUP05	1	
+Rmag_0884	R.southwardae	1	
+Rmag_0884	R.rectimargo	1	
+Rmag_0884	V.extenta	1	
+Rmag_0884	R.magnifica	1	
+Rmag_0884	V.gigas	1	
+Rmag_0884	R.pacifica	1	
+Rmag_0884	R.kilmeri	1	
+Rmag_0884	V.okutanii	1	
+Rmag_0884	R.pleocardia	1	
+Rmag_0884	Node1	1	
+Rmag_0884	Node15	1	
+Rmag_0884	Node3	1	
+Rmag_0884	Node2	1	
+Rmag_0884	Node7	1	
+Rmag_0884	Node6	1	
+Rmag_0884	Node12	1	
+Rmag_0884	V.diagonalis	1	
+Rmag_0884	Node8	1	
+Rmag_0884	Node19	1	
+Rmag_0884	Node18	1	
+Rmag_0884	Bathy	1	
+Rmag_0915	R.phaseoliformis	1	
+Rmag_0915	SUP05	1	
+Rmag_0915	R.southwardae	1	
+Rmag_0915	R.rectimargo	1	
+Rmag_0915	Node20	1	
+Rmag_0915	V.extenta	1	
+Rmag_0915	R.magnifica	1	
+Rmag_0915	V.gigas	1	
+Rmag_0915	R.pacifica	1	
+Rmag_0915	R.kilmeri	1	
+Rmag_0915	V.okutanii	1	
+Rmag_0915	Node8	1	
+Rmag_0915	Node1	1	
+Rmag_0915	Node3	1	
+Rmag_0915	Node2	1	
+Rmag_0915	Node5	1	
+Rmag_0915	Node4	1	
+Rmag_0915	Node10	0.01508384430960286	
+Rmag_0915	Node13	1	
+Rmag_0915	V.diagonalis	1	
+Rmag_0915	Node14	1	
+Rmag_0915	R.pleocardia	1	
+Rmag_0915	Bathy	1	
+Rmag_0931	R.phaseoliformis	1	
+Rmag_0931	SUP05	1	
+Rmag_0931	R.southwardae	1	
+Rmag_0931	R.rectimargo	1	
+Rmag_0931	Node21	1	
+Rmag_0931	V.extenta	1	
+Rmag_0931	R.magnifica	1	
+Rmag_0931	V.gigas	1	
+Rmag_0931	R.pacifica	1	
+Rmag_0931	R.kilmeri	1	
+Rmag_0931	V.okutanii	1	
+Rmag_0931	Node9	1	
+Rmag_0931	R.pleocardia	1	
+Rmag_0931	Node1	1	
+Rmag_0931	Node3	1	
+Rmag_0931	Node2	1	
+Rmag_0931	Node4	1	
+Rmag_0931	Node7	1	
+Rmag_0931	Node13	1	
+Rmag_0931	V.diagonalis	1	
+Rmag_0931	Node8	1	
+Rmag_0931	Node18	1	
+Rmag_0931	Bathy	1	
+Rmag_0944	R.phaseoliformis	1	
+Rmag_0944	SUP05	1	
+Rmag_0944	R.southwardae	1	
+Rmag_0944	R.rectimargo	1	
+Rmag_0944	V.extenta	1	
+Rmag_0944	R.magnifica	1	
+Rmag_0944	V.gigas	1	
+Rmag_0944	R.pacifica	1	
+Rmag_0944	R.kilmeri	1	
+Rmag_0944	V.okutanii	1	
+Rmag_0944	Node9	1	
+Rmag_0944	R.pleocardia	1	
+Rmag_0944	Node1	1	
+Rmag_0944	Node3	1	
+Rmag_0944	Node2	1	
+Rmag_0944	Node5	1	
+Rmag_0944	Node4	1	
+Rmag_0944	Node10	1	
+Rmag_0944	Node13	1	
+Rmag_0944	V.diagonalis	1	
+Rmag_0944	Node17	1	
+Rmag_0944	Node8	1	
+Rmag_0944	Bathy	1	
+Rmag_0962	R.phaseoliformis	1	
+Rmag_0962	SUP05	0.1074777726955434	
+Rmag_0962	R.southwardae	1	
+Rmag_0962	R.rectimargo	1	
+Rmag_0962	Node20	1	
+Rmag_0962	V.extenta	1	
+Rmag_0962	R.magnifica	1	
+Rmag_0962	V.gigas	1	
+Rmag_0962	R.pacifica	1	
+Rmag_0962	R.kilmeri	1	
+Rmag_0962	V.okutanii	1	
+Rmag_0962	R.pleocardia	1	
+Rmag_0962	Node1	0.006524718954668052	
+Rmag_0962	Node15	1	
+Rmag_0962	Node2	0.003390740217217747	
+Rmag_0962	Node5	1	
+Rmag_0962	Node7	0.04706007272154833	
+Rmag_0962	Node6	1	
+Rmag_0962	Node11	0.08730892201219476	
+Rmag_0962	V.diagonalis	1	
+Rmag_0962	Node14	1	
+Rmag_0962	Node16	1	
+Rmag_0962	Bathy	1	
+Rmag_0981	R.phaseoliformis	1	
+Rmag_0981	SUP05	1	
+Rmag_0981	R.southwardae	1	
+Rmag_0981	R.rectimargo	1	
+Rmag_0981	Node21	1	
+Rmag_0981	V.extenta	1	
+Rmag_0981	R.magnifica	1	
+Rmag_0981	V.gigas	1	
+Rmag_0981	R.pacifica	1	
+Rmag_0981	R.kilmeri	1	
+Rmag_0981	V.okutanii	1	
+Rmag_0981	Node9	1	
+Rmag_0981	R.pleocardia	1	
+Rmag_0981	Node1	1	
+Rmag_0981	Node3	1	
+Rmag_0981	Node2	1	
+Rmag_0981	Node4	1	
+Rmag_0981	Node7	0.8098202078712844	
+Rmag_0981	Node12	1	
+Rmag_0981	V.diagonalis	1	
+Rmag_0981	Node8	1	
+Rmag_0981	Node18	1	
+Rmag_0981	Bathy	1	
+Rmag_0990	R.phaseoliformis	0.001744253248746608	0.05
+Rmag_0990	SUP05	1	0.05
+Rmag_0990	R.southwardae	2.853392575552505e-07	0.05
+Rmag_0990	R.rectimargo	0.0003068612303639973	0.05
+Rmag_0990	Node21	1	0.05
+Rmag_0990	V.extenta	1	0.05
+Rmag_0990	R.magnifica	1	0.05
+Rmag_0990	V.gigas	1	0.05
+Rmag_0990	R.pacifica	1	0.05
+Rmag_0990	R.kilmeri	1	0.05
+Rmag_0990	V.okutanii	1	0.05
+Rmag_0990	Node9	1	0.05
+Rmag_0990	R.pleocardia	1	0.05
+Rmag_0990	Node1	1	0.05
+Rmag_0990	Node3	1	0.05
+Rmag_0990	Node2	1	0.05
+Rmag_0990	Node4	1	0.05
+Rmag_0990	Node7	1	0.05
+Rmag_0990	Node6	1	0.05
+Rmag_0990	Node10	1	0.05
+Rmag_0990	V.diagonalis	1	0.05
+Rmag_0990	Node17	1	0.05
+Rmag_0990	Bathy	0.4069063658020343	0.05
+Rmag_1012	R.phaseoliformis	1	
+Rmag_1012	SUP05	1	
+Rmag_1012	R.southwardae	1	
+Rmag_1012	R.rectimargo	1	
+Rmag_1012	Node20	1	
+Rmag_1012	V.extenta	1	
+Rmag_1012	R.magnifica	1	
+Rmag_1012	V.gigas	1	
+Rmag_1012	R.pacifica	1	
+Rmag_1012	R.kilmeri	1	
+Rmag_1012	V.okutanii	1	
+Rmag_1012	Node9	1	
+Rmag_1012	R.pleocardia	1	
+Rmag_1012	Node1	1	
+Rmag_1012	Node3	1	
+Rmag_1012	Node2	1	
+Rmag_1012	Node5	1	
+Rmag_1012	Node4	1	
+Rmag_1012	Node11	1	
+Rmag_1012	Node12	1	
+Rmag_1012	V.diagonalis	1	
+Rmag_1012	Node8	1	
+Rmag_1012	Bathy	1	
+Rmag_1027	R.phaseoliformis	1	
+Rmag_1027	SUP05	1	
+Rmag_1027	R.southwardae	1	
+Rmag_1027	R.rectimargo	1	
+Rmag_1027	Node20	1	
+Rmag_1027	V.extenta	1	
+Rmag_1027	R.magnifica	1	
+Rmag_1027	V.gigas	1	
+Rmag_1027	R.pacifica	1	
+Rmag_1027	R.kilmeri	1	
+Rmag_1027	V.okutanii	1	
+Rmag_1027	R.pleocardia	1	
+Rmag_1027	Node1	1	
+Rmag_1027	Node15	1	
+Rmag_1027	Node3	1	
+Rmag_1027	Node2	1	
+Rmag_1027	Node7	1	
+Rmag_1027	Node6	1	
+Rmag_1027	Node11	1	
+Rmag_1027	V.diagonalis	1	
+Rmag_1027	Node8	1	
+Rmag_1027	Node16	1	
+Rmag_1027	Bathy	1	
+Rmag_1038	R.phaseoliformis	1	
+Rmag_1038	SUP05	1	
+Rmag_1038	R.southwardae	1	
+Rmag_1038	R.rectimargo	1	
+Rmag_1038	Node21	1	
+Rmag_1038	V.extenta	1	
+Rmag_1038	R.magnifica	1	
+Rmag_1038	V.gigas	1	
+Rmag_1038	R.pacifica	1	
+Rmag_1038	R.kilmeri	1	
+Rmag_1038	V.okutanii	1	
+Rmag_1038	R.pleocardia	1	
+Rmag_1038	Node1	1	
+Rmag_1038	Node3	1	
+Rmag_1038	Node2	1	
+Rmag_1038	Node7	1	
+Rmag_1038	Node6	1	
+Rmag_1038	Node11	1	
+Rmag_1038	Node10	1	
+Rmag_1038	V.diagonalis	1	
+Rmag_1038	Node17	1	
+Rmag_1038	Node16	1	
+Rmag_1038	Bathy	1	
+Rmag_1071	R.phaseoliformis	1	0.1
+Rmag_1071	SUP05	1	0.1
+Rmag_1071	R.southwardae	1	0.1
+Rmag_1071	R.rectimargo	1	0.1
+Rmag_1071	V.extenta	1	0.1
+Rmag_1071	R.magnifica	1	0.1
+Rmag_1071	V.gigas	1	0.1
+Rmag_1071	R.pacifica	1	0.1
+Rmag_1071	R.kilmeri	1	0.1
+Rmag_1071	V.okutanii	1	0.1
+Rmag_1071	R.pleocardia	1	0.1
+Rmag_1071	Node1	1	0.1
+Rmag_1071	Node5	1	0.1
+Rmag_1071	Node4	1	0.1
+Rmag_1071	Node7	1	0.1
+Rmag_1071	Node6	1	0.1
+Rmag_1071	Node11	1	0.1
+Rmag_1071	V.diagonalis	1	0.1
+Rmag_1071	Node17	1	0.1
+Rmag_1071	Node8	1	0.1
+Rmag_1071	Node19	1	0.1
+Rmag_1071	Node18	1	0.1
+Rmag_1071	Bathy	1	0.1
+Rmag_0016	R.phaseoliformis	1	
+Rmag_0016	SUP05	1	
+Rmag_0016	R.southwardae	0.2505528963457893	
+Rmag_0016	R.rectimargo	1	
+Rmag_0016	Node21	1	
+Rmag_0016	V.extenta	1	
+Rmag_0016	R.magnifica	1	
+Rmag_0016	V.gigas	1	
+Rmag_0016	R.pacifica	1	
+Rmag_0016	R.kilmeri	1	
+Rmag_0016	V.okutanii	1	
+Rmag_0016	R.pleocardia	1	
+Rmag_0016	Node1	1	
+Rmag_0016	Node15	0.02213579150171796	
+Rmag_0016	Node3	1	
+Rmag_0016	Node2	1	
+Rmag_0016	Node7	1	
+Rmag_0016	Node6	1	
+Rmag_0016	Node11	1	
+Rmag_0016	Node10	1	
+Rmag_0016	V.diagonalis	1	
+Rmag_0016	Node19	1	
+Rmag_0016	Bathy	1	
+Rmag_0745	R.phaseoliformis	1	
+Rmag_0745	SUP05	1	
+Rmag_0745	R.southwardae	1	
+Rmag_0745	R.rectimargo	1	
+Rmag_0745	V.extenta	1	
+Rmag_0745	R.magnifica	1	
+Rmag_0745	V.gigas	1	
+Rmag_0745	R.pacifica	0.02452120416191861	
+Rmag_0745	R.kilmeri	1	
+Rmag_0745	V.okutanii	1	
+Rmag_0745	R.pleocardia	1	
+Rmag_0745	Node1	1	
+Rmag_0745	Node3	1	
+Rmag_0745	Node2	1	
+Rmag_0745	Node4	0.8009967267665701	
+Rmag_0745	Node6	1	
+Rmag_0745	Node13	1	
+Rmag_0745	Node12	1	
+Rmag_0745	V.diagonalis	1	
+Rmag_0745	Node8	1	
+Rmag_0745	Node19	1	
+Rmag_0745	Node18	2.619744060572415e-08	
+Rmag_0745	Bathy	1	
+Rmag_0976	R.phaseoliformis	1	
+Rmag_0976	SUP05	1	
+Rmag_0976	R.southwardae	1	
+Rmag_0976	R.rectimargo	1	
+Rmag_0976	Node20	1	
+Rmag_0976	V.extenta	1	
+Rmag_0976	R.magnifica	1	
+Rmag_0976	V.gigas	1	
+Rmag_0976	R.pacifica	1	
+Rmag_0976	R.kilmeri	1	
+Rmag_0976	V.okutanii	1	
+Rmag_0976	Node8	1	
+Rmag_0976	Node1	1	
+Rmag_0976	Node3	1	
+Rmag_0976	Node2	1	
+Rmag_0976	Node4	1	
+Rmag_0976	Node7	1	
+Rmag_0976	Node11	1	
+Rmag_0976	Node12	1	
+Rmag_0976	V.diagonalis	1	
+Rmag_0976	Node17	1	
+Rmag_0976	R.pleocardia	1	
+Rmag_0976	Bathy	1	
