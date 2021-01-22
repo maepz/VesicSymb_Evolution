@@ -12,4 +12,5 @@
 #SBATCH --mail-user=maepz@hotmail.com
 
 
-bash run_mauve_latest.sh
+#bash run_mauve_symbionts.sh
+bash run_mauve_mitochondria.sh

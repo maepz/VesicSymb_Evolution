@@ -1,0 +1,792 @@
+LOCUS       A._mariana             15927 bp    DNA              UNK 14-APR-2020
+DEFINITION  A.mariana_ref mitochondrion.
+ACCESSION   ref_Amaria
+VERSION     ref_Amaria
+KEYWORDS    .
+SOURCE      mitochondrion ref_Amaria
+  ORGANISM  ref_Amaria ref_Amaria.
+            .
+REFERENCE   1  (bases 1 to 15927)
+  AUTHORS   Tillich,M., Lehwark,P., Pellizzer,T., Ulbricht-Jones, E.S., Fischer,
+            A., Bock, R. and Greiner,S.
+  TITLE     GeSeq - versatile and accurate annotation of organelle genomes
+  JOURNAL   Nucleic Acids Res. 45 (W1), W6-W11 (2017)
+   PUBMED   28486635
+COMMENT     GeSeq Version 1.80
+            Job           Geneious_mitoch
+            Subjob        ref_Amariana
+            Creator       anonymous
+            Program       blat
+            blatxcutoff=60                 blatncutoff=85
+            blatxmaxintron=750000          blatnmaxintron=0
+            annotate_ir=false              shortmatches=false
+            mpimpchlororefset=false
+            ncbirefs=NC_028724.1
+            Program       HMMER disabled
+            Program       ARAGORN v1.2.38 disabled
+            Program       ARWEN v1.2.3
+            searchmode=metazoan            gcode=gcinvert
+            circular=true
+            Program       MFannot v1.34 disabled
+            Program       tRNAscan-SE v1.3.1 disabled
+            Program       tRNAscan-SE v2.0.3 disabled
+            Program       RNA Editing disabled
+            Submitted     14 Apr 2020 19:59:10 GMT
+            Started       14 Apr 2020 20:00:52 GMT
+            Finished      14 Apr 2020 20:00:55 GMT
+FEATURES             Location/Qualifiers
+     source          1..15927
+                     /organism="ref_Amaria"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+     gene            20..499
+                     /note="blatX_hit ND6_NC_028724.1, position 1 - 479, psl
+                     score 81.7, coverage 99.79%, match 81.46%"
+                     /gene="ND6"
+                     /locus_tag="Amar_01"
+     CDS             20..499
+                     /gene="ND6"
+                     /locus_tag="Amar_01"
+                     /translation="MAEMFVLVFLLLCSNFSIWVEHPLILGGGLLMVSIVSLPLMISVG
+                     SLFGFSFFIVVVGGVLIVFAYSVSLISITKSDLLLKYFTQSLGVLGKVWSVFLFFSLVF
+                     LFSSWVVGAGIFCWSDVLYFSKGWGLGVVLLGFLLLAIMVIAISLASKFKGALIK"
+     gene            518..787
+                     /note="blatX_hit ND4L_NC_028724.1, position 1 - 270, psl
+                     score 88.6, coverage 100.00%, match 88.52%"
+                     /gene="ND4L"
+                     /locus_tag="Amar_02"
+     CDS             518..787
+                     /gene="ND4L"
+                     /translation="MFVFFSLIHFMTHFNFFMNLLLVFELMGFCVFLFCMNLSFISFSS
+                     VGLYFSIVILTFSVCETVLGMALLVSAARYTGRANVKSFSFLGF"
+                     /locus_tag="Amar_02"
+     gene            790..837
+                     /note="blatN_hit trnG_NC_028724.1, position 1 - 48, psl
+                     score 98.0, coverage 75.00%, match 73.44%"
+                     /gene="trnG"
+                     /locus_tag="Amar_03"
+     tRNA            790..837
+                     /gene="trnG"
+                     /locus_tag="Amar_03"
+     gene            790..851
+                     /note="annotated by ARWEN v1.2.3, score: 100.2"
+                     /gene="trnG-UCC"
+                     /locus_tag="Amar_04"
+     tRNA            790..851
+                     /gene="trnG-UCC"
+                     /locus_tag="Amar_04"
+     gene            872..931
+                     /note="annotated by ARWEN v1.2.3, score: 101.7"
+                     /gene="trnL-UAA"
+                     /locus_tag="Amar_05"
+     tRNA            872..931
+                     /gene="trnL-UAA"
+                     /locus_tag="Amar_05"
+     gene            932..1963
+                     /note="blatX_hit ND2_NC_028724.1, position 1 - 1032, psl
+                     score 87.1, coverage 100.00%, match 87.02%"
+                     /gene="ND2"
+                     /locus_tag="Amar_06"
+     CDS             932..1963
+                     /gene="ND2"
+                     /translation="MLIGWFVPMAVIVSGYIMVGGIFVCIYSVGLLGMWVGMELSFFGA
+                     VGVLGGSSVEEVEGVQKYFIIQVFSSIFLLIGFLLVINFYKGGWLVEFILVIGLMMKLG
+                     LFPFYFWIPSVMSVVSWVSCFVVSVVQKFNPIWILVNLMLESYLQQLIEFSACLTGLVG
+                     CIGGIGVLQFRVLLAFSSMVHLGYMIFMCLVGWDEFLTYMVLYFCLSFSLMMSLWVCGI
+                     YSFLDLMKSNGGSDVDLFMISLYMFSFAGIPPLSGCFMKAVFLVSCWEVFPVGCVVLFL
+                     SSGVSLFYYSSFFTYLNLYWGSMLKWQFVKSSLADLKVFLFFVSILLNVVMGFGLFLLI
+                     VII"
+                     /locus_tag="Amar_06"
+     gene            1975..2037
+                     /note="annotated by ARWEN v1.2.3, score: 103.8"
+                     /gene="trnD-GUC"
+                     /locus_tag="Amar_07"
+     tRNA            1975..2037
+                     /gene="trnD-GUC"
+                     /locus_tag="Amar_07"
+     gene            2043..2099
+                     /note="blatN_hit trnT_NC_028724.1, position 7 - 63, psl
+                     score 96.5, coverage 90.48%, match 87.30%"
+                     /gene="trnT"
+                     /locus_tag="Amar_08"
+     tRNA            2043..2099
+                     /gene="trnT"
+                     /locus_tag="Amar_08"
+     gene            2110..2929
+                     /note="blatN_hit rrn12_NC_028724.1, position 3 - 822, psl
+                     score 94.0, coverage 87.70%, match 82.35%"
+                     /gene="rrn12"
+                     /locus_tag="Amar_09"
+     rRNA            2110..2929
+                     /gene="rrn12"
+                     /locus_tag="Amar_09"
+     gene            2932..3041
+                     /note="blatN_hit rrn12-fragment_NC_028724.1, position 826 -
+                     935, psl score 96.4, coverage 11.76%, match 11.34%,
+                     fragment match 96.36%"
+                     /gene="rrn12-fragment"
+                     /locus_tag="Amar_10"
+     rRNA            2932..3041
+                     /gene="rrn12-fragment"
+                     /locus_tag="Amar_10"
+     gene            2982..3048
+                     /note="annotated by ARWEN v1.2.3, score: 105.5; blatN_hit
+                     trnM_NC_028724.1, position 1 - 67, psl score 94.1, coverage
+                     100.00%, match 94.03%; merged"
+                     /gene="trnM-CAU"
+                     /locus_tag="Amar_11"
+     tRNA            2982..3048
+                     /gene="trnM-CAU"
+                     /locus_tag="Amar_11"
+     gene            3051..3118
+                     /note="annotated by ARWEN v1.2.3, score: 105.5"
+                     /gene="trnC-GCA"
+                     /locus_tag="Amar_12"
+     tRNA            3051..3118
+                     /gene="trnC-GCA"
+                     /locus_tag="Amar_12"
+     gene            3122..3191
+                     /note="annotated by ARWEN v1.2.3, score: 103.3"
+                     /gene="trnY-GUA"
+                     /locus_tag="Amar_13"
+     tRNA            3122..3191
+                     /gene="trnY-GUA"
+                     /locus_tag="Amar_13"
+     gene            3124..3185
+                     /note="blatN_hit trnY_NC_028724.1, position 1 - 62, psl
+                     score 100.0, coverage 100.00%, match 100.00%"
+                     /gene="trnY"
+                     /locus_tag="Amar_14"
+     tRNA            3124..3185
+                     /gene="trnY"
+                     /locus_tag="Amar_14"
+     gene            3260..4111
+                     /note="blatX_hit COX3_NC_028724.1, position 1 - 951, psl
+                     score 88.3, coverage 99.68%, match 88.01%"
+                     /gene="COX3"
+                     /locus_tag="Amar_15"
+     CDS             3260..4111
+                     /gene="COX3"
+                     /locus_tag="Amar_15"
+                     /translation="MARTGYNKVPMSPWPIAISASVFGVAIGLIWYLTDEVSFSMYFYL
+                     GMVSFFLGMALTGWWSDIIEESTFLGNHTSHVVLNLRWGFYLFILSEVWFFFSLFWAFF
+                     TASVGEISMQGVGAQWPPVGMEGMYPWGVPFLNTVVLVSSGLWATTAHKAVKVHSSISL
+                     DTLRGIRLSAKWWKVGLLCLGITIVLGVYFTYLQIHEYYSSSFSMSDGAYGSVFFVLTG
+                     FHGLHVIIGTVYLSVCWIRLLKKHFSYKHHQFGLDSCMWYWHFVDAVWIVVFLSVYVWG
+                     NQ"
+     gene            3192..3258
+                     /note="annotated by ARWEN v1.2.3, score: 105.6"
+                     /gene="trnS-UCU"
+                     /locus_tag="Amar_16"
+     tRNA            3192..3258
+                     /gene="trnS-UCU"
+                     /locus_tag="Amar_16"
+     gene            4111..4173
+                     /note="annotated by ARWEN v1.2.3, score: 102.6; blatN_hit
+                     trnF_NC_028724.1, position 1 - 63, psl score 96.9, coverage
+                     100.00%, match 96.83%; merged"
+                     /gene="trnF-GAA"
+                     /locus_tag="Amar_17"
+     tRNA            4111..4173
+                     /gene="trnF-GAA"
+                     /locus_tag="Amar_17"
+     gene            4190..4256
+                     /note="annotated by ARWEN v1.2.3, score: 102.5; blatN_hit
+                     trnA_NC_028724.1, position 1 - 66, psl score 92.5, coverage
+                     101.52%, match 96.97%; merged"
+                     /gene="trnA-UGC"
+                     /locus_tag="Amar_18"
+     tRNA            4190..4256
+                     /gene="trnA-UGC"
+                     /locus_tag="Amar_18"
+     gene            4340..6145
+                     /note="blatX_hit COX1_NC_028724.1, position 1 - 1806, psl
+                     score 89.6, coverage 100.00%, match 89.59%"
+                     /gene="COX1"
+                     /locus_tag="Amar_19"
+     CDS             4340..6145
+                     /gene="COX1"
+                     /locus_tag="Amar_19"
+                     /translation="MFVVERVAKSLMAVYKFVFFYAFSSFNAYIKSVFMVLVLGIYEIL
+                     LDLKGLIWSFSGSSSVPFYKRSVIRRWLFSSNHKDIGTLYFFFSIWAGLMGTAFSIIIR
+                     FELAMPGAGVLGDSHLYQVVVTAHGLLMIFFLVMPMMIGGFGNWLVPLMLQIPDMAFPR
+                     MNNLSFWLMPSSVLMLLGSAYVESGAGTGWTIYPPLSSIMGHAGPSVDFVILSLHLGGV
+                     SSILASINFVVTSLCMRVEALSLLRVTMFVWCVAITGFLLIIAMPVLAGSLTMLLTDRN
+                     FNTSFFDPAGLGDPILFVHLFWFFGHPEVYILILPGFGIISHVIKVGSSKLELFGKVPM
+                     IYAVLSIGFLGFIVWGHHMFTVGMNVDSRAYFSTVTLIIAIPTGVKVFSWLATMSGGYV
+                     RWWPMMYWAMGFLFLFTVGGITGIVLASASLDVMMHDSYYVIAHFHYVLSMGAVFSLFA
+                     GFHFWYPMVTGLGLHPLWSRGQFWTMFIGVNVTFFPQHLMGLLGMPRRYSDYSDSLHGL
+                     NLMSSWGSTVSLVSLFTFLFIIWESMLSQRCLVFPLVYGTEAEWSFRGYPLRFHNRSQN
+                     SFGFNAKDIKKKLLWWMKMDRHSSV"
+     gene            6167..6230
+                     /note="annotated by ARWEN v1.2.3, score: 109.4; blatN_hit
+                     trnP_NC_028724.1, position 1 - 64, psl score 96.9, coverage
+                     100.00%, match 96.88%; merged"
+                     /gene="trnP-UGG"
+                     /locus_tag="Amar_20"
+     tRNA            6167..6230
+                     /gene="trnP-UGG"
+                     /locus_tag="Amar_20"
+     gene            6231..7379
+                     /note="blatX_hit COX2_NC_028724.1, position 1 - 1092, psl
+                     score 83.8, coverage 105.77%, match 66.85%"
+                     /gene="COX2"
+                     /locus_tag="Amar_21"
+     CDS             6231..7379
+                     /gene="COX2"
+                     /translation="MGSWNKLWFYDMNTVVGQELILYNDLVMVVAVAVLVVVGWFMLLF
+                     LNSRTFFGGKMNKYVYHNELLEIMWTMVPAFMLCFLGYVSLMNLYIMEVGDHVENGMKV
+                     TAHQWYWEYSYIVDFIGKEKKMDELWLSNWFDSVILSDFIFLSLVNSSNFENTGEMSSL
+                     PVEAENNYFTLDSSGGSVSFVFDEEPEVLFSGEEVVGYSSVICSGLESVTQDYSSEMNL
+                     DILYKDKNMGMGSKDVESISIFLPHIFMDCKWNYSYEVYEVFNSLILDQSNFRNFTVTD
+                     ACYLMSSVKNEMLISTMDVMHSWGVGSLGVKCDAVPGRVNSLGIFPLRSGVFYGNCYEL
+                     CGEGHSMMPISVAVMTFDDVSLVLKQGVLGTSDCVAMLEGFV"
+                     /locus_tag="Amar_21"
+     gene            7418..7482
+                     /note="blatN_hit trnR_NC_028724.1, position 1 - 65, psl
+                     score 95.4, coverage 100.00%, match 95.38%"
+                     /gene="trnR"
+                     /locus_tag="Amar_22"
+     tRNA            7418..7482
+                     /gene="trnR"
+                     /locus_tag="Amar_22"
+     gene            7418..7483
+                     /note="annotated by ARWEN v1.2.3, score: 107.0"
+                     /gene="trnR-UCG"
+                     /locus_tag="Amar_23"
+     tRNA            7418..7483
+                     /gene="trnR-UCG"
+                     /locus_tag="Amar_23"
+     gene            7487..8620
+                     /note="blatX_hit CYTB_NC_028724.1, position 1 - 1134, psl
+                     score 88.0, coverage 100.00%, match 87.92%"
+                     /gene="CYTB"
+                     /locus_tag="Amar_24"
+     CDS             7487..8620
+                     /gene="CYTB"
+                     /translation="MGNHDGKGIFYSMKSILYDLPVPLNLSNFWNFGSLLGVCLTSQLI
+                     TGLLMAAHYTPDTELAFSSVAHIMRDVNGGWFIRSMHATGASFFFVCIYMHIGRGIYYQ
+                     SYYMSNTWWSGCSILMLLMAVSFTGYVLPWGQMSFWAATVITSMFSAIPYVGSSLVEWL
+                     WGGFCVGDGTLKRFYVFHFVGPFIMIVLVAFHIMNLHETGSSNSLGVSSDADITCFHSL
+                     YTFKDLVWIVIMLYFLVMVCLWSPDLFINPYNYIPASSLKTPQHIEPEWYFLFAYCILR
+                     SVPNKMGGVLALVGSVFVLYLMPLFPRKNALKGFAHNFIARVFFWDFVAGFVMLSVIGG
+                     CTIDMPLSMLGPLATLSYFGFFIVIPFLFIDWGFYKK"
+                     /locus_tag="Amar_24"
+     gene            8721..9210
+                     /note="blatN_hit rrn16_NC_028724.1, position 71 - 559, psl
+                     score 91.1, coverage 40.20%, match 36.75%"
+                     /gene="rrn16"
+                     /locus_tag="Amar_25"
+     rRNA            8721..9210
+                     /gene="rrn16"
+                     /locus_tag="Amar_25"
+     gene            9310..9589
+                     /note="blatN_hit rrn16-fragment_NC_028724.1, position 659 -
+                     937, psl score 95.4, coverage 22.97%, match 22.07%,
+                     fragment match 96.42%"
+                     /gene="rrn16-fragment"
+                     /locus_tag="Amar_26"
+     rRNA            9310..9589
+                     /gene="rrn16-fragment"
+                     /locus_tag="Amar_26"
+     gene            9590..9857
+                     /note="blatN_hit rrn16-fragment_NC_028724.1, position 939 -
+                     1206, psl score 97.8, coverage 21.99%, match 21.49%,
+                     fragment match 97.76%"
+                     /gene="rrn16-fragment"
+                     /locus_tag="Amar_27"
+     rRNA            9590..9857
+                     /gene="rrn16-fragment"
+                     /locus_tag="Amar_27"
+     gene            9877..9990
+                     /note="blatX_hit ATP8_NC_028724.1, position 1 - 114, psl
+                     score 93.0, coverage 100.00%, match 92.98%"
+                     /gene="ATP8"
+                     /locus_tag="Amar_28"
+     CDS             9877..9990
+                     /gene="ATP8"
+                     /translation="MPQFSPLFVDFIFLFYWAVFISVFCMLYWISKREYNF"
+                     /locus_tag="Amar_28"
+     gene            10007..11353
+                     /note="blatX_hit ND4_NC_028724.1, position 1 - 1347, psl
+                     score 86.2, coverage 100.00%, match 86.12%"
+                     /gene="ND4"
+                     /locus_tag="Amar_29"
+     CDS             10007..11353
+                     /gene="ND4"
+                     /translation="MGTVISCFVIYCIPNSGILGSVAWGFSSIFIMLDLIGLSWFYCMV
+                     SGWIGFDGVSLLMAMLVILVPMMSLISSVSDYKLSDSSSSSSDMGEVVYLISLVCIIFF
+                     FLSNWMDFYFFFEFSLLPTFWLILKWGYQPERLQAGVLMLMYTVCGSLPLLIIILLIWN
+                     ESFTDSFLLMKLMSGNWEYFQSWTCVLMILGFLVKLPVYLVHGWLPKAHVEAPLSGSMI
+                     LAGILLKLGGYGLFRFVWVFEMKMSGMFMFIMVISLWGGFMSGLYCLTQSDLKALIAYS
+                     SISHMALGLGGILSFYECGKMAGMCLFFAHGLCSPALFSLAASVYDWSHSRSVLLSKGI
+                     LRVFPLFSVFWFLMCIINMGIPPSLNFFSEIFCAGSLVYLSVFFMIPLVLMCLFTGIYC
+                     MFLYSVVNHGTCSKMVKPVFNLSERYLYSLVYSLGILMGGFLFLSCFMM"
+                     /locus_tag="Amar_29"
+     gene            11373..11436
+                     /note="annotated by ARWEN v1.2.3, score: 100.5"
+                     /gene="trnH-GUG"
+                     /locus_tag="Amar_30"
+     tRNA            11373..11436
+                     /gene="trnH-GUG"
+                     /locus_tag="Amar_30"
+     gene            11374..11435
+                     /note="blatN_hit trnH_NC_028724.1, position 1 - 62, psl
+                     score 96.8, coverage 100.00%, match 96.77%"
+                     /gene="trnH"
+                     /locus_tag="Amar_31"
+     tRNA            11374..11435
+                     /gene="trnH"
+                     /locus_tag="Amar_31"
+     gene            11435..11500
+                     /note="blatN_hit trnE_NC_028724.1, position 1 - 66, psl
+                     score 95.5, coverage 100.00%, match 95.45%"
+                     /gene="trnE"
+                     /locus_tag="Amar_32"
+     tRNA            11435..11500
+                     /gene="trnE"
+                     /locus_tag="Amar_32"
+     gene            11436..11499
+                     /note="annotated by ARWEN v1.2.3, score: 100.7"
+                     /gene="trnE-UUC"
+                     /locus_tag="Amar_33"
+     tRNA            11436..11499
+                     /gene="trnE-UUC"
+                     /locus_tag="Amar_33"
+     gene            11496..11559
+                     /note="annotated by ARWEN v1.2.3, score: 104.8; blatN_hit
+                     trnS_NC_028724.1, position 1 - 64, psl score 96.9, coverage
+                     100.00%, match 96.88%; merged"
+                     /gene="trnS-UGA"
+                     /locus_tag="Amar_34"
+     tRNA            11496..11559
+                     /gene="trnS-UGA"
+                     /locus_tag="Amar_34"
+     gene            11560..12273
+                     /note="blatX_hit ATP6_NC_028724.1, position 1 - 714, psl
+                     score 89.7, coverage 100.00%, match 89.64%"
+                     /gene="ATP6"
+                     /locus_tag="Amar_35"
+     CDS             11560..12273
+                     /gene="ATP6"
+                     /translation="MTSDIFTFMDCFMGGFSVLELGMWTASVVWPIYSVLMSTFWYGNS
+                     WVESMLSEGAIGFSSSFPIGAKKFGGLVHLNFSLLYFLLAINLAGVLAYSYPVNCHYAL
+                     TLGFSFPFWFATVSLNFNKNWWMFFISHVEGDMGIAVVAMLVASQWFSLMVRPFTLSMR
+                     MSTNLFMGKLLVNLTFYMAEEFIFPFMDFWGLSSILMFFMGTALYVIEGCLASLQSMIF
+                     VGLLSFYCEEAQFKL"
+                     /locus_tag="Amar_35"
+     gene            12370..12690
+                     /note="blatX_hit ND3_NC_028724.1, position 4 - 297, psl
+                     score 87.1, coverage 98.99%, match 86.20%"
+                     /gene="ND3"
+                     /locus_tag="Amar_36"
+     CDS             12370..12690
+                     /gene="ND3"
+                     /locus_tag="Amar_36"
+                     /translation="MALVILGVMVSQNWRFEWAKLTSFECGFDPMSSSRSPFSMQFFLL
+                     ALLFLIFDMEIILLFPIVMSLKMVFCLMPMAGKGLTFLFLFILLGGLIHEFNEGTLDWV
+                     QG"
+     gene            12702..12768
+                     /note="annotated by ARWEN v1.2.3, score: 104.7; blatN_hit
+                     trnQ_NC_028724.1, position 1 - 67, psl score 98.6, coverage
+                     100.00%, match 98.51%; merged"
+                     /gene="trnQ-UUG"
+                     /locus_tag="Amar_37"
+     tRNA            12702..12768
+                     /gene="trnQ-UUG"
+                     /locus_tag="Amar_37"
+     gene            12772..12840
+                     /note="annotated by ARWEN v1.2.3, score: 107.4"
+                     /gene="trnI-GAU"
+                     /locus_tag="Amar_38"
+     tRNA            12772..12840
+                     /gene="trnI-GAU"
+                     /locus_tag="Amar_38"
+     gene            12773..12825
+                     /note="blatN_hit trnI_NC_028724.1, position 1 - 53, psl
+                     score 96.3, coverage 79.10%, match 76.12%"
+                     /gene="trnI"
+                     /locus_tag="Amar_39"
+     tRNA            12773..12825
+                     /gene="trnI"
+                     /locus_tag="Amar_39"
+     gene            12838..12906
+                     /note="annotated by ARWEN v1.2.3, score: 106.3"
+                     /gene="trnK-UUU"
+                     /locus_tag="Amar_40"
+     tRNA            12838..12906
+                     /gene="trnK-UUU"
+                     /locus_tag="Amar_40"
+     gene            12839..12888
+                     /note="blatN_hit trnK_NC_028724.1, position 1 - 50, psl
+                     score 100.0, coverage 74.63%, match 74.63%"
+                     /gene="trnK"
+                     /locus_tag="Amar_41"
+     tRNA            12839..12888
+                     /gene="trnK"
+                     /locus_tag="Amar_41"
+     gene            12907..12970
+                     /note="annotated by ARWEN v1.2.3, score: 107.6; blatN_hit
+                     trnL-fragment_NC_028724.1, position 1 - 64, psl score 95.4,
+                     coverage 100.00%, match 95.31%, fragment match 95.31%;
+                     merged"
+                     /gene="trnL-UAA | trnL-fragment"
+                     /locus_tag="Amar_42"
+     tRNA            12907..12970
+                     /gene="trnL-UAA | trnL-fragment"
+                     /locus_tag="Amar_42"
+     gene            12971..13882
+                     /note="blatX_hit ND1_NC_028724.1, position 2 - 912, psl
+                     score 88.2, coverage 99.89%, match 88.05%"
+                     /gene="ND1"
+                     /locus_tag="Amar_43"
+     CDS             12971..13882
+                     /gene="ND1"
+                     /locus_tag="Amar_43"
+                     /translation="MISGMIVVIIMMMAVAFYIVVERKGLGMIQLRQGPNKVSFKGILQ
+                     PIGDGVKLFKKEISFPFSSTRFMFLLGPFLCFFCAYCLWLIFPGSFRYSNFELGLLFFQ
+                     CISSFSVFGVFLSGWVCDSRYGFLGAMRAVAQSVSYEVFLSTCLYCPLLLIGSFDLMVI
+                     REFPLWFFWVGQEVMILWLVATLAETNRAPFDFVESESELVAGYSVEYGGVGFALMALA
+                     EYSNMLFMSLLVSILFFSGVSGIELISDMVFIFFLLVVSYFMVWVRGALPRFRYDLLMG
+                     LCWEILLPLSLCEFMILLCVSL"
+     gene            13899..13962
+                     /note="annotated by ARWEN v1.2.3, score: 112.5"
+                     /gene="trnV-UAC"
+                     /locus_tag="Amar_44"
+     tRNA            13899..13962
+                     /gene="trnV-UAC"
+                     /locus_tag="Amar_44"
+     gene            13900..13961
+                     /note="blatN_hit trnV_NC_028724.1, position 1 - 62, psl
+                     score 96.8, coverage 100.00%, match 96.77%"
+                     /gene="trnV"
+                     /locus_tag="Amar_45"
+     tRNA            13900..13961
+                     /gene="trnV"
+                     /locus_tag="Amar_45"
+     gene            13962..14008
+                     /note="blatN_hit trnN_NC_028724.1, position 1 - 47, psl
+                     score 97.9, coverage 75.81%, match 74.19%"
+                     /gene="trnN"
+                     /locus_tag="Amar_46"
+     tRNA            13962..14008
+                     /gene="trnN"
+                     /locus_tag="Amar_46"
+     gene            13962..14023
+                     /note="annotated by ARWEN v1.2.3, score: 106.5"
+                     /gene="trnN-GUU"
+                     /locus_tag="Amar_47"
+     tRNA            13962..14023
+                     /gene="trnN-GUU"
+                     /locus_tag="Amar_47"
+     gene            14051..15724
+                     /note="blatX_hit ND5_NC_028724.1, position 1 - 1674, psl
+                     score 84.8, coverage 100.00%, match 84.77%"
+                     /gene="ND5"
+                     /locus_tag="Amar_48"
+     CDS             14051..15724
+                     /gene="ND5"
+                     /locus_tag="Amar_48"
+                     /translation="MKISLMILMGVVIIFFIWSGGWFTEYLVVELGSTDSDRFPSIRFH
+                     VVMDTMSLLMGFTVMYISAVVMMYSWFYMSHEVYFKRFMLLLALFVLAMLLLVFVPGFL
+                     SMMIGWDFLGVISYLLVVYRMNKPSLSAGTLTFVSNRVGDACFIMGIVFLMASMAFDCS
+                     SMWSSSSQFIIAGAVSLGSLTKSAQVPFSAWLPAAMAAPTPVSTLVHSSTLVAAGVYVM
+                     LRYPDLVNESWDLAVFVCSCSTLLIAGSSSAGEMDLKKVLALSTLSQVASMMLFLAMGA
+                     IQVAFFHMVVHSFLKALLFMAVGSIIFYSGGLQDVRLMGGLAWKAPLLYLWLVISILSL
+                     VGLPFMAGFYSKEYMVASLVDGNFPMMSAIMVVLGMASTLFYSGRVLVLLLVSSGGFPV
+                     RHYSDGGVILSISCFLLMLGAIFSGVLIHNIFSLSRGFTSLEVGGFYIKLFYVTLSILV
+                     VSCLFSLSKKTWVKMQISEFLGKMWFFKGLSGNFLSSTFLVKCSRLTKVVENGWVGDFL
+                     WSSGMKNVVFGFMSVMRGLNYNFIGVMVFIMISCVFIFTL"
+     gene            14405..14473
+                     /note="annotated by ARWEN v1.2.3, score: 101.1"
+                     /gene="trnK-UUU"
+                     /locus_tag="Amar_49"
+     tRNA            14405..14473
+                     /gene="trnK-UUU"
+                     /locus_tag="Amar_49"
+     gene            15742..15804
+                     /note="annotated by ARWEN v1.2.3, score: 105.7; blatN_hit
+                     trnL_NC_028724.1, position 1 - 63, psl score 100.0,
+                     coverage 100.00%, match 100.00%; merged"
+                     /gene="trnL-UAG"
+                     /locus_tag="Amar_50"
+     tRNA            15742..15804
+                     /gene="trnL-UAG"
+                     /locus_tag="Amar_50"
+     gene            15806..15870
+                     /note="annotated by ARWEN v1.2.3, score: 105.7; blatN_hit
+                     trnW_NC_028724.1, position 1 - 65, psl score 98.5, coverage
+                     100.00%, match 98.46%; merged"
+                     /gene="trnW-UCA"
+                     /locus_tag="Amar_51"
+     tRNA            15806..15870
+                     /gene="trnW-UCA"
+                     /locus_tag="Amar_51"
+ORIGIN
+        1 ttagacttta aaaataaaaa tggctgaaat atttgttttg gtatttttgc ttttatgtag
+       61 aaatttttca atttgagtgg aacatcccct cattttaggg ggtggtttat taatagtaag
+      121 aattgtgagt ttacctttga taatttctgt tggaagactt tttggtttta gtttttttat
+      181 tgttgtggtg gggggagttt taattgtttt tgcttattct gtatctttga tttctattac
+      241 aaagagagat ttactgttaa aatattttac tcaaagatta ggtgtgttag ggaaagtctg
+      301 aagagttttt ttatttttta gattagtttt tttgttttca agttgagtag tcggagcggg
+      361 aattttttgt tggagtgatg ttttatattt tagaaaaggt tggggattgg gggtggtttt
+      421 acttggattt ttgttactag caattatagt aattgctatt aggttagcaa gaaagtttaa
+      481 aggggcttta attaaataga aattataatg gtgataagtg tttgtttttt tttctttaat
+      541 tcattttata actcatttta atttttttat gaatttatta ttggtttttg agttaatagg
+      601 attttgtgta tttttgtttt gtataaattt atcttttatt tcttttagaa gggtgggttt
+      661 gtattttagt attgttattt taacttttag ggtgtgtgag actgttttag gtatggcttt
+      721 attagtaaga gctgcacgct atacaggtcg ggcaaatgtg aaatctttta gatttctggg
+      781 tttttaattg taacaggagt atgaagagta tatttgtttt ccatgcaaaa ggttcgtttt
+      841 agattgttat tagttgctta tttgacaaaa tgataaataa ataaattatt atttaaagtt
+      901 aagtttaaaa gttccttaat aggatttatc tatgttaatt gggtgatttg ttcctatggc
+      961 tgttattgtt aggggttata ttatggttgg aggtattttt gtttgtattt atagggttgg
+     1021 tttgttgggt atatgagtag gtatggagtt aagatttttt ggagctgttg gagttttagg
+     1081 ggggtcaaga gtagaggaag tggagggtgt tcaaaaatat tttattattc aagtttttag
+     1141 atctattttt ttattaattg ggtttttgtt agtaattaat ttttacaaag ggggctgatt
+     1201 ggttgagttt attttagtta ttggtttaat aatgaaatta ggtttatttc ctttttattt
+     1261 ttgaattcct tctgtaataa gggttgtatc ttgggtaaga tgttttgtag tttctgtggt
+     1321 ccaaaagttt aaccctattt gaattttggt gaatttaata ttagaaagtt atcttcagca
+     1381 gttaattgaa ttttctgctt gtttaactgg tctggttggt tgtattgggg ggattggagt
+     1441 tttacaattt cgtgttttat tggctttttc ttcaatggtt catttaggat atataatttt
+     1501 tatatgtttg gttgggtggg atgaattttt gacttatata gtcttgtatt tttgtttaag
+     1561 ttttaggttg ataatgagtc tttgggtttg tgggatttat aggtttttag atttaataaa
+     1621 atctaatggg ggtagggatg tagatttgtt tatgatttct ttatatatgt tttcttttgc
+     1681 tggtattcct cctttaagag ggtgttttat aaaggctgtt tttttagttt cttgttggga
+     1741 ggtttttcct gtggggtgtg tagttttatt tttgagttca ggtgttagtt tgttttatta
+     1801 taggagattt tttacatatt taaatttata ttgaggaaga atattaaagt gacaatttgt
+     1861 aaagagaaga ctagcagatt taaaagtttt tttatttttt gtaagaattt tattaaatgt
+     1921 agtaataggg tttggtttat ttttattaat tgttattatt taaatttttt acaaaataaa
+     1981 agtagtttaa taagaatgaa aatttgtcat atttttggtg ctgggagtct tttattggga
+     2041 ttatagttta aaaagaatga gaattttgta aatttttggt aaagtgatat ttggttcttt
+     2101 attgtgatga aaaaattagt ttattagctt ctggtaatgt tttagctata tatttaaata
+     2161 atacatggta ttaaaagagt tggagagagg aaaatatctt ttttagttaa tgatttaata
+     2221 aggttaaata aaatagatat taaatcgatt aggtgtttta taatagatta tttagtatct
+     2281 ctactccagt agttagagtt gattaaaaat atagaaatat agattaagta atatatataa
+     2341 ggggagaata ataaagtgcc agcattcgcg gtcagtcttt ttacctcaag ttaataattt
+     2401 tgtaaaagag taaggttata ataaagtatt agttttagtt tatagcggtt aaatgtttat
+     2461 taggctaaaa ataaagggct acttaaaaac ctaatctgta aaggctgtaa caaagacaag
+     2521 gatttgatac ccttttattt atgctgtcaa ataatttacg gggactacga gttataattg
+     2581 cttaaaactt aaagaagttg gcggtgcttc acaaccatta aggggaactt ggcgattgaa
+     2641 ttgatgatcc tcaaattacc tcacctttag tagtctttat ataccgccgt tgaaaggtaa
+     2701 ttttgaagaa aaaagatacg ggcatagtgt atatttaaag tatatttata caggaattca
+     2761 ggtacacgta taggatctaa agggtttagc tgagttacaa ttataaaata atacggattt
+     2821 attagtgaaa tatttaatag gaaggtgtac ttattagtaa atttttataa gagaggaaaa
+     2881 ttgaataggg taattggagt gcgtacaaat cgcccgatac cctacgtata gaaatcgagg
+     2941 taagtcgtaa catagtaatg ctagtataaa ttggtattat ataaaagata aactaagtaa
+     3001 agttatttgg ttcataccca aattatagaa ttaatattct tctttttata agcctggtaa
+     3061 tatatatgta ataatatttt aaattgcaaa tttgagaaag gagaaatccc taggtttcag
+     3121 gttgaatagg cggctgtaga agtgttaagt tgtaacctta attataggta tttacctcct
+     3181 ttttatttaa gagaagcgat ggttacatag tgagatttct aatcttttct gtttgcggtt
+     3241 caattccgtt tgttttttta tggctcgaac tggttataac aaggtgccta taaggccttg
+     3301 accaattgca atttctgcta gggtgtttgg tgtagcaatt ggtctgattt gatatttaac
+     3361 tgatgaagtt tcttttagga tgtattttta tttaggtatg gtttcttttt ttcttggtat
+     3421 ggcattgact ggttggtgaa gggatattat tgaagagaga acttttttgg gtaatcatac
+     3481 ttcgcatgtg gtattaaatt tacgatgggg tttttattta tttattttat ctgaggtttg
+     3541 attttttttt agactttttt gagctttttt tactgctaga gtaggtgaga tttctataca
+     3601 gggtgtgggt gcacaatggc ctccagtagg tatagagggg atgtatcctt ggggtgttcc
+     3661 ttttttgaat actgttgtgt tagtaagatc tgggttatgg gcaacaacgg cccataaagc
+     3721 tgtaaaggta catagatcaa ttagtttgga tactttacgg gggattcgtt taagagctaa
+     3781 atggtgaaaa gtagggttgt tatgtttagg aattaccatt gttttgggtg tttattttac
+     3841 ttatttgcag attcatgaat attattcttc ttctttttca atatcagatg gggcttatgg
+     3901 gagagtattt tttgtattaa caggatttca tgggttgcat gtaattattg gtactgttta
+     3961 tttaagagtt tgttggattc ggcttttaaa gaagcatttt tcttataagc atcaccaatt
+     4021 tgggttagat aggtgcatgt gatattggca ttttgtagat gcagtttgaa ttgtggtgtt
+     4081 tctttctgtt tatgtgtggg gaaatcaata gctttgatag tttaaaaaga atatagtttt
+     4141 gaagcgacta gggtaatagt atattttaag gcaatatatt tataaattgg gtggattact
+     4201 ttaagtgtag aagattaagt ttgcaactta catagtgtga tttttcatgt tcacttaatg
+     4261 agctttttat tattctaaat ttattgttaa tattttactt tataaaaggt ctttgtggaa
+     4321 ttgagcgagt taattattta tatttgtggt tgagcgtgta gctaagagtc ttatagctgt
+     4381 ttataaattt gtgttttttt atgctttttc ttcttttaat gcttatatta agtctgtttt
+     4441 tatagtttta gttttgggta tttatgagat tttattagat ttaaaggggt taatttgatc
+     4501 ttttagggga tcttctagtg ttccttttta taagcggtct gttattcgtc gttgattgtt
+     4561 taggagtaat cataaagata ttggaactct ttattttttt ttctctattt gggcggggtt
+     4621 gatgggaact gcttttagaa ttattattcg ttttgagtta gctataccag gtgcgggggt
+     4681 tttaggtgat agtcatttat atcaggtagt agttactgca catgggttat taatgatttt
+     4741 tttcttagta atacctatga tgattggggg ctttgggaat tgattagttc ctttgatgtt
+     4801 gcaaattcct gatatagctt ttcctcgaat aaataattta agattttggt tgatgcctag
+     4861 gtcagtttta atgttacttg gttctgctta tgtagaaagt ggggcaggta ctggttgaac
+     4921 tatttatcct ccattatcta gtattatagg tcatgctggt ccttctgtgg attttgtgat
+     4981 tttatctctt catttaggtg gtgtatcttc tattttagct tctattaatt ttgtagttac
+     5041 ttctctttgc atacgtgttg aagctttatc tttattgcgt gtaactatat ttgtttgatg
+     5101 tgttgctatt actggttttt tattaattat tgctataccg gttttagctg ggagattaac
+     5161 aatattatta actgatcgta attttaatac tagatttttt gatcctgctg gtttgggtga
+     5221 tcctattctt tttgttcatt tattttgatt ttttgggcat cctgaggttt atattttaat
+     5281 tctacctggt tttggtatta tttctcatgt aattaaagtt ggaagaagaa agcttgaatt
+     5341 gtttggaaag gtacctataa tttatgcggt gttgtctatt gggtttttag ggtttattgt
+     5401 ttgagggcat catatattta cggtaggaat aaatgttgat agtcgtgctt attttagaac
+     5461 ggttacatta attattgcta ttcctactgg ggtaaaggtt tttagatggt tggctacaat
+     5521 gagtgggggt tatgttcgtt gatgaccaat aatgtattga gctataggtt ttttattttt
+     5581 atttactgtg gggggaatta ctggaattgt tttagctagt gcttctttag atgtaataat
+     5641 gcatgattct tattatgtta ttgcacattt tcactatgtt ttaagaatgg gggcagtctt
+     5701 ttctttattt gctggatttc atttttgata ccctatagtt actggtttag gtttacaccc
+     5761 tctttgaaga cggggtcaat tttgaacaat atttattggt gtgaatgtta ctttttttcc
+     5821 acagcatttg ataggattac taggtatgcc acgtcgttat agggattata gggatagttt
+     5881 acatggatta aatttaatgt ctagttgagg ttctactgtt tctttggtga gtctttttac
+     5941 ttttttattt attatttggg aaagtatatt aagtcaacga tgtttagtgt ttcctttggt
+     6001 ttatgggact gaggcagagt ggtcttttcg aggttatcct cttcgatttc ataatcgttc
+     6061 gcagaatagg tttggattta atgctaaaga tattaaaaag aagcttttgt ggtgaatgaa
+     6121 aatggatcgt cataggagag tttaagtaga gtttattgat atttagcaaa atatagttta
+     6181 ataaaaattc taattttggg aattagtaat actgttttca gttattttga atggggtctt
+     6241 gaaataagtt atgattttat gatataaata ctgttgttgg gcaggagtta attttgtata
+     6301 atgatttggt aatagtagtt gcagttgcgg ttttggtggt agttgggtga tttatacttt
+     6361 tatttttaaa tagtcgtact ttttttggtg gtaagataaa taagtatgtt tatcataacg
+     6421 aattattgga aattatatga actatagtac ctgcttttat gctttgtttt ttaggttatg
+     6481 tttcattgat gaatttgtat attatagagg ttggtgatca tgttgaaaat gggatgaaag
+     6541 taactgctca tcagtggtat tgagagtata gttatattgt tgattttatt gggaaagaaa
+     6601 agaaaataga tgagttatga ttatctaatt ggtttgatag ggttatttta agagatttta
+     6661 tttttcttag gttggttaat agatcgaatt ttgaaaatac tggagagata agaagtttac
+     6721 ctgttgaggc ggaaaataat tattttactt tagatagctc ggggggtaga gttagctttg
+     6781 tttttgatga ggaacctgaa gttttattta gtggggagga agtagtaggc tattcttcag
+     6841 ttatttgtag gggtttagaa tctgtaacgc aggattattc tagggaaata aatttggata
+     6901 ttttatataa ggataaaaat atgggtatag gaagaaaaga tgtcgagaga atttctattt
+     6961 ttcttcctca tatttttata gattgtaagt gaaactattc ttatgaggtt tatgaggttt
+     7021 ttaatagttt gattttagat caaagaaatt tccgcaattt tactgttacg gatgcttgct
+     7081 atctaatatc ctctgtaaag aatgagatat taatttctac tatagatgta atacattcat
+     7141 ggggtgttgg aagtttaggg gtaaaatgtg atgctgttcc tggtcgagta aattctttag
+     7201 ggatttttcc gttgcgaagt ggggtctttt atggaaattg ctatgagtta tgtggggagg
+     7261 gtcatagaat aatacctatt tcggtagctg taataacttt tgatgatgtt tctttagtgt
+     7321 tgaagcaggg tgttttggga acaagagatt gtgttgctat gttggagggg tttgtttaaa
+     7381 agtagtgtta aaataaaaat aagtttaatt taaagaaaaa tagttggcgt agatagcgta
+     7441 tatgatttcg ggtcataagg gaaatataaa gtttactatt tgcgaaatgg gaaatcatga
+     7501 tggaaaagga attttttata gaataaaaag aattttgtat gacttacctg ttcctttaaa
+     7561 tttgagaaat ttttgaaatt ttggatcttt attgggtgtt tgtttaacta gccagctgat
+     7621 tacaggttta ttgatggctg ctcattatac accagataca gagttagctt tttcttctgt
+     7681 tgcccacatt atacgagatg taaatggggg ttggtttatt cgaagaatgc atgctactgg
+     7741 ggcatcattt ttttttgtgt gtatttatat acatattgga cgaggaattt attatcaatc
+     7801 ttactatata agtaatactt gatggagggg ttgtagtatt ttaatgttat taatagctgt
+     7861 atcttttact ggttatgtgt tgccatgagg ccaaatgtct ttttgagctg cgactgtgat
+     7921 tactagaata tttagggcta tcccttatgt ggggtcttct ttggtagagt gattatgggg
+     7981 aggtttttgt gttggagatg gaactttgaa gcgtttttat gtttttcatt ttgttggccc
+     8041 ttttattata attgttcttg ttgcttttca cattataaat cttcatgaga cagggtctag
+     8101 aaattctcta ggagttagaa gagatgctga tattacttgt tttcataggc tttacacttt
+     8161 taaagattta gtatgaattg tcattatact ttatttttta gtaatggttt gtttatgaag
+     8221 acctgattta tttattaatc cttacaatta tattcctgct tcttctttaa aaactcctca
+     8281 gcatattgaa ccggagtgat attttttatt tgcttattgt attttacgga gtgttcctaa
+     8341 taaaatgggg ggagttttag cattagttgg gtctgtgttt gttttatatt taataccttt
+     8401 atttccacga aagaatgctt tgaaaggatt tgctcataat tttattgctc gagttttttt
+     8461 ttgagatttt gttgctggat ttgttatatt aagggtaatt ggtgggtgca ctattgatat
+     8521 acctctgtca atgcttgggc ctttagcaac attgagatat tttgggtttt ttattgtgat
+     8581 tcctttttta tttattgatt ggggatttta taaaaaatag ttttattagt atgaaaatat
+     8641 gtatatatat aataatatag agaaatctgt ttataattag tattgtgaaa gagaagaaga
+     8701 ttatgatttc gtgagagatt tttataacta tagaaattat taattagtgt tctttttgta
+     8761 tcatgatttg taaagagtga atgaaaattt tatatcctga aaattttaga gtaattcttt
+     8821 tgtatttcta atgtttcaaa attagggtaa agaaaagaat ggtaatgata tgtttttcga
+     8881 gaaaattgat agctggttta aagggaaata tattttagta tagatagaat tttattatta
+     8941 aaattatagt tttgtggaaa ttttaataag gttttaattt agattttagg ggtaagctct
+     9001 aaagtatagg gggaaatagt gtagttagtt agtagggttg atattggcca tctataagaa
+     9061 ttattattat aaagtaataa cagaaaaatt tttgatttag tacctttatg tttataaaaa
+     9121 ttatttatga agaacttagt ataaaatcag taataagtgt aatataagat gaaaattgtt
+     9181 ttaaatgaag agttgtagat gttgattttt aacagagtgt ttattttcta taaatatttt
+     9241 taaaaggaat tcggctaatt ttttttacgc ctgtttatca aaaacatggc cttttggttt
+     9301 gaatggagta taaaaggttt gacctgccca gtggtttaac taaacggctg cagtgaataa
+     9361 ctgtacaaag gtagcgaaat cagttgtcct ttaaatgggg aaaggtatga aaggtttgac
+     9421 gataaaaaag ctgtctctta aaaataatat gaagtttccg tttaagtgaa aaggcttaaa
+     9481 tttttaaaaa agacgagaag accctattga gcttgattat atttttttat aagaagaagt
+     9541 tgaagtttta ttggggcaat agaaagctag aagaaacgct ttctttttag gtagggatcc
+     9601 ttcatgggag aaaaaagcaa aagctaccat agggataaca gcgttatctt tcttaagagt
+     9661 tctgattaag ggaaaggttt gcgacctcga tgttggatta agatgtcttt ttggtgcagc
+     9721 agctaaaaaa gtaagactgt tcgtctttta aaattttaca tgaactgagt taagaccggt
+     9781 gtgaactagg tcggtttcta tctttttttt atagcagctt tgtacgaaag gatcggctgg
+     9841 taatgtttta cttttttttt aatataatta ttagatatgc ctcaattttc acctcttttt
+     9901 gtcgatttta tttttttatt ttattgggcg gtgtttatta gtgttttttg tatattatat
+     9961 tggatttcaa agcgggagta taatttttaa tttaatgggg ggaattatgg ggactgtaat
+    10021 ttcttgtttt gttatttatt gtattccaaa taggggtatt ttaggtagtg tggcttgggg
+    10081 gttttctagt atttttatta tattagattt gattggtttg tcttgatttt attgtatagt
+    10141 aagaggttga attggttttg atggagtgtc gttgctaata gctatattgg ttattttagt
+    10201 tcctataata agattaattt ctagtgtgag tgattacaag ttaagagata gaagaagtag
+    10261 gagaagagat ataggagagg ttgtttattt aatttcattg gtctgtatta tttttttctt
+    10321 tttatctaac tggatagatt tttatttttt ttttgagttt tccttattac caactttttg
+    10381 gttgatttta aaatggggct atcaaccgga gcggctccag gcaggggtgt tgatgttaat
+    10441 atatacggtt tgtgggtctt tacctttact tattattatt ttattaattt gaaatgaaag
+    10501 atttacggat aggtttctgt taataaaatt aataaggggt aattgggaat attttcaaag
+    10561 ttgaacttgt gtgttaataa ttttagggtt tttagttaag ctaccagtat atttagttca
+    10621 tggttgatta cctaaagctc atgtagaagc ccctttgaga ggttctataa ttttggcggg
+    10681 aattttatta aagttaggcg gttatggttt atttcgtttt gtttgggtat ttgaaatgaa
+    10741 aataagaggg atgttcatat ttattatagt tattaggttg tgggggggtt ttatgagggg
+    10801 tttgtattgt ttaactcaga gagatttaaa ggctttaatt gcttattctt cgattaggca
+    10861 tatagcttta gggttggggg gaattttaag gttttatgag tgtggcaaaa tagcgggtat
+    10921 atgcttgttt tttgctcatg ggttatgttc cccagcttta ttttctttgg ctgcaagagt
+    10981 atatgattga tcccactctc gaagagttct tttaaggaaa ggaattcttc gtgtttttcc
+    11041 tttattttca gtgttttgat ttttaatgtg cattattaat ataggaattc ctccctcatt
+    11101 aaattttttt agggaaattt tttgtgctgg ttctttagta tatttatcag ttttttttat
+    11161 aattcccctg gttttaatgt gtttatttac tggcatttat tgtatatttt tatatagggt
+    11221 tgttaatcat gggacttgta gtaaaatggt aaaacctgtg tttaatttaa gagaacgtta
+    11281 tctatattct ttagtttact ctttagggat tttaatgggt ggatttttat ttttgagttg
+    11341 ttttataata tagtttagga aataaaataa atagtcaatt tagtttaaat aaaatattat
+    11401 tttgtggaaa tagggaaatc gatagttaat tgatttttta atagtgtaat gaaaacgttg
+    11461 atttttcgag tcagagatga gattaagttc tcttaaggct ttgttgggaa ataattattt
+    11521 tgaaattaat ttaggaacgt tcgattcgtt tagaggctta tgactaggga tatttttact
+    11581 tttatggatt gttttatagg tggatttaga gtgttggaat taggtatgtg gactgctagt
+    11641 gtagtgtggc caatttattc agtattaata agtacttttt ggtatggaaa ttcttgagtt
+    11701 gaatctatac tttctgaggg tgctattgga ttttcatcta gatttcctat tggtgctaaa
+    11761 aaatttggtg gtttagttca tttaaatttt tctttattat attttttatt agctattaat
+    11821 ttagctggag ttttagctta ttcttatcca gttaattgtc attatgcttt aactttaggg
+    11881 ttttcatttc ctttttgatt tgctactgtt tctttgaatt ttaataagaa ttggtgaata
+    11941 ttttttatta gccatgtaga gggggatata ggaattgcgg tagtagcaat attagtagca
+    12001 tctcaatgat ttaggttgat agttcgtcct tttacattat ctatgcggat gagaactaat
+    12061 ttgtttatgg gtaaattact tgttaattta actttttata tagctgagga gtttattttt
+    12121 ccatttatag atttttgagg gttatctaga attttaatat ttttcatggg gacggcgttg
+    12181 tatgtaattg aaggttgttt agcttcttta caatctataa tttttgtcgg tttattatct
+    12241 ttttattgtg aggaggcaca atttaaattg taattagttt tgtttagcaa ataacaaaaa
+    12301 gtgtatgagt ggtaatatgt ttttagtgag aaatagattt gcttatttta atgagtattt
+    12361 ttttttatta ttgctttagt tattttaggg gtaatagtta gccaaaattg acggtttgaa
+    12421 tgggcaaaac ttacttcttt tgagtgtggg tttgatccta taagcagttc acgatctcca
+    12481 ttttctatac aatttttttt attagcactt ttgtttttaa tttttgatat agagattatt
+    12541 ttattattcc cgattgtaat aaggttaaaa atagtatttt gcttgatacc aatggcgggt
+    12601 aaaggtttaa cttttttgtt tttatttatt cttttagggg gtttaattca tgaatttaat
+    12661 gagggaactt tagattgagt ccaaggttag gttaaaatag gagtaaagtg gtgtatgggc
+    12721 acgaaggatt ttgagttctt aggaaactct ttataaggtt ttttactaag cagatgctat
+    12781 gccagaaaaa ttgggttatc ttgatggggt aaaatatgag attatatctt tagcatttgc
+    12841 ttctatagct tataaaaagt gaagagcttt taactctttg aaacaaatgt ttgatgttgg
+    12901 aggtaaatta aaatggcaga aaatatgcat tagatttaaa acctaaagat gagtaaatac
+    12961 tcttttaata gtgattaggg ggataattgt agttattatt ataataatgg ctgtagcttt
+    13021 ttatattgtg gtagaacgaa aaggattagg gataattcaa ttgcggcaag ggcctaataa
+    13081 agtaagtttt aaaggaattc ttcaacctat tggggatggg gttaagcttt ttaagaaaga
+    13141 aattagattt cctttttcta gaactcgatt tatattttta ttggggcctt ttctttgttt
+    13201 tttttgtgct tattgtcttt gattgatttt tccaggttca tttcgttact caaattttga
+    13261 attggggttg ttattttttc aatgtatttc ttcttttaga gtatttgggg tctttttgtc
+    13321 tggttgagtt tgtgattctc gttatgggtt tttaggggct atgcgagctg tagctcaaag
+    13381 agtttcatat gaagtatttt tgagaacttg cttatattgt cctctgttgt taattgggag
+    13441 ttttgattta atagttattc gtgaatttcc gttatgattt ttttgagttg gccaagaggt
+    13501 tataattttg tgacttgtag ctacattagc ggagactaat cgagctccat ttgattttgt
+    13561 agagagtgaa tctgaattag tagcagggta tagggttgag tatggtggag ttggatttgc
+    13621 tttaatagct ttagctgagt atagaaatat gttatttata agtttgttgg tttccatttt
+    13681 atttttcagg ggggtaaggg gaattgagtt aattagagat atagttttta tttttttcct
+    13741 attagtggtg tcttatttta tggtgtgggt acgaggtgcg ctacctcgat ttcgttatga
+    13801 tttattaatg ggtttgtgtt gagaaatttt acttccatta agattgtgtg agtttatgat
+    13861 tcttttatgt gtaaggttat agttaagttt gagagatgat gaagagtagc atataaagtg
+    13921 catcttgttt acaccaagaa ggagagttta atcctcttta ttaagcctta gtttaaaaag
+    13981 aactatcgac tgttaatcgg agggtataat tgtataggtt taggtgaaag attataaatt
+    14041 agcgggaact ataaaaattt ctttaataat tttaataggg gtggttatta ttttttttat
+    14101 ttgaagtggg gggtggttca ctgaatattt agtagtagaa ttaggatcta ctgattctga
+    14161 tcgtttccca agtattcgat ttcatgtagt aatagatact atatctttgt taataggatt
+    14221 tactgttatg tatatttctg cggtagtaat aatatactca tggttttata taagacatga
+    14281 ggtctatttt aaacgtttta tattattatt agctttattt gttttagcta tattactttt
+    14341 agtgtttgtt cctggttttt tatctataat aattgggtga gattttttag gtgtaatttc
+    14401 ctatttatta gtggtttatc gaataaataa gccttcttta agggctggga ctttaacatt
+    14461 tgtctctaat cgtgttggag atgcttgttt tattatggga attgtatttc ttatagcttc
+    14521 tatggctttt gattgttctt ctatatggtc tagtaggagt caatttatca ttgcaggggc
+    14581 agtaagatta gggtcattaa ctaagagggc tcaggttcct ttttctgcct gattacccgc
+    14641 agctatagct gctcctactc ctgtttctac tttagtacat tcatctactt tggtggccgc
+    14701 tggggtttat gtaatacttc gttatcctga tttggttaac gaatcatgag atttggcagt
+    14761 atttgtatgc tcatgtagaa ctcttttaat cgcgggctca agttctgcgg gggaaatgga
+    14821 tttaaaaaag gtgcttgcat tatccacctt aagtcaagtg gctagaataa tacttttttt
+    14881 ggctataggc gcaattcaag ttgcattttt tcatatagta gttcattctt ttttaaaagc
+    14941 tttgttattt atggctgtag gaagaattat tttttatagg ggagggcttc aagatgttcg
+    15001 attgatgggg ggcttagcat ggaaagcacc tttgttatat ttatggttag tgatttctat
+    15061 tttatcttta gttggtctac catttatggc tggattttat tcaaaagagt atatagttgc
+    15121 ttctttagta gatggaaatt ttcctataat aagggctatt atagtagttt taggtatagc
+    15181 tagaactctt ttttatagtg gtcgggtgtt agttttatta ttagtaagat ctgggggttt
+    15241 tcctgttcgt cattattcag atgggggagt aattttaaga attagatgtt ttttgttaat
+    15301 attgggggct atttttagtg gggttttgat tcataatatt ttcaggctat ctcgtggttt
+    15361 tacttcccta gaagtcgggg gtttttatat taaacttttt tatgtaactt taagaatttt
+    15421 agtagtatct tgtttatttt ccctatccaa aaaaacatgg gtaaaaatgc aaattagtga
+    15481 atttttgggg aaaatatgat tttttaaagg tctgaggggt aatttcttaa ggagaacatt
+    15541 tttagtcaaa tgttctcggt taacaaaagt tgtagaaaat ggttgggttg gagatttttt
+    15601 atgaagaagg gggataaaaa atgtagtgtt tgggtttata agggtaatgc gaggtttaaa
+    15661 ttataatttt attggggtta tagtttttat tataattagt tgtgtattta tttttacttt
+    15721 atagaaaaaa taaataaaga ggctagatta gcagatataa tgtattcaac ttaggattga
+    15781 aaggaaattt ttaattattt agttggggat attaagttaa atagactgta atatttcaag
+    15841 tattaaagtg aaacggagtt ttatatctcg gataggtaat acaaaataat atttagcaat
+    15901 aaccgagcag aatatactat ttttttt
+//
