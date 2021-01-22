@@ -1,0 +1,880 @@
+LOCUS       AP014557.1             19424 bp    DNA              UNK 14-APR-2020
+DEFINITION  A.phaseoliformis_ref mitochondrion.
+ACCESSION   ref_Aphase
+VERSION     ref_Aphase
+KEYWORDS    .
+SOURCE      mitochondrion ref_Aphase
+  ORGANISM  ref_Aphase ref_Aphase.
+            .
+REFERENCE   1  (bases 1 to 19424)
+  AUTHORS   Tillich,M., Lehwark,P., Pellizzer,T., Ulbricht-Jones, E.S., Fischer,
+            A., Bock, R. and Greiner,S.
+  TITLE     GeSeq - versatile and accurate annotation of organelle genomes
+  JOURNAL   Nucleic Acids Res. 45 (W1), W6-W11 (2017)
+   PUBMED   28486635
+COMMENT     GeSeq Version 1.80
+            Job           Geneious_mitoch
+            Subjob        ref_Aphaseoliformis
+            Creator       anonymous
+            Program       blat
+            blatxcutoff=60                 blatncutoff=85
+            blatxmaxintron=750000          blatnmaxintron=0
+            annotate_ir=false              shortmatches=false
+            mpimpchlororefset=false
+            ncbirefs=NC_028724.1
+            Program       HMMER disabled
+            Program       ARAGORN v1.2.38 disabled
+            Program       ARWEN v1.2.3
+            searchmode=metazoan            gcode=gcinvert
+            circular=true
+            Program       MFannot v1.34 disabled
+            Program       tRNAscan-SE v1.3.1 disabled
+            Program       tRNAscan-SE v2.0.3 disabled
+            Program       RNA Editing disabled
+            Submitted     14 Apr 2020 19:59:10 GMT
+            Started       14 Apr 2020 19:59:52 GMT
+            Finished      14 Apr 2020 19:59:56 GMT
+FEATURES             Location/Qualifiers
+     source          1..19424
+                     /organism="ref_Aphase"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+     gene            1675..1738
+                     /note="annotated by ARWEN v1.2.3, score: 109.4; blatN_hit
+                     trnP_NC_028724.1, position 1 - 64, psl score 98.5, coverage
+                     100.00%, match 98.44%; merged"
+                     /gene="trnP-UGG"
+                     /locus_tag="Apha_01"
+     tRNA            1675..1738
+                     /gene="trnP-UGG"
+                     /locus_tag="Apha_01"
+     gene            1739..2878
+                     /note="blatX_hit COX2_NC_028724.1, position 1 - 1092, psl
+                     score 83.9, coverage 104.95%, match 68.04%"
+                     /gene="COX2"
+                     /locus_tag="Apha_02"
+     CDS             1739..2878
+                     /gene="COX2"
+                     /translation="MGSWNKLWFYDMNTVVGQELILYNDLVMVVAVAVLVVVGWFMLLF
+                     LNSRTFFGGKMNKYVYHNELLEIMWTMVPAFMLCFLGYVSLMNLYIMEVGDHVENGMKV
+                     TAHQWYWEYSYIVDFIGKEKEMDELWLSNWFDSVILSDSIFLSSGNFVNIGEMSSLSVE
+                     AEDNYFTLASSGSSVSFVLNEEPKVLFSGEEVVDYSSVIYSSLESVTQEYSSEMNLDIL
+                     YKDSNMGSGSKDVESISIFLPHIFMDCKWNYSYEVYEVFNSLILDQSNFRGFTVTDACY
+                     LMSSVKNEMLISTMDVMHSWGVGSLGVKCDAVPGRVNSLGIFPLRSGVFYGNCYELCGE
+                     GHSMMPISVAVMTFDDVSLVLKQGVLGTSDCVAMLEGFV"
+                     /locus_tag="Apha_02"
+     gene            2917..2981
+                     /note="annotated by ARWEN v1.2.3, score: 107.0; blatN_hit
+                     trnR_NC_028724.1, position 1 - 65, psl score 95.4, coverage
+                     100.00%, match 95.38%; merged"
+                     /gene="trnR-UCG"
+                     /locus_tag="Apha_03"
+     tRNA            2917..2981
+                     /gene="trnR-UCG"
+                     /locus_tag="Apha_03"
+     gene            2986..4119
+                     /note="blatX_hit CYTB_NC_028724.1, position 1 - 1134, psl
+                     score 88.5, coverage 100.00%, match 88.45%"
+                     /gene="CYTB"
+                     /locus_tag="Apha_04"
+     CDS             2986..4119
+                     /gene="CYTB"
+                     /translation="MGNHDGKGIFYSMKSVLYDLPVPLNLSNFWNFGSLLGVCLTSQLI
+                     TGLLMAAHYTPDTELAFSSVAHIMRDVNGGWFIRSMHATGASFFFVCIYMHIGRGIYYQ
+                     SYYMSNTWWSGCSILMLLMAVSFTGYVLPWGQMSFWAATVITSMFSAIPYVGSLLVEWL
+                     WGGFCVGDGTLKRFYVFHFVGPFIMIVLVAFHIMNLHETGSSNSLGVSSDADITCFHSL
+                     YTFKDLVWIVIMLYFLVMVCLWSPDLFINPYNYIPASSLKTPQHIEPEWYFLFAYCILR
+                     SVPNKMGGVLALVGSVFVLYLMPLFPRKNALKGFAHNFIARVFFWDFVAGFVMLSVIGG
+                     CTIDTPLSMLGPLATLSYFGFFIVIPFLFIDWGFYKK"
+                     /locus_tag="Apha_04"
+     gene            3988..4046
+                     /note="annotated by ARWEN v1.2.3, score: 104.2"
+                     /gene="trnN-AUU"
+                     /locus_tag="Apha_05"
+     tRNA            3988..4046
+                     /gene="trnN-AUU"
+                     /locus_tag="Apha_05"
+     gene            4214..4703
+                     /note="blatN_hit rrn16_NC_028724.1, position 71 - 559, psl
+                     score 91.7, coverage 40.20%, match 37.00%"
+                     /gene="rrn16"
+                     /locus_tag="Apha_06"
+     rRNA            4214..4703
+                     /gene="rrn16"
+                     /locus_tag="Apha_06"
+     gene            4803..5082
+                     /note="blatN_hit rrn16-fragment_NC_028724.1, position 659 -
+                     937, psl score 96.1, coverage 22.97%, match 22.23%,
+                     fragment match 97.13%"
+                     /gene="rrn16-fragment"
+                     /locus_tag="Apha_07"
+     rRNA            4803..5082
+                     /gene="rrn16-fragment"
+                     /locus_tag="Apha_07"
+     gene            5083..5350
+                     /note="blatN_hit rrn16-fragment_NC_028724.1, position 939 -
+                     1206, psl score 98.6, coverage 21.99%, match 21.66%,
+                     fragment match 98.51%"
+                     /gene="rrn16-fragment"
+                     /locus_tag="Apha_08"
+     rRNA            5083..5350
+                     /gene="rrn16-fragment"
+                     /locus_tag="Apha_08"
+     gene            5370..5483
+                     /note="blatX_hit ATP8_NC_028724.1, position 1 - 114, psl
+                     score 92.2, coverage 100.00%, match 92.11%"
+                     /gene="ATP8"
+                     /locus_tag="Apha_09"
+     CDS             5370..5483
+                     /gene="ATP8"
+                     /translation="MPQFSPLFVDFIFLFYWAVFISVFCMLYWISKREYNF"
+                     /locus_tag="Apha_09"
+     gene            5500..6846
+                     /note="blatX_hit ND4_NC_028724.1, position 1 - 1347, psl
+                     score 86.1, coverage 100.00%, match 86.04%"
+                     /gene="ND4"
+                     /locus_tag="Apha_10"
+     CDS             5500..6846
+                     /gene="ND4"
+                     /translation="MGTVISCFVVYCIPNSGILGSVAWGFSSIFIMLDLIGLSWFYCMV
+                     SGWIGFDGVSLLMAMLVILVPMMSLISSVSDYKLSDSSSSSSDMGEVVYLISLVCIIFF
+                     FLSNWMDFYFFFEFSLLPTFWLILKWGYQPERLQAGVLMLMYTVCGSLPLLIIILLIWN
+                     ESFTDSFLLMKLMSGNWEYFQSWTCVLMILGFLVKLPVYLVHGWLPKAHVEAPLSGSMI
+                     LAGILLKLGGYGLFRFIWVFEMKMSGMFMFIMVISLWGGFMSGLYCLTQSDLKALIAYS
+                     SISHMALGLGGILSFYECGKMAGMCLFFAHGLCSPALFSLAASVYDWSHSRSVLLSKGI
+                     LRVFPLFSVFWFLMCIINMGIPPSLNFFSEIFCAGSLVYLSVFFMVPLVLMCLFTGVYC
+                     MFLYSVVNHGTCSKMVKPVFNLSERYLYSLVYSLGILMGGFLFLSCFMM"
+                     /locus_tag="Apha_10"
+     gene            6866..6929
+                     /note="annotated by ARWEN v1.2.3, score: 100.5"
+                     /gene="trnH-GUG"
+                     /locus_tag="Apha_11"
+     tRNA            6866..6929
+                     /gene="trnH-GUG"
+                     /locus_tag="Apha_11"
+     gene            6867..6913
+                     /note="blatN_hit trnH_NC_028724.1, position 1 - 47, psl
+                     score 100.0, coverage 75.81%, match 75.81%"
+                     /gene="trnH"
+                     /locus_tag="Apha_12"
+     tRNA            6867..6913
+                     /gene="trnH"
+                     /locus_tag="Apha_12"
+     gene            6928..6993
+                     /note="blatN_hit trnE_NC_028724.1, position 1 - 66, psl
+                     score 95.5, coverage 100.00%, match 95.45%"
+                     /gene="trnE"
+                     /locus_tag="Apha_13"
+     tRNA            6928..6993
+                     /gene="trnE"
+                     /locus_tag="Apha_13"
+     gene            6929..6992
+                     /note="annotated by ARWEN v1.2.3, score: 100.7"
+                     /gene="trnE-UUC"
+                     /locus_tag="Apha_14"
+     tRNA            6929..6992
+                     /gene="trnE-UUC"
+                     /locus_tag="Apha_14"
+     gene            6989..7052
+                     /note="annotated by ARWEN v1.2.3, score: 104.8; blatN_hit
+                     trnS_NC_028724.1, position 1 - 64, psl score 96.9, coverage
+                     100.00%, match 96.88%; merged"
+                     /gene="trnS-UGA"
+                     /locus_tag="Apha_15"
+     tRNA            6989..7052
+                     /gene="trnS-UGA"
+                     /locus_tag="Apha_15"
+     gene            7053..7766
+                     /note="blatX_hit ATP6_NC_028724.1, position 1 - 714, psl
+                     score 89.3, coverage 100.00%, match 89.22%"
+                     /gene="ATP6"
+                     /locus_tag="Apha_16"
+     CDS             7053..7766
+                     /gene="ATP6"
+                     /translation="MTSDIFTFMDCFMGGFSVLELGMWTASVVWPIYSVLMSTFWYGNS
+                     WVESMLSEGAIGFSSSFPIGAKKFGGLVHLNFSLLYFLLAINLAGVLAYSYPVNCHYAL
+                     TLGFSFPFWFATVSLNFNKNWWMFFISHVEGDMGIAVVAMLVASQWFSLMVRPFTLSMR
+                     MSTNLFMGKLLVNLTFYMAEEFIFPFMDFWGLSSILMFFMGTALYVIEGCLASLQSMIF
+                     VGLLSFYCEEAQFKL"
+                     /locus_tag="Apha_16"
+     gene            7863..8183
+                     /note="blatX_hit ND3_NC_028724.1, position 4 - 297, psl
+                     score 87.5, coverage 98.99%, match 86.53%"
+                     /gene="ND3"
+                     /locus_tag="Apha_17"
+     CDS             7863..8183
+                     /gene="ND3"
+                     /locus_tag="Apha_17"
+                     /translation="MALVILGVMVSQNWRFEWAKLTSFECGFDPMSSSRSPFSMQFFLL
+                     ALLFLIFDMEIILLFPIVMSLKMVFCLMPMAGKGLTFLFLLILLGGLIHEFNEGTLDWV
+                     QG"
+     gene            8195..8261
+                     /note="annotated by ARWEN v1.2.3, score: 104.7; blatN_hit
+                     trnQ_NC_028724.1, position 1 - 67, psl score 98.6, coverage
+                     100.00%, match 98.51%; merged"
+                     /gene="trnQ-UUG"
+                     /locus_tag="Apha_18"
+     tRNA            8195..8261
+                     /gene="trnQ-UUG"
+                     /locus_tag="Apha_18"
+     gene            8265..8333
+                     /note="annotated by ARWEN v1.2.3, score: 107.4"
+                     /gene="trnI-GAU"
+                     /locus_tag="Apha_19"
+     tRNA            8265..8333
+                     /gene="trnI-GAU"
+                     /locus_tag="Apha_19"
+     gene            8266..8318
+                     /note="blatN_hit trnI_NC_028724.1, position 1 - 53, psl
+                     score 96.3, coverage 79.10%, match 76.12%"
+                     /gene="trnI"
+                     /locus_tag="Apha_20"
+     tRNA            8266..8318
+                     /gene="trnI"
+                     /locus_tag="Apha_20"
+     gene            8331..8399
+                     /note="annotated by ARWEN v1.2.3, score: 106.9"
+                     /gene="trnK-UUU"
+                     /locus_tag="Apha_21"
+     tRNA            8331..8399
+                     /gene="trnK-UUU"
+                     /locus_tag="Apha_21"
+     gene            8332..8398
+                     /note="blatN_hit trnK_NC_028724.1, position 1 - 67, psl
+                     score 98.6, coverage 100.00%, match 98.51%"
+                     /gene="trnK"
+                     /locus_tag="Apha_22"
+     tRNA            8332..8398
+                     /gene="trnK"
+                     /locus_tag="Apha_22"
+     gene            8400..8463
+                     /note="annotated by ARWEN v1.2.3, score: 107.6; blatN_hit
+                     trnL-fragment_NC_028724.1, position 1 - 64, psl score 95.4,
+                     coverage 100.00%, match 95.31%, fragment match 95.31%;
+                     merged"
+                     /gene="trnL-UAA | trnL-fragment"
+                     /locus_tag="Apha_23"
+     tRNA            8400..8463
+                     /gene="trnL-UAA | trnL-fragment"
+                     /locus_tag="Apha_23"
+     gene            8464..9375
+                     /note="blatX_hit ND1_NC_028724.1, position 2 - 912, psl
+                     score 88.2, coverage 99.89%, match 88.05%"
+                     /gene="ND1"
+                     /locus_tag="Apha_24"
+     CDS             8464..9375
+                     /gene="ND1"
+                     /locus_tag="Apha_24"
+                     /translation="MISGMIVVIIMMMSVAFYIVVERKGLGMIQLRQGPNKVSFKGILQ
+                     PIGDGVKLFKKEISFPFSSTRFMFLLGPFLCFFCAYCLWLIFPGSFRYSNFELGLLFFQ
+                     CISSFSVFGVFLSGWVCDSRYGFLGAMRAVAQSVSYEVFLSTCLYCPLLLIGSFDLMVI
+                     REFPLWFFWVGQEVMILWLVATLAETNRAPFDFVESESELVAGYSVEYGGVGFALMALA
+                     EYSNMLFMSLLVSILFFSGVSGIELFSDMVFIFFLLVVSYFMVWVRGALPRFRYDLLMG
+                     LCWEILLPLSLCEFMVLLCVSL"
+     gene            9392..9455
+                     /note="annotated by ARWEN v1.2.3, score: 112.5"
+                     /gene="trnV-UAC"
+                     /locus_tag="Apha_25"
+     tRNA            9392..9455
+                     /gene="trnV-UAC"
+                     /locus_tag="Apha_25"
+     gene            9393..9454
+                     /note="blatN_hit trnV_NC_028724.1, position 1 - 62, psl
+                     score 96.8, coverage 100.00%, match 96.77%"
+                     /gene="trnV"
+                     /locus_tag="Apha_26"
+     tRNA            9393..9454
+                     /gene="trnV"
+                     /locus_tag="Apha_26"
+     gene            9455..9516
+                     /note="annotated by ARWEN v1.2.3, score: 102.7; blatN_hit
+                     trnN_NC_028724.1, position 1 - 62, psl score 95.2, coverage
+                     100.00%, match 95.16%; merged"
+                     /gene="trnN-GUU"
+                     /locus_tag="Apha_27"
+     tRNA            9455..9516
+                     /gene="trnN-GUU"
+                     /locus_tag="Apha_27"
+     gene            9544..11217
+                     /note="blatX_hit ND5_NC_028724.1, position 1 - 1674, psl
+                     score 84.8, coverage 100.00%, match 84.77%"
+                     /gene="ND5"
+                     /locus_tag="Apha_28"
+     CDS             9544..11217
+                     /gene="ND5"
+                     /locus_tag="Apha_28"
+                     /translation="MKISLMILMGVVIIFFIWSGGWFTEYLVVELGSTDSDRFPSIRFH
+                     VVMDTMSLLMGFTVMYISAVVMMYSWFYMSHEVYFKRFLLLLALFVLAMLLLVFVPGFL
+                     SMMIGWDFLGVISYLLVVYRMNKPSLSAGTLTFVSNRVGDACFIMGIVFLMASMAFDCS
+                     SMWSSSSQFIIAGAVSLGSLTKSAQIPFSAWLPAAMAAPTPVSTLVHSSTLVAAGVYVM
+                     LRYPDLVSESWDLAVFVCSCSTLLIAGTSSAGEMDLKKVLALSTLSQVASMMLFLAMGA
+                     IQVAFFHMVVHSFLKALLFMAVGSIIFYSGGLQDVRLMGGLAWKAPLLYLWLVISILSL
+                     IGLPFMAGFYSKEYMVASLVDGNFPMMSAIMVVLGMASTLFYSGRVLVLLLVSSGGFPV
+                     RHYSDGGVILSISCFLLMLGAIFSGVLIHNVFSLSRGFTSLEVGGFYMKLFYVTLSILV
+                     MSCLFSLYKKTWVKMQVSEFLGKMWFLKGLSGNYLSSTFLVKCSRLTKVVENGWVGDFL
+                     WSSGMKNVVFGFMGVMRGLNYNFIGVMVFIMISCVFIFTL"
+     gene            9605..9661
+                     /note="annotated by ARWEN v1.2.3, score: 103.8"
+                     /gene="trnL-UAG"
+                     /locus_tag="Apha_29"
+     tRNA            9605..9661
+                     /gene="trnL-UAG"
+                     /locus_tag="Apha_29"
+     gene            9898..9966
+                     /note="annotated by ARWEN v1.2.3, score: 101.6"
+                     /gene="trnK-UUU"
+                     /locus_tag="Apha_30"
+     tRNA            9898..9966
+                     /gene="trnK-UUU"
+                     /locus_tag="Apha_30"
+     gene            11236..11298
+                     /note="annotated by ARWEN v1.2.3, score: 105.7; blatN_hit
+                     trnL_NC_028724.1, position 1 - 63, psl score 100.0,
+                     coverage 100.00%, match 100.00%; merged"
+                     /gene="trnL-UAG"
+                     /locus_tag="Apha_31"
+     tRNA            11236..11298
+                     /gene="trnL-UAG"
+                     /locus_tag="Apha_31"
+     gene            11300..11364
+                     /note="annotated by ARWEN v1.2.3, score: 105.7; blatN_hit
+                     trnW_NC_028724.1, position 1 - 65, psl score 98.5, coverage
+                     100.00%, match 98.46%; merged"
+                     /gene="trnW-UCA"
+                     /locus_tag="Apha_32"
+     tRNA            11300..11364
+                     /gene="trnW-UCA"
+                     /locus_tag="Apha_32"
+     gene            11452..11519
+                     /note="annotated by ARWEN v1.2.3, score: 103.4"
+                     /gene="trnH-GUG"
+                     /locus_tag="Apha_33"
+     tRNA            11452..11519
+                     /gene="trnH-GUG"
+                     /locus_tag="Apha_33"
+     gene            12186..12266
+                     /note="annotated by ARWEN v1.2.3, score: 101.1"
+                     /gene="trnStop-UUA"
+                     /locus_tag="Apha_34"
+     tRNA            12186..12266
+                     /gene="trnStop-UUA"
+                     /locus_tag="Apha_34"
+     gene            complement(12261..12320)
+                     /note="annotated by ARWEN v1.2.3, score: 101.9"
+                     /gene="trnF-AAA"
+                     /locus_tag="Apha_35"
+     tRNA            complement(12261..12320)
+                     /gene="trnF-AAA"
+                     /locus_tag="Apha_35"
+     gene            12293..12347
+                     /note="annotated by ARWEN v1.2.3, score: 101.2"
+                     /gene="trn???-GUUU"
+                     /locus_tag="Apha_36"
+     tRNA            12293..12347
+                     /gene="trn???-GUUU"
+                     /locus_tag="Apha_36"
+     gene            14958..15437
+                     /note="blatX_hit ND6_NC_028724.1, position 1 - 479, psl
+                     score 81.5, coverage 99.79%, match 81.25%"
+                     /gene="ND6"
+                     /locus_tag="Apha_37"
+     CDS             14958..15437
+                     /gene="ND6"
+                     /locus_tag="Apha_37"
+                     /translation="MAEMFVLVFLLLCSNFSIWVEHPLILGGGLLMVSIVSLPLMISVG
+                     SLFGFSFFIVVVGGVLIVFAYSVSLISITKSDLLLKYFTQSLGVVGKVWSVFLFFSLVF
+                     LFSSWVVGAGIFCWSDVLYFSKGWGLGVVLLGFLLLAIMVIAISLASKFKGALIK"
+     gene            15456..15725
+                     /note="blatX_hit ND4L_NC_028724.1, position 1 - 270, psl
+                     score 88.2, coverage 100.00%, match 88.15%"
+                     /gene="ND4L"
+                     /locus_tag="Apha_38"
+     CDS             15456..15725
+                     /gene="ND4L"
+                     /translation="MFVFFSLIHFMTHFNFFMNLLLVFELMGFCVFLFCMNLSFISFSS
+                     VGLYFSIVILTFSVCETVLGMALLVSAARYTGRANVKSFSFLGF"
+                     /locus_tag="Apha_38"
+     gene            15728..15775
+                     /note="blatN_hit trnG_NC_028724.1, position 1 - 48, psl
+                     score 95.9, coverage 75.00%, match 71.88%"
+                     /gene="trnG"
+                     /locus_tag="Apha_39"
+     tRNA            15728..15775
+                     /gene="trnG"
+                     /locus_tag="Apha_39"
+     gene            15728..15786
+                     /note="annotated by ARWEN v1.2.3, score: 102.2"
+                     /gene="trnG-UCC"
+                     /locus_tag="Apha_40"
+     tRNA            15728..15786
+                     /gene="trnG-UCC"
+                     /locus_tag="Apha_40"
+     gene            15810..15869
+                     /note="annotated by ARWEN v1.2.3, score: 100.9"
+                     /gene="trnS-UGA"
+                     /locus_tag="Apha_41"
+     tRNA            15810..15869
+                     /gene="trnS-UGA"
+                     /locus_tag="Apha_41"
+     gene            15870..16901
+                     /note="blatX_hit ND2_NC_028724.1, position 1 - 1032, psl
+                     score 87.0, coverage 100.00%, match 86.92%"
+                     /gene="ND2"
+                     /locus_tag="Apha_42"
+     CDS             15870..16901
+                     /gene="ND2"
+                     /translation="MLIGWFVPMAVIVSGYIMVGGIFVCVYSVGLLGMWVGMELSFFGA
+                     VGVLGGSSVEEVEGVQKYFIIQVFSSIFLLIGFLLVINFYKGGWLVEFIMVIGLMMKLG
+                     LFPFYFWIPSVMSVVSWVSCFVVSVVQKFNPIWILVNLMLESYLQQMIEFSACLTGLVG
+                     CIGGIGVLQFRVLLAFSSMVHLGYMIFMCLVGWDEFLTYMVLYFCLSFSLMMSLWVCGI
+                     YSFLDLMKSNGGSDVDLFMISLYMFSFAGIPPLSGCFMKAVFLVSCWEVFPVGCVVLFL
+                     SSGVSLFYYSSFFTYLNLYWGSMLKWQFVKSSLADLKVFLFFVSVLLNVVLGFGLFLLI
+                     VII"
+                     /locus_tag="Apha_42"
+     gene            16913..16975
+                     /note="annotated by ARWEN v1.2.3, score: 103.8"
+                     /gene="trnD-GUC"
+                     /locus_tag="Apha_43"
+     tRNA            16913..16975
+                     /gene="trnD-GUC"
+                     /locus_tag="Apha_43"
+     gene            16981..17037
+                     /note="blatN_hit trnT_NC_028724.1, position 7 - 63, psl
+                     score 94.8, coverage 90.48%, match 85.71%"
+                     /gene="trnT"
+                     /locus_tag="Apha_44"
+     tRNA            16981..17037
+                     /gene="trnT"
+                     /locus_tag="Apha_44"
+     gene            17048..17867
+                     /note="blatN_hit rrn12_NC_028724.1, position 3 - 822, psl
+                     score 93.7, coverage 87.70%, match 82.14%"
+                     /gene="rrn12"
+                     /locus_tag="Apha_45"
+     rRNA            17048..17867
+                     /gene="rrn12"
+                     /locus_tag="Apha_45"
+     gene            17870..17979
+                     /note="blatN_hit rrn12-fragment_NC_028724.1, position 826 -
+                     935, psl score 95.5, coverage 11.76%, match 11.23%,
+                     fragment match 95.45%"
+                     /gene="rrn12-fragment"
+                     /locus_tag="Apha_46"
+     rRNA            17870..17979
+                     /gene="rrn12-fragment"
+                     /locus_tag="Apha_46"
+     gene            17920..17986
+                     /note="annotated by ARWEN v1.2.3, score: 104.2; blatN_hit
+                     trnM_NC_028724.1, position 1 - 67, psl score 92.6, coverage
+                     100.00%, match 92.54%; merged"
+                     /gene="trnM-CAU"
+                     /locus_tag="Apha_47"
+     tRNA            17920..17986
+                     /gene="trnM-CAU"
+                     /locus_tag="Apha_47"
+     gene            17988..18051
+                     /note="annotated by ARWEN v1.2.3, score: 109.2"
+                     /gene="trnC-GCA"
+                     /locus_tag="Apha_48"
+     tRNA            17988..18051
+                     /gene="trnC-GCA"
+                     /locus_tag="Apha_48"
+     gene            18055..18124
+                     /note="annotated by ARWEN v1.2.3, score: 100.0"
+                     /gene="trnY-GUA"
+                     /locus_tag="Apha_49"
+     tRNA            18055..18124
+                     /gene="trnY-GUA"
+                     /locus_tag="Apha_49"
+     gene            18057..18118
+                     /note="blatN_hit trnY_NC_028724.1, position 1 - 62, psl
+                     score 100.0, coverage 100.00%, match 100.00%"
+                     /gene="trnY"
+                     /locus_tag="Apha_50"
+     tRNA            18057..18118
+                     /gene="trnY"
+                     /locus_tag="Apha_50"
+     gene            18097..19044
+                     /note="blatX_hit COX3_NC_028724.1, position 1 - 951, psl
+                     score 88.1, coverage 99.68%, match 87.80%"
+                     /gene="COX3"
+                     /locus_tag="Apha_51"
+     CDS             18097..19044
+                     /gene="COX3"
+                     /locus_tag="Apha_51"
+                     /translation="MGIYLLFIKEKRWLHSEISNLFCLRFNSVCFFMARTGYNKVPMSP
+                     WPIAISASVFGVAIGLIWYLTDEVSFSMYFYLGVVSFFLGMALTGWWGDIIEESTFLGN
+                     HTSHVVLNLRWGFYLFILSEVWFFFSLFWAFFTASVGEISMQGVGAQWPPVGMEGMYPW
+                     GVPFLNTVVLVSSGLWATTAHKAVKVHSSISLDTLQGVRLSSKWWKVGLLCLGITIVLG
+                     VYFTYLQLHEYYSSSFSMSDGAYGSVFFVLTGFHGLHVIIGTVYLGVCWIRLLKKHFSY
+                     KHHQFGLDSCMWYWHFVDAVWIVVFLSVYVWGNQ"
+     gene            18125..18191
+                     /note="annotated by ARWEN v1.2.3, score: 105.6"
+                     /gene="trnS-UCU"
+                     /locus_tag="Apha_52"
+     tRNA            18125..18191
+                     /gene="trnS-UCU"
+                     /locus_tag="Apha_52"
+     gene            19044..19106
+                     /note="annotated by ARWEN v1.2.3, score: 102.6; blatN_hit
+                     trnF_NC_028724.1, position 1 - 63, psl score 96.9, coverage
+                     100.00%, match 96.83%; merged"
+                     /gene="trnF-GAA"
+                     /locus_tag="Apha_53"
+     tRNA            19044..19106
+                     /gene="trnF-GAA"
+                     /locus_tag="Apha_53"
+     gene            19123..19188
+                     /note="annotated by ARWEN v1.2.3, score: 102.4; blatN_hit
+                     trnA_NC_028724.1, position 1 - 66, psl score 98.5, coverage
+                     100.00%, match 98.48%; merged"
+                     /gene="trnA-UGC"
+                     /locus_tag="Apha_54"
+     tRNA            19123..19188
+                     /gene="trnA-UGC"
+                     /locus_tag="Apha_54"
+     gene            join(19272..19424,1..1653)
+                     /note="blatX_hit COX1_NC_028724.1, position 1 - 1806, psl
+                     score 89.3, coverage 100.00%, match 89.20%"
+                     /gene="COX1"
+                     /locus_tag="Apha_55"
+     CDS             join(19272..19424,1..1653)
+                     /gene="COX1"
+                     /locus_tag="Apha_55"
+                     /translation="MFVVERVAKSLMAVYKFVFFYAFSSFNAYIKSVFMVLVLGIYEIL
+                     LDLKGLIWSFSGSTSVPFYKRSVIRRWLFSSNHKDIGTLYFFFSIWAGLMGTAFSIIIR
+                     FELAMPGAGVLGDSHLYQVVVTAHGLLMIFFLVMPMMIGGFGNWLVPLMLQIPDMAFPR
+                     MNNLSFWLMPSSVLMLLGSAYVESGAGTGWTIYPPLSSIMGHAGPSVDFVILSLHLGGV
+                     SSILASINFVVTSLCMRVEALSLLRVTMFVWCVAITGFLLIIAMPVLAGSLTMLLTDRN
+                     FNTSFFDPAGLGDPILFVHLFWFFGHPEVYILILPGFGIISHVIKVGSSKLELFGKVPM
+                     IYAVLSIGFLGFIVWGHHMFTVGMNVDSRAYFSTVTLIIAIPTGVKVFSWLATMSGGYV
+                     RWWPMMYWAMGFLFLFTVGGITGIVLASASLDVMMHDSYYVIAHFHYVLSMGAVFSLFA
+                     GFHFWYPMVTGLGLHPLWSRGQFWTMFIGVNVTFFPQHLMGLLGMPRRYSDYSDSLHGL
+                     NLLSSWGSTVSLVSLFTFLFIIWESMLSQRCLVFPLVYGTEAEWSFRGYPLRFHNRSQN
+                     SFGFNAKDIKKKLLWWMKMDRHSSV"
+ORIGIN
+        1 atttgatctt ttagggggtc tactagtgtt cctttctata agcggtctgt tattcgtcgt
+       61 tgattgttta ggagtaatca taaagatatt ggaactcttt attttttttt ttctatttgg
+      121 gcggggttga tgggaactgc ttttagaatt attattcgtt ttgagttagc tataccaggt
+      181 gcgggggttc taggtgatag tcatttatat caggtagtag ttactgcaca tggactatta
+      241 atgatttttt ttttagtaat accaatgatg attggaggtt ttggaaattg attagttcct
+      301 ttaatgttgc aaattcctga catagctttt cctcgaataa ataatttaag attttggttg
+      361 atacctaggt cagttttaat gttacttggt tctgcttatg tagaaagtgg ggcaggtact
+      421 ggttgaacta tttatcctcc attatctagt attataggtc atgctggtcc ttctgtagat
+      481 tttgtgattt tatctcttca tttaggtggt gtatcttcta ttttggcctc tattaatttt
+      541 gtagttactt ctctttgtat gcgtgttgaa gctttatctt tattacgtgt aactatattt
+      601 gtttgatgtg ttgctattac tggtttttta ttaattattg ctataccggt tttagctggg
+      661 agattaacaa tattattaac tgatcgtaat tttaatacta gattttttga tcctgctggt
+      721 ttgggtgatc ctattctttt tgttcactta ttttgatttt ttgggcatcc tgaggtttat
+      781 attttaattt tacctggttt tggtattatt tctcatgtta ttaaagttgg aagaagaaaa
+      841 cttgaattgt ttggtaaggt gcctataatt tatgcggtgt tatcaattgg atttttaggg
+      901 tttattgttt gagggcatca catatttacg gtaggaataa atgttgatag tcgtgcttat
+      961 tttagaacgg ttacattaat tattgctatt cctactgggg taaaggtttt tagatggttg
+     1021 gctacaatga gtggtggtta tgttcgttga tgaccaataa tgtattgagc tataggcttt
+     1081 ttatttttat ttactgtggg gggaattact ggaattgttt tagctagtgc ttctttagat
+     1141 gtaataatgc atgattctta ttatgttatt gcacattttc actatgtttt aaggatggga
+     1201 gcagtttttt ctttatttgc tggatttcat ttttggtatc ctatagttac tggtttaggt
+     1261 ttacacccac tttgaagacg gggtcaattt tgaacaatat ttattggtgt gaatgttact
+     1321 ttttttccac agcatttaat aggattatta ggaatacctc gtcgttatag ggattatagt
+     1381 gatagtttac atggtttaaa tttattgtct agttgaggtt ctactgtttc tttagtgagt
+     1441 ctttttactt tcctatttat tatttgggaa agtatattaa gtcagcgatg tttagtgttt
+     1501 cctttggttt atgggactga ggcagagtgg tcttttcgag gttatcctct tcggtttcat
+     1561 aatcgttcgc agaataggtt tggatttaat gctaaagata ttaaaaagaa gcttttgtgg
+     1621 tgaatgaaaa tggatcgtca taggagagtt taagtagggt ttattaatat ttagcaaaat
+     1681 atagtttaat aaaaattcta attttgggaa ttagtgatac tgttttcagt tattttgaat
+     1741 ggggtcttga aataagttat gattttatga tataaatact gttgttgggc aggagttaat
+     1801 tttatataat gatttggtaa tagtagttgc agttgcggtt ttggtggtag ttgggtgatt
+     1861 tatactttta tttttaaata gtcgcacttt ttttggtggt aagataaata agtatgttta
+     1921 tcataatgaa ttattggaaa ttatgtggac tatagtacct gcttttatgc tttgtttttt
+     1981 aggttatgtt tcattaatga atttgtatat tatagaggtt ggtgatcatg ttgaaaatgg
+     2041 gatgaaagta actgctcatc agtgatattg agagtatagt tatattgttg attttattgg
+     2101 taaagaaaag gaaatagatg agttatgatt atctaattga tttgataggg ttattttaag
+     2161 agattcaatt tttcttaggt cgggcaattt tgtaaatatt ggggagataa ggagtttatc
+     2221 tgttgaggcg gaagataatt attttacttt agctagctcg gggagtagag ttagctttgt
+     2281 tttaaatgag gaacctaaag ttttatttag tggggaggaa gtggtagatt attcttcagt
+     2341 tatttatagg agtttagaat ctgtaacgca ggagtattct agtgaaataa atttggatat
+     2401 tttgtataag gatagaaata tggggagagg aagaaaagat gtcgagagaa tttctatttt
+     2461 tcttccgcat atttttatag attgtaagtg aaactattct tatgaggttt atgaggtttt
+     2521 taatagtttg attttagatc aaagaaattt tcgcggtttt actgttacgg atgcttgtta
+     2581 tttaatatct tctgtaaaga atgagatatt aatttctact atagatgtaa tacattcatg
+     2641 gggtgttggt agtttagggg taaaatgtga tgctgttccg ggtcgagtaa attctttagg
+     2701 gatttttccg ttgcgaagtg gggtctttta tggtaattgt tatgagttat gtggggaggg
+     2761 tcatagaata atacctattt ccgtagctgt aataactttt gatgatgttt ctttagtatt
+     2821 gaagcagggt gttttgggaa caagagattg tgtcgctatg ctggaggggt ttgtttaaaa
+     2881 gtagtgttta aataaaaata agtttgattt agagtaaaat agttggcgta gatagcgtat
+     2941 atgatttcgg gtcataaggg aaatataaag tttactattt gtgaaatggg aaatcatgat
+     3001 ggaaaaggaa ttttttatag aataaaaaga gttttgtatg acttacctgt ccctttaaat
+     3061 ttgagaaatt tttgaaattt tggatcttta ttgggtgttt gtttaactag tcagctgatt
+     3121 acaggtttat tgatggctgc tcattataca ccagatacgg agttagcttt ttcttctgtt
+     3181 gcccatatta tgcgagatgt taatgggggt tggtttattc gaagaatgca tgctactggg
+     3241 gcatcatttt tttttgtgtg tatttatata catattggac gaggaattta ttatcaatct
+     3301 tattatataa gtaatacttg atggaggggt tgtagtattt taatgttatt aatagctgtt
+     3361 tcttttactg gttatgtgtt gccttgaggc caaatgtctt tttgagctgc gactgtaatt
+     3421 actagaatgt ttagggctat cccgtatgtg gggtctcttt tggtagagtg attatgggga
+     3481 ggcttttgtg tcggggatgg aactttgaag cgtttttatg tttttcattt tgttggccct
+     3541 tttattataa ttgttcttgt tgcttttcac attataaatc ttcatgagac agggtctaga
+     3601 aattctctag gagttagaag agatgcggat attacttgtt ttcataggct ttacactttt
+     3661 aaagatttag tatgaattgt tattatactt tattttttgg taatggtttg tttatggaga
+     3721 cctgatttat ttattaatcc ttacaattat attcctgctt cttctttaaa aactcctcaa
+     3781 catattgaac cggagtgata ttttttattt gcttattgta ttttacggag tgtacctaat
+     3841 aaaatagggg gcgttttggc attagttggg tctgtgtttg ttttatattt aataccttta
+     3901 tttccacgaa agaatgcttt gaaggggttt gctcataatt ttattgctcg agtttttttt
+     3961 tgagattttg ttgctggatt tgttatatta agggtaattg gtgggtgtac tattgataca
+     4021 cctctctcaa tgcttgggcc tttagcaaca ttgagatatt ttgggttttt tattgtcatt
+     4081 ccttttttat ttattgattg gggattttat aaaaaatagt tttatttata taaattatat
+     4141 atatatattt tagagaaatc tgtttataat tagtattgtg aaagagtaga agattatgat
+     4201 ttcgtgagag atttttataa ttatagaaat tattaattag tgttcttttt gtatcatgat
+     4261 ttgtaaagag tgaatgaaaa ttttatatcc tgaaaatttt agagtaattc ttttgtattt
+     4321 ctaatgtttc aaaattaggg taaagaaaag aatggtaatg atatgttttt cgagaaaatt
+     4381 gatagctggt ttaaagggaa atatatttta gtatagatag aattttatta ttaaaattat
+     4441 agttttatag aaattttaat aaggttttaa tttagatttt aggggtaagc tctaaagtat
+     4501 agggggaaat agtgtagtta gttagtaggg ttgatattgg ccatctataa gaattattat
+     4561 tataaagtaa ttacagaaaa atttttgatt tagtaccttt atgtttgtaa aaattattta
+     4621 tgaagaactt agtataaaat cagtaataag tgtaatataa gatgaaaatt gttttaaatg
+     4681 aagagttgta gatgttgatt tttaacaggt tgtttattta ctataaatat ttttaaaagg
+     4741 aattcggcta atttttttta cgcctgttta tcaaaaacat ggccttttgg tttgaatgga
+     4801 gtataaaagg tctgacctgc ccagtggttt atctaaacgg ctgcagtgaa taactgtaca
+     4861 aaggtagcga aatcagttgt cctttaaatg gggaaaggta tgaaaggttt gacgataaaa
+     4921 aagctgtctc ttaaaaataa tatgaagttt ccgtttaagt gaaaaggctt aaatttttta
+     4981 aaaagacgag aagaccctat tgagcttgat tatatttttt tataggaaga agttgaagtt
+     5041 ttattggggc aatagaaagc tagaagaaac gctttctttt taggtaggga tccttcatgg
+     5101 gagaagaaag caaaagctac catagggata acagcgttat ctttcttaag agttctgatt
+     5161 aagggaaagg tttgcgacct cgatgttgga ttaaaatgtc tttttggtgc agcagctaaa
+     5221 aaagtaagac tgttcgtctt ttaaaatttt acatgaactg agttaagacc ggtgtgaact
+     5281 aggtcggttt ctatcttttt tttatagcag ctttgtacga aaggatcggc tggtaatgtt
+     5341 ttactttttt tttaatataa ttattagata tgcctcaatt ttcacctctt tttgttgatt
+     5401 ttattttttt attttattgg gcggtattta ttagtgtgtt ttgtatgttg tattggattt
+     5461 caaagcggga gtataatttt taatttaatg gggggaatta tggggactgt aatttcttgt
+     5521 tttgttgttt attgtattcc aaatagaggt attttaggta gtgtggcttg gggtttttct
+     5581 agtattttta ttatactaga tttgattggt ttgtcttgat tttattgtat agtaagaggt
+     5641 tgaattggtt ttgatggggt atcgttgcta atagctatat tggttatttt agttcctata
+     5701 ataagattaa tttctagtgt gagggattac aagttaagag atagaagaag tagaagaaga
+     5761 gatataggag aggttgttta tttaatttca ttggtctgta ttattttttt ctttttatcc
+     5821 aactgaatag atttttattt tttttttgag ttttccttat taccaacttt ttggttgatt
+     5881 ttaaaatggg gctatcaacc ggagcggctt caggcagggg tgttgatgtt aatatacaca
+     5941 gtttgtgggt ctttaccttt acttattatt atcttgttaa tttgaaatga aagatttacg
+     6001 gataggtttc tgttaataaa attaatgagg ggtaattggg aatattttca aagttgaact
+     6061 tgtgtattaa taattttggg gtttttagtt aagttaccag tatatttagt acatggttga
+     6121 ttacctaaag ctcatgtaga agccccttta agcgggtcta taattttagc gggaatttta
+     6181 ttaaagttag gcggttatgg tttattccgt tttatttggg tatttgaaat gaaaataaga
+     6241 ggaatgttta tatttattat agttattagg ttgtggggtg gttttatgag gggtttgtat
+     6301 tgtttaactc agagagattt aaaggcttta attgcttatt cttcgattag ccatatagct
+     6361 ttagggttgg ggggaatttt aaggttttat gagtgtggta agatagcggg catatgcttg
+     6421 ttttttgccc acgggttatg ttccccagct ttattttctt tggctgcaag agtgtacgat
+     6481 tgatcccact ctcgaagagt tcttttaagg aaaggaattc ttcgtgtttt ccctttattt
+     6541 tcagtgtttt gatttttaat atgtattatt aatataggaa ttcccccctc attaaatttt
+     6601 tttagggaaa ttttttgtgc tggttcttta gtatatttat cagttttttt tatagttccc
+     6661 ctggttttaa tgtgtttatt tactggtgtt tattgtatat ttttatacag ggttgttaat
+     6721 catgggactt gtagtaaaat ggtaaaacct gtgtttaatt taagagagcg ttatttatat
+     6781 tctttagttt actcgttagg aattttaata ggtggatttt tatttttgag ttgttttata
+     6841 atatagttta ggaaataaaa taaatagtca atttagttta aataaaatat tattttgtgg
+     6901 aaatagggaa atcgatagtt aattgatttt ttaatagtgt aatgaaaacg ttgatttttc
+     6961 gagtcagaga tgagattaag ttctcttaag gctttgttgg gaaataatta ttttgaaatt
+     7021 aatttaggaa cgttcgattc gtttagaggc ttatgactag ggatattttt acttttatgg
+     7081 attgttttat aggtggattt agagtgttgg aattaggtat gtggactgct agtgtagtgt
+     7141 ggccaattta ttcagtatta ataagtactt tttgatatgg aaattcttga gttgaatcta
+     7201 tactttctga gggagctatt ggattttcat ctagatttcc tattggtgct aaaaaatttg
+     7261 gtggtttagt tcatttaaat ttttctttat tatatttttt attggctatt aatttagctg
+     7321 gggttttagc ttattcttac ccagttaatt gtcattatgc tttaacttta gggttttcat
+     7381 ttcctttttg atttgctact gtttctttga attttaataa gaattggtga atatttttta
+     7441 ttaggcatgt agagggggat ataggaattg cggtagtagc aatattagta gcatctcaat
+     7501 gatttaggtt gatagttcgt ccttttacat tatctatacg tataagaact aatttgttta
+     7561 tgggtaaatt acttgttaat ttaacttttt atatagctga ggagtttatt ttcccattca
+     7621 tagatttttg agggttatct agtattttaa tattttttat ggggacggcg ttgtatgtaa
+     7681 ttgaaggttg tttagcttct ttacaatcta taatttttgt tggtttatta tctttttatt
+     7741 gtgaggaagc tcaatttaaa ttgtaattag ttttgtttag taaataacaa aaagtgtatg
+     7801 agtggtaata tgtttttagt gagaaataga tttgcttatt ttaatgagta ttttttttta
+     7861 ttattgcttt agtaatttta ggggtaatag ttagccaaaa ttgacggttt gaatgggcaa
+     7921 aacttacttc ttttgagtgt gggtttgacc ctataagcag ttcacgatct ccattttcta
+     7981 tacaattttt tttattagca cttttgtttt taatttttga tatagagatt attttattat
+     8041 tcccgattgt aataaggtta aaaatagtat tttgtttgat accaatggcg ggcaaaggtt
+     8101 taactttttt gtttttatta attcttttag ggggtttaat tcatgaattt aatgagggaa
+     8161 ctttagattg agtccaaggt taggttagaa taggagtaaa gtggtgtatg ggcacgaagg
+     8221 attttgagtt cttaggaaac tctttataag gttttttact aagcagatgc tatgccagaa
+     8281 aaattgggtt atcttgatgg ggtaaaatat gagattatat ctttagcatt tgcttctata
+     8341 gcttataaaa agtgaagagc ttttaactct ttgaaacaaa tggtttatgt tggaggtaaa
+     8401 ttaaaatggc agaaaatatg cattagattt aaaacctaaa gatgagtaaa tactctttta
+     8461 atagtgatta gggggataat tgtagttatt attataataa tgtctgtagc tttttatatt
+     8521 gtagtagagc gaaaaggatt agggataatt caattgcggc aagggcctaa taaagtaagt
+     8581 tttaaaggaa ttcttcagcc tattggggat ggggttaagc tttttaagaa agaaattaga
+     8641 tttccttttt ctagaactcg atttatattt ttattggggc cttttctttg ttttttctgt
+     8701 gcttattgtc tttgattaat ttttccaggc tcatttcgct actcaaattt tgaattgggg
+     8761 ttgttatttt ttcaatgtat ttcttctttt agagtatttg gggtcttttt gtctggttga
+     8821 gtttgcgatt ctcgttatgg gtttttaggg gctatgcgag ctgtagctca aagagtttca
+     8881 tatgaagtat ttttgagaac ttgcttatat tgtcccctat tgttaattgg aagttttgat
+     8941 ttaatagtta ttcgtgaatt tccgttatga tttttttgag ttggccaaga ggttataatt
+     9001 ttgtggcttg tagctacgtt agcggagact aatcgggccc cgtttgattt tgtagaaagt
+     9061 gaatctgaat tagtagcggg gtatagggtt gagtatgggg gagttggatt tgctttaata
+     9121 gctttagctg agtatagaaa tatgctattt ataagtttgt tggtttccat tttatttttt
+     9181 agtggggtaa ggggaattga gttatttaga gatatggttt ttattttttt tctattggtg
+     9241 gtgtcttatt ttatggtgtg ggtacggggt gcgttacccc gatttcgtta tgatttacta
+     9301 atagggttgt gttgagaaat tttactacca ttaagcttgt gtgagtttat ggttctttta
+     9361 tgtgtaaggt tataggtaag tttgagaaat gatgaagagt agcatataaa gtgcatcttg
+     9421 tttacaccaa gaaggagagt ttaatcctct ttattaagcc ttagtttaaa aagaactatc
+     9481 gactgttaat cggggggtat aattatatag gtttaggtga aagattataa attagcggga
+     9541 actataaaaa tttctttaat aattttaata ggggtggtta ttattttttt tatttgaagt
+     9601 ggggggtggt ttactgaata tttagtagta gaattaggat ctactgattc tgaccgtttc
+     9661 ccaagaattc gatttcatgt agtaatagat actatatctt tgttgatagg atttactgtt
+     9721 atgtatattt ctgcggtagt aataatatac tcatggtttt atataagaca tgaggtttat
+     9781 tttaaacgtt ttttattatt attagcttta tttgttttag ctatattact tttggttttt
+     9841 gtccctggtt ttttatctat aataattgga tgagattttc taggtgtaat ttcctatttg
+     9901 ttagtggttt atcgaataaa caagccttct ttaagggctg ggactttaac atttgtctct
+     9961 aatcgtgttg gagatgcttg ttttattatg gggattgtat ttcttatagc ttctatggct
+    10021 tttgattgtt cttctatgtg gtctagtagg agtcaattta tcattgcggg ggcagtaaga
+    10081 ttaggatcat taactaagag ggctcagatt cctttttctg cttggttacc cgcagctata
+    10141 gctgctccta ctcctgtctc tactttagtg cattcatcta ctttggtggc cgccggggtt
+    10201 tatgtaatac ttcgttatcc tgatttggtt agtgaatcat gagatttggc agtatttgta
+    10261 tgttcctgta gaactctttt aattgcgggc acaagttctg cgggggaaat agatttaaaa
+    10321 aaggtgcttg cattatctac tttaagtcaa gtagctagaa taatactttt tttggctata
+    10381 ggtgcaattc aagttgcatt tttccatatg gtagttcatt cttttttaaa agctttatta
+    10441 tttatggctg tagggagaat tattttttat aggggagggc ttcaagatgt ccgattgatg
+    10501 gggggcttag cgtggaaagc acctttgtta tatttatggt tagtaatttc tattttatct
+    10561 ttaattggtc taccatttat ggctgggttt tattcaaaag agtatatagt tgcttcttta
+    10621 gtggacggaa atttcccgat aataagggct attatagtag ttttaggaat ggctagaact
+    10681 cttttttata gcggtcgggt gttagtttta ttgttagtaa gatctggggg ttttcctgtt
+    10741 cgtcattatt cagatggggg agtaatttta agaattaggt gttttttgtt aatattgggg
+    10801 gctattttta gtggggtttt gattcataat gttttcaggc tgtcccgtgg ttttacttcc
+    10861 cttgaagttg ggggttttta tataaaactc ttttatgtaa ctttgagaat tttagtaata
+    10921 tcttgtttat tttccttgta taaaaaaacg tgggtaaaaa tgcaagttag tgaattttta
+    10981 gggaaaatat gatttttaaa aggtttgagg ggtaattatt tgaggagaac atttttagta
+    11041 aaatgttccc gattaacaaa agttgtagaa aatggttggg ttggagattt tttatgaaga
+    11101 aggggaataa aaaatgtagt gtttgggttt ataggagtaa tgcgaggttt aaattataat
+    11161 tttattgggg ttatagtttt tattataatt agttgtgtat ttatttttac tttataggta
+    11221 aaaataaata aagaggctag attagcagat ataatgtatt caacttagga ttgaaaggaa
+    11281 atttttaatt atttagttgg ggatattaag ttaaatagac tgtaatattt caagtattaa
+    11341 agtgaaacgg agttttatat ctcggctagg caatacaaaa ataatattta gcaataaccg
+    11401 agcagaatat atatattttt tttttttttt tttctaatta aattaaaatg atgacttagc
+    11461 taagcaatag atgatttttg tgaaaagtca aaagggggtt tgttattcct ctaagttagt
+    11521 aaattatttt gtttgattta gtatggcgcg acaaatgtag caatacatca tattatggtc
+    11581 atttggttaa aagcatagtt tttataaagg tgtgttttat tattttattc ttgattttac
+    11641 ttatttgaaa tgtttcctta gatggaatta ttaataactg gaaggtgata tcacctagtt
+    11701 ttaattttct ctttgagggg gagggtgtga aaagcatttt gatgtgggtt ggagaaggta
+    11761 gtgattagta ttaaaggaaa agaattcctc tttttgatct aaatgggtca aactgaatgc
+    11821 aattattaat acaggtggtt tgagggagca aactagtgct atttgaagag ttacttttgc
+    11881 ttttaaaaga aatgttacgc gtatgttttc ttttttcttc atttactgtt aaggattgcc
+    11941 tgtagaactt accaaatgtg tatgtgcata tgtgagatat atatatatat ataaaaagta
+    12001 agggattcta gtataatttt aatattaata tttttactct ttagagtaaa aatattaata
+    12061 ttaaaattat actagaatcc catacttttt atatatatat atatatatat attaacacat
+    12121 tactttcttt cttaataaaa tataactata attaaaaata ttttattaag aaagaaagta
+    12181 aatgtgttaa tatatatata tatataaatc agcttttaaa gctgatttat ataaatttta
+    12241 cttaactttt ataatttata taaactaaaa aaaattaatt taaattttta ctttaaaaat
+    12301 tttaacaatt tgtttagatt gtttgtagtt attatatctt ttaaaagaaa aataaaattg
+    12361 attcagatag accatatatt cccttcccgg cgtggctccg tgaggtctgc ctgacgcccg
+    12421 gtaaagctga ggtctatttc tgaatcaatt gttttatttt ttttctttta aaattttagt
+    12481 taagaacaat gttaaatagt tcaatatatg attagtgcca aataaatatt tggcactaaa
+    12541 atttatatat atttattatt aattttcatt attttattag taaaataatg aaaattaact
+    12601 aaatattctt catactattc cttttattat tttataataa aaggtatagt gtgtataata
+    12661 tttaggtatt tttttatttg ataaaaaaaa tacgtaataa tatatatata atatctaaat
+    12721 tgaaaatcaa tttagatatt atatatatat tattacaaaa aaaaaaaata aaaatatact
+    12781 tgggtgattt ttttggtcgg tttttgaggg ggggtgattt ttttgtaggg taattggggg
+    12841 gtttttgtaa tttggaatgt gatgagcttt ttagaagtaa tggaaaatgg gggacttgta
+    12901 attggggatt tagatttttt tggggggtga tttttttggt gtaggcttat gtgtggtttt
+    12961 tagaggtaat gaaaattgag ggcgattttt taagggttga tttttttaga gtttttgtga
+    13021 tttttataag tgtggtttat gtgtggtttt cagagggaaa tggaaaatgg gggtgatttt
+    13081 ttgggggggt gattttgggg ttttttgttc tttttacagg ttgaggttta ttagaggctt
+    13141 ttagaagaaa gtaaaatggg ggtttgttgt acggggattt aaatttttta gggtgttttt
+    13201 cgaggtggga ttatgtgtgg ttttcagagg gaaatggaaa atgggggtga tttttggggg
+    13261 tgattttggg gtttttcgtt ctttttacag gttgaggttt attagaggct tttagaagaa
+    13321 agtaaaatgg gggtttgttg tacggggatt ttaatttttt agggtgtttt tcaaggtggg
+    13381 attatgtgtg gtttttagag gtaatgaaaa atggggtgat tttttaaggg gtgatttttt
+    13441 ttagagtttt tgtgattttt ataagtgtgg tttatgtgtg gttttcagaa ataaatggaa
+    13501 aatgggggaa tttttgatgg gggcgatttt ttggttttgt gttattttac tggttgaggt
+    13561 ttattgtgta gtttttagta gaaatttaaa atggggattt ataagtttga ttagttagtg
+    13621 tattttgtga attgtaacaa ggttagactt taaaaattta taatagatag ggaataaaaa
+    13681 agtattgaaa attattttta ttgagtttat ggggttagtt taagttgatt tattagcgtg
+    13741 ttttgtgggt tgtaacaagg ttagacttta aaaatttata atagatagga aatataaaag
+    13801 tattggaaat tatttttatt gagtttataa ggttggtgta agttgattta ttagcgtatt
+    13861 ttgtgaattg tgacaaggtt agactttaaa aatttataat agatagggaa gataaaagta
+    13921 ttgaaaatta tttttattga gtttataggg ttagtataag ttgaatttat tagcgtattt
+    13981 tgtgaattgt aacaaggtta gactttaaaa atttataata gatagggaag ataaaagtat
+    14041 taaaaattat ttttattgag tttacagggt tagtgtaagt tgatttatta gcgtattttg
+    14101 tgaattgtaa caaggttaga ctttaaaagt ttataataga taggataaaa gtattgaaaa
+    14161 ttatttttta ttgagtttac agggttagtg taagttgatt tattagtgta ttttgttagt
+    14221 tgtaacaagg ttagacttta aaaatttata atagataggg aggataaaag tattgaaaat
+    14281 tatttttatt gagtttatag ggttagtata agttgaattt attagcgtat tttgtgaatt
+    14341 gtaacaaggt tagactttaa aaatttataa tagataggga agataaaagt attaaaaatt
+    14401 atttttattg agtttatagg gttagtgtaa gttgatttat tagcgtgttt tgtgaattgt
+    14461 aacaaggtta gactttaaaa atttataata gatagggagg ataaaagtat tgaaaattat
+    14521 ttttattgag tttatagggt tagtgcaagt tggtttatta gcgtattttg tgagttgtaa
+    14581 caaggttaga ctttaaaaat ttataataga tagggaggat aaaagtattg aaaattattt
+    14641 ttattgagtt tatagggtta gtgtaagttg atttattagc gtattttgtg aattgtaaca
+    14701 aggttagatt ttaaaaattt ataatagata gggaggataa aagtattgaa aattattttt
+    14761 attgagttta tagggttagt gtaagttggt ttattagtgt attttgtgaa ttgtaacaag
+    14821 gttagacttt aaaaatttat aatagatagg gaggataaaa gtattgaaaa ttatttttat
+    14881 tgagtttata gggttagtgt aagttgattt attagcgtat tttgttaatt gtaacatggt
+    14941 tagactttaa aattaaaatg gctgaaatat ttgttttggt atttttgctt ttatgtagaa
+    15001 atttttcaat ttgagtggag catcccctta ttttaggggg tggtttatta atagtaagaa
+    15061 ttgtgagttt acctttaata atttctgttg gaagtctttt tggttttagt ttttttattg
+    15121 ttgtggtggg gggagtttta attgtttttg cttattctgt atctttgatt tctattacaa
+    15181 agagagattt attgttaaaa tattttactc aaaggttagg tgtggtagga aaagtttgaa
+    15241 gagttttttt attttttaga ttagtttttt tgttttcaag ttgagtagta ggagcaggaa
+    15301 ttttttgttg gagtgatgtt ttatatttca gaaaaggttg gggattaggg gtggttttac
+    15361 ttggattttt attgctagca attatggtaa ttgctattag gttagcgaga aagtttaaag
+    15421 gggctttaat taaatagtaa ttataatggt gataagtgtt cgtttttttt tctttaattc
+    15481 attttataac tcattttaat ttttttatga atttattatt ggtttttgag ttaataggat
+    15541 tttgtgtttt tttgttttgt ataaatttat cttttatttc ttttaggagg gtgggtttgt
+    15601 attttagtat tgttattttg acttttaggg tgtgtgagac tgttttaggt atggctttat
+    15661 tagtaagagc tgcacgttat acaggtcggg caaatgtaaa atcttttagg tttctgggtt
+    15721 tttaattgta acaggagtat gaggagtata tttgttttcc atgcaaaagg ttcgttttag
+    15781 gttgttatta gttgcttatt ttacaaattg ataaataaat aaattattat ttaaagttga
+    15841 gtttaagagt tccttaatag gatttatcta tgttaattgg gtgatttgtt cctatggctg
+    15901 ttattgttag gggttacatt atggttggag gtatttttgt ttgtgtttat agggttggtt
+    15961 tgttgggaat atgggtagga atagagttaa gattttttgg agctgttgga gttttagggg
+    16021 ggtcaagggt agaggaagtg gagggtgttc aaaaatattt tattattcaa gtttttagat
+    16081 ctattttttt attaattggg tttttgttag taattaattt ttataagggg ggttgattgg
+    16141 ttgagtttat tatagttatt ggtttaataa tgaaattagg tttatttcct ttttattttt
+    16201 gaattccttc tgtaataagg gttgtatctt gggtaagatg ttttgtagtt tctgtggttc
+    16261 aaaagtttaa tcctatttga attttggtga atttaatatt agaaagttat cttcagcaga
+    16321 taattgagtt ttctgcttgt ttaactggtc tagttggttg tattgggggg attggagttt
+    16381 tacagtttcg tgttttattg gctttttctt caatggttca tttaggttat ataattttta
+    16441 tatgcttggt tgggtgggat gaatttttaa cttatatagt tttgtatttt tgtttaagtt
+    16501 ttaggttgat aatgagtctt tgggtttgtg ggatttatag gtttttagat ttaataaaat
+    16561 ctaatggggg tagggatgta gatttattta tgatttcttt gtatatattt tcttttgctg
+    16621 gtattccccc tttaagtggg tgttttatga aagctgtttt tttagtttct tgttgggagg
+    16681 tttttcctgt ggggtgtgta gttttatttt tgagctcagg tgttagtttg ttttattata
+    16741 gaagattttt tacatattta aatttatatt gaggaagtat attaaagtgg caatttgtaa
+    16801 agagaagact agcagattta aaagtttttt tattttttgt aagagtttta ttaaatgtgg
+    16861 tattagggtt tggtttattt ttattgattg ttattattta aaatttttac aaaataaaag
+    16921 tagtttaata agaatgaaaa tttgtcatat ttttggtgct gggagtcttt tattgggatt
+    16981 atagtttaaa aagaatgaga attttgtaaa tttttggtaa agttatattt ggttctttat
+    17041 tgtgatgaaa aaattagttt attagcttct ggtaatgttt tagctatata tttaaagaat
+    17101 acatggtatt aaaagagttg gagagaggaa aatatctttt ttagttaatg atttaataag
+    17161 gttaaataaa atagataata aatcgattag gtgttttata atagattatt tagtatctct
+    17221 actccagtag ttagagttga ttaaaaatat agaaatatag attaagtaat atatataagg
+    17281 ggagaataat aaagtgccag cattcgcggt cagtcttttt acctcaagtt aataattttg
+    17341 taaaagagta aggttataat aaagtattag ttttagttta tagcggttaa atgtttatta
+    17401 agctaaaaat aaggggctac ttaaaaacct aatctgtaaa ggctgtaaca aagacaagga
+    17461 tttgataccc ttttatttat gctgtcaaat aatttacggg gactacgagt tataattgct
+    17521 taaaacttaa agaagttggc ggtgcttcac aaccattaag gggaacttgg cgattaaatt
+    17581 gatgatcctc aaattacctt acctttagta gtctttatat accgccgttg aaaggtaatt
+    17641 ttgaagaaaa aagatacggg catagtgtat atttaaagta tatttataca ggaattcagg
+    17701 tacacgtata ggatctaaag ggtttagctg agttacaatt ataaaataat acggatttat
+    17761 tagtgaaata tttaatagga aggtgtactt attagtaaat ttttataaga gaggaaaatt
+    17821 gaatagggta attggagtgc gtacaaatcg cccgataccc tacgtataga aatcgaggta
+    17881 agtcgtaaca tagtaatgct agtataaatt ggtattatat aaaagataaa ctaagtaaag
+    17941 ttatttggtt catacccaag ttatagaatt aatattcttc tttttataag cctggtaata
+    18001 tataaaatat tttaaattgc aaatttgagt aaggaacaat ccccgggttt aaggttgaat
+    18061 aggcggctgt agaagtgtta agttgtaacc ttaattatag gtatttacct cctttttatt
+    18121 aaagagaagc gatggttaca tagtgagatt tctaatcttt tctgtttgcg gttcaattcc
+    18181 gtttgttttt ttatggctcg aactggttat aacaaggtgc ctataaggcc ttgaccaatt
+    18241 gcaatttctg ctagagtgtt tggtgtagca attggtctga tttgatattt aactgatgaa
+    18301 gtttctttta ggatgtattt ttatttgggt gtggtttctt tttttcttgg tatggcattg
+    18361 actggttggt gaggggatat tattgaagag agaacttttt tgggtaatca tacttctcat
+    18421 gtggtattga atttacgatg gggtttttat ttatttattt tatctgaggt ttgatttttt
+    18481 tttagacttt tttgagcttt ttttactgct agagtgggtg agatttccat acagggtgtg
+    18541 ggtgcacaat ggcctccagt aggtatagag gggatatacc cttggggtgt tccttttttg
+    18601 aatactgttg tgttagttag atctgggtta tgggcaacaa cggcccataa agctgtaaag
+    18661 gtacatagat caattagttt ggatacttta cagggggttc gtttaagatc taaatggtga
+    18721 aaagtggggt tgttatgttt gggaattact attgttttgg gtgtttattt tacttatttg
+    18781 cagcttcatg aatattattc ctcttctttt tctatatccg atggggctta tgggagagta
+    18841 ttttttgtgt tgacaggatt tcatgggttg catgtaatta ttggtactgt ttatttagga
+    18901 gtttgttgga ttcggctttt aaagaaacat ttttcttaca agcatcatca atttgggtta
+    18961 gataggtgca tgtgatattg acattttgta gatgcagttt gaattgtggt gtttctttct
+    19021 gtttatgtgt ggggaaatca atagctttga tagtttaaaa agaatatagt tttgaagcga
+    19081 ctagggtaat agtatatttt aaggcaatat atttataaat tgggtggatt actttaagtg
+    19141 tagaaggtta agtttgcaac ttacatagtg tgattttcat gttcacttaa tgatcttttt
+    19201 aattatttta aatttttgta gatattttac tttataaaag gtctttgtgt aattgagtga
+    19261 gttaattatt tatatttgtg gttgagcgtg tagctaagag tcttatagct gtttataaat
+    19321 ttgtgttttt ttatgctttt tcttctttta atgcttatat taagtctgtt tttatagttt
+    19381 tagttttggg tatttatgag attttattag atttaaaggg gtta
+//
