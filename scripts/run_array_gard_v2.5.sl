@@ -46,3 +46,5 @@ echo "
 (echo 1; echo "${PATH_ALN}/aligned_${SAMPLE}.fna"; echo 2; echo "GRM"; echo 3; echo 5; echo 4; echo "${PATH_TREE}/${SAMPLE}.tree" | mpirun -np $SLURM_NTASKS /home/maeperez/software/HYPHY/bin/HYPHYMPI /home/maeperez/software/HYPHY/share/hyphy/TemplateBatchFiles/KHTest.bf
 
 #(echo 15; echo 2; echo ${PATH_ALN}/aligned_${SAMPLE}.fna; echo ${GARD}) | mpirun -np $SLURM_NTASKS HYPHYMPI > ${PATH_GARD}/${SAMPLE}.KHtest
+
+
