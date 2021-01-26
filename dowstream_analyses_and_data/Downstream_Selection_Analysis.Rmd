@@ -8,24 +8,19 @@ editor_options:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-setwd("./")
+setwd("/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/dowstream_analyses_and_data/")
+getwd()
 library('ggplot2')
 library('gridExtra')
 library(RColorBrewer)
-library(dplyr)
 library(tidyr)
-library(reshape2)
-library(plyr)
+library(plyr) ##
+library(dplyr)
+library(reshape2) ##
+# install.packages(c('gridExtra','RColorBrewer','tidyr','plyr','dplyr','reshape2','vegan','ape'), dep = TRUE)
+# install.packages(c('data.table','grid','gtable','scales'), dep = TRUE)
 
-# library(grid)
-# require(gtable)
-# library('scales')
-# library(plotly)
-# library(e1071)
-# library("outliers")
-# library("dummies")
-# library(ggbiplot)
-# library('Cairo')
+
 
 ```
 
@@ -180,10 +175,11 @@ plot<-ggplot(data=subset(breakdown_w_counts,comp!='Pan'))+
 # Import data
 
 ```{r echo=FALSE}
-# Import list of genes that passed the KH test. Genes without significant evidence for recombinaiton
+# Import list of genes with significant evidence for recombinaiton according to the AICc test.
 
-KHtest_pass= read.table('./list_of_non_recombining_genes',header=F)$V1 %>% substring(., 9,17)
-KHtest_pass
+recombining_genes= read.table('core_genes_with_recomb_AICc.txt',header=F)$V1
+recombining_genes
+
 
 # Import SEED annotations for all genes
 
@@ -192,23 +188,25 @@ seed = seed[,c(-1,-length(seed))]
 seed = seed[!duplicated(seed),]
 head(seed)
 
-core_sel=read.table('Selected_genes.txt',header=T,sep='\t',row.names = 1)
+core_sel=read.table('absrel_results_pval_0.05.txt',header=T,sep='\t',row.names = 1)
 core_sel$Core=0
 # str(core_sel)
 core_sel[core_sel>0]=1
 core_sel$gene_id=rownames(core_sel)
 core_sel=merge(core_sel,seed,by = 'gene_id',all.x=T)
 colnames(core_sel)
-core_sel %>% head()
+head(core_sel)
 
 
-core_orth=read.table('Orthology.txt',header=T,sep='\t')
+core_orth=read.table('Orthology_id35cov51_nopseudo.txt',header=T,sep='\t',row.names=1)
+core_orth %>% head
 core_orth$gene_id<-core_orth$R.magnifica
 core_orth$Core=1
 core_orth=core_orth[,c('gene_id','Core')]
-core_orth[setdiff(colnames(core_sel),colnames(core_orth))[1:27]]<-0
+core_orth
+core_orth[setdiff(colnames(core_sel),colnames(core_orth))[1:38]]<-0
 core_orth=merge(core_orth,seed,by = 'gene_id',all.x=T) %>% unique(.)
-core_orth= subset(core_orth, gene_id %in% KHtest_pass)
+core_orth= subset(core_orth, !(gene_id %in% recombining_genes))
 core_orth %>% tail()
 colnames(core_orth)
 
