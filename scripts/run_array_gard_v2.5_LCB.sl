@@ -1,13 +1,13 @@
 #!/bin/bash 
-#SBATCH --job-name=run_gard_v2.5
+#SBATCH --job-name=run_LCBgard_v2.5
 #SBATCH --account=def-bacc
-#SBATCH --time=0:30:0
+#SBATCH --time=3:00:0
 #SBATCH --ntasks=6
 #SBATCH --nodes=1
-#SBATCH --mem-per-cpu=300M
+#SBATCH --mem-per-cpu=600M
 #SBATCH --error=%x-%A'.err' 
 #SBATCH --output=%x-%A'.out' 
-#SBATCH --array=301-638%50 #1-638
+#SBATCH --array=11,14,28,40,54,57,74,81,82,86,88,95,96,97,98,99,100,101,103,104,105,106,107,108,110,113,115,122,123,124,125,126,127,128,129,130,132,134,151,155,156,157,158,159,161,162,166,167,168,169,170,171,172,174,175,176,178,179,181,182,183,184,185,186,187,189,190,191,192,194,195,196,197,198,199,200,201,203,206,207,208,210,212,213,214,216,217,218,220,223,224,225,227,228,229,230,231,232,233,234,235,236,237,238,239,241,249,250,252,253,254,255,256,259,264,265,266,269,270,271,274,276,278,280,284,286,294,295,296,299,300,301,302,307,315,316,317,323,324,325,326,328,329,330,331,332,335,336,337,338,340,341,342,344,346,351,352,354,355,356,367,368,371,376,377,378,379,380,383,384,387,390,391,393,395,396,397,400,402,406,408,409,411,414,417,420,426,427,432,440,441,442,444,447,449,450,451,452,453,454,456,458,463,465,467,468,469,471,472,474,477,479,480,484,486,488,495,498,507,508,511,513,517,519,524,528,529,540,541,543,544,546,548,555,558,563,564,566,569,570,573,574,576,577,578,580,581,582,583,588,592,594,597,598,599,600,601,604,606,608,611,612,616,622,626,627,630,631,632,633,635,636,639,640,642,643,644,645,647,648,659,660,661,663,669,671,674,678,680,681,685,689,692,696,703,704,708,709,714,716%50
 
 module load StdEnv/2020
 module load gcc/9.3.0
@@ -16,7 +16,7 @@ module load hyphy/2.5.26
 
 PATH_ALN="/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/mauve_alignments/core_ALL_alignments"
 PATH_GARD="/home/maeperez/scratch/Clams/hyphy2.5/gard_LCB"
-PATH_PHYLOGENY="/home/maeperez/scratch/Clams/init_trees"
+#PATH_PHYLOGENY="/home/maeperez/scratch/Clams/init_trees"
 
 #SAMPLE="Rmag_0001"
 SAMPLE=$(sed 's/,.*//' ${PATH_ALN}/filelist | sed -n "${SLURM_ARRAY_TASK_ID}p" | sed 's/aligned_//' | sed 's/.fasta//')
@@ -29,8 +29,8 @@ echo "running sample # ${SLURM_ARRAY_TASK_ID}  : $SAMPLE"
 echo "## GARD ##"
 echo "SLURM_NTASKS =${SLURM_NTASKS}"
 
-(echo 14; echo 1; echo "${PATH_ALN}/aligned_${SAMPLE}.fna") | mpirun -np $SLURM_NTASKS HYPHYMPI
+(echo 14; echo 1; echo "${PATH_ALN}/aligned_${SAMPLE}.fasta") | mpirun -np $SLURM_NTASKS HYPHYMPI
 
-mv ${PATH_ALN}/aligned_${SAMPLE}.fna.best-gard ${PATH_GARD}/${SAMPLE}.best-gard
-mv ${PATH_ALN}/aligned_${SAMPLE}.fna.best-gard.fit.bf ${PATH_GARD}/${SAMPLE}.best-gard.fit.bf
-mv ${PATH_ALN}/aligned_${SAMPLE}.fna.GARD.json ${PATH_GARD}/${SAMPLE}.GARD.json
+mv ${PATH_ALN}/aligned_${SAMPLE}.fasta.best-gard ${PATH_GARD}/${SAMPLE}.best-gard
+mv ${PATH_ALN}/aligned_${SAMPLE}.fasta.best-gard.fit.bf ${PATH_GARD}/${SAMPLE}.best-gard.fit.bf
+mv ${PATH_ALN}/aligned_${SAMPLE}.fasta.GARD.json ${PATH_GARD}/${SAMPLE}.GARD.json

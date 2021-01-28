@@ -3,11 +3,11 @@
 #SBATCH --account=def-bacc
 #SBATCH --time=3:0:0
 #SBATCH --nodes=1
-#SBATCH --ntasks=12
-#SBATCH --mem-per-cpu=600M
-#SBATCH --error=%x-%A'.err' 
-#SBATCH --output=%x-%A'.out' 
-#SBATCH --array=67,138,171,176,192,311,341,398,435,444,458,507,533,542,556,558,567,596,601,613,617,631,634,638
+#SBATCH --ntasks=6
+#SBATCH --mem-per-cpu=500M
+#SBATCH --error=%x-%A_%a'.err' 
+#SBATCH --output=%x-%A_%a'.out' 
+#SBATCH --array=533
 
 
 module load StdEnv/2020
