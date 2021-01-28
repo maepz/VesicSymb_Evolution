@@ -174,7 +174,6 @@ plot<-ggplot(data=subset(breakdown_w_counts,comp!='Pan'))+
 
 
 # Import data
-
 ```{r echo=FALSE}
 # Import list of genes with significant evidence for recombinaiton according to the AICc test.
 
@@ -189,9 +188,11 @@ seed=seed[,c("locus_tag","SEED_level_1","SEED_level_2","SEED_level_3" ,"SEED_lon
 colnames(seed)[1]='gene_id'
 seed = seed[!duplicated(seed),]
 
+pval_thresh=0.01
+core_sel=read.table(paste0('./absrel_results_pval_',pval_thresh,'.txt'),header=T,sep='\t',row.names = 1)
 
-core_sel=read.table('./absrel_results_pval_0.05.txt',header=T,sep='\t',row.names = 1)
-core_sel[core_sel>0]=1
+# core_sel=read.table('./absrel_results_pval_0.05.txt',header=T,sep='\t',row.names = 1)
+core_sel[core_sel>0]=1 # presence/absence of selection in that gene (not counting multiple episodes of diversifying selection within a particular group)
 core_sel$gene_id=rownames(core_sel)
 core_sel=subset(core_sel, !(gene_id %in% recombining_genes)) # remove recombining genes
 core_sel=merge(core_sel,seed,by = 'gene_id',all.x=T)
@@ -249,7 +250,6 @@ colSums(df[,c("Core", "All", "All.groups", "Sym", "Gigas", "Ruthia",
 "i", "j", 'k','l','m','n', "R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
 "R.rectimargo","R.fausta", "R.southwardae", "V.gigas1","V.gigas2", "V.okutanii",  "V.soyoae1", "V.soyoae2","V.marissinica","Bathy","SUP05")])
 ```
-
 # Run hypergeometric tests and format data frame for figure
 
 ```{r}
@@ -341,9 +341,9 @@ plot_Core
 plot_FL<-ggplot(subset(dat,(comp %in% c('FL'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
-  scale_y_continuous(limits=c(0,10),
-                     breaks=c(seq(0,10,2)),
-                     minor_breaks = c(seq(0,15,1)),
+  scale_y_continuous(limits=c(0,max(subset(dat,(comp %in% c('FL')))$count)),
+                     breaks=c(seq(0,max(subset(dat,(comp %in% c('FL')))$count),2)),
+                     minor_breaks = c(seq(0,10,1)),
                      position='left',
                      sec.axis = sec_axis(~./subset(dat,(comp %in% c('FL')))$tot*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
   scale_fill_manual(values=c('depletion'='blue','enrichment'='red','NS'='grey50','NA'='white'))+
@@ -355,7 +355,7 @@ plot_FL
 plot_Ruthia<-ggplot(subset(dat,(comp %in% c('Ruthia'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
-  scale_y_continuous(limits=c(0,17),
+  scale_y_continuous(limits=c(0,max(subset(dat,(comp %in% c('Ruthia')))$count)),
                      breaks=c(seq(0,20,2)),
                      position='left',
                      sec.axis = sec_axis(~./unique(subset(dat,(comp %in% c('Ruthia')))$tot)*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
@@ -369,8 +369,8 @@ plot_Ruthia
 plot_Gigas<-ggplot(subset(dat,(comp %in% c('Gigas'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
-  scale_y_continuous(limits=c(0,3.5),
-                     breaks=c(seq(0,3.5,1)),
+  scale_y_continuous(limits=c(0,max(subset(dat,(comp %in% c('Gigas')))$count)),
+                     breaks=c(seq(0,max(subset(dat,(comp %in% c('Gigas')))$count),1)),
                      position='left',
                      sec.axis = sec_axis(~./unique(subset(dat,(comp %in% c('Gigas')))$tot)*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
   # scale_fill_gradient2(low = "blue", high = "red", mid = 'grey20',na.value= 'grey20',limits=c(-0.5, 0.5), oob=squish)+
@@ -380,11 +380,12 @@ plot_Gigas<-ggplot(subset(dat,(comp %in% c('Gigas'))))+
   theme(axis.title.x = element_text(size=8))
 
 plot_Gigas
+
 #### here ####
 plot_Sym<-ggplot(subset(dat,(comp %in% c('Sym'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
-  scale_y_continuous(limits=c(0,23),
+  scale_y_continuous(limits=c(0,max(subset(dat,(comp %in% c('Sym')))$count)),
                      breaks=c(seq(0,10,1),seq(10,25,5)),
                      position='left',
                      sec.axis = sec_axis(~./unique(subset(dat,(comp %in% c('Sym')))$tot)*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
@@ -439,7 +440,7 @@ plot_Core
 plot_a<-ggplot(subset(dat,(comp %in% c('a'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
-  scale_y_continuous(limits=c(0,10),
+  scale_y_continuous(limits=c(0,max(subset(dat,(comp %in% c('a')))$count)),
                      breaks=c(seq(0,10,2),seq(10,20,5)),
                      minor_breaks = c(seq(0,10,1),seq(10,20,2.5)),
                      position='left',
@@ -454,7 +455,7 @@ plot_a
 plot_b<-ggplot(subset(dat,(comp %in% c('b'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
-  scale_y_continuous(limits=c(0,8),
+  scale_y_continuous(limits=c(0,max(subset(dat,(comp %in% c('Gigas')))$count)),
                      breaks=c(seq(0,10,2),seq(10,25,5)),
                      position='left',
                      sec.axis = sec_axis(~./unique(subset(dat,(comp %in% c('b')))$tot)*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
@@ -468,7 +469,7 @@ plot_b
 plot_c<-ggplot(subset(dat,(comp %in% c('c'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
-  scale_y_continuous(limits=c(0,3.1),
+  scale_y_continuous(limits=c(0,max(subset(dat,(comp %in% c('Gigas')))$count)),
                      breaks=c(seq(0,5,1)),
                      position='left',
                      sec.axis = sec_axis(~./unique(subset(dat,(comp %in% c('c')))$tot)*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
@@ -503,12 +504,10 @@ plot2
 plot_Selection<-grid.arrange(plot1,plot2,nrow=2,ncol=1)
 plot_Selection
 
-
-# ggsave(file='plot_Selection.svg',plot=plot_Selection,width=8.53,height=8.36,units='in',dpi=600,device='svg')
 ```
 
 ```{r}
-ggsave(file='plot_Selection.svg',plot=plot_Selection,width=8.53,height=8.36,units='in',dpi=600,device='svg')
+ggsave(file=paste0('plot_Selection',pval_thresh,'.svg'),plot=plot_Selection,width=8.53,height=8.36,units='in',dpi=600,device='svg')
 ```
 
 # Get genes for specific categories
