@@ -3,7 +3,7 @@
 #SBATCH --account=def-bacc
 #SBATCH --time=0:30:0
 #SBATCH --ntasks=4
-#SBATCH --mem-per-cpu=200M
+#SBATCH --mem-per-cpu=600M
 #SBATCH --error=%x-%A'.err' 
 #SBATCH --output=%x-%A'.out' 
 #SBATCH --array=207,254

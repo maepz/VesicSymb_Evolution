@@ -1,7 +1,7 @@
 #!/bin/bash 
 #SBATCH --job-name=run_relax_V2.5
 #SBATCH --account=def-bacc
-#SBATCH --time=3:0:0
+#SBATCH --time=6:0:0
 #SBATCH --nodes=1
 #SBATCH --ntasks=6
 #SBATCH --mem-per-cpu=500M
