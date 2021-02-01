@@ -1,7 +1,7 @@
-LOCUS       MK721544               18819 bp    DNA     linear   INV 24-JUL-2019
+LOCUS       B.thermophilus         18819 bp    DNA     linear   INV 24-JUL-2019
 DEFINITION  UNVERIFIED: Bathymodiolus thermopilus mitochondrion sequence.
-ACCESSION   MK721544
-VERSION     MK721544.1
+ACCESSION   Contig_1
+VERSION     Contig_1
 KEYWORDS    UNVERIFIED.
 SOURCE      mitochondrion Bathymodiolus thermophilus
   ORGANISM  Bathymodiolus thermophilus
@@ -22,233 +22,386 @@ REFERENCE   2  (bases 1 to 18819)
 COMMENT     GenBank staff is unable to verify sequence and/or annotation
             provided by the submitter.
 FEATURES             Location/Qualifiers
-     source          1..18819
-                     /organism="Bathymodiolus thermophilus"
+     source          2..18819
+                     /organism="UNVERIFIED: Bathymodiolus"
                      /organelle="mitochondrion"
                      /mol_type="genomic DNA"
-                     /db_xref="taxon:12966"
      gene            1..1560
-                     /gene="cox1"
+                     /locus_tag="Bthe_01"
+                     /gene="COX1"
      CDS             1..1560
-                     /gene="cox1"
+                     /gene="COX1"
                      /codon_start=1
                      /transl_table=5
                      /product="cytochrome c oxidase subunit I"
                      /protein_id="QDO71880.1"
-                     /translation="MCSTNHKDIGTLYILLGLWSGMIGTSLSMLIRIELARPGSFLGD
-                     DQLYNVIVTAHALVMIFFMVMPLMVGGFGNWLLPLMMGSIDMIFPRLNNLSFWFLPAS
-                     LFTLLLSTFIESGAGTGWTLYPPLSSYTGHSGPAVDMSLFSLHLAGASSIGGSINFLT
-                     SMKNMSVESMRGERMVLFVWSMAVTAVLLLVSLPVLAGGITMLIFDRHFNTSFYDPSG
-                     GGDPVLYQHLFWFFGHPEVYVLILPGFGMVSHVVAHCAGKDEVFGVLGMVYAMVCIGV
-                     LGFIVWGHHMFTVGMDVDSRAYFTSATMIIAVPTGVKVFSWLATLNGGNLLHEPALYW
-                     AVGFIFLFTVGGLTGIMLSNSSLDVALHDTYYVTAHFHYVLSMGAVFALFCGFFHWFP
-                     LFYGYCFHERWSKAHFFIMFIGVNVTFFPQHFLGLSGMPRRYSDYPDCFMKWHVVSSL
-                     GSWLSFVSVLYFLFIVWEALVSQRGVVCKSNRPGAIEWSWEWCCPLSFHNQDEPVVVL
-                     KSLKPGLVLNQ"
-     misc_feature    1561..2598
-                     /note="control region"
+                     /translation="LCSTNHKDIGTLYILLGLWSGMIGTSLSMLIRIELARPGSFLGDD
+                     QLYNVIVTAHALVMIFFMVMPLMVGGFGNWLLPLMMGSIDMIFPRLNNLSFWFLPASLF
+                     TLLLSTFIESGAGTGWTLYPPLSSYTGHSGPAVDMSLFSLHLAGASSIGGSINFLTSMK
+                     NMSVESMRGERMVLFVWSMAVTAVLLLVSLPVLAGGITMLIFDRHFNTSFYDPSGGGDP
+                     VLYQHLFWFFGHPEVYVLILPGFGMVSHVVAHCAGKDEVFGVLGMVYAMVCIGVLGFIV
+                     WGHHMFTVGMDVDSRAYFTSATMIIAVPTGVKVFSWLATLNGGNLLHEPALYWAVGFIF
+                     LFTVGGLTGIMLSNSSLDVALHDTYYVTAHFHYVLSMGAVFALFCGFFHWFPLFYGYCF
+                     HERWSKAHFFIMFIGVNVTFFPQHFLGLSGMPRRYSDYPDCFMKWHVVSSLGSWLSFVS
+                     VLYFLFIVWEALVSQRGVVCKSNRPGAIEWSWEWCCPLSFHNQDEPVVVLKSLKPGLVL
+                     NQ*"
+                     /locus_tag="Bthe_01"
+     gene            2599..2665
+                     /locus_tag="Bthe_02"
+                     /gene="tRNA-Pro"
      tRNA            2599..2665
                      /product="tRNA-Pro"
+                     /locus_tag="Bthe_02"
+                     /gene="tRNA-Pro"
+     gene            2684..2748
+                     /locus_tag="Bthe_03"
+                     /gene="tRNA-Glu"
      tRNA            2684..2748
                      /product="tRNA-Glu"
+                     /locus_tag="Bthe_03"
+                     /gene="tRNA-Glu"
+     gene            2752..2817
+                     /locus_tag="Bthe_04"
+                     /gene="tRNA-Cys"
      tRNA            2752..2817
                      /product="tRNA-Cys"
+                     /locus_tag="Bthe_04"
+                     /gene="tRNA-Cys"
      gene            2819..3175
-                     /gene="nad3"
+                     /locus_tag="Bthe_05"
+                     /gene="ND3"
      CDS             2819..3175
-                     /gene="nad3"
+                     /gene="ND3"
                      /codon_start=1
                      /transl_table=5
                      /product="NADH dehydrogenase subunit 3"
                      /protein_id="QDO71888.1"
-                     /translation="MSLFLSVILFWLVAGGLMIVSIVLSMVGQWNREGVSPYECGFDP
-                     ILSARSSFSLRFFLLGVLFLVFDVEVVMVVPLLFVLYGGVKVVGVVCLVGFLHILTVG
-                     CLYERRDGSMDWISEL"
+                     /translation="MSLFLSVILFWLVAGGLMIVSIVLSMVGQWNREGVSPYECGFDPI
+                     LSARSSFSLRFFLLGVLFLVFDVEVVMVVPLLFVLYGGVKVVGVVCLVGFLHILTVGCL
+                     YERRDGSMDWISEL*"
+                     /locus_tag="Bthe_05"
+     gene            3184..3249
+                     /locus_tag="Bthe_06"
+                     /gene="tRNA-Leu"
      tRNA            3184..3249
                      /product="tRNA-Leu"
+                     /locus_tag="Bthe_06"
+                     /gene="tRNA-Leu"
      gene            3321..3452
-                     /gene="atp8"
+                     /locus_tag="Bthe_07"
+                     /gene="ATP8"
      CDS             3321..3452
-                     /gene="atp8"
+                     /gene="ATP8"
                      /codon_start=1
                      /transl_table=5
                      /product="ATP synthase F0 subunit 8"
                      /protein_id="QDO71890.1"
-                     /translation="MPMMVPQYLVFICFFVLICLFLLCSGLLTRDVSGCGLALSKLF"
+                     /translation="VPMMVPQYLVFICFFVLICLFLLCSGLLTRDVSGCGLALSKLF*"
+                     /locus_tag="Bthe_07"
+     gene            3481..3547
+                     /locus_tag="Bthe_08"
+                     /gene="tRNA-Leu"
      tRNA            3481..3547
                      /product="tRNA-Leu"
+                     /locus_tag="Bthe_08"
+                     /gene="tRNA-Leu"
+     gene            3553..3616
+                     /locus_tag="Bthe_09"
+                     /gene="tRNA-Lys"
      tRNA            3553..3616
                      /product="tRNA-Lys"
+                     /locus_tag="Bthe_09"
+                     /gene="tRNA-Lys"
+     gene            3660..4498
+                     /locus_tag="Bthe_10"
+                     /gene="small subunit ribosomal RNA"
      rRNA            3660..4498
                      /product="small subunit ribosomal RNA"
+                     /locus_tag="Bthe_10"
+                     /gene="small subunit ribosomal RNA"
+     gene            4501..4569
+                     /locus_tag="Bthe_11"
+                     /gene="tRNA-Gln"
      tRNA            4501..4569
                      /product="tRNA-Gln"
+                     /locus_tag="Bthe_11"
+                     /gene="tRNA-Gln"
+     gene            4749..4812
+                     /locus_tag="Bthe_12"
+                     /gene="tRNA-Tyr"
      tRNA            4749..4812
                      /product="tRNA-Tyr"
+                     /locus_tag="Bthe_12"
+                     /gene="tRNA-Tyr"
      gene            4817..5533
-                     /gene="atp6"
+                     /locus_tag="Bthe_13"
+                     /gene="ATP6"
      CDS             4817..5533
-                     /gene="atp6"
+                     /gene="ATP6"
                      /codon_start=1
                      /transl_table=5
                      /product="ATP synthase F0 subunit 6"
                      /protein_id="QDO71885.1"
-                     /translation="MMLDLLSSFDSYSMSDLSSVPLRLSFYFVLVLVSTLFYCSCSLS
-                     EGGIGKSLAVSWGMFKSASGLNLSGFPLVVCSLFVFLMGVNMMGLVPFSFSVTSHLSL
-                     GPALAFLMWSSLWVSGHRISANQNLTSLVPSFAPMFLVPFLFLVEIVTINSRPLTLGF
-                     RLMINIIAGHLILSMGTNVNTSVFLSGLLLNLSSFSCGAVYFSLLAWMGLLAAELAVG
-                     LIQAFIFCSLLSLYTNDHSQ"
+                     /translation="MMLDLLSSFDSYSMSDLSSVPLRLSFYFVLVLVSTLFYCSCSLSE
+                     GGIGKSLAVSWGMFKSASGLNLSGFPLVVCSLFVFLMGVNMMGLVPFSFSVTSHLSLGP
+                     ALAFLMWSSLWVSGHRISANQNLTSLVPSFAPMFLVPFLFLVEIVTINSRPLTLGFRLM
+                     INIIAGHLILSMGTNVNTSVFLSGLLLNLSSFSCGAVYFSLLAWMGLLAAELAVGLIQA
+                     FIFCSLLSLYTNDHSQ*"
+                     /locus_tag="Bthe_13"
+     gene            5728..5797
+                     /locus_tag="Bthe_14"
+                     /gene="tRNA-Arg"
      tRNA            5728..5797
                      /product="tRNA-Arg"
+                     /locus_tag="Bthe_14"
+                     /gene="tRNA-Arg"
+     gene            5799..5862
+                     /locus_tag="Bthe_15"
+                     /gene="tRNA-Met"
      tRNA            5799..5862
                      /product="tRNA-Met"
+                     /locus_tag="Bthe_15"
+                     /gene="tRNA-Met"
+     gene            5864..5929
+                     /locus_tag="Bthe_16"
+                     /gene="tRNA-Val"
      tRNA            5864..5929
                      /product="tRNA-Val"
+                     /locus_tag="Bthe_16"
+                     /gene="tRNA-Val"
      gene            5931..7235
-                     /gene="nad4"
+                     /locus_tag="Bthe_17"
+                     /gene="ND4"
      CDS             5931..7235
-                     /gene="nad4"
+                     /gene="ND4"
                      /codon_start=1
                      /transl_table=5
                      /product="NADH dehydrogenase subunit 4"
                      /protein_id="QDO71881.1"
-                     /translation="MIIGFIMCLLLLGVLGGLEVSIAGLSLLGVLAVPLFLSGGCSEL
-                     SGMFSLDFSGQVLVVLSIYISFLMLMGSVTVSRFSAFNGLVVCIGILLVGAFSVSATF
-                     LFFILFEGVLFPTLLLIVGWGYQPERLQAVVYMVIYTVMGSLPLLYGLGKLYFNDGSD
-                     NLFSLEYYLDKSVLSFSWLYLLAFLVKLPVFPLHLWLPKAHVEAPVAGSMILAGLLLK
-                     LGGYGVIRLSGLLVLKSISMSTLLVLMISLFGGVLTSMVCLRQTDFKSLVAYSSVGHM
-                     SFVMVGLLSNTLWGFMGAMLIMVGHGLCSSGLFALVNTFYLSSHSRLLTMNKGYLMLS
-                     PCVGLLCFLLVVSNMASPPSLNLLGELFIYMVGASMNMFFFPMLMLLSFLSACYSLHI
-                     YVSSQHGKCGNNLSSRADFSVSSMSLLSFHWLPLNFLFVVIP"
+                     /translation="VIIGFIMCLLLLGVLGGLEVSIAGLSLLGVLAVPLFLSGGCSELS
+                     GMFSLDFSGQVLVVLSIYISFLMLMGSVTVSRFSAFNGLVVCIGILLVGAFSVSATFLF
+                     FILFEGVLFPTLLLIVGWGYQPERLQAVVYMVIYTVMGSLPLLYGLGKLYFNDGSDNLF
+                     SLEYYLDKSVLSFSWLYLLAFLVKLPVFPLHLWLPKAHVEAPVAGSMILAGLLLKLGGY
+                     GVIRLSGLLVLKSISMSTLLVLMISLFGGVLTSMVCLRQTDFKSLVAYSSVGHMSFVMV
+                     GLLSNTLWGFMGAMLIMVGHGLCSSGLFALVNTFYLSSHSRLLTMNKGYLMLSPCVGLL
+                     CFLLVVSNMASPPSLNLLGELFIYMVGASMNMFFFPMLMLLSFLSACYSLHIYVSSQHG
+                     KCGNNLSSRADFSVSSMSLLSFHWLPLNFLFVVIP*"
+                     /locus_tag="Bthe_17"
+     gene            7236..7299
+                     /locus_tag="Bthe_18"
+                     /gene="tRNA-Asn"
      tRNA            7236..7299
                      /product="tRNA-Asn"
+                     /locus_tag="Bthe_18"
+                     /gene="tRNA-Asn"
      gene            7304..8080
-                     /gene="cox3"
+                     /locus_tag="Bthe_19"
+                     /gene="COX3"
      CDS             7304..8080
-                     /gene="cox3"
+                     /gene="COX3"
                      /codon_start=1
                      /transl_table=5
                      /product="cytochrome c oxidase subunit III"
                      /protein_id="QDO71884.1"
-                     /translation="MPRNPFYLVGPSPWPVFTSMGAFCMAVGFVSWFHKHGYALLLIG
-                     VLVLILSLSQWWRDVMREGDLGFHTSYVVKGLRDGFILFLVSEIMFFFSLFWAFFHMS
-                     LAPDISMGCMWPPKGLETLDPMKVPLCGTTVLVGSGASLMYSHAAIRAGLNTHAVLGT
-                     FYTIVLGLFFTRLQGYEYYWASFTIADSAYGSLFYIMTGFHGLHVMFGTGFLLVSLVR
-                     LMRNRFTPRNHFGFMVCSWYWHFVDVVWIGLYLVVYCWGS"
+                     /translation="IPRNPFYLVGPSPWPVFTSMGAFCMAVGFVSWFHKHGYALLLIGV
+                     LVLILSLSQWWRDVMREGDLGFHTSYVVKGLRDGFILFLVSEIMFFFSLFWAFFHMSLA
+                     PDISMGCMWPPKGLETLDPMKVPLCGTTVLVGSGASLMYSHAAIRAGLNTHAVLGTFYT
+                     IVLGLFFTRLQGYEYYWASFTIADSAYGSLFYIMTGFHGLHVMFGTGFLLVSLVRLMRN
+                     RFTPRNHFGFMVCSWYWHFVDVVWIGLYLVVYCWGS*"
+                     /locus_tag="Bthe_19"
+     gene            8081..8143
+                     /locus_tag="Bthe_20"
+                     /gene="tRNA-Phe"
      tRNA            8081..8143
                      /product="tRNA-Phe"
+                     /locus_tag="Bthe_20"
+                     /gene="tRNA-Phe"
+     gene            8146..8211
+                     /locus_tag="Bthe_21"
+                     /gene="tRNA-Ser"
      tRNA            8146..8211
                      /product="tRNA-Ser"
+                     /locus_tag="Bthe_21"
+                     /gene="tRNA-Ser"
+     gene            8212..9465
+                     /locus_tag="Bthe_22"
+                     /gene="large subunit ribosomal RNA"
      rRNA            8212..9465
                      /product="large subunit ribosomal RNA"
+                     /locus_tag="Bthe_22"
+                     /gene="large subunit ribosomal RNA"
+     gene            9466..9527
+                     /locus_tag="Bthe_23"
+                     /gene="tRNA-Ser"
      tRNA            9466..9527
                      /product="tRNA-Ser"
+                     /locus_tag="Bthe_23"
+                     /gene="tRNA-Ser"
+     gene            9533..9598
+                     /locus_tag="Bthe_24"
+                     /gene="tRNA-Asp"
      tRNA            9533..9598
                      /product="tRNA-Asp"
+                     /locus_tag="Bthe_24"
+                     /gene="tRNA-Asp"
      gene            9663..10115
-                     /gene="nad6"
+                     /locus_tag="Bthe_25"
+                     /gene="ND6"
      CDS             9663..10115
-                     /gene="nad6"
+                     /gene="ND6"
                      /codon_start=1
                      /transl_table=5
                      /product="NADH dehydrogenase subunit 6"
                      /protein_id="QDO71887.1"
-                     /translation="MLEVILFSISSLVCCFMLSISEPLFMGLALFAVSFAISVLLGLE
-                     MSSLVGYFVFLIYIGGLMILFGYVLSIFPNQRFGAPVLFVKLLLAVLVGFVVVFHKNK
-                     GDSFVSIGDFGSCLGSGNMYLFVGVLLLFVLLLVVAFCKKRRMPLRMV"
+                     /translation="VLEVILFSISSLVCCFMLSISEPLFMGLALFAVSFAISVLLGLEM
+                     SSLVGYFVFLIYIGGLMILFGYVLSIFPNQRFGAPVLFVKLLLAVLVGFVVVFHKNKGD
+                     SFVSIGDFGSCLGSGNMYLFVGVLLLFVLLLVVAFCKKRRMPLRMV*"
+                     /locus_tag="Bthe_25"
+     gene            10132..10196
+                     /locus_tag="Bthe_26"
+                     /gene="tRNA-Ile"
      tRNA            10132..10196
                      /product="tRNA-Ile"
+                     /locus_tag="Bthe_26"
+                     /gene="tRNA-Ile"
      gene            10363..11331
-                     /gene="nad2"
-     misc_feature    10363..11331
-                     /gene="nad2"
+                     /locus_tag="Bthe_27"
+                     /gene="ND2"
+     CDS             10363..11331
+                     /product="NADH dehydrogenase subunit 2"
+                     /gene="ND2"
                      /note="similar to NADH dehydrogenase subunit 2"
+                     /locus_tag="Bthe_27"
+                     /transl_table=5
+                     /translation="VNRFEGPLMVLSCFALMFGLIVMVSTDSHMSAWVGMEVNMLGFMC
+                     LLGVKSVLNMRVLVNYFVFQSFGSTMYLFGSTIVLHYESISISLLGYFLVHLGLLCKAG
+                     LFPFWLWVPSVVNSSGWLVAYLLLGVQKVGPLLLLGVWCTCGEFLSLVVFAMSVMGGLG
+                     GCIQNSYRDVLVYSSFVHSAWMLVCLMNSQQLFLFYVGAYLVQLGLVIYYLWRSNSSFM
+                     KSGKWSLMVASSLMSLSGLPPLAGFVVKMVVVFCVGDKLVLFIALAGSISAMFYYLKTV
+                     IMSVLKDYNFCVLDDEDFVWIFIPLTLGLYVFVYLLGCLFL*"
+     gene            11378..11443
+                     /locus_tag="Bthe_28"
+                     /gene="tRNA-Trp"
      tRNA            11378..11443
                      /product="tRNA-Trp"
+                     /locus_tag="Bthe_28"
+                     /gene="tRNA-Trp"
+     gene            11499..11564
+                     /locus_tag="Bthe_29"
+                     /gene="tRNA-Gly"
      tRNA            11499..11564
                      /product="tRNA-Gly"
+                     /locus_tag="Bthe_29"
+                     /gene="tRNA-Gly"
+     gene            11573..11636
+                     /locus_tag="Bthe_30"
+                     /gene="tRNA-Thr"
      tRNA            11573..11636
                      /product="tRNA-Thr"
+                     /locus_tag="Bthe_30"
+                     /gene="tRNA-Thr"
      gene            11652..12788
-                     /gene="cytb"
+                     /locus_tag="Bthe_31"
+                     /gene="CYTB"
      CDS             11652..12788
-                     /gene="cytb"
+                     /gene="CYTB"
                      /codon_start=1
                      /transl_table=5
                      /product="cytochrome b"
                      /protein_id="QDO71882.1"
-                     /translation="MFGPLRKRDSVVKILNSSLYDLPAPLNLSVLWNFGSLLGLCLVV
-                     QIITGFVLSLHYTAHVNMSFDSVIHVIRDVNNGWLFRALHANGASLFFVCAYFHIGRG
-                     LYYGSYKSRMVWNVGVILLFLLMATAFLGYVLPWGQMSYWGATVITKLVTAIPYIGET
-                     ILYWIWGGYTVCNATLVRFYSFHFVLPFIMIVFSVVHLFYLHEEGANNPLGVSADSAL
-                     VRFHPFYTYKDVVGFFILFFGLLLLVCFWPDLLGNVNNWIPADPMKTPLQIEPEWYFL
-                     FAYSILRSIPNKAGGAAALVASVLILFIIPSLHTGQFRSNSFYPLGQLGFWGLIVVWT
-                     GLTWVGACPVQNPYDFLGCVFTFLYFFFIMLIPLSQGLWDWLIK"
+                     /translation="IFGPLRKRDSVVKILNSSLYDLPAPLNLSVLWNFGSLLGLCLVVQ
+                     IITGFVLSLHYTAHVNMSFDSVIHVIRDVNNGWLFRALHANGASLFFVCAYFHIGRGLY
+                     YGSYKSRMVWNVGVILLFLLMATAFLGYVLPWGQMSYWGATVITKLVTAIPYIGETILY
+                     WIWGGYTVCNATLVRFYSFHFVLPFIMIVFSVVHLFYLHEEGANNPLGVSADSALVRFH
+                     PFYTYKDVVGFFILFFGLLLLVCFWPDLLGNVNNWIPADPMKTPLQIEPEWYFLFAYSI
+                     LRSIPNKAGGAAALVASVLILFIIPSLHTGQFRSNSFYPLGQLGFWGLIVVWTGLTWVG
+                     ACPVQNPYDFLGCVFTFLYFFFIMLIPLSQGLWDWLIK*"
+                     /locus_tag="Bthe_31"
      gene            12918..13193
-                     /gene="nad4L"
+                     /locus_tag="Bthe_32"
+                     /gene="ND4L"
      CDS             12918..13193
-                     /gene="nad4L"
+                     /gene="ND4L"
                      /codon_start=1
                      /transl_table=5
                      /product="NADH dehydrogenase subunit 4L"
                      /protein_id="QDO71889.1"
-                     /translation="MLLFSFFIFIFGVILMCGRSMHLVTIFLGMEFSALGVFSMVGSL
-                     SAYNSLFVLLVIICISVSEAAIMLSLMVMMTRMYGNDRCLNLMTDKS"
+                     /translation="MLLFSFFIFIFGVILMCGRSMHLVTIFLGMEFSALGVFSMVGSLS
+                     AYNSLFVLLVIICISVSEAAIMLSLMVMMTRMYGNDRCLNLMTDKS*"
+                     /locus_tag="Bthe_32"
+     gene            13194..13255
+                     /locus_tag="Bthe_33"
+                     /gene="tRNA-Ala"
      tRNA            13194..13255
                      /product="tRNA-Ala"
+                     /locus_tag="Bthe_33"
+                     /gene="tRNA-Ala"
+     gene            13267..13332
+                     /locus_tag="Bthe_34"
+                     /gene="tRNA-His"
      tRNA            13267..13332
                      /product="tRNA-His"
-     misc_feature    13333..15282
-                     /note="control region"
+                     /locus_tag="Bthe_34"
+                     /gene="tRNA-His"
+     gene            15283..15343
+                     /locus_tag="Bthe_35"
+                     /gene="tRNA-Leu"
      tRNA            15283..15343
                      /product="tRNA-Leu"
+                     /locus_tag="Bthe_35"
+                     /gene="tRNA-Leu"
      gene            15350..17059
-                     /gene="nad5"
+                     /locus_tag="Bthe_36"
+                     /gene="ND5"
      CDS             15350..17059
-                     /gene="nad5"
+                     /gene="ND5"
                      /codon_start=1
                      /transl_table=5
                      /product="NADH dehydrogenase subunit 5"
                      /protein_id="QDO71879.1"
-                     /translation="MAFKFNEVLGCVFMVLGWGVMSMIPFFDSMILVEYSIWLSSNLS
-                     VNLTVLLDQISGLFMAAIFLISGSVLVYCSWYMGDETYYSRFIYLVIFFVLSMMSLIM
-                     IPNLIALLLGWDGLGITSFLLVVYYQNNKSLGAGMVTVLTNRVGDAILLSIIGVFCSE
-                     GTWALFEFFPSVKYVWVPFLLVMAAITKSAQIPYSAWLPAAMAAPTPVSALVHSSTLV
-                     TAGVYLLIRGYPMLSQSDFSLGVLKCLSLLTLVMAGSVALVEVDLKKIVALSTLSQLS
-                     MMLFAISICLPKVAFFHLITHAMFKSLLFLSAGVVIHSSLKWQDIRSLGKNWARVPVS
-                     MSCVTVASLSLCGMPFLSGFYSKDLIIEMSFQSGDSLLIYLMLIVGTLFTSWYSVRLS
-                     FNLFLGVNKSVSPIIHEKEAVSVKFAYSGLLFSSVVMGFLLVCLCSDLDLTAMVENIE
-                     KFIVMSLVIMSVSIVEFSSKWSGKTPFIFFKGVYSYLASMWHFKPLLAQFSPMLGLSL
-                     AGVISVSMEKGWLEKIGPQGVYSAIQVFGVSNQKSQSYHFLKTSLGLLFSLFFLIVLM
-                     VNL"
+                     /translation="MAFKFNEVLGCVFMVLGWGVMSMIPFFDSMILVEYSIWLSSNLSV
+                     NLTVLLDQISGLFMAAIFLISGSVLVYCSWYMGDETYYSRFIYLVIFFVLSMMSLIMIP
+                     NLIALLLGWDGLGITSFLLVVYYQNNKSLGAGMVTVLTNRVGDAILLSIIGVFCSEGTW
+                     ALFEFFPSVKYVWVPFLLVMAAITKSAQIPYSAWLPAAMAAPTPVSALVHSSTLVTAGV
+                     YLLIRGYPMLSQSDFSLGVLKCLSLLTLVMAGSVALVEVDLKKIVALSTLSQLSMMLFA
+                     ISICLPKVAFFHLITHAMFKSLLFLSAGVVIHSSLKWQDIRSLGKNWARVPVSMSCVTV
+                     ASLSLCGMPFLSGFYSKDLIIEMSFQSGDSLLIYLMLIVGTLFTSWYSVRLSFNLFLGV
+                     NKSVSPIIHEKEAVSVKFAYSGLLFSSVVMGFLLVCLCSDLDLTAMVENIEKFIVMSLV
+                     IMSVSIVEFSSKWSGKTPFIFFKGVYSYLASMWHFKPLLAQFSPMLGLSLAGVISVSME
+                     KGWLEKIGPQGVYSAIQVFGVSNQKSQSYHFLKTSLGLLFSLFFLIVLMVNL*"
+                     /locus_tag="Bthe_36"
      gene            17086..17790
-                     /gene="cox2"
+                     /locus_tag="Bthe_37"
+                     /gene="COX2"
      CDS             17086..17790
-                     /gene="cox2"
+                     /gene="COX2"
                      /codon_start=1
                      /transl_table=5
                      /product="cytochrome c oxidase subunit II"
                      /protein_id="QDO71886.1"
-                     /translation="MPLWGSFSFQDCYYHIGEYLGLFHEGVMCLIIFILSVVLYGLGW
-                     VFCSGSSFRYLREAQAVETAWTIIPSVCLVCVAIPSMHLLYVMDEIGSPKFCFKAIGH
-                     QWFWSYEFMGDQEDVLGFDSFMEREEETGYRLLDVDQRMVAPANTGIRCMVSSADVIH
-                     SFALPGCMLKVDAIPGRVNEVPMTVNMCGVLYGQCSEICGANHSFMPIVIEFIHPRVY
-                     NLWHWAAVESFDIKVL"
+                     /translation="MPLWGSFSFQDCYYHIGEYLGLFHEGVMCLIIFILSVVLYGLGWV
+                     FCSGSSFRYLREAQAVETAWTIIPSVCLVCVAIPSMHLLYVMDEIGSPKFCFKAIGHQW
+                     FWSYEFMGDQEDVLGFDSFMEREEETGYRLLDVDQRMVAPANTGIRCMVSSADVIHSFA
+                     LPGCMLKVDAIPGRVNEVPMTVNMCGVLYGQCSEICGANHSFMPIVIEFIHPRVYNLWH
+                     WAAVESFDIKVL*"
+                     /locus_tag="Bthe_37"
      gene            17891..18808
-                     /gene="nad1"
+                     /locus_tag="Bthe_38"
+                     /gene="ND1"
      CDS             17891..18808
-                     /gene="nad1"
+                     /gene="ND1"
                      /codon_start=1
                      /transl_table=5
                      /product="NADH dehydrogenase subunit 1"
                      /protein_id="QDO71883.1"
-                     /translation="MQVISFILPGVFGLMAVGWFTLVERKVLGYIMTRKGPNKVGVLG
-                     LMQPMSDGAKLFSKEILIPTYSNFVPFLVCPVMTFFIALLLWLLYPFHSSEGVFMCGV
-                     LFYLANSGANVYGVMVAGWSSNSKYALLGAMRAMAQSISYEVSMALVLLGCVFMAGSM
-                     HLQSVKLWQEGTFFVMGLAILPLFAVWLISMLAETNRAPFDFVEGESELVSGFNVEYS
-                     SGGFALIYMAEYSNMLFNSLFTCAMFLGSSDVYMLGQAWVFLFLFLWARGTFPRFRYD
-                     MLMSLAWKTFLGIVLGLSLVVSMVIYLLV"
-ORIGIN      
+                     /translation="MQVISFILPGVFGLMAVGWFTLVERKVLGYIMTRKGPNKVGVLGL
+                     MQPMSDGAKLFSKEILIPTYSNFVPFLVCPVMTFFIALLLWLLYPFHSSEGVFMCGVLF
+                     YLANSGANVYGVMVAGWSSNSKYALLGAMRAMAQSISYEVSMALVLLGCVFMAGSMHLQ
+                     SVKLWQEGTFFVMGLAILPLFAVWLISMLAETNRAPFDFVEGESELVSGFNVEYSSGGF
+                     ALIYMAEYSNMLFNSLFTCAMFLGSSDVYMLGQAWVFLFLFLWARGTFPRFRYDMLMSL
+                     AWKTFLGIVLGLSLVVSMVIYLLV*"
+                     /locus_tag="Bthe_38"
+ORIGIN
         1 ttgtgttcta caaatcataa agacattgga actttatata ttttattagg tttgtggtct
        61 ggaataattg gaacaagatt aaggatactt attcgtattg aattagcacg tcctggaagg
       121 tttttggggg atgatcagct ttataatgtt attgtaactg ctcatgcttt agttatgatt
@@ -564,4 +717,3 @@ ORIGIN
     18721 attaataaga ctagcttgaa agactttttt aggtattgtt ttaggtttaa gtttggttgt
     18781 ttctatggtt atctacctgt tagtttaagc gtgcgttgg
 //
-
