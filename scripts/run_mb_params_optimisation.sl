@@ -1,12 +1,12 @@
 #!/bin/bash 
 #SBATCH --job-name=run_mb_params_optimisation
 #SBATCH --account=def-bacc
-#SBATCH --time=1:0:0
-#SBATCH --ntasks=4
+#SBATCH --time=2:0:0
+#SBATCH --ntasks=10
 #SBATCH --mem-per-cpu=500M
-#SBATCH --error=%x-%A'.err' 
-#SBATCH --output=%x-%A'.out' 
-#SBATCH --array=1-6 #1-6
+#SBATCH --error=%x-%A_%a'.err' 
+#SBATCH --output=%x-%A_%a'.out' 
+#SBATCH --array=8 #1-8
 
 module load perl
 module load StdEnv/2020
@@ -16,9 +16,9 @@ module load intel/2020.1.217
 module load mrbayes/3.2.7
 
 
-aln="LCB_001_3_684to1390"
+#aln="LCB_001_3_684to1390.nex"
 #aln="LCB_124_1_0to186.nex"
-
+aln=LCB_189_1_0to9425.nex
 
 #scriptdir="/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/scripts/"
 datadir="/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/mauve_alignments/core_ALL_alignments/nex/"

@@ -7,10 +7,11 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mail-type=END
-#SBATCH --error=%A_%a'.err' 
-#SBATCH --output=%A_%a'.out' 
+#SBATCH --error=%x_%A'.err' 
+#SBATCH --output=%x_%A'.out' 
 #SBATCH --mail-user=maepz@hotmail.com
 
 
 #bash run_mauve_symbionts.sh
-bash run_mauve_mitochondria.sh
+#bash run_mauve_mitochondria.sh
+bash run_mauve_mitochondria2.sh
