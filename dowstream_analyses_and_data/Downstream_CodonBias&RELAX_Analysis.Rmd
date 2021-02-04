@@ -9,6 +9,8 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 # setwd("~/Desktop/codon_usage/")
 setwd("./")
+setwd("~/Desktop/VesicSymb_Evolution/dowstream_analyses_and_data/")
+
 
 library('ggplot2')
 library('gridExtra')
@@ -51,6 +53,8 @@ tail(relax)
 
 
 df=read.csv('codonbias_results.csv',sep='\t',row.names = 1,header=T,na.strings = '')
+df$Genome %>% count
+
 unique(df$Genome)
 df$Group<-ifelse(df$Genome %in% c('Bathy','SUP05'),'FL',
                  ifelse(df$Genome %in% c('V.okutanii','V.soyoae1','V.soyoae2','V.diagonalis','V.extenta','V.gigas1','V.gigas2','V.marissinica'),'Gigas','Ruthia'))
@@ -60,12 +64,14 @@ df %>% tail()
 notpseudo=df[(df$ispseudo==0 & !(is.na(df$coregene_id))),]$coregene_id %>% unique()
 
 ## remove values if Pval > 0.05
+
+
 ```
 # Plots
 
 ## Distribution of selection intensity parameter K from RELAX analysis
 only the K parameter values with a p-value <0.05 are present in the table
-```{k}
+```{r}
 head(relax)
 
 # relax$comp<-factor(relax$comp, levels=rev(c("SymvsFL", "RuvsFL","GivsFL","GivsRu","SymbAll")))
@@ -77,7 +83,7 @@ Kdistrib<-ggplot(subset(relax,comp %in% c('SymvsFL','GivsFL','RuvsFL','GivsRu') 
   # geom_boxplot(aes(x=comp,y=k))+
   geom_violin(aes(x=comp,y=k),fill='grey90')+
   geom_jitter(aes(x=comp,y=k+0.001),width = 0.05,size=0.05)+
-  scale_x_discrete(position='top',labels=c('SymvsFL'="Symbionts vs\nfree-living","RuvsFL"='Clade II vs\nfree-living',"GivsFL"='Clde I vs\nfree-living',"GivsRu"='Clade I vs\nClade II'))+
+  scale_x_discrete(position='top',labels=c('SymvsFL'="Symbionts vs\nfree-living","RuvsFL"='Clade II vs\nfree-living',"GivsFL"='Clade I vs\nfree-living',"GivsRu"='Clade I vs\nClade II'))+
   geom_hline(yintercept = 1,color='red')+
   scale_y_log10(limits=c(0.001,50),breaks=c(0.1,seq(0,0.6,0.2),1,seq(5,10,5),seq(25,50,25)))+
   ylab('Selection coefficient (k)')+
@@ -99,8 +105,8 @@ Kdistrib
 colors=list(Gi='#606E96',Ru='#68C47F',FL='#F6EFA1')
 levels(df$Group) <- c("Free-living", "Gigas", "Ruthia")
 group_names <- c(`FL` = "Free-living",
-                    `Gigas` = "Gigas clade",
-                    `Ruthia` = "Ruthia clade")
+                    `Gigas` = "Clade I",
+                    `Ruthia` = "Clade II")
 colors_fill=c(Bathy = "#ffa800", SUP05 = "#ff006d", R.magnifica = "#287C8EFF", 
 R.phaseoliformis = "#21908CFF", R.pacifica = "#20A486FF", R.rectimargo = "#35B779FF", 
 R.pliocardia = "#5DC863FF", R.southwardae = "#8FD744FF", V.okutanii = "#440154FF", 
@@ -134,8 +140,8 @@ V.gigas2 = "#31688EFF",V.gigas1 = "#308d8d",V.marissinica = "#33701f", R.fausta 
 df$Group<-factor(df$Group,levels = c('FL','Ruthia','Gigas'))
 
 group_names <- c(`FL` = "Free-living",
-                    `Gigas` = "Gigas clade",
-                    `Ruthia` = "Ruthia clade")
+                    `Gigas` = "Clade I",
+                    `Ruthia` = "Clade II")
 
 CDC_spectra<-ggplot(data=subset(df,P.CDC.<0.05 & ispseudo==0))+
   theme_bw()+
@@ -174,7 +180,7 @@ Bi_plot<-ggplot(bipl)+
   scale_y_continuous(limits=c(0.05,0.4))+
   scale_x_continuous(limits=c(0.05,0.36))+ expand_limits(x = 0)+
   xlab(label = 'CDC in Free-Living')+ylab(label= 'CDC in symbionts')+
-  scale_color_manual(values=c(colors$Ru,colors$Gi),labels=c('Ruthia clade','Gigas clade'),name='')+
+  scale_color_manual(values=c(colors$Ru,colors$Gi),labels=c('Clade II','Clade I'),name='')+
   theme(
     legend.text=element_text(size=8))
 Bi_plot
@@ -183,8 +189,9 @@ Bi_plot
 p3<-grid.arrange(CDC_spectra + theme(legend.position="none"), Bi_plot+ theme(legend.position="none"), nrow=1, widths = unit(c(10,9), "cm"), heights = unit(rep(10, 1), "cm"))
 p3
 
-p4<-grid.arrange(p3,Kdistrib,nrow=2,heights = unit(c(10,7), "cm"), widths = unit(c(20), "cm"))
-ggsave(file="plot_CDCk.svg", plot=p4,width = 20,units = 'cm')
+p4<-grid.arrange(p3,Kdistrib,nrow=2,heights = unit(c(10,7), "cm"), widths = unit(c(15), "cm"))
+
+ggsave(file="plot_CDCk.svg", plot=p4,width = 20,height = 20,units = 'cm')
 
 
 ```

@@ -204,6 +204,7 @@ core_orth=read.table('./Orthology_id35cov51_nopseudo.txt',header=T,sep='\t',row.
 core_orth %>% head
 core_orth=core_orth[core_orth$Count==17,] # Keep only Core orthologs
 core_orth=core_orth[!(grepl('_R', core_orth$R.magnifica)),] # remove core RNA genes
+nrow(core_orth) # # of non -pseudo core genes 
 core_orth$gene_id<-core_orth$R.magnifica
 core_orth= subset(core_orth, !(gene_id %in% recombining_genes)) # remove recombining genes
 
@@ -249,6 +250,12 @@ colSums(df[,c("Core", "All", "All.groups", "Sym", "Gigas", "Ruthia",
 "FL", "allbranches", "a", "b", "c", "d", "e", "f", "g", "h", 
 "i", "j", 'k','l','m','n', "R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
 "R.rectimargo","R.fausta", "R.southwardae", "V.gigas1","V.gigas2", "V.okutanii",  "V.soyoae1", "V.soyoae2","V.marissinica","Bathy","SUP05")])
+
+df[df$All==1,'gene_id'] %>% unique %>% length
+df[df$Core==1,'gene_id'] %>% unique %>% length
+df[df$All.groups==1,'gene_id'] %>% unique %>% length
+df[df$allbranches==1,'gene_id'] %>% unique %>% length
+
 ```
 # Run hypergeometric tests and format data frame for figure
 
@@ -322,7 +329,7 @@ names(Group_labels)=c( "All", "Sym",  "FL", "Ruthia","Gigas",
 
 ##  Core Vs Groups
 ```{r  Core vs groups}
-
+subset(dat,(comp %in% c('All.groups')))
 plot_Core<-ggplot(subset(dat,(comp %in% c('Core'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories),fill='grey20',stat='identity',color='black')+

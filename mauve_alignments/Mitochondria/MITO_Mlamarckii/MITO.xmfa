@@ -1,151 +1,151 @@
 #FormatVersion Mauve1
-#Sequence1File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+#Sequence1File	../../../genomes/A.diagonalis.gbk
 #Sequence1Format	GenBank
-#Annotation1File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+#Annotation1File	../../genomes/A.diagonalis.gbk
 #Annotation1Format	GenBank
-#Sequence2File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas1.gbk
+#Sequence2File	../../../genomes/A.gigas1.gbk
 #Sequence2Format	GenBank
-#Annotation2File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas1.gbk
+#Annotation2File	../../../genomes/A.gigas1.gbk
 #Annotation2Format	GenBank
-#Sequence3File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas2.gbk
+#Sequence3File	../../../genomes/A.gigas2.gbk
 #Sequence3Format	GenBank
-#Annotation3File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas2.gbk
+#Annotation3File	../../../genomes/A.gigas2.gbk
 #Annotation3Format	GenBank
-#Sequence4File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.mariana_ref.gbk
+#Sequence4File	../../../genomes/A.mariana_ref.gbk
 #Sequence4Format	GenBank
-#Annotation4File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.mariana_ref.gbk
+#Annotation4File	../../../genomes/A.mariana_ref.gbk
 #Annotation4Format	GenBank
-#Sequence5File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis.gbk
+#Sequence5File	../../../genomes/A.phaseoliformis.gbk
 #Sequence5Format	GenBank
-#Annotation5File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis.gbk
+#Annotation5File	../../../genomes/A.phaseoliformis.gbk
 #Annotation5Format	GenBank
-#Sequence6File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis_ref.gbk
+#Sequence6File	../../../genomes/A.phaseoliformis_ref.gbk
 #Sequence6Format	GenBank
-#Annotation6File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis_ref.gbk
+#Annotation6File	../../../genomes/A.phaseoliformis_ref.gbk
 #Annotation6Format	GenBank
-#Sequence7File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+#Sequence7File	../../../genomes/A.southwardae.gbk
 #Sequence7Format	GenBank
-#Annotation7File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+#Annotation7File	../../../genomes/A.southwardae.gbk
 #Annotation7Format	GenBank
-#Sequence8File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.magnifica.gbk
+#Sequence8File	../../../genomes/C.magnifica.gbk
 #Sequence8Format	GenBank
-#Annotation8File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.magnifica.gbk
+#Annotation8File	../../../genomes/C.magnifica.gbk
 #Annotation8Format	GenBank
-#Sequence9File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.pacifica.gbk
+#Sequence9File	../../../genomes/C.pacifica.gbk
 #Sequence9Format	GenBank
-#Annotation9File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.pacifica.gbk
+#Annotation9File	../../../genomes/C.pacifica.gbk
 #Annotation9Format	GenBank
-#Sequence10File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.rectimargo.gbk
+#Sequence10File	../../../genomes/C.rectimargo.gbk
 #Sequence10Format	GenBank
-#Annotation10File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.rectimargo.gbk
+#Annotation10File	../../../genomes/C.rectimargo.gbk
 #Annotation10Format	GenBank
-#Sequence11File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MK948426.gbk
+#Sequence11File	../../../genomes/MK948426.gbk
 #Sequence11Format	GenBank
-#Annotation11File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MK948426.gbk
+#Annotation11File	../../../genomes/MK948426.gbk
 #Annotation11Format	GenBank
-#Sequence12File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MT528632.1.gbk
+#Sequence12File	../../../genomes/MT528632.1.gbk
 #Sequence12Format	GenBank
-#Annotation12File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MT528632.1.gbk
+#Annotation12File	../../../genomes/MT528632.1.gbk
 #Annotation12Format	GenBank
-#Sequence13File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.extenta.gbk
+#Sequence13File	../../../genomes/P.extenta.gbk
 #Sequence13Format	GenBank
-#Annotation13File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.extenta.gbk
+#Annotation13File	../../../genomes/P.extenta.gbk
 #Annotation13Format	GenBank
-#Sequence14File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.okutanii_ref.gbk
+#Sequence14File	../../../genomes/P.okutanii_ref.gbk
 #Sequence14Format	GenBank
-#Annotation14File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.okutanii_ref.gbk
+#Annotation14File	../../../genomes/P.okutanii_ref.gbk
 #Annotation14Format	GenBank
-#Sequence15File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae1.gbk
+#Sequence15File	../../../genomes/P.soyoae1.gbk
 #Sequence15Format	GenBank
-#Annotation15File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae1.gbk
+#Annotation15File	../../../genomes/P.soyoae1.gbk
 #Annotation15Format	GenBank
-#Sequence16File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae2.gbk
+#Sequence16File	../../../genomes/P.soyoae2.gbk
 #Sequence16Format	GenBank
-#Annotation16File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae2.gbk
+#Annotation16File	../../../genomes/P.soyoae2.gbk
 #Annotation16Format	GenBank
-#Sequence17File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+#Sequence17File	../../../genomes/X.pliocardia.gbk
 #Sequence17Format	GenBank
-#Annotation17File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+#Annotation17File	../../../genomes/X.pliocardia.gbk
 #Annotation17Format	GenBank
-#Sequence18File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/M.lamarckii.gbk
+#Sequence18File	../../../genomes/M.lamarckii.gbk
 #Sequence18Format	GenBank
-#Annotation18File	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/M.lamarckii.gbk
+#Annotation18File	../../../genomes/M.lamarckii.gbk
 #Annotation18Format	GenBank
-#BackboneFile	/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/mauve_alignments/MITO.xmfa.bbcols
-> 1:7841-8018 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+#BackboneFile	../../../mauve_alignments/MITO.xmfa.bbcols
+> 1:7841-8018 + ../../../genomes/A.diagonalis.gbk
 gtggagttgagtgagttgattatttatatttgtggttgagcgtgtagctaaaagtcttatatatgtttataaatttgtat
 ttttttatactttttcttctttgggggtttatattaagtctcttttttttgttttagtgctaggtgttcgtgaggtttta
 ttggatttgaagggggta
-> 2:4565-4742 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas1.gbk
+> 2:4565-4742 + ../../../genomes/A.gigas1.gbk
 nnnnnnnnnnnnnnnntgattatttatgtttgtggttgagcgtgtggctaaaagtcttatatctgtttataaatttgtat
 ttttttacactttttcttctttgagggtttatataaaatctcttttttttgtattagtgttaggtgttcgtgaggtttta
 ttggatttgaaggggata
-> 3:4363-4540 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas2.gbk
+> 3:4363-4540 + ../../../genomes/A.gigas2.gbk
 gtggagttgagtgggttgattatttatgtttgtggttgagcgtgtggctaaaagtcttatatctgtttataaatttgtat
 ttttttacactttttcttctttgagggtttatataaaatctcttttttttgtattagtgttaggtgttcgtgaggtttta
 ttggatttgaaggggata
-> 4:4337-4492 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.mariana_ref.gbk
+> 4:4337-4492 + ../../../genomes/A.mariana_ref.gbk
 ----------------------tttatatttgtggttgagcgtgtagctaagagtcttatagctgtttataaatttgtgt
 ttttttatgctttttcttcttttaatgcttatattaagtctgtttttatagttttagttttgggtatttatgagatttta
 ttagatttaaaggggtta
-> 5:5863-6018 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis.gbk
+> 5:5863-6018 + ../../../genomes/A.phaseoliformis.gbk
 ----------------------tttatatttgtggttgagcgtgtagctaagagtcttatagctgtttataaatttgtgt
 ttttttatgctttttcttcttttaatgcttatattaagtctgttttcatagttttagttttgggtatttatgagatttta
 ttagatttaaaggggtta
-> 6:19269-19424 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis_ref.gbk
+> 6:19269-19424 + ../../../genomes/A.phaseoliformis_ref.gbk
 ----------------------tttatatttgtggttgagcgtgtagctaagagtcttatagctgtttataaatttgtgt
 ttttttatgctttttcttcttttaatgcttatattaagtctgtttttatagttttagttttgggtatttatgagatttta
 ttagatttaaaggggtta
-> 7:5893-6048 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+> 7:5893-6048 + ../../../genomes/A.southwardae.gbk
 ----------------------tttatatttgtggttgagcgtgtagctaagagtcttatagctgtttataaatttgtgt
 ttttttatgctttttcttcttttaatgcttatattaagtctgtttttatagtcttggttttaggtatttatgagatttta
 ttagatttaaagggttta
-> 8:1-153 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.magnifica.gbk
+> 8:1-153 + ../../../genomes/C.magnifica.gbk
 -------------------------atatttgtggttgagcgtgtagctaagggtcttatgtctgtttataagtttgtgt
 ttttttatgctttctcttctttaagtgtttatactaagtctgttttttttgtcttagtattaggtattcgtgagatttta
 ttagatttgaagggagta
-> 9:5978-6134 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.pacifica.gbk
+> 9:5978-6134 + ../../../genomes/C.pacifica.gbk
 ---------------------atttatgtttgtggttgagcgtgtgattaaaagttttatacttatttacaagtttgtat
 ttttttatgctttttcttctttaagtgtttatattaaatctgttttttttgttttagtattaggtattcgtgagatttta
 ttagatttaaaaggaata
-> 10:5982-6138 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.rectimargo.gbk
+> 10:5982-6138 + ../../../genomes/C.rectimargo.gbk
 ---------------------atttatatttgtgcctgagcgtgtggctaaaatttttatatttgtttataagtttatgt
 ttttttactctttctcctctttaaatgcctatattaaatctgttttttttgtcttagtattaggtattcgtgagatttta
 ctagatttaaaaggggta
-> 11:3-180 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MK948426.gbk
+> 11:3-180 + ../../../genomes/MK948426.gbk
 gtggtattgagggagttgattaattatatttgtggttgagcgtgtagctaagagtcttatgtctgtctataagtttgtat
 ttttttacactttttcttctttaagtagctatgtgaagtctcttttttttgtcttagtgttaggtgtgcgtgaggttttg
 ttagatttgaaaggggta
-> 12:4584-4740 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MT528632.1.gbk
+> 12:4584-4740 + ../../../genomes/MT528632.1.gbk
 ---------------------atttatatttgtgcctgagcgtgtggctaaaatttttatatttgtttataagtttatgt
 ttttttactctttctcctctttaaatgcctatattaaatctgttttttttgtcttagtattaggtattcgtgagatttta
 ctagatttaaaaggggta
-> 13:6291-6468 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.extenta.gbk
+> 13:6291-6468 + ../../../genomes/P.extenta.gbk
 gtggaattgagtgagttgattatttatatttgtggttgagcgtgtagctaaaagtcttatatctgtttataaatttgtat
 ttttttatactttttcttctttgagtgtctatgttaagtctcttttttttgtcttagtgttaggtgttcgtgaggttttg
 ttagatttgaaagggata
-> 14:4952-5129 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.okutanii_ref.gbk
+> 14:4952-5129 + ../../../genomes/P.okutanii_ref.gbk
 gtggaattgagtgagttgattatttatatttgtggttgagcgtgtagctaaaagtcttatatctgtttataaatttgtat
 ttttttatactttttcttctttgagcacttatgttaagtctcttttttttgtcttagtgttaggtgttcgtgaggtttta
 ttagatttgaaaggcatg
-> 15:6247-6424 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae1.gbk
+> 15:6247-6424 + ../../../genomes/P.soyoae1.gbk
 gtggaattgagtgagttgaatatttatatttgtggttgagcgtgtagctaaaagtcttatatctgtttataaatttgtat
 ttttttatactttttcttctttgagtacctatgttaagtctcttttttttgtcttagtgttaggtgttcgtgaggtttta
 ttagatttgaaaggaata
-> 16:6257-6434 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae2.gbk
+> 16:6257-6434 + ../../../genomes/P.soyoae2.gbk
 gtggaattgagtgagttgaatatttatatttgtggttgagcgtgtagctaaaagtcttatatctgtttataaatttgtat
 ttttttatactttttcttctttgagtacctatgttaagtctcttttttttgtcttagtgttaggtgttcgtgaggtttta
 ttagatttgaaaggaata
-> 17:5804-5955 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+> 17:5804-5955 + ../../../genomes/X.pliocardia.gbk
 --------------------------tatttgtgattgagcgtttatctaagagtattatactagtttataaatttgtgt
 ttttttatgctttttcttctttaatttcttatactaaatctgtgttttttgttttagtattaggtgttcgtgaaattttg
 ctagatttgaaaaggata
-> 18:0-0 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/M.lamarckii.gbk
+> 18:0-0 + ../../../genomes/M.lamarckii.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------
 =
-> 1:1814-2214 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:1814-2214 + ../../../genomes/A.diagonalis.gbk
 tgtagttttggaattgtattaaggttagactttaaaaatttatagtaaatggaagag-----attttttggtttgaggtg
 tttgtttctttagaatttttaataatgtgtataatga--ttttttta-----------gtgtagttttcgaattgtgtta
 aggttagactttaaaaatttaaactaaatggaagagatttttttgggttgggtgtttgtttctttagaatttttaataat
@@ -153,7 +153,7 @@ gtgtataatgattt--gttta---------------gtgtggttttcgaattgtattaaggttagattttaaaaatttat
 actaaatggaagagatttttttggattgggtgtttgtttctttagaatttttaataatgtgtataatga--tttt-----
 ----------------------------------------------------------------tttagtgtagttttcg
 aattgtatcaaggttagactttaaaaa
-> 6:14207-14268 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis_ref.gbk
+> 6:14207-14268 + ../../../genomes/A.phaseoliformis_ref.gbk
 tgtattttgttagttgtaacaaggttagactttaaaaatttataatagatagggaggataaa------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -161,7 +161,7 @@ tgtattttgttagttgtaacaaggttagactttaaaaatttataatagatagggaggataaa------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ---------------------------
-> 7:693-754 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+> 7:693-754 + ../../../genomes/A.southwardae.gbk
 cgtattttgtgaattgtaacaaggttagactttaaaaatttataatagatagaggggataaa------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -169,7 +169,7 @@ cgtattttgtgaattgtaacaaggttagactttaaaaatttataatagatagaggggataaa------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ---------------------------
-> 8:14315-14688 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.magnifica.gbk
+> 8:14315-14688 + ../../../genomes/C.magnifica.gbk
 ttgaatttctgaattgtaacaaggttagactttaaaaatttatagtaaatagaggga-----cctatataagttaga---
 -----------------------------------------------ttgactttcaagttggatttttgaattgtaaca
 aggttagactttaaaaatttatagtaaatagagggacttatataagt---------------------------------
@@ -177,7 +177,7 @@ aggttagactttaaaaatttatagtaaatagagggacttatataagt---------------------------------
 agtaaatagagggacttatataagttagattgactttcaagttggatttct------------------------taatt
 gtaacaaggttagactttaaaaatttatagtaaatagagggatttatgtaagttagattgacttttaagttgaatttctg
 aattgtaataaggttagactttaaaaa
-> 11:12914-12974 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MK948426.gbk
+> 11:12914-12974 + ../../../genomes/MK948426.gbk
 -----ttttcgaattgtaacaaggttagactttaaaaatttatactaaatggaggat-----atttttagg---------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -185,7 +185,7 @@ aattgtaataaggttagactttaaaaa
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ---------------------------
-> 13:987-1386 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.extenta.gbk
+> 13:987-1386 + ../../../genomes/P.extenta.gbk
 tgtgattttcgaattgtaacaaggttagactttaaaaatttatactaaatggagggg-----gatttttggttatggggg
 tta-tttctttagaatttttagtaatatttataagagg-ttttttta-----------gtgtgattttcgaattgtaaca
 aggttagactttaaaaatttatactaaatggagggggatttttggttttggg-ggttatttctttagaatttttagtaat
@@ -193,7 +193,7 @@ atttataagaggtt--tttta---------------gtgtgattttcgaattgtaacaaggttagactttaaaaatttat
 actaaatggagggggatttttggttttggg-ggttatttctttagaatttttagtaatatttataagagg-tttt-----
 ----------------------------------------------------------------tttagtgtgattttcg
 aattgtaacaaggttagactttaaaaa
-> 14:276-355 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.okutanii_ref.gbk
+> 14:276-355 + ../../../genomes/P.okutanii_ref.gbk
 ggggttttttgaattgtgacagggttagactttaaaaatttatactaaatggaggag-----attttttaggtttagggg
 tta-tt--------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -201,7 +201,7 @@ tta-tt--------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ---------------------------
-> 15:929-1329 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae1.gbk
+> 15:929-1329 + ../../../genomes/P.soyoae1.gbk
 ggggatttccgaattgtaacaaggttagactttaaaaatttatactaaatggaggag-----agtttttaggtttggggg
 gtt-ttta-ttagagtttttagtgatatttataagaggataattata-----------gggggatttccgaattgtaaca
 aggttagactttaaaaatttatactaaatggaggagagtttttaggtttggg-gggt-ttttattagggtttttagtgat
@@ -209,7 +209,7 @@ atttataagaggataattata---------------gggggatttccgaattgtaacaaggttagactttaaaaatttat
 actaaatggaggagagtttttaggtttggg-gggt-ttttattagagtttttagtgatatttataagaggataat-----
 ----------------------------------------------------------------tatagggggatttccg
 aattgtaacaaggttagactttaaaaa
-> 16:939-1339 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae2.gbk
+> 16:939-1339 + ../../../genomes/P.soyoae2.gbk
 ggggatttccgaattgtaacaaggttagactttaaaaatttatactaaatggaggag-----agtttttaggtttggggg
 gtt-ttta-ttagagtttttagtgatatttataagaggataattata-----------gggggatttccgaattgtaaca
 aggttagactttaaaaatttatactaaatggaggagagtttttaggtttggg-gggt-ttttattagagtttttagtgat
@@ -217,7 +217,7 @@ atttataagaggataattata---------------gggggatttccgaattgtaacaaggttagactttaaaaatttat
 actaaatggaggagagtttttaggtttggg-gggt-ttttattagagtttttagtgatatttataagaggataat-----
 ----------------------------------------------------------------tatagggggatttccg
 aattgtaacaaggttagactttaaaaa
-> 17:227-279 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+> 17:227-279 + ../../../genomes/X.pliocardia.gbk
 ggagattatagtattgtaacagagttagactttaaaaatgtataataaataga---------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -226,7 +226,7 @@ ggagattatagtattgtaacagagttagactttaaaaatgtataataaataga---------------------------
 --------------------------------------------------------------------------------
 ---------------------------
 =
-> 1:8019-20320 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:8019-20320 + ../../../genomes/A.diagonalis.gbk
 atttggtcttttaggggggtgtctagtgttcctttgtataagtgttgtgtggttcgctggtggttgtttgggagtgggcg
 taaagttattggtactcgatccttttttttctctatttgggcagggttaataggaactgcttttaggattattattcgtt
 ttgaattagctatacctggtgctggagtcttaggtgataggcatttgtaccaggtggtggtaactgcccatgggttgttg
@@ -544,7 +544,7 @@ aaaa-tttggcacta--atattaatat-----------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 2:4743-15003 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas1.gbk
+> 2:4743-15003 + ../../../genomes/A.gigas1.gbk
 atttggtcttttaggggtgtgtctagtgtgcctttttataagcgatctgttattcgtcgatggctgtttagaagtaacca
 taaggatattgggactctttatttttttttctctatttgagcggggttaatgggaactgcttttaggattattattcgtt
 ttgaattagctatacctggtgctggagttttaggggatagccatttgtaccaggtagtggtaactgcccatgggttgtta
@@ -862,7 +862,7 @@ ttttggccatgggtgctatccaagttgcgtttttccacatg---------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 3:4541-15691 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas2.gbk
+> 3:4541-15691 + ../../../genomes/A.gigas2.gbk
 atttggtcttttaggggtgtgtctagtgtgcctttttataagcgatctgttattcgtcgatggctgtttagaagtaacca
 taaggatattgggactctttatttttttttctctatttgagcggggttaatgggaactgcttttaggattattattcgtt
 ttgaattagctatacctggtgctggagttttaggggatagccatttgtaccaggtagtggtaactgcccatgggttgtta
@@ -1180,7 +1180,7 @@ atactaaatggaagngatttt-----------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 4:4493-15871 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.mariana_ref.gbk
+> 4:4493-15871 + ../../../genomes/A.mariana_ref.gbk
 atttgatcttttaggggatcttctagtgttcctttttataagcggtctgttattcgtcgttgattgtttaggagtaatca
 taaagatattggaactctttatttttttttctctatttgggcggggttgatgggaactgcttttagaattattattcgtt
 ttgagttagctataccaggtgcgggggttttaggtgatagtcatttatatcaggtagtagttactgcacatgggttatta
@@ -1498,7 +1498,7 @@ tt-atatctcgg--------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 5:6019-17996 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis.gbk
+> 5:6019-17996 + ../../../genomes/A.phaseoliformis.gbk
 atttgatcttttaggggatctgctagtgttcctttctataagcggtctgttattcgtcgttgattgtttaggagtaatca
 taaagatattggaactctttatttttttttttctatttgggcggggttgatgggaactgcttttagaattattattcgtt
 ttgagttagctataccaggtgcgggggttctaggtgatagtcatttatatcaggtagtagttactgcacatggattatta
@@ -1816,7 +1816,7 @@ ttcatttac--tgtaaaggattgcctgtagaacttaccaaatgtgtatgtgtatatgtga--------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 6:1-12382 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis_ref.gbk
+> 6:1-12382 + ../../../genomes/A.phaseoliformis_ref.gbk
 atttgatcttttagggggtctactagtgttcctttctataagcggtctgttattcgtcgttgattgtttaggagtaatca
 taaagatattggaactctttatttttttttttctatttgggcggggttgatgggaactgcttttagaattattattcgtt
 ttgagttagctataccaggtgcgggggttctaggtgatagtcatttatatcaggtagtagttactgcacatggactatta
@@ -2134,7 +2134,7 @@ gatagaccatatattc----------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------c-----
-> 7:6049-18430 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+> 7:6049-18430 + ../../../genomes/A.southwardae.gbk
 atttgatcttttaggggatcttctagtgttcctttttataagcggtctgttattcgtcgttgattgtttaggagtaatca
 taaagatattggaactctttatttttttttttctatttgggcgggtttgatgggaactgcttttagaattattattcgtt
 ttgagttagctataccaggtgcgggggttttaggtgatagtcatttatatcaggtagtagttactgcacatgggttatta
@@ -2452,7 +2452,7 @@ gatagaccatatatat----------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------t-----
-> 8:154-12799 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.magnifica.gbk
+> 8:154-12799 + ../../../genomes/C.magnifica.gbk
 atttggtcttttaagggggcttctagtgtgcctttttataagcggtctgttattcgtcgttggttgtttagaagtaatca
 taaggatattggaactctttatttttttttctctatttgagcggggttaataggaactgcctttagaattattattcgtt
 ttgaattagctatacctggtgctggagttttaggagatagtcatttgtaccaggtagtggttactgcacatggtttgttg
@@ -2770,7 +2770,7 @@ aaaaaaaaaaaaaataatatata---------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 9:6135-19166 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.pacifica.gbk
+> 9:6135-19166 + ../../../genomes/C.pacifica.gbk
 atttgatcttttagtagggcatctagtgtacctttttataagcgatctggtattcgtcgttggttgtttaggagtaatca
 taaagacattggaactctttatttttttttctcaatttgggcgggacttatgggaactgcttttagaattattattcgtt
 ttgagttagctataccgggcgctagagttttaggggataggcatttgtaccaagtagtagttactgcacatgggttatta
@@ -3088,7 +3088,7 @@ aaaaaaaaaaaaaaaaaaatatacatgtgatgttttttgaaggttttttttgtt--------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 10:6139-19291 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.rectimargo.gbk
+> 10:6139-19291 + ../../../genomes/C.rectimargo.gbk
 gtttgatcttttagtggggtatctagtgtgcccttctataagcgggctattattcgtcgttgattatttagaagtaatca
 taaagatattgggactctttattttttcttttcaatttgagcggggttaataggaactgcttttagaattattattcgtt
 ttgagttggctatgccaggtgctggggttttgggggataggcatttatatcaagtagtagttactgcacatgggttatta
@@ -3406,7 +3406,7 @@ ttttatactttttgtgaattgggatgtaagttgggttttagaagtaatgta-----------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 11:181-12846 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MK948426.gbk
+> 11:181-12846 + ../../../genomes/MK948426.gbk
 atctggtcttttaggggggtgtctagtgttcctttttataagcgatcggttattcgtcggtgattatttagaagcaacca
 taaagatattgggactctttatttttttttttctatttgagcagggttaatgggaactgcttttaggattattattcgtt
 ttgagttagctataccgggtgctggggttttaggggatagccacttataccaagtagtggtgactgctcatgggttgttg
@@ -3724,7 +3724,7 @@ gttagactttaaaaatttatactaaatggaggatatttttaggttgggaaataaattccaagagttttagcattgtttat
 aaaagatttttttagtgtgattttcgaattgtaacaaggttagactttaaaaatttatactaaatggagga---------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 12:4741-17077 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MT528632.1.gbk
+> 12:4741-17077 + ../../../genomes/MT528632.1.gbk
 gtttgatcttttagtggggtatctagtgtgcccttctataagcgggctattattcgtcgttgattatttagaagtaatca
 taaagatattgggactctttattttttcttttcaatttgagcggggttaataggaactgcttttagaattattattcgtt
 ttgagttggctatgccaggtgctggggttttgggggataggcatttataccaagtagtagttactgcacatggattatta
@@ -4042,7 +4042,7 @@ aagtaagggattctagtataatttatatacctaatatttttactctttagagtaaaaatattaggtatata---------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 13:6469-18105 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.extenta.gbk
+> 13:6469-18105 + ../../../genomes/P.extenta.gbk
 atttggtcttttaggagggtgtctagtgtgcctttctataagcggtcggttatccgtcggtgattgtttaggagtaatca
 taaagatattgggactctttatttttttttttctatttgagcggggctgataggaactgcttttaggattattattcgtt
 ttgaattagctatacctggtgctggcgttttaggtgatagccatttgtaccaggtagtggtgactgctcatgggttgtta
@@ -4360,7 +4360,7 @@ tttg-agggagcaagctggtgctatttgaagagttacttttgcttttaaaagaaata-tacgc-----------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 14:5130-16318 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.okutanii_ref.gbk
+> 14:5130-16318 + ../../../genomes/P.okutanii_ref.gbk
 atttggtcttttagaagggtgtctagtgtgcctttctataagcgatctgttatccgtcggtggttgttcaggagtaacca
 taaagatattgggactctttatttttttttttctatttgagcagggttaatggggactgcttttaggattattattcgtt
 ttgaattagctatacctggcgctggagttttaggggatagccatttgtaccaagtagtggttactgctcatgggttgttg
@@ -4678,7 +4678,7 @@ tt-ataccccgg--------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 15:6425-19225 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae1.gbk
+> 15:6425-19225 + ../../../genomes/P.soyoae1.gbk
 atttggtcttttagaagggtgtctagcgtgcctttttataagcgatctgttatccgtcggtggttgtttaggagtaacca
 taaagatattgggactctttatttttttttctctatttgagcagggttaatggggactgcttttaggattattattcgtt
 ttgaattagctatacctggtgctggagttttaggggatagtcatttgtaccaagtagtggtcactgctcacgggttgttg
@@ -4996,7 +4996,7 @@ gttttaggtttggggggattttcttagagtttttagtgatatttataagag-----------------------------
 ----gataattatagggggatttccgaattgtaacaaggttagactttaaaaatttatactaaatggagtagagttttta
 ggtttggggggtttttattagagtttttagtgatatttataagaggataattatag-gggatttccgaattgtaacaagg
 ttagactttaaaaatttatactaaatggggtagagtttttaggtttggggggtttttattagagtt-tttag
-> 16:6435-19232 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae2.gbk
+> 16:6435-19232 + ../../../genomes/P.soyoae2.gbk
 atttggtcttttagaagggtgtctagcgtgcctttttataagcgatctgttatccgtcggtggttgtttaggagtaacca
 taaagatattgggactctttatttttttttctctatttgagcagggttaatggggactgcttttaggattattattcgtt
 ttgaattagctatacctggtgctggagttttaggggatagtcatttgtaccaagtagtggtcactgctcacgggttgttg
@@ -5314,7 +5314,7 @@ gttttaggtttggggggtttttattagagtttttagtgatatttataagag-----------------------------
 ----gataattatagggggatttccgaattgtaacaaggttagactttaaaaatttatactaaatggaggagagttttta
 ggtttgggggttt-ttattagagtttttagtgatatttataagaggataattatagggggatttccgaattgtaacaagg
 ttagactttaaaaatttatactaaatggaggagagtttttaggtttggggggtttttattagagtt-ttkag
-> 17:5963-18588 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+> 17:5963-18588 + ../../../genomes/X.pliocardia.gbk
 -------ctttaagaatatcatctaatgtacctttttataagcggtctgttatccgacgttgattatttagaagtaatca
 caaagatattggaactctttatttttttttctctatttgagctggattaataggaactgcatttagaattattattcgtt
 ttgagctggctataccaggtgctggagttttaggtgatagtcatttataccaagtagtagttacagcacatggtttatta
@@ -5632,7 +5632,7 @@ ttttgtggtttttgaaagttgagatataaatgtgattttggtgatattgga-----------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
-> 18:71-13965 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/M.lamarckii.gbk
+> 18:71-13965 + ../../../genomes/M.lamarckii.gbk
 -------------------------------------------------atagacaccgttggctttttagtactaacca
 taaagatattggaactttatattttgttttttctttttgggctggtttggttggaacggcttttagtgttattatccgta
 tggaattgtctatgcctggtacta---ttttagatgatgcccatttatataatttaattgttacttctcacgggttagtt
@@ -5951,7 +5951,7 @@ cgggggttga----------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------
 =
-> 1:1004-1813 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:1004-1813 + ../../../genomes/A.diagonalis.gbk
 --------------------------------------------------------------------------------
 ---------ttttagtgtagttttcgaattgtatcaaggttagactttaaaaatttatagtaaatggaggaggttttttg
 gtttgggtgtttgtttctttagagtttttaataatatatatatatatatatttatatttagataacgattttttt-----
@@ -5971,7 +5971,7 @@ ggttagactttaaaaatttatagtaaatggaagagatttttttggattgggtgtttgtttctttaga-------------
 ------------------------------------------------------atttttaataatatatatatttatat
 ttatataacgattt------------------------------------------------------------------
 --------------------ttag--------------------------------------------------
-> 6:13759-14206 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis_ref.gbk
+> 6:13759-14206 + ../../../genomes/A.phaseoliformis_ref.gbk
 --------------------------------------------------------------------------------
 -------------------------------------ggttagactttaaaaatttataatagataggaaata-------
 --------------------------------------------------------------------------------
@@ -5991,7 +5991,7 @@ ggttagactttaaaagtttataatagataggataaaagtattgaaaattattttttattga-------------------
 --------------------------------------------------------------------------------
 --------------gtttacagggttagtgta------------------------------------------------
 ----------agttgatttattag--------------------------------------------------
-> 7:686-692 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+> 7:686-692 + ../../../genomes/A.southwardae.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6011,7 +6011,7 @@ ggttagactttaaaagtttataatagataggataaaagtattgaaaattattttttattga-------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 -----------------ttattag--------------------------------------------------
-> 8:13567-14314 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.magnifica.gbk
+> 8:13567-14314 + ../../../genomes/C.magnifica.gbk
 --------------------------------------------------------------------------------
 ------------aagttgaattttttaattgtaataaagttagattttaaaaatttatattaatagggggaggggctt--
 ---------------------------------------------------------------------------acata
@@ -6031,7 +6031,7 @@ ggttagactttaaaaatttatagtaaatagagagacttgtataagttaagttgacttttaagttgga-------------
 ------------------------------------------------------tttctta-------------------
 --------------------------------attgtaacaaggttagattttaaagatttatagtaaatagagagattt
 gtataagttaaattgacttttaag--------------------------------------------------
-> 9:234-779 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.pacifica.gbk
+> 9:234-779 + ../../../genomes/C.pacifica.gbk
 --------------------------------------------------------------------------------
 ----------------------------------------tagactttaaaaatttatactaaatggagggtgg------
 --------------------------------------------------------------------------------
@@ -6051,7 +6051,7 @@ ggttagactttaaaaatttatactaaatggagggtggtt-ataggtttggaaatttattttatgtaatttattaataaag
 tataaaaataagttttattagcgtaatttgtgaattgtaacagggttagacttt--------------------------
 --------------------------------------------------------------------------------
 ------------------------aaaaatttatactaaatggagggtggttataggtttggaagtttatttta
-> 10:307-800 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.rectimargo.gbk
+> 10:307-800 + ../../../genomes/C.rectimargo.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6071,7 +6071,7 @@ ggttagactttaaaaatttatactaaatggggagtaatt-gtgattttaaaagtttattttatgtagtttactaggaagg
 gaggaaa--aggttttattagggtaatttgtgaattgtaacaaggttagacttt--------------------------
 --------------------------------------------------------------------------------
 ------------------------aaaaatttatactaaatggggagtaattatgattttaaaaatttatttta
-> 13:344-986 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.extenta.gbk
+> 13:344-986 + ../../../genomes/P.extenta.gbk
 -------------------------------------------tgggggttatttctttagaatttttgtaatatttata
 agagg-tttttttagtgtgattttcgaattgtaacaaggttagastttaaaaatttataytaratggggggggatttttg
 gttatgggggttatttctttagaatttttagtaatatttat---------------------------------------
@@ -6091,7 +6091,7 @@ ggttagactttaaaaatttatactaaatggagggggatttttggttttggg-ggttatttctttaga-------------
 ------------------------------------------------------atttttagtaatatttataag-----
 -----agg-ttttt------------------------------------------------------------------
 --------------------ttag--------------------------------------------------
-> 14:27-275 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.okutanii_ref.gbk
+> 14:27-275 + ../../../genomes/P.okutanii_ref.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------ttctttagggtttttagtggtatttat---------------------------------------
@@ -6111,7 +6111,7 @@ ggttagactttaaaaatttatactaaatggaggagattttttaggtttagg-ggttatttctttagg-------------
 ------------------------------------------------------gtttttagtagtatttata-------
 --------------------------------------------------------------------------------
 ----------------------ag--------------------------------------------------
-> 15:351-928 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae1.gbk
+> 15:351-928 + ../../../genomes/P.soyoae1.gbk
 agactttaaaaatttatactaaatggaggagagtttttaggtttggggggtttttattagagtttttagtgatatttata
 agaggataattatagggggatttccgaattgtaacaaggttagactttaaaaatttatactaaatggaggagagttttta
 ggtttggggg-gattttcttagggtttttagtgatatttat---------------------------------------
@@ -6131,7 +6131,7 @@ ggttagactttaaaaatttatactaaatggaggagagtttttaggtttggg-gg-gattttcttagg-------------
 ------------------------------------------------------gtttttagtgatatttataag-----
 -----aggataatt------------------------------------------------------------------
 --------------------atag--------------------------------------------------
-> 16:362-938 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae2.gbk
+> 16:362-938 + ../../../genomes/P.soyoae2.gbk
 agactttaaaaatttatactaaatggaggagagtttttaggtttggggggtttttattagagtttttagtgatatttata
 agaggataattatagggggatttccgaattgtaacaaggttagactttaaaaatttatactaaatggaggagagttttta
 ggtttggggg-gtttttattagagtttttagtgatatttat---------------------------------------
@@ -6151,7 +6151,7 @@ ggttagactttaaaaatttatactaaatggaggagagtttttaggtttggg-gg-gattttcttagg-------------
 ------------------------------------------------------gtttttagtggtatttataag-----
 -----aggataatt------------------------------------------------------------------
 --------------------atag--------------------------------------------------
-> 17:45-193 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+> 17:45-193 + ../../../genomes/X.pliocardia.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6172,7 +6172,7 @@ agttagactttaaaaatgtataataaatagagatat--------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------
 =
-> 1:12-334 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:12-334 + ../../../genomes/A.diagonalis.gbk
 ----------------------------ttct-ttagaatttttaatactatatata--tttatatttatataacggttt
 tggaattgtatcaaggttagac---------tttaaaaatttatagtaaatggttgagatt---ttt----tttgggaga
 ttttttt-------------tttggggggtattt------------ttttagtgtattttctaattgtggggaggttaga
@@ -6196,7 +6196,7 @@ cttaggaggttttttgggtgatttcttaggtttgctt-------------------------------------------
 attcaaaa-atttatactgatgaagtgatttttgggttgaggtgtttgtttctttagaatttttaatagtg---------
 --------------------------------------------------------------------------------
 ------------------
-> 15:13-350 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae1.gbk
+> 15:13-350 + ../../../genomes/P.soyoae1.gbk
 tggtggggagtttttgtgttttgggggtttctattagagtttttagtgatatttataagaggataattatagggggattt
 ccgaattgtaacaaggttagac---------tttaaaaatttatactaaatggaggagagt---ttttaggtttgggggg
 attttct-------taggg-ttttagtggtatttataagaggataattataggggatttccgaattgtaacaaggttaga
@@ -6220,7 +6220,7 @@ ctttaaaaatt---------------------------------------------------------------------
 -----------------------------------------------------------------------tatactaaa
 tggaggagagtttttaggtttggggggtttttattagagtttttagtgatatttataagaggataattatagggggattt
 ccgaattgtaacaaggtt
-> 16:24-361 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae2.gbk
+> 16:24-361 + ../../../genomes/P.soyoae2.gbk
 tggggtagagtttttaggtttggggggtttttattagagtttttagtgatatttataagaggataattata-ggggattt
 ccgaattgtaacaaggttagac---------tttaaaaatttatactaaatggggtagagt---ttttaggtttgggggg
 tttttat-------tagagtttttagtgatatttataagaggataattataggggatttccgaattgtaacaaggttaga
@@ -6244,7 +6244,7 @@ ctttaaaaatt---------------------------------------------------------------------
 -----------------------------------------------------------------------tatactaaa
 tggaggagagtttttaggtttggggggtttttattagagtttttagtgatatttataagaggataattatagggggattt
 ccgaattgtaacaaggtt
-> 18:14941-16522 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/M.lamarckii.gbk
+> 18:14941-16522 + ../../../genomes/M.lamarckii.gbk
 ------ttctgttttccaaacagaaggtttctacaagaactgttgtatgtttgtgttagtagtttgttttggttttagtt
 taaggtgttaatgttagtaggtgtttttttgtgtaaataaatatattaaaatgtatagggtttgttttagggattaaaag
 ttttaatataaatgtgctaatctggggtaccttgag--------------------------------------------
@@ -6269,7 +6269,7 @@ atggaaaataaatgttattgttttgcgatttgaaagtta-gattttagtgttctaaaaagtttttttagtg---------
 --------------------------------------------------------------------------------
 ------------------
 =
-> 1:3240-3312 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:3240-3312 + ../../../genomes/A.diagonalis.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6290,7 +6290,7 @@ tagtaaatggaggaggttttttgggattgggtgtttgtttcttt------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-> 5:377-909 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis.gbk
+> 5:377-909 + ../../../genomes/A.phaseoliformis.gbk
 acggga--tttgattttttagggtgctttttgtggggggcttatgtgtggtttttagaggt-aatgaaaaatgggggtta
 -ttttttaaagggtgattttttagagtttttgtgatttttataag-tgtggtttatgtgtggttttcagaaagaaaagtc
 aaatgggggtgatttttgaggggctg------atttggggttttccttctttttacaggttgaggtttattaggggcttt
@@ -6311,7 +6311,7 @@ gtttg---------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ---------------attagttagcgtattttgtgaattgtaacaaggttagactttaaaaatttataatagatagggaa
 tataaaagtattgaaaattatttttattgggcttat-gggttagtttaagt---------------------------
-> 6:13171-13725 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis_ref.gbk
+> 6:13171-13725 + ../../../genomes/A.phaseoliformis_ref.gbk
 acggggatttaaattttttagggtgtttttcgaggtgggattatgtgtggttttcagagggaaatggaaaatgggggtga
 ---tttttgggggtga-ttttggggtttttcgttctttttacaggttgaggtttattagaggcttttagaa--gaaagta
 aaatgggggtttgttgtacggggattttaattttttagggt--------gtttttcaaggtgggattatgtgtggttttt
@@ -6332,7 +6332,7 @@ gtttg---------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ---------------attagttagtgtattttgtgaattgtaacaaggttagactttaaaaatttataatagatagggaa
 taaaaaagtattgaaaattatttttattgagtttatggggttagtttaagt---------------------------
-> 7:13-680 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+> 7:13-680 + ../../../genomes/A.southwardae.gbk
 --------------------------------------------gtgtggttttgaaaggt-aattgaaaataggagtga
 ttttttttgggggtga-tttttcggttttttgttctttttatgtgttgag------------------------------
 --------------------------------------------------------------------------------
@@ -6353,7 +6353,7 @@ taataaatagaaaat-----------------------------------------------------------------
 tgtaacaaggttagacttttaaaatttataataaatagagaatataaaaatgttgaaaattatttttatgggtttttaga
 ggttagtttaagtggatttattagcgtattttgtgaattgtaacaaggttagactttaaaaatttataatagatagagaa
 tataaaaatattgaaaattatttttatgggttttag-gggttagtttaag----------------------------
-> 9:780-1543 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.pacifica.gbk
+> 9:780-1543 + ../../../genomes/C.pacifica.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6374,7 +6374,7 @@ tactaaatggagggtggttataggtttggaaatttattttatgtaatt--------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ---------------------------------------------------tattagtaaagtataaaaataagtttt
-> 10:801-1551 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.rectimargo.gbk
+> 10:801-1551 + ../../../genomes/C.rectimargo.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6395,7 +6395,7 @@ tactaaatggggagtaattgtgattttaaaaatttattttatgtagtt--------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ---------------------------------------------------tactagggagggatgaaa--aggtttt
-> 12:3-153 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MT528632.1.gbk
+> 12:3-153 + ../../../genomes/MT528632.1.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6417,7 +6417,7 @@ tactaaatggggagtaattgggattttaaaaatttattttatgtagtt--------------------------------
 --------------------------------------------------------------------------------
 ---------------------------------------------------tactagggagggatgaaa--aggtttt
 =
-> 1:2713-3135 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:2713-3135 + ../../../genomes/A.diagonalis.gbk
 gttagactttaaaaatttatag----------------------------------------------------taaatg
 gaagagattttttttggattgggtgtttgtttctttagaatttttaataatatatatatttatatttatataacgatttt
 tagtgtagttttcgagttgtattaaggttagactttaaaaatttatagtaaatggaagagatttttttggattgggtgtt
@@ -6425,7 +6425,7 @@ tgtttctttagggtttttaataatatatatacttatatttatataacgattttttagtgtagttttcgaat---------
 ---------------------------------------------tgtatcaaggttagactt-taaaaatttatagtaa
 atggaagagattttttgggattgggtgtttgtttctttagaatttttaatagtatatatatttatatttatataacgatt
 t---------------------ttta---g---tgtagttttcgaattgtatcaaggttagactttaaaaatttata---
-> 2:131-254 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas1.gbk
+> 2:131-254 + ../../../genomes/A.gigas1.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6433,7 +6433,7 @@ t---------------------ttta---g---tgtagttttcgaattgtatcaaggttagactttaaaaatttata---
 ---------------------------------------------tgtaacaaggttagactt-taaaaatttatactaa
 atggaagagatt--------------------------------------------------------------------
 ------------------------------ttgtgtagttttcgaattgtaacaaggttagactttaaaaatttatacta
-> 3:2-48 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas2.gbk
+> 3:2-48 + ../../../genomes/A.gigas2.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6441,7 +6441,7 @@ atggaagagatt--------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ---------------------------------tgtagttttcgaattgtaacaaggttagactttaaaaatttatacta
-> 8:15178-15365 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.magnifica.gbk
+> 8:15178-15365 + ../../../genomes/C.magnifica.gbk
 gttagactttaaaaatttatag----------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6449,7 +6449,7 @@ gttagactttaaaaatttatag----------------------------------------------------------
 ggacttatataaattaaattgatttttaagctgggtttagcgggctgtaacaaggttgggtttataaagatttatagtga
 gtaagggg------------------------------------------------------------------------
 -ctatataaagtgagttgacttttaa---g---ttggattccttaattgagacggggttggatttcaaaaatttgt----
-> 11:13029-13073 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MK948426.gbk
+> 11:13029-13073 + ../../../genomes/MK948426.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6457,7 +6457,7 @@ gtaagggg------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 -----------------------------------tgattttcgaattgtaacaaggttagactttaaaaatttatactg
-> 13:1783-1997 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.extenta.gbk
+> 13:1783-1997 + ../../../genomes/P.extenta.gbk
 ----------------------ggttatttctttagaatttttagtaatatttataagagg-tttttttagtgt------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6465,7 +6465,7 @@ gtaagggg------------------------------------------------------------------------
 ---------------------------------------------tgtaacaaggttagactt-taaaaatttatactaa
 atggagggggatttttggttatggg-ggttatttctttagaatttttagtaatatttata-----------agagg-ttt
 t---------------------ttta---g---tgtgattttcgaattgtaacaaggttagactttaaaaatttatagt-
-> 14:567-649 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.okutanii_ref.gbk
+> 14:567-649 + ../../../genomes/P.okutanii_ref.gbk
 ----------------------ggttatttctttagggtttttagtggtattta--------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6473,7 +6473,7 @@ t---------------------ttta---g---tgtgattttcgaattgtaacaaggttagactttaaaaatttatagt-
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------taag---ggggttttttgaattgtgacagggttagactttaaaaatttatacta
-> 15:1727-1942 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae1.gbk
+> 15:1727-1942 + ../../../genomes/P.soyoae1.gbk
 ----------------------gggt-ttttattagagtttttagtgatatttataagaggataattatagggg------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6481,7 +6481,7 @@ t---------------------ttta---g---tgtgattttcgaattgtaacaaggttagactttaaaaatttatagt-
 ---------------------------------------------tgtaacaaggttagactt-taaaaatttatactaa
 atggaggagagtttttaggtttggg-gggg-tttttcttagggttttagtggtatttata-----------agaggataa
 t---------------------tata---g---ggggatttccgaattgtaacaaggttagactttaaaaatttatacta
-> 16:1737-1952 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae2.gbk
+> 16:1737-1952 + ../../../genomes/P.soyoae2.gbk
 ----------------------gggt-ttttattagagtttttagtgatatttataagaggataattatagggg------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6490,7 +6490,7 @@ t---------------------tata---g---ggggatttccgaattgtaacaaggttagactttaaaaatttatacta
 atggaggagagtttttaggtttggg-gggt-ttttattagagtttttagtgatatttata-----------agaggataa
 t---------------------tata---g---ggggatttccgaattgtaacaaggttagactttaaaaatttatacta
 =
-> 1:2215-2712 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:2215-2712 + ../../../genomes/A.diagonalis.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6509,7 +6509,7 @@ g-------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------
-> 5:3-376 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis.gbk
+> 5:3-376 + ../../../genomes/A.phaseoliformis.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6528,7 +6528,7 @@ agctttttagaggt-aataaaaattggggg-----acttctgtacggg--------------------------------
 atttttattggggcgatttttttagagtttttgtgatttttataagtgtggtttatgtgtggttttcagaaggaaatggg
 aaatgggggtg-ctttttgtgggggtggttttggag-tttttgttctttttacaggttgaggtttattaggggtttttag
 aagagagtaaaatgggggacttctgt
-> 6:12383-13170 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis_ref.gbk
+> 6:12383-13170 + ../../../genomes/A.phaseoliformis_ref.gbk
 cttcccggcgtggctccgtgaggtctgcctgacgcccggtaaagctgaggtctatttctgaatcaattgttttatttttt
 ttcttttaaaattttagttaagaacaatgttaaatagttcaatatatgattagtgccaaataaatatttggcactaaaat
 ttatatatatttattattaattttcattattttattagtaaaataatgaaaattaactaaatattcttcatactattcct
@@ -6547,7 +6547,7 @@ agctttttagaagt-aatggaaaatggggg-----acttgtaattggg--------------------------------
 attttttaagggttgatttttttagagtttttgtgatttttataagtgtggtttatgtgtggttttcagagggaaatgga
 aaatgggggtgattttttgggggggtgattttggggttttttgttctttttacaggttgaggtttattagaggcttttag
 aagaaagtaaaatgggggtttgttgt
-> 7:18433-19078 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+> 7:18433-19078 + ../../../genomes/A.southwardae.gbk
 cttcccggcgtggctccgtgaggtctgcctgacgcccggtaaagctgaggtctatttctgaatcaattgttttatttttt
 ttcttttaaaatttaagttaaaaactatgtaaaatattttaatatacagttagtgccaaataaatatttggcactaagat
 ttacacatatttattattaattttcattattttaatattaaaataatgaaaattaactaaatactcctcatactattcct
@@ -6566,7 +6566,7 @@ agatttttagaaataaatgaaaagtgagggtgattttttctctaaaaa--------------------------------
 attttttaatttgagtttttttcagagtttttgtgatttt----------------------------------------
 --------------------------------------------------------------------------------
 --------------------------
-> 8:14689-15177 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.magnifica.gbk
+> 8:14689-15177 + ../../../genomes/C.magnifica.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6585,7 +6585,7 @@ g-------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------
-> 13:1387-1782 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.extenta.gbk
+> 13:1387-1782 + ../../../genomes/P.extenta.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6604,7 +6604,7 @@ agactttaaaaatt-tatactaaatggagggggattt-----------ttggttatggg---------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------
-> 14:384-566 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.okutanii_ref.gbk
+> 14:384-566 + ../../../genomes/P.okutanii_ref.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6623,7 +6623,7 @@ agactttaaaaatt-tatactaaatggaggagatttt-----------ttaggtttagg---------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------
-> 15:1330-1726 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae1.gbk
+> 15:1330-1726 + ../../../genomes/P.soyoae1.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6642,7 +6642,7 @@ agactttaaaaatt-tatactaaatggaggagagttt-----------ttaggtttggg---------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------
-> 16:1340-1736 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae2.gbk
+> 16:1340-1736 + ../../../genomes/P.soyoae2.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -6662,7 +6662,7 @@ agactttaaaaatt-tatactaaatggaggagagttt-----------ttaggtttggg---------------------
 --------------------------------------------------------------------------------
 --------------------------
 =
-> 1:3346-7840 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:3346-7840 + ../../../genomes/A.diagonalis.gbk
 --------------------------------------------------------------------------agtgta
 gttttcgaattgtatcaaggttagactttaaaaatttatagtaaatggaagag---------------------------
 --------------------------------------------------------------------------------
@@ -6750,7 +6750,7 @@ tatccact-tagtagg----------------------------------------------tag----gttaggtaaga
 agtttgaaaaatttatgggtatag-cgaataagaattgtaaatattttacttgaaagaaggtctat--------------
 --------------------------------------------------------------------------------
 -------------------------------------------
-> 2:255-4305 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas1.gbk
+> 2:255-4305 + ../../../genomes/A.gigas1.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------aa------------------------------
@@ -6838,7 +6838,7 @@ aattattgggagtgtttatttaatagtgtgttgaattcggcttttaaagaagcattttacctataagcatcatcattttg
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 -------------------------------------------
-> 3:49-4362 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas2.gbk
+> 3:49-4362 + ../../../genomes/A.gigas2.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------aa------------------------------
@@ -6926,7 +6926,7 @@ tgtccact-tggtagc----------------------------------------------cag----atttgctaggt
 agtttgaaaaacttataggggagt--taaacaaaaatataaatattttacttggaaaaggt-ctat--------------
 --------------------------------------------------------------------------------
 -------------------------------------------
-> 4:13-4336 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.mariana_ref.gbk
+> 4:13-4336 + ../../../genomes/A.mariana_ref.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -7014,7 +7014,7 @@ tgttcact-taatgag----------------------------------------------cttttta-----------
 ------------------------------------------------------------------t-tattctaaattt
 attgttaatattttactttataaaaggtctttg-----------------------------------------------
 -------------t---------ggaattgagcgagttaatta
-> 5:914-5862 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis.gbk
+> 5:914-5862 + ../../../genomes/A.phaseoliformis.gbk
 ---------------------------------------------------------------------ttattagcata
 ttttgtgagttgtaacaaggttagactttaaaaatttataatagatagggaagataaaagtattgaaaattatttttatt
 gagtttatagggttagtgtaagttg-atttattagcgtattttgtgaa--------------------------------
@@ -7102,7 +7102,7 @@ tgttcact-taatgaa----------------------------------------------cttttta-----------
 --------------------------------------------------------------------ctattttaaatt
 tttgtagatattttactttataaaaggtctttg-----------------------------------------------
 -------------t---------ggaattgagtgagttaatta
-> 6:14269-19268 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis_ref.gbk
+> 6:14269-19268 + ../../../genomes/A.phaseoliformis_ref.gbk
 -------------------agtattgaaaattatttttattgagtttatagggttagtataagttgaatttattagcgta
 ttttgtgaattgtaacaaggttagactttaaaaatttataatagatagggaagataaaagtattaaaaattatttttatt
 gagtttatagggttagtgtaagttg-atttattagcgtgttttgtgaa--------------------------------
@@ -7190,7 +7190,7 @@ tgttcact-taatgat----------------------------------------------cttttta-----------
 -------------------------------------------------------------------attattttaaatt
 tttgtagatattttactttataaaaggtctttg-----------------------------------------------
 -------------t---------gtaattgagtgagttaatta
-> 7:755-5891 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+> 7:755-5891 + ../../../genomes/A.southwardae.gbk
 -------------------aatattgaaaattatttttatgggtttttagaggttagtttaag-tgtatttattagcgta
 ttttgtgaattgtaacaaggttagactttaaaaatttataatagatagagaggataaaaatattaaaaattatttttatg
 ggttttaga-ggttagtttaagtggaatttattagcgtattttgtgaa--------------------------------
@@ -7278,7 +7278,7 @@ tgttcact-taatgag----------------------------------------------cttttta-----------
 ------------------------------------------------------------------t-tattttagattt
 attgtggatattttactttataaaaggtctttt-----------------------------------------------
 -------------t---------ggaattagagtgagttaatt
-> 8:15366-19651 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.magnifica.gbk
+> 8:15366-19651 + ../../../genomes/C.magnifica.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 -------------------------------------------------a------------------------------
@@ -7366,7 +7366,7 @@ tgtccact-tgatagggct---tttaattgttaagagttaagcgtaaaaattaaagtaatta------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 -------------------------------------------
-> 9:1544-5977 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.pacifica.gbk
+> 9:1544-5977 + ../../../genomes/C.pacifica.gbk
 atcagcgtaatttgtgaat-------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -7454,7 +7454,7 @@ tgttcact-tggtgggttcagttaatcagggtgttggttaaatgctaaatgtgggttgattt------------------
 --------------------------------------------------------------------------------
 ---------------------------------attaagagtaatataaaaatttatcaataagattattgtagatattt
 tactttaaaaa---ggtttttatggaattgagtgagttaatt-
-> 10:1552-5981 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.rectimargo.gbk
+> 10:1552-5981 + ../../../genomes/C.rectimargo.gbk
 attagggtaagttgtgaat-------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -7542,7 +7542,7 @@ tgttcact-tattgggggctggtttattagggtggggttaagtgctaaatgggaattgtttt------------------
 --------------------------------------------------------------------------------
 ----------------------------------gtatagagtaagggtaaaatttattgtgaagttactgaaggtattt
 tacttagctaaaa-ggtctctagggaattgagtgagttaact-
-> 11:13074-17374 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MK948426.gbk
+> 11:13074-17374 + ../../../genomes/MK948426.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------aa------------------------------
@@ -7630,7 +7630,7 @@ cattcact-tggtagg----------------------------------------------ta-----atttgac-gga
 gttttaaaaaattataagaatgtgttgaacaataaatgtaaatattttacttgaaaaaggt-ct----------------
 --------------------------------------------------------------------------------
 -------------------------------------------
-> 12:154-4583 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MT528632.1.gbk
+> 12:154-4583 + ../../../genomes/MT528632.1.gbk
 attagggtaagttgtgaat-------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -7718,7 +7718,7 @@ tgttcact-tattgggggctggtttattagggtggggttaagtgctaaatgggaattgtttt------------------
 --------------------------------------------------------------------------------
 ----------------------------------gtatagagtaagggtaaaatttattgtgaagttactgaaggtattt
 tacttagctaaaa-ggtctctagggaattgagtgagttaact-
-> 13:1998-6290 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.extenta.gbk
+> 13:1998-6290 + ../../../genomes/P.extenta.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------aa------------------------------
@@ -7806,7 +7806,7 @@ tatccact-tggtaa-----------------------------------------------ta-----atttgatgggg
 ttat--ctaaattataagagtgtgt-tggtggggattttggatattttacttgaaaggt---ctat--------------
 --------------------------------------------------------------------------------
 -------------------------------------------
-> 14:650-4951 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.okutanii_ref.gbk
+> 14:650-4951 + ../../../genomes/P.okutanii_ref.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------aa------------------------------
@@ -7894,7 +7894,7 @@ tgtccact-tggtaga----------------------------------------------ta-----atttgat-ggt
 agtttgaaaaattataagaatgtgttgagaaagaattataaatattttacttgaaaaaggt-ctat--------------
 --------------------------------------------------------------------------------
 -------------------------------------------
-> 15:1943-6246 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae1.gbk
+> 15:1943-6246 + ../../../genomes/P.soyoae1.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------aa------------------------------
@@ -7982,7 +7982,7 @@ tgtccact-tggtagc----------------------------------------------ta-----atttgat-ggt
 agtttgaaaaattataaaagtgtgttgagaaagagttataaatattttacttgaaaaaggt-ctat--------------
 --------------------------------------------------------------------------------
 -------------------------------------------
-> 16:1953-6256 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae2.gbk
+> 16:1953-6256 + ../../../genomes/P.soyoae2.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------aa------------------------------
@@ -8070,7 +8070,7 @@ tgtccact-tggtagc----------------------------------------------ta-----atttgat-ggt
 agtttgaaaaattataaaagtgtgttgagaaagagttataaatattttacttgaaaaaggt-ctat--------------
 --------------------------------------------------------------------------------
 -------------------------------------------
-> 17:513-5682 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+> 17:513-5682 + ../../../genomes/X.pliocardia.gbk
 --------------------------------------------------------------------------------
 ----------tgtaacagagttaggctttaaaaatgtataataaatagag------------------------------
 --------------------------------------------------atattttaattttaaaataaatagtaagtt
@@ -8158,7 +8158,7 @@ tgttcgctaagataa-----------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 -------------------------------------------
-> 18:18553-20853 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/M.lamarckii.gbk
+> 18:18553-20853 + ../../../genomes/M.lamarckii.gbk
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -8247,10 +8247,10 @@ gtgtttgggcagctg--tatggtattgacattttgttgatcttgtttgggtgtttgtttatggtttagtttatatttgag
 --------------------------------------------------------------------------------
 -------------------------------------------
 =
-> 1:1-11 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:1-11 + ../../../genomes/A.diagonalis.gbk
 gaggtgtttgt
 =
-> 1:335-1003 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:335-1003 + ../../../genomes/A.diagonalis.gbk
 tgtataatgatttttttttagtgtagttttggaattgcatcaaggttagactttaaaatttatagtaaatggaggaggtt
 ttttgggtttgggtgtttgtttctttagagtttttaataatatatatatttatatttagataacgatttttttagtgtag
 ttttcgaattgcatcaaggttagactttaaaaatttatactaaatggaagtgatttttggggttgaggtgtttgtttctt
@@ -8261,69 +8261,69 @@ gtgtttgtttctttagggttttaaataatatatatacttatatttatataacgatttttttggtgtagttttggaattgt
 atcaaggttagactttaaaaatttatagtaaatggaggagatttttggattgggtgtttgtttctttagaatttttaata
 atatatatatttatatttgtataacgatt
 =
-> 1:3136-3239 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:3136-3239 + ../../../genomes/A.diagonalis.gbk
 gtaaatggaagagattttttggggttgaggtgtttgtttctttagaatttttaataatatatacattattatttatataa
 tgattttttagtgtagttttcgaa
 =
-> 1:3313-3345 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:3313-3345 + ../../../genomes/A.diagonalis.gbk
 agaatttttaataatgtgtataatgattttttt
 =
-> 1:20321-20322 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.diagonalis.gbk
+> 1:20321-20322 + ../../../genomes/A.diagonalis.gbk
 ac
 =
-> 2:1-130 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas1.gbk
+> 2:1-130 + ../../../genomes/A.gigas1.gbk
 tttttacttcgtaaaaaaatacataataatatatatacaatacctaaattgttaaacaatttaggtattgtatatatatt
 attaaaaaaaaaaaaaataatatatatatgttgtttttttttaatataaa
 =
-> 2:4306-4564 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas1.gbk
+> 2:4306-4564 + ../../../genomes/A.gigas1.gbk
 nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 nnnnnnnnnnnnnnnnnnn
 =
-> 2:15004-15004 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas1.gbk
+> 2:15004-15004 + ../../../genomes/A.gigas1.gbk
 g
 =
-> 3:1-1 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas2.gbk
+> 3:1-1 + ../../../genomes/A.gigas2.gbk
 g
 =
-> 3:15692-15758 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.gigas2.gbk
+> 3:15692-15758 + ../../../genomes/A.gigas2.gbk
 tttggtttgnnttcgagttgtaatttnnttagaatttttaacaatntatactaaatggaagtttttt
 =
-> 4:1-12 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.mariana_ref.gbk
+> 4:1-12 + ../../../genomes/A.mariana_ref.gbk
 ttagactttaaa
 =
-> 4:15872-15927 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.mariana_ref.gbk
+> 4:15872-15927 + ../../../genomes/A.mariana_ref.gbk
 ataggtaatacaaaataatatttagcaataaccgagcagaatatactatttttttt
 =
-> 5:1-2 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis.gbk
+> 5:1-2 + ../../../genomes/A.phaseoliformis.gbk
 tt
 =
-> 5:910-913 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis.gbk
+> 5:910-913 + ../../../genomes/A.phaseoliformis.gbk
 tgat
 =
-> 5:17997-17997 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis.gbk
+> 5:17997-17997 + ../../../genomes/A.phaseoliformis.gbk
 g
 =
-> 6:13726-13758 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.phaseoliformis_ref.gbk
+> 6:13726-13758 + ../../../genomes/A.phaseoliformis_ref.gbk
 tgatttattagcgtgttttgtgggttgtaacaa
 =
-> 7:1-12 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+> 7:1-12 + ../../../genomes/A.southwardae.gbk
 agggggtttatt
 =
-> 7:681-685 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+> 7:681-685 + ../../../genomes/A.southwardae.gbk
 tggat
 =
-> 7:5892-5892 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+> 7:5892-5892 + ../../../genomes/A.southwardae.gbk
 a
 =
-> 7:18431-18432 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+> 7:18431-18432 + ../../../genomes/A.southwardae.gbk
 cc
 =
-> 7:19079-19082 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/A.southwardae.gbk
+> 7:19079-19082 + ../../../genomes/A.southwardae.gbk
 ttta
 =
-> 8:12800-13566 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.magnifica.gbk
+> 8:12800-13566 + ../../../genomes/C.magnifica.gbk
 tataaatgtgaatttttgcaccctattgattcagatttttatcgatttttatcgatttttatcgatttttatcgattttt
 atcgatttttatcgatttttatcgatttttatcgatttttatcgatttttatcgatttttatcgatttttatcgattttt
 atcgatttttatcgatttttatcgatttttatcgatttttatcgatttttatcgatttttatcgatttttatcgattttt
@@ -8335,16 +8335,16 @@ atcgatttttatcgatttttatcgatttttatcgatttttatcgatttttatcgatttttatcgatttttatcgattttt
 atcgatttttatcgatttttatcgatttttatcgatttttatcgatttttaagctgtggtaaaggttaggtttaaaagtg
 agaatttgtagtgagtaagaggagctatataaattaagttggctttt
 =
-> 8:19652-19738 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.magnifica.gbk
+> 8:19652-19738 + ../../../genomes/C.magnifica.gbk
 aaaataggtctgtggtttgaaaaagtattgttattggtatattacttatgtagaaggtctttatgaaattgaatgagtta
 gttatct
 =
-> 9:1-233 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.pacifica.gbk
+> 9:1-233 + ../../../genomes/C.pacifica.gbk
 tcagatattctccaactgtcctataattccagatcctctagatattctccaactgtcctataattccagatcctctagat
 attctccaactgtcctataattacagatccattagatattctccaactgtcctataattctagatccactagatattctc
 caactgtcctataattctagatccactagatattctccaactgtcctataattccagatcctctagatattct
 =
-> 9:19167-19910 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.pacifica.gbk
+> 9:19167-19910 + ../../../genomes/C.pacifica.gbk
 tttttttttttttttgtggtttttttttttgttattttttgtttttatttttagggtgttttttgatgtttgtttattat
 tttgtttttttgtttgttttttttttttttttttttttttttttttttttttagaatcataatttactatttattaatta
 aaaattaattattcaatttatttaggataaatttgtaatagcagtgctatttagacttgatcantngcnntnntattttc
@@ -8356,89 +8356,89 @@ cactcggccacggaggcccctacatatacatctagtacgttccttccctttaccgtgtagctgttgnattngcagatctg
 atctacaatcgtcatcgtaaatataaaataaaaaatagggaccacctacccacacaaaaagtaattaaataataaatatt
 tatagatgaatcccgaccaaccct
 =
-> 10:1-306 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.rectimargo.gbk
+> 10:1-306 + ../../../genomes/C.rectimargo.gbk
 tttaattattaaataattttttttttgtgactatagcatatttaggtatttttttaaagagtaaaaaaataataaataat
 ataaatataatatctaaattgatttttaatttagatattatatatatattattacaaaaaaaaaaaataaaaatatatac
 atgtgtgcttttttgtgatttttattgggtgattgtgatttttattgggggtgatttttatactttttgtgaattgggat
 gtaagttgggttttagaagtaatgtagaagtgggggtaagtttgtcctttttttttgctattactt
 =
-> 10:19292-19326 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/C.rectimargo.gbk
+> 10:19292-19326 + ../../../genomes/C.rectimargo.gbk
 gaagtgggggtaagtttgtctcttttttttgctat
 =
-> 11:1-2 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MK948426.gbk
+> 11:1-2 + ../../../genomes/MK948426.gbk
 at
 =
-> 11:12847-12913 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MK948426.gbk
+> 11:12847-12913 + ../../../genomes/MK948426.gbk
 tatttttaggttgggaaataaatttcaagagttttagcattgtttataaaagatttttttagtgtga
 =
-> 11:12975-13028 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MK948426.gbk
+> 11:12975-13028 + ../../../genomes/MK948426.gbk
 ttgggaaataaatttcaagagttttagcattgtttataaaagatttttttagtg
 =
-> 12:1-2 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MT528632.1.gbk
+> 12:1-2 + ../../../genomes/MT528632.1.gbk
 at
 =
-> 12:17078-17079 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/MT528632.1.gbk
+> 12:17078-17079 + ../../../genomes/MT528632.1.gbk
 aa
 =
-> 13:1-343 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.extenta.gbk
+> 13:1-343 + ../../../genomes/P.extenta.gbk
 gataatttttattttttttttcttttnaattttaaacaaaagnccnataaatattttaatataaagttagtgccaaattt
 aatttggcactaatatagatatgcatatatacaaattttcgttattttgaaaacaaaataatgaaaattactaaatattc
 cccatgctacctatttaattatgaaataattaaatagatagtatgaagaatatttaggtatttttttacttcgtaaaaaa
 atacataataatatatatacaatacctaaattgtttaacaatttaggtattgtatatatattattataaaaaaaaaaaaa
 ataatatagtgttgagtggtttt
 =
-> 13:18106-18107 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.extenta.gbk
+> 13:18106-18107 + ../../../genomes/P.extenta.gbk
 gn
 =
-> 14:1-26 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.okutanii_ref.gbk
+> 14:1-26 + ../../../genomes/P.okutanii_ref.gbk
 ggagattttttaggtttaggggttat
 =
-> 14:356-383 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.okutanii_ref.gbk
+> 14:356-383 + ../../../genomes/P.okutanii_ref.gbk
 tctttagggtttttagtggtatttataa
 =
-> 14:16319-16336 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.okutanii_ref.gbk
+> 14:16319-16336 + ../../../genomes/P.okutanii_ref.gbk
 gatttttttttttttttt
 =
-> 15:1-12 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae1.gbk
+> 15:1-12 + ../../../genomes/P.soyoae1.gbk
 gatgaaataata
 =
-> 15:19226-19298 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae1.gbk
+> 15:19226-19298 + ../../../genomes/P.soyoae1.gbk
 tcgtcatgccgtcttctgcttgaaaaaaaaaaaataaatacaacagaaaactacacatacatagatgtcactc
 =
-> 16:1-23 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae2.gbk
+> 16:1-23 + ../../../genomes/P.soyoae2.gbk
 agactttaaaaatttatactaaa
 =
-> 16:19233-19268 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/P.soyoae2.gbk
+> 16:19233-19268 + ../../../genomes/P.soyoae2.gbk
 tgwtayttartagcrssatmacwatkgggkaktkyt
 =
-> 17:1-44 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+> 17:1-44 + ../../../genomes/X.pliocardia.gbk
 aatagggatattttaattttaaaataaatagtaagtttatttta
 =
-> 17:194-226 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+> 17:194-226 + ../../../genomes/X.pliocardia.gbk
 tttaattttaaaataaatagtaagtttatttta
 =
-> 17:280-512 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+> 17:280-512 + ../../../genomes/X.pliocardia.gbk
 gatattttaattttaaaatagaagtaagtttattttaggagattatagtattgtaacagagttagactttaaaaatgtat
 aataaatagagatattttaattttaaaataaatagtaagtttattttaggagattatagtattgtaacagagttagactt
 taaaaatatataataaatagagatattttaattttaaaataaatagtaagtttattttaggagattatagtat
 =
-> 17:5683-5803 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+> 17:5683-5803 + ../../../genomes/X.pliocardia.gbk
 atctataattattaaaattatatagttagtagagtgattacaataatttagaaatagttgtaaattgaaaatattttact
 taaaaaaaggtctttatacaattgagtgagttggtaattta
 =
-> 17:5956-5962 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+> 17:5956-5962 + ../../../genomes/X.pliocardia.gbk
 attatat
 =
-> 17:18589-18886 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/X.pliocardia.gbk
+> 17:18589-18886 + ../../../genomes/X.pliocardia.gbk
 aataatttgatttttttagatttaaaatttgttctatttttgatttttttttgtggtttttgaaagttgagatataaatg
 tgattttggtgatattggaaataattgattttttagatttagaatttatagtaaatagggatattttaaaataaatagta
 agtttattttaggagattatagtagacagagttagactttaaaaatgtataatacaatagagayccttttcgttttatgg
 ccgagggtatatggtacatgtgcttaaaccttgccaaattttctgaaacttcgtagtt
 =
-> 18:1-70 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/M.lamarckii.gbk
+> 18:1-70 + ../../../genomes/M.lamarckii.gbk
 atgagtactttggctaaaaagcatgacgataaagggaaaagagggggattaaaagaacgattgtattctt
 =
-> 18:13966-14940 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/M.lamarckii.gbk
+> 18:13966-14940 + ../../../genomes/M.lamarckii.gbk
 tattccttttggttctaatagtaagatttttagttcttgagttgtgttgggtttttttttccttgtttgtcttgtttcgg
 ttggtgcaaatagtgcttatagagaggattttccttctatgcttttaaactatacagaaattgcttattttactgaggat
 tattctgttgttattgtatggttatctgtgttgttgtttttggctatggtttttggtgcttctatatctagttgatataa
@@ -8453,7 +8453,7 @@ ttggtatattgttcgttgaaacatttggtgattgaggtggcagaatagtatgcgttaaatttaagctttaaagatgaaaa
 attttcccttgatagtgtttttttggtaagataaaagtaaataagatggttttggtttggtgttttaaattaacaatagt
 agtataagatagtat
 =
-> 18:16523-18552 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/M.lamarckii.gbk
+> 18:16523-18552 + ../../../genomes/M.lamarckii.gbk
 gtttgaattttaaatttgtggtttaaaaggtgttttatcctttgttttagggttgtctagttctactaggtttaggttga
 tttaattattttatattttttagagagtgaagttgttgtggttagggttttaaaacttagttttatgggcagttaaaggt
 aaatatacttttagtttagtgagttaggtagtaaatagaaagggaggaatgctgttaggggttagggttttaaaacttag
@@ -8481,7 +8481,7 @@ tattttggagaatgttcgattgttaatcgaaaggggttttaaaaacaggcttagatagtcggtgttgttggatctgtagt
 taaagtttataataggggttttgtaaacctcagttaaatggtatttttgggtctagctgaggtttatagttttatataag
 gtttaggagatgtgtattttagatgagatg
 =
-> 18:20854-21209 + /home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes/M.lamarckii.gbk
+> 18:20854-21209 + ../../../genomes/M.lamarckii.gbk
 gttattgaggttataggtagtgggtgtataaggtggtgcggtactttaatttaaaaggttaggtttgcaacttaagattg
 aggcttatgtaggtcttccgtgctgggatgtttatggtgaaagttttgtgttttattaggcgtgttaggcttggaaaata
 tagtgtaaattttctgatgaaaaaattgattggacagttagctttttttattaacaggtttttcttttggtttaaaagag
