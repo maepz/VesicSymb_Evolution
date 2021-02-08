@@ -8,7 +8,7 @@
 #SBATCH --time=12:0:0
 #SBATCH --error=%x_%A_%a'.err' 
 #SBATCH --output=%x_%A_%a'.out'
-#SBATCH --array=2-17
+#SBATCH --array=2
 
 PATH=$PATH:/home/maeperez/software/bin/
 source ~/virtualenv/py36/bin/activate
