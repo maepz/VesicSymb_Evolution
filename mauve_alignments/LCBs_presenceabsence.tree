@@ -1,0 +1,119 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=17;
+	taxlabels
+	Bathy
+	'R.fausta'
+	'R.magnifica'
+	'R.pacifica'
+	'R.phaseoliformis'
+	'R.pliocardia'
+	'R.rectimargo'
+	'R.southwardae'
+	SUP05
+	'V.diagonalis'
+	'V.extenta'
+	'V.gigas1'
+	'V.gigas2'
+	'V.marissinica'
+	'V.okutanii'
+	'V.soyoae1'
+	'V.soyoae2'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (((((('V.gigas1':0.0,'V.gigas2':0.0)[&label=100]:0.009169,(('V.soyoae1':7.27E-4,'V.soyoae2':0.001165)[&label=100]:0.008566,'V.okutanii':0.011136)[&label=97.98,!rotate=true]:0.007526)[&label=77.36,!rotate=true]:0.002969,'V.marissinica':0.013277)[&label=85.61]:0.00462,('V.diagonalis':1.54E-4,'V.extenta':7.97E-4)[&label=100]:0.022676)[&label=100]:0.090955,((('R.phaseoliformis':0.019171,'R.southwardae':0.018137)[&label=100]:0.029679,'R.pliocardia':0.042206)[&label=97.98,!rotate=true]:0.011718,((('R.fausta':0.002152,'R.rectimargo':5.51E-4)[&label=100]:0.047975,'R.pacifica':0.03996)[&label=99.96]:0.019566,'R.magnifica':0.054279)[&label=98.62,!rotate=true]:0.01295)[&label=90.87,!rotate=true]:0.010327)[&label=100]:0.035634,SUP05:0.058687,Bathy:0.11082)[&label=100];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="label";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=true;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="label";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=2;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=true;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
