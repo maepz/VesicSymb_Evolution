@@ -34,19 +34,26 @@ wide<-read.csv('./dsNuclMito_results.txt',header=T,sep='\t')
 Pair=as.factor(wide$X)
 wide$X<-NULL
 wide$Pair=Pair
-wide=as.data.table(wide)
+# wide=as.data.table(wide)
 wide %>% head()
-wide$Groups=factor(wide$Groups, level=c('V-V','R-V','R-R'))
+wide$Groups=factor(wide$Groups, level=c('F-F','F-V','F-R','V-V','R-V','R-R'))
 known_isolates=c('diagonalis',  'rectimargo', 'gigas1', 'phaseoliformis', 'extenta', 'soyoae1', 'soyoae2', 'gigas2', 'pliocardia', 'fausta',  'southwardae', 'pacifica', 'marissinica')
 
 wide$sameIsolate=as.numeric(strsplit(as.character(wide$Pair),split = "-") %>% sapply( ., "[", 2 ) %in% known_isolates & strsplit(as.character(wide$Pair),split = "-") %>% sapply( ., "[", 1 ) %in% known_isolates)
+str(wide)
 
-
-long=melt(wide, id.vars = c('Groups','Pair','sameIsolate'),
+long=data.table::melt(setDT(wide), id.vars = c('Groups','Pair','sameIsolate'),
           measure.vars = list(c(1,4), c(2,5), c(3,6), c(12,13),c(8,10),c(9,11)),
           variable.name='genome',
           value.name=c('dnds','ds','dn','f84','ts','tv'))
 
+# long=data.table::melt(setDT(wide),id.vars=c('Groups','Pair','sameIsolate'),
+#             measure.vars = patterns("dnds_", "ds_","dn_","transition_","transversion_","f84_"),
+#             variable.name = 'genome',
+#             value.name=c('dnds','ds','dn','ts','tv','f84'),
+#             variable.factor = T)
+
+str(long)
 long$genome= ifelse(long$genome == 1,'mito','symb')
 summary(long)
 long$Pair=as.factor(long$Pair)

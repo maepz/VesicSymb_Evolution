@@ -3,14 +3,13 @@ setwd('~/Desktop/VesicSymb_Evolution/mauve_alignments/')
 library(ape)
 library(dplyr)
 ########## Tree based on LCBs ################
-
 df=read.table('ALL_LCBs.txt',header=T,sep='\t')
 df
 ngenomes=ncol(df)
 df$count=ngenomes-rowSums(df==0)
 df=df[df$count>1,]
 df$avg=rowMeans(df[,1:length(df)-1])
-# df=df[df$avg>10,]
+df=df[df$avg>100,]
 nrow(df)
 head(df)
 
@@ -41,7 +40,8 @@ print(lcb.nj)
 plot(lcb.nj)
 
 
-write.tree(lcb.nj, file = "LCBs_all_presenceabsence.tree")
+# write.tree(lcb.nj, file = "LCBs_all_presenceabsence.tree")
+write.tree(lcb.nj, file = "LCBs_100_presenceabsence.tree")
 
 ############## Tree based on genes ######################
 out = 2

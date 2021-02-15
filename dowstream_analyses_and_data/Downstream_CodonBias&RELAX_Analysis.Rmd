@@ -20,50 +20,85 @@ library(tidyr)
 library(grid)
 require(gtable)
 library('scales')
-library(plyr)
+# library(plyr)
 # library(reshape2)
 library(data.table)
 ```
 
 # Import data
 ```{r}
+recombining_genes=read.table('core_genes_with_recomb_AICc.txt')$V1
+
 relax=read.table('./relax_results.txt',header=T,sep='\t')
 relax=as.data.table(relax)
+core_nopseudo=relax$gene
+nrow(relax)
+head(relax)
 
-ggplot(data=relax, aes(x=RuvsFL_k,y='ruvffl'))+
-  geom_violin(aes(x=RuvsFL_k,y='ruvffl'),fill='grey90')+
-  geom_jitter()+scale_x_log10(limits=c(0.001,50),breaks=c(0.1,seq(0,0.6,0.2),1,seq(5,10,5),seq(25,50,25)))
+relax=subset(relax,!(gene %in% recombining_genes)) # remove genes with evidence of recombination
+nrow(relax)
+head(relax)
 
 
-relax<-data.table::melt(relax,id.vars=c('gene','ncodons'),
+# (subset(relax,GivsFL_pval<0.05) %>% nrow) + (subset(relax,RuvsFL_pval<0.05) %>% nrow)
+# 
+# 
+# ggplot(data=subset(relax,GivsFL_pval<0.05 | RuvsFL_pval<0.05))+
+#   geom_violin(aes(x=GivsFL_k,y='Givffl'),fill='grey90')+
+#   geom_jitter(aes(x=RuvsFL_k,y='Givffl'))+
+#   geom_violin(aes(x=RuvsFL_k,y='ruvffl'),fill='grey90')+
+#   geom_jitter(aes(x=RuvsFL_k,y='ruvffl'))+
+#   scale_x_log10(limits=c(0.001,50),breaks=c(0.1,seq(0,0.6,0.2),1,seq(5,10,5),seq(25,50,25)))
+
+
+
+relax2<-data.table::melt(relax,id.vars=c('gene','ncodons'),
             measure.vars = patterns("_k", "_pval"),
             variable.name = 'comp',
             value.name=c('k','pval'),
-            variable.factor = FALSE)
+            variable.factor = T)
 
 
-relax$comp=ifelse(relax$comp == 1,'SymvsFL',
-                  ifelse(relax$comp == 2,'RuvsFL',
-                         ifelse(relax$comp == 3,'GivsFL','GivsRu')))
-tail(relax)
 
-# ggplot(data=subset(relax,comp=='RuvsFL' & pval<0.05), aes(x=k,y='ruvffl'))+
+# subset(relax2,pval<0.05 & comp %in% c(2,3)) %>% nrow
+# test = cbind(subset(relax,GivsFL_pval<0.05)$GivsFL_k, subset(relax2,pval<0.05 & comp %in% c(3))$k)
+# ggplot(as.data.table(test))+
+#   geom_violin(aes(x=V1,y='v1'))+
+#   geom_violin(aes(x=V2,y='v2'))+
+#   geom_jitter(aes(x=V1,y='v1'))+
+#   geom_violin(aes(x=V2,y='v2'))+
+#   geom_jitter(aes(x=V1,y='v2'))+
+#     scale_x_log10(limits=c(0.001,50),breaks=c(0.1,seq(0,0.6,0.2),1,seq(5,10,5),seq(25,50,25)))
+
+
+# relax2$comp<-factor(as.factor(relax2$comp), levels=c('SymvsFL','RuvsFL','GivsFL','GivsRu'))
+levels(relax2$comp)<-c('SymvsFL','RuvsFL','GivsFL','GivsRu')
+
+
+# ggplot()+
+#   geom_violin(data=subset(relax2,pval<0.05 & comp %in% c('RuvsFL','GivsFL')),aes(x=k,y=comp),fill='grey90')+
+#   geom_point(data=subset(relax2,pval<0.05 & comp %in% c('RuvsFL','GivsFL')),aes(x=k,y=comp))+
+#   geom_violin(data=subset(relax,GivsFL_pval<0.05),aes(x=GivsFL_k,y='givffl'),fill='grey90',trim = F)+
+#   geom_point(data=subset(relax,GivsFL_pval<0.05),aes(x=GivsFL_k,y='givffl'))+
+#   geom_violin(data=subset(relax,RuvsFL_pval<0.05),aes(x=RuvsFL_k,y='ruvffl'),fill='grey90')+
+#   geom_point(data=subset(relax,RuvsFL_pval<0.05),aes(x=RuvsFL_k,y='ruvffl'))+
+#   scale_x_log10(limits=c(0.001,50),breaks=c(0.1,seq(0,0.6,0.2),1,seq(5,10,5),seq(25,50,25)))
+# 
+# ggplot(data=subset(relax,comp==3 & pval<0.05), aes(x=k,y='ruvffl'))+
 #   geom_violin(fill='grey90')+
 #   geom_jitter()+scale_x_log10(limits=c(0.001,50),breaks=c(0.1,seq(0,0.6,0.2),1,seq(5,10,5),seq(25,50,25)))
 
 
-df=read.csv('codonbias_results.csv',sep='\t',row.names = 1,header=T,na.strings = '')
-df$Genome %>% count
+df_all=read.csv('codonbias_results.csv',sep='\t',row.names = 1,header=T,na.strings = '')
+df_all$Group<-ifelse(df_all$Genome %in% c('Bathy','SUP05'),'FL',
+                 ifelse(df_all$Genome %in% c('V.okutanii','V.soyoae1','V.soyoae2','V.diagonalis','V.extenta','V.gigas1','V.gigas2','V.marissinica'),'Gigas','Ruthia'))
+colnames(df_all)
 
-unique(df$Genome)
-df$Group<-ifelse(df$Genome %in% c('Bathy','SUP05'),'FL',
-                 ifelse(df$Genome %in% c('V.okutanii','V.soyoae1','V.soyoae2','V.diagonalis','V.extenta','V.gigas1','V.gigas2','V.marissinica'),'Gigas','Ruthia'))
-# factor(df$Group)
-df %>% tail()
+df=df_all[,-c(14:ncol(df_all)-3)]
 
-notpseudo=df[(df$ispseudo==0 & !(is.na(df$coregene_id))),]$coregene_id %>% unique()
+head(df)
 
-## remove values if Pval > 0.05
+subset(df, coregene_id %in% core_nopseudo)$coregene_id %>% unique %>% length
 
 
 ```
@@ -74,11 +109,10 @@ only the K parameter values with a p-value <0.05 are present in the table
 ```{r}
 head(relax)
 
-# relax$comp<-factor(relax$comp, levels=rev(c("SymvsFL", "RuvsFL","GivsFL","GivsRu","SymbAll")))
-relax$comp<-factor(relax$comp, levels=rev(c("SymvsFL", "RuvsFL","GivsFL","GivsRu")))
+relax2$comp<-factor(relax2$comp, levels=rev(c("SymvsFL", "RuvsFL","GivsFL","GivsRu")))
 
 
-Kdistrib<-ggplot(subset(relax,comp %in% c('SymvsFL','GivsFL','RuvsFL','GivsRu') & gene %in% notpseudo & pval<0.05))+
+Kdistrib<-ggplot(subset(relax2,comp %in% c('SymvsFL','GivsFL','RuvsFL','GivsRu') & pval<0.05))+
   theme_bw()+
   # geom_boxplot(aes(x=comp,y=k))+
   geom_violin(aes(x=comp,y=k),fill='grey90')+
@@ -136,16 +170,19 @@ V.soyoae1 = "#331f70",V.soyoae2 = "#481F70FF", V.diagonalis = "#443A83FF", V.ext
 V.gigas2 = "#31688EFF",V.gigas1 = "#308d8d",V.marissinica = "#33701f", R.fausta = "#68C47F")
 
 
-# levels(df$Group) <- c("FL", "Gigas", "Ruthia")
 df$Group<-factor(df$Group,levels = c('FL','Ruthia','Gigas'))
 
 group_names <- c(`FL` = "Free-living",
                     `Gigas` = "Clade I",
                     `Ruthia` = "Clade II")
+sup05cdc=subset(df,Genome=='SUP05' & P.CDC.<0.05 & ispseudo==0)$CDC
+maxdensitysup05=density(sup05cdc)$x[which.max(density(sup05cdc)$y)]
 
-CDC_spectra<-ggplot(data=subset(df,P.CDC.<0.05 & ispseudo==0))+
+
+CDC_spectra<-ggplot(data=subset(df,P.CDC.<0.05 & ispseudo==0) )+
   theme_bw()+
   geom_density(aes(x=CDC,color=Group,fill=Genome,y=..density..),color='black',alpha=0.3)+
+  geom_vline(aes(xintercept = maxdensitysup05),linetype=2,color='grey60')+
   scale_x_continuous(limits=c(0,0.35),minor_breaks = seq(0.05, 0.25, by=0.01),breaks=c(0,0.05,0.1,0.15,0.2,0.25,0.3))+
   facet_grid(Group~.,labeller = as_labeller(group_names),switch = 'y')+
   scale_color_manual(values=c(colors$FL,colors$Ru,colors$Gi))+
@@ -158,16 +195,14 @@ CDC_spectra<-ggplot(data=subset(df,P.CDC.<0.05 & ispseudo==0))+
     )
 
 CDC_spectra
+
 ```
 
 ## Biplot: CDC in Symbiont as function of CSC in free-living
 
 ```{r}
-df %>% head()
-bipl<-dcast(df, coregene_id ~ Group, value.var = 'CDC', fun=mean,subset=.(P.CDC. < 0.05 & ispseudo==0))
-head(bipl)
 
-
+bipl<-data.table::dcast(as.data.table(subset(df, coregene_id %in% core_nopseudo)), coregene_id ~ Group, value.var = 'CDC', fun=mean,subset=.(P.CDC. < 0.05 & coregene_id %in% core_nopseudo))
 
 Bi_plot<-ggplot(bipl)+
   theme_bw()+
@@ -190,11 +225,151 @@ p3<-grid.arrange(CDC_spectra + theme(legend.position="none"), Bi_plot+ theme(leg
 p3
 
 p4<-grid.arrange(p3,Kdistrib,nrow=2,heights = unit(c(10,7), "cm"), widths = unit(c(15), "cm"))
-
+p4
 ggsave(file="plot_CDCk.svg", plot=p4,width = 20,height = 20,units = 'cm')
 
 
 ```
+
+## PCA with RSCU
+
+```{R}
+
+df2=cbind(df_all[,grepl( "RSCU" , names( df_all ) ) ],df_all[,c('Genome','ncodons','Group','ispseudo','coregene_id','locus_tag','ortho_id')])
+df_all%>% colnames
+df2=subset(df2,ispseudo==0 & !(is.na(coregene_id)))
+
+mat<-df2[,c(1:64)][ , which(apply(df2[,c(1:64)], 2, var) != 0)] # remove unvariable columns (RSCU Codons)
+ncol(mat)
+
+df2.pca=prcomp(mat, center = T,scale. = T)
+screeplot(df2.pca)
+as.data.frame(df2.pca$sdev/sum(df2.pca$sdev))[1,]
+as.data.frame(df2.pca$sdev/sum(df2.pca$sdev))[2,]
+
+# biplot(df2.pca)
+
+df_out <- cbind(as.data.frame(df2.pca$x),df2[,65:ncol(df2)])
+head(df_out)
+
+
+ggplot(subset(df_out,!(is.na(coregene_id) & ispseudo==0)))+
+  geom_density2d(aes(x=PC1,y=PC2,color=Group))
+
+
+plot<-ggplot(subset(df_out,!(is.na(coregene_id) & ispseudo==0)))+
+  geom_point(aes(x=PC1,y=PC2,color=Group),alpha=0.5)
+
+ggplot(subset(df_out,!(is.na(coregene_id) & ispseudo==0)))+
+  geom_point(aes(x=coregene_id,y=PC1,color=Group),alpha=0.5)
+
+
+datapc <- data.frame(varnames=rownames(df2.pca$rotation), df2.pca$rotation)
+data <- data.frame(obsnames=row.names(df2.pca$x), df2.pca$x)
+mult <- min(
+    (max(data[,'PC2']) - min(data[,'PC2'])/(max(datapc[,'PC2'])-min(datapc[,'PC2']))),
+    (max(data[,'PC1']) - min(data[,'PC1'])/(max(datapc[,'PC1'])-min(datapc[,'PC1'])))
+    )
+datapc <- transform(datapc,
+        v1 = .7 * mult * (get('PC1')),
+        v2 = .7 * mult * (get('PC2'))
+        )
+plot <- plot + coord_equal() + geom_text(data=datapc, aes(x=v1, y=v2, label=varnames), size = 5, vjust=1, color="red")
+plot <- plot + geom_segment(data=datapc, aes(x=0, y=0, xend=v1, yend=v2), arrow=arrow(length=unit(0.2,"cm")), alpha=0.75, color="red")
+plot
+    
+    
+
+#################
+df3<-data.table::melt(as.data.table(df2),id.vars=names(df2)[65:ncol(df2)],
+            measure.vars = patterns("RSCU"),
+            variable.name = 'Codon',
+            value.name=c('RSCU'),
+            variable.factor = T)
+
+df3 %>% head
+
+test<-as.data.frame(dcast(df3,formula = Codon~Genome,fun.aggregate = mean))
+rownames(test)<-test$Codon
+
+test.clust=hclust(dist(test[,-1]))
+plot(test.clust)
+t<-as.data.frame(cbind(test.clust$labels,as.numeric(test.clust$order))) %>% .[order(as.numeric(.$V2)),]
+t$V1
+str(test.clust)
+
+df3$Codon<-factor(df3$Codon, levels=t$V1)
+ggplot(subset(df3,ncodons>300 & Codon %in% c('RSCU.GCC.','RSCU.GTA.','RSCU.AGA.','RSCU.ACG.')))+
+  geom_raster(aes(x=Genome,y=Codon,fill=log10(RSCU)),stat='identity')+
+  scale_fill_gradient2(low='blue',mid='white',high='red',midpoint = 0,na.value = 'white')
+
+ggplot(subset(df3,ncodons>300))+
+  geom_raster(aes(x=Genome,y=Codon,fill=log10(RSCU)),stat='identity')+
+  scale_fill_gradient2(low='blue',mid='white',high='red',midpoint = 0,na.value = 'white')
+
+ 
+
+ggplot(subset(df3, !(is.na(coregene_id))))+
+  geom_bin2d(aes(x=Group,y=Codon,fill=RSCU),stat='identity')
+
+##########3
+library(vegan)
+# df.rda = rda(df2[,c(1:64)], df2[,c(65:ncol(df2))])
+tree_pca$CA$eig
+```
+
+
+
+```{r}
+
+CDC_codons<-ggplot(data=subset(df,P.CDC.<0.05))+
+  theme_bw()+
+  geom_density_2d(aes(x=CDC,y=ncodons,color=as.factor(ispseudo)))+
+  facet_grid(Group~.,labeller = as_labeller(group_names),switch = 'y')+
+  theme(strip.background = element_rect(fill = 'white'),
+    axis.title.x = element_text(),
+    panel.grid.minor.y = element_blank(),
+    strip.text.y = element_text(angle=-90)
+    )
+
+CDC_codons
+
+CDC_spectra<-ggplot(data=subset(df, P.CDC.<0.05 & ncodons>300))+
+  theme_bw()+
+  geom_violin(aes(x=CDC,color=Group,fill=Genome,y=Genome),color='black',alpha=0.3)+
+  geom_vline(aes(xintercept = maxdensitysup05))+
+  facet_grid(Group~factor(ispseudo),labeller = as_labeller(group_names),switch = 'y',scales='free')+
+  scale_color_manual(values=c(colors$FL,colors$Ru,colors$Gi))+
+  scale_fill_manual(values=colors_fill)+
+  labs(x='Codon Deviation Coefficient (CDC)',y='Density')+
+  theme(strip.background = element_rect(fill = 'white'),
+    axis.title.x = element_text(),
+    panel.grid.minor.y = element_blank(),
+    strip.text.y = element_text(angle=-90)
+    )
+
+CDC_spectra
+
+
+CDC_spectra<-ggplot(data=subset(df,P.CDC.<0.05 & ispseudo==0 & ncodons>300))+
+  theme_bw()+
+  geom_density(aes(x=CDC,color=Group,fill=Genome,y=..density..),color='black',alpha=0.3)+
+  geom_vline(aes(xintercept = maxdensitysup05))+
+  scale_x_continuous(limits=c(0,0.35),minor_breaks = seq(0.05, 0.25, by=0.01),breaks=c(0,0.05,0.1,0.15,0.2,0.25,0.3))+
+  facet_grid(Group~.,labeller = as_labeller(group_names),switch = 'y')+
+  scale_color_manual(values=c(colors$FL,colors$Ru,colors$Gi))+
+  scale_fill_manual(values=colors_fill)+
+  labs(x='Codon Deviation Coefficient (CDC)',y='Density')+
+  theme(strip.background = element_rect(fill = 'white'),
+    axis.title.x = element_text(),
+    panel.grid.minor.y = element_blank(),
+    strip.text.y = element_text(angle=-90)
+    )
+
+CDC_spectra
+```
+
+
 ## Pseudo vs non pseudo
 
 ```{R}
