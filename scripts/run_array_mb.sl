@@ -6,7 +6,7 @@
 #SBATCH --mem-per-cpu=600M
 #SBATCH --error=%x-%A'.err' 
 #SBATCH --output=%x-%A'.out' 
-#SBATCH --array=454
+#SBATCH --array=1-195%50
 
 module load perl
 module load StdEnv/2020
@@ -18,14 +18,18 @@ module load mrbayes/3.2.7
 
 #scriptdir="/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/scripts/"
 
-datadir="/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/mauve_alignments/core_ALL_alignments/nex"
-mbdir="/home/maeperez/scratch/Clams/bucky/mrbayes/"
+datadir="/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/mauve_alignments/core_ALL_alignments/nex2"
+mbdir="/home/maeperez/scratch/Clams/bucky2/mrbayes/"
+
+#datadir="/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/mauve_alignments/core_ALL_alignments/nex"
+#mbdir="/home/maeperez/scratch/Clams/bucky/mrbayes/"
 
 
 cd $mbdir
 
+aln=$(cat $datadir/rerun_mb_filelist | sed -n "${SLURM_ARRAY_TASK_ID}p")
 
-aln=$(cat $datadir/filelist | sed -n "${SLURM_ARRAY_TASK_ID}p")
+#aln=$(cat $datadir/filelist | sed -n "${SLURM_ARRAY_TASK_ID}p")
 
 cp ${datadir}/${aln} ${aln}
 
