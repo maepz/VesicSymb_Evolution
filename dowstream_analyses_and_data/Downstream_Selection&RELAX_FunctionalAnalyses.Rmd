@@ -335,7 +335,6 @@ names(Group_labels)=c( "All", "Sym",  "FL", "Ruthia","Gigas",
 ```
 ## Create Selection Figure
 
-###  Core Vs Groups
 ```{r  Core vs groups}
 subset(dat,(comp %in% c('All.groups')))
 plot_Core<-ggplot(subset(dat,(comp %in% c('Core'))))+
@@ -433,7 +432,6 @@ plot1
 # ggsave(file='plot_Selection_Core_vs_groups.svg',plot=plot1,width=40,units='cm',dpi=600,device='svg')
 ```
 
-### Core vs branches
 ```{r  Core vs branches }
 
 plot_Core<-ggplot(subset(dat,(comp %in% c('Core'))))+
@@ -517,11 +515,14 @@ plot2<-grid.arrange(arrangeGrob(plot_Core+theme(plot.margin=unit(c(0.5,0.5,1,0),
 plot2
 ```
 
-### Plot figure
-```{r}
+```{r mount Selection composite figure}
 plot_Selection<-grid.arrange(plot1,plot2,nrow=2,ncol=1)
 plot_Selection
 
+print("Selection count summary")
+summary=df[,c('gene_id',"Core", "All", "All.groups", "Gigas", "Ruthia", 
+"FL", "allbranches", "a", "b", "c")] %>% unique 
+print(colSums(summary[,-1]))
 ```
 
 ```{r}

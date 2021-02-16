@@ -28,7 +28,8 @@ library(data.table)
 # Import data
 ```{r}
 recombining_genes=read.table('core_genes_with_recomb_AICc.txt')$V1
-
+pseudogenes = ('') # to add pseudogene list
+  
 relax=read.table('./relax_results.txt',header=T,sep='\t')
 relax=as.data.table(relax)
 core_nopseudo=relax$gene
@@ -39,54 +40,13 @@ relax=subset(relax,!(gene %in% recombining_genes)) # remove genes with evidence 
 nrow(relax)
 head(relax)
 
-
-# (subset(relax,GivsFL_pval<0.05) %>% nrow) + (subset(relax,RuvsFL_pval<0.05) %>% nrow)
-# 
-# 
-# ggplot(data=subset(relax,GivsFL_pval<0.05 | RuvsFL_pval<0.05))+
-#   geom_violin(aes(x=GivsFL_k,y='Givffl'),fill='grey90')+
-#   geom_jitter(aes(x=RuvsFL_k,y='Givffl'))+
-#   geom_violin(aes(x=RuvsFL_k,y='ruvffl'),fill='grey90')+
-#   geom_jitter(aes(x=RuvsFL_k,y='ruvffl'))+
-#   scale_x_log10(limits=c(0.001,50),breaks=c(0.1,seq(0,0.6,0.2),1,seq(5,10,5),seq(25,50,25)))
-
-
-
 relax2<-data.table::melt(relax,id.vars=c('gene','ncodons'),
             measure.vars = patterns("_k", "_pval"),
             variable.name = 'comp',
             value.name=c('k','pval'),
             variable.factor = T)
 
-
-
-# subset(relax2,pval<0.05 & comp %in% c(2,3)) %>% nrow
-# test = cbind(subset(relax,GivsFL_pval<0.05)$GivsFL_k, subset(relax2,pval<0.05 & comp %in% c(3))$k)
-# ggplot(as.data.table(test))+
-#   geom_violin(aes(x=V1,y='v1'))+
-#   geom_violin(aes(x=V2,y='v2'))+
-#   geom_jitter(aes(x=V1,y='v1'))+
-#   geom_violin(aes(x=V2,y='v2'))+
-#   geom_jitter(aes(x=V1,y='v2'))+
-#     scale_x_log10(limits=c(0.001,50),breaks=c(0.1,seq(0,0.6,0.2),1,seq(5,10,5),seq(25,50,25)))
-
-
-# relax2$comp<-factor(as.factor(relax2$comp), levels=c('SymvsFL','RuvsFL','GivsFL','GivsRu'))
 levels(relax2$comp)<-c('SymvsFL','RuvsFL','GivsFL','GivsRu')
-
-
-# ggplot()+
-#   geom_violin(data=subset(relax2,pval<0.05 & comp %in% c('RuvsFL','GivsFL')),aes(x=k,y=comp),fill='grey90')+
-#   geom_point(data=subset(relax2,pval<0.05 & comp %in% c('RuvsFL','GivsFL')),aes(x=k,y=comp))+
-#   geom_violin(data=subset(relax,GivsFL_pval<0.05),aes(x=GivsFL_k,y='givffl'),fill='grey90',trim = F)+
-#   geom_point(data=subset(relax,GivsFL_pval<0.05),aes(x=GivsFL_k,y='givffl'))+
-#   geom_violin(data=subset(relax,RuvsFL_pval<0.05),aes(x=RuvsFL_k,y='ruvffl'),fill='grey90')+
-#   geom_point(data=subset(relax,RuvsFL_pval<0.05),aes(x=RuvsFL_k,y='ruvffl'))+
-#   scale_x_log10(limits=c(0.001,50),breaks=c(0.1,seq(0,0.6,0.2),1,seq(5,10,5),seq(25,50,25)))
-# 
-# ggplot(data=subset(relax,comp==3 & pval<0.05), aes(x=k,y='ruvffl'))+
-#   geom_violin(fill='grey90')+
-#   geom_jitter()+scale_x_log10(limits=c(0.001,50),breaks=c(0.1,seq(0,0.6,0.2),1,seq(5,10,5),seq(25,50,25)))
 
 
 df_all=read.csv('codonbias_results.csv',sep='\t',row.names = 1,header=T,na.strings = '')
@@ -98,7 +58,7 @@ df=df_all[,-c(14:ncol(df_all)-3)]
 
 head(df)
 
-subset(df, coregene_id %in% core_nopseudo)$coregene_id %>% unique %>% length
+subset(df, !(coregene_id %in% recombining_genes ))$coregene_id %>% unique %>% length
 
 
 ```
