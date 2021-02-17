@@ -1,0 +1,583 @@
+---
+title: "Amplicons_variance_partition"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# LOAD PACKAGES
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+setwd('./')
+setwd("/Users/maeperez/Desktop/VesicSymb_Evolution/dowstream_analyses_and_data")
+# setwd("../CRISPR_haplo/")
+library(dplyr)
+library(reshape2)
+library(tidyr)
+library(ggplot2)
+library(plotly)
+require(reshape)
+library(devtools)
+path_to_files='../mauve_alignments/bucky_results/'
+
+```
+# All genomes
+## Get data
+```{r}
+prefix='a0.001'
+
+nLCBs=793
+
+
+pairs=read.table(paste0(path_to_files,prefix,'.pairs'),row.names=1)
+head(pairs)
+
+
+
+genes=read.table(paste0(path_to_files,prefix,'.input'),skip =2,nrows=nLCBs,sep="")
+genes$V2<-strsplit(as.character(genes$V2),split="/") %>% sapply(., "[[", 2)
+genes$V3<-gsub('.in','',genes$V2)
+genes$V4<-substr(genes$V3,1,9)
+colnames(genes)<-c('gene_no','file','nex','gene_id')
+
+range_string = strsplit(genes$nex,split="_") %>% sapply(., "[[", 4) 
+genes$len<- as.numeric(strsplit(range_string,split="to") %>% sapply(., "[[", 2)) - as.numeric(strsplit(range_string,split="to") %>% sapply(., "[[", 1))
+head(genes)
+nrow(genes)
+
+dat=genes
+head(dat)
+nrow(dat)
+summary(dat)
+
+ggplot(dat)+
+  geom_histogram(aes(x=len,y=..count..))+scale_x_log10()
+```
+
+```{r}
+x=readLines(paste0(path_to_files,prefix,'.gene'))
+closeAllConnections()
+
+start <- grep("^Gene", x)
+mark <- vector('integer', length(x))
+mark[start] <- 1
+# determine limits of each table
+mark <- cumsum(mark)
+# mark<-mark[1:302]
+# split the data for reading
+df <- lapply(split(x, mark), function(.data){
+  .input <- read.table(textConnection(.data), skip=2, header=TRUE)
+  attr(.input, 'name') <- .data[1]  # save the name
+  .input})
+# rename the list
+names(df) <- sapply(df, attr, 'name')
+
+
+
+maxtopo=setNames(data.frame(matrix(ncol = 5, nrow = 0)), c("index", "topology", "single", "joint",'gene_no'))
+for(gene in names(df)){
+  gene_no=gsub('Gene ','',gene) %>% substr(.,1,nchar(.)-1)
+
+  subtable=as.data.frame(df[gene],col.names = '')
+  subtable=subtable[which.max(subtable$joint),] # looking for max prob in joint
+  subtable$gene_no=gene_no
+  maxtopo=rbind(maxtopo,subtable)
+}
+
+colnames(maxtopo)[1]='topo_index'
+nrow(maxtopo)
+table=merge(dat,maxtopo,by='gene_no',all.x=T)
+head(table)
+
+topo_len=aggregate(len~topo_index, table,FUN='sum')
+totlen=sum(topo_len$len)
+totlen # total length (in bp) of core LCBs > 100bp
+```
+## Get basic stats
+133 trees were necessary to represent all LCBs topologies.
+The fist 10 most common topologies represent ~1/4 of LCBs and 1/2 of core genome length
+```{r}
+aggregate(len~topo_index, table,FUN='sum',subset = gene_id %in% subset(table,topo_index<11)$gene_id %>% unique(.) )$len %>% sum # len in bp of genes represented by fist 10 topologies
+
+subset(table,topo_index<11)$gene_id %>% unique(.) # 217/793 LCBs (385426/762629 bp) are represented by the first 10 topologies.
+
+# table$topo_index %>% unique
+```
+
+
+```{r}
+as.factor(table$topo_index) %>% unique %>% length
+
+most.common.trees=summary(as.factor(table$topo_index)) %>% sort(.,decreasing = T) %>% data.frame(.) # sort topologies by number of represented LCBs represented by them (decreasing order)
+colnames(most.common.trees)[1]='LCB_count' # # of LCB with that topology
+most.common.trees$topo_index=row.names(most.common.trees)
+most.common.trees$pgen=most.common.trees$LCB_count/nLCBs #pgen= LCB relative abundance
+most.common.trees=most.common.trees[c(rownames(most.common.trees)[-1],rownames(most.common.trees)[1]),] # Place the "Others" category at the end as it lumps all the rare topologies
+
+
+most.common.trees$cumsum=cumsum(most.common.trees$pgen) # LCB cumulative abundance
+
+most.common.trees$n_gen=as.numeric(seq(1,nrow(most.common.trees))) # continuous axis
+most.common.trees=merge(topo_len,most.common.trees,by='topo_index',all.y=T)
+most.common.trees[1,'len']=totlen-sum(most.common.trees[-1,'len'])
+
+most.common.trees=most.common.trees[c(rownames(most.common.trees)[-1],rownames(most.common.trees)[1]),] # sort dataframe again
+
+most.common.trees$plen=most.common.trees$len/totlen
+most.common.trees= most.common.trees[order(most.common.trees$plen, decreasing = T),]
+
+rowlist=c(rownames(subset(most.common.trees, topo_index != '(Other)')),
+rownames(subset(most.common.trees, topo_index == '(Other)')))
+most.common.trees=most.common.trees[rowlist,]
+most.common.trees$plencumsum=cumsum(as.numeric(most.common.trees$plen))
+
+
+most.common.trees=most.common.trees[order(most.common.trees$n_gen),]
+N50=most.common.trees[most.common.trees$cumsum>0.5,][1,'n_gen']
+N75=most.common.trees[most.common.trees$cumsum>0.75,][1,'n_gen']
+
+qplot(x=n_gen,y=cumsum,data=most.common.trees)+
+  geom_vline(xintercept = N50, color='red',size=1)+
+  geom_vline(xintercept = N75, color='green',size=1)+
+  theme_bw() # 45 topologies are necessary to represent 75% of the LCBs, 18 topologies are necessary to represent 50% of the LCBs
+
+
+most.common.trees= most.common.trees[order(most.common.trees$plencumsum),] 
+most.common.trees$n_len=seq(1,nrow(most.common.trees),)
+
+most.common.trees=most.common.trees[order(most.common.trees$n_len),]
+L50=most.common.trees[most.common.trees$plencumsum>0.5,][1,'n_len']
+L75=most.common.trees[most.common.trees$plencumsum>0.75,][1,'n_len']
+
+qplot(x=n_len,y=plencumsum,data=most.common.trees) # 27 topologies are necessary to represent 75% of the core genome length, 11 topologies are necessary to represent 50% of the core genome length
+
+most.common.trees %>% head(LCB_count,n = 20)
+qplot(x=plen,y=pgen,data=most.common.trees)+scale_y_log10()+scale_x_log10()
+
+###                                                     
+ggplot(subset(table, topo_index <5))+
+  geom_histogram(aes(x=topo_index+1))
+
+# table[,c('topology','topo_index')] %>% unique()
+
+```
+
+
+A very unique sets of genes favor topology 7 and 0; For these genes, the signal for these topologies is very strong
+##NMDS
+```{r NMDS}
+mat=as.matrix(pairs)
+# set column names to gene IDs. Actual gene names would be best...
+colnames(mat) = rownames(mat)
+mat # Just to check. Big! 100x100 matrix
+diag(mat) # check that diagonal has ones only.
+# now NMDS calculations:
+mds = cmdscale(1-mat)
+str(mds) # matrix of 100 rows and 2 columns: for the 2 axes.
+plot(mds[,1], mds[,2], type="n", xlab="axis 1", ylab="axis 2",
+asp=1, # to keep aspect ratio = 1 between both axes
+main="dissimilarity between genes: P{Ti and Tj differ}")
+text(mds[,1], mds[,2], rownames(mds), cex=0.6)
+head(mds)
+
+mds=cbind(mds,table)
+colnames(mds)[1]='NMDS1'
+colnames(mds)[2]='NMDS2'
+head(mds)
+
+### Good plot ####
+dev.off()
+
+ggplot()+
+    geom_point(data=subset(mds,topo_index>19),aes(x=NMDS1,y=NMDS2),color='black',size=1,alpha=0.5)+
+  geom_point(data=subset(mds,topo_index<20),aes(x=NMDS1,y=NMDS2,color=as.factor(topo_index)),size=1,alpha=1)
+
+subset(mds,topo_index==7)$topology %>% unique # Rmag at base of Clade I and V.gigas monophyletic with  Diagolanis,extenta,mariscinica
+subset(mds,topo_index==0)$topology %>% unique #Rmag sister to plio,recti and V.gigas basal of Clade I
+subset(mds,topo_index==1)$topology %>% unique #same as topology 0 but V.gigas monophyletic with  Diagolanis,extenta,mariscinica
+subset(mds,topo_index==9)$topology %>% unique # Rmac at base of Clade II and Diagolanis,extenta at base of Clade I
+
+#Distribution of genes with tree 0 and 1 -> genes with thes eopology tend to cluster together?
+subset(mds,NMDS1>0.3)$topo_index
+plot(x=subset(mds,NMDS1>0.3)$gene_id %>% strsplit(.,split = '_') %>% sapply(., "[[", 2)  %>% as.integer(.) ,y=rep(1,length(subset(mds,NMDS1>0.3)$gene_id)),type = 'h')
+
+###
+subset(mds,topo_index==0)$topo_index
+plot(x=subset(mds,topo_index==0)$gene_id %>% strsplit(.,split = '_') %>% sapply(., "[[", 2)  %>% as.integer(.) ,y=rep(1,length(subset(mds,topo_index==0)$gene_id)),type = 'h')
+
+subset(mds,topo_index==7)$topo_index
+plot(x=subset(mds,topo_index==7)$gene_id %>% strsplit(.,split = '_') %>% sapply(., "[[", 2)  %>% as.integer(.) ,y=rep(1,length(subset(mds,topo_index==7)$gene_id)),type = 'h')
+
+subset(mds,topo_index==1)$topo_index
+plot(x=subset(mds,topo_index==1)$gene_id %>% strsplit(.,split = '_') %>% sapply(., "[[", 2)  %>% as.integer(.) ,y=rep(1,length(subset(mds,topo_index==1)$gene_id)),type = 'h')
+
+subset(mds,topo_index==9)$topo_index
+plot(x=subset(mds,topo_index==9)$gene_id %>% strsplit(.,split = '_') %>% sapply(., "[[", 2)  %>% as.integer(.) ,y=rep(1,length(subset(mds,topo_index==9)$gene_id)),type = 'h')
+
+# is this random?
+
+
+# distribution of all gene trees
+par(mfrow = c(5, 2))
+for(topo in subset(mds,topo_index<20)$topo_index %>% unique(.) %>% sort(.)){
+  plot(x=subset(mds,topo_index==topo)$gene_id %>% strsplit(.,split = '_') %>% sapply(., "[[", 2)  %>% as.integer(.) ,y=rep(1,length(subset(mds,topo_index==topo)$gene_id)),type = 'h',xlab='',ylab='',sub=paste('topology', topo),ylim=c(0,1))
+  
+}
+```
+
+##PcoA
+
+```{r}
+library(ade4)
+
+mat=as.matrix(pairs)
+# set column names to gene IDs. Actual gene names would be best...
+colnames(mat) = rownames(mat)
+mat # Just to check. Big! 100x100 matrix
+diag(mat) # check that diagonal has ones only.
+
+test=as.dist(1-mat)
+is.euclid(test)
+is.euclid(sqrt(test))
+
+# PcoA
+cmdscale(sqrt(1-mat)) %>% plot(.)
+wcmdscale(sqrt(1-mat)) %>% plot(.)
+
+prcomp(sqrt(1-mat)) %>% plot(.)
+prcomp(sqrt(1-mat)) %>% summary(.)
+
+library(ape)
+PCOA=pcoa(sqrt(test),correction = "cailliez")
+
+barplot(PCOA$values$Relative_eig)
+
+biplot(pcoa)
+
+
+pcoa1=cmdscale(sqrt(1-mat),k=3,eig=T )
+pcoa1$GOF
+pcoa1$eig[1]/sum(pcoa1$eig)
+pcoa1$eig[2]/sum(pcoa1$eig)
+pcoa1$eig[3]/sum(pcoa1$eig)
+(pcoa1$eig[1]+pcoa1$eig[2])/sum(pcoa1$eig) # axes 1 and 2 explain 10% of variation
+(pcoa1$eig[1]+pcoa1$eig[2]+pcoa1$eig[3])/sum(pcoa1$eig)
+
+
+pcoa1$points %>% plot(.)
+pcoa=cbind(pcoa1$points,table)
+colnames(pcoa)[1]='PcoA1'
+colnames(pcoa)[2]='PcoA2'
+colnames(pcoa)[3]='PcoA3'
+head(pcoa)
+
+### Good plot ####
+ggplot()+
+    geom_point(data=subset(pcoa,!(topo_index %in% c('0','1','4','6','9'))),aes(x=PcoA1,y=PcoA2,color='all others'),color='black',size=1,alpha=0.5)+
+  geom_point(data=subset(pcoa,topo_index %in% c('0','1','4','6','9')),aes(x=PcoA1,y=PcoA2,color=as.factor(topo_index)),size=1,alpha=1)
+
+
+plot_ly(data=subset(pcoa,topo_index %in% c('0','1','4','6','9','12','22')),x=~PcoA1,y=~PcoA2,z=~PcoA3,color=~as.factor(topo_index),size=1)
+
+plot_ly(data=subset(pcoa,topo_index %in% c('0','1','4','6','9','12','22') & gene_no<200),x=~PcoA1,y=~PcoA2,z=~PcoA3,color=~gene_no,size=1,mode = 'lines+markers',line=(list(width=1)))
+```
+
+
+##MLtrees
+```{r}
+par(mfrow=c(1,1))
+
+ggplot(mds)+geom_histogram(aes(x=topo_index+0.01),binwidth = 10)+scale_y_log10()
+
+summary(as.factor(mds$topo_index)) %>% sort(.,decreasing = T) %>% plot(.,ylab='genes with that topology',xlab='topologies')
+
+MLtrees=summary(as.factor(mds$topo_index)) %>% sort(.,decreasing = T) %>% data.frame(.) 
+MLtrees=merge(unique(mds[,c('topo_index','topology')]),aggregate(mds[,c('topo_index','single','joint')],by=list(mds$topo_index),FUN = mean),by='topo_index',all.y=T) %>% .[,-3] %>% cbind(.,summary(as.factor(mds$topo_index)) %>% data.frame(.))
+
+colnames(MLtrees)[3]='mean_single'
+colnames(MLtrees)[4]='mean_joint'
+colnames(MLtrees)[5]='gene_counts'
+write.table(MLtrees,'MLtrees_genes20.txt',sep='\t',quote = F,row.names = F)
+
+
+MLtrees$gene_counts %>% sum(.)/2
+
+
+##########
+most.freq.trees=summary(as.factor(mds$topo_index)) %>% sort(.,decreasing = T) %>% data.frame(.) %>% rownames(.)
+most.freq.trees=most.freq.trees[1:8]
+
+ggplot(subset(mds,topo_index %in% most.freq.trees))+
+  geom_vline(aes(xintercept=gene_id %>% strsplit(.,split = '_') %>% sapply(., "[[", 2)  %>% as.integer(.),color=as.factor(topo_index)))+scale_color_brewer(palette='Dark2')
+
+
+ggplot(subset(mds,topo_index %in% most.freq.trees))+
+  geom_vline(aes(xintercept=gene_id %>% strsplit(.,split = '_') %>% sapply(., "[[", 2)  %>% as.integer(.),color=SEED_level_1))+facet_wrap(~topo_index)
+# do these represent a random pick of the genes in the pan-genome?
+
+
+### Good plot ####
+most.common.trees10=most.common.trees[1:10,'topo_index']
+
+ggplot()+
+    geom_point(data=subset(mds,!(topo_index %in% most.common.trees10)),aes(x=NMDS1,y=NMDS2),color='black',size=1,alpha=0.5)+
+  geom_point(data=subset(mds,topo_index %in% most.common.trees10),aes(x=NMDS1,y=NMDS2,color=as.factor(topo_index)),size=1,alpha=1)
+
+
+
+```
+
+
+# Clade II
+## Get data
+```{r}
+prefix='a0.001_ruthia'
+
+nLCBs=793
+
+genes=read.table(paste0(path_to_files,prefix,'.input'),skip =2,nrows=nLCBs,sep="")
+genes$V2<-strsplit(as.character(genes$V2),split="/") %>% sapply(., "[[", 2)
+genes$V3<-gsub('.in','',genes$V2)
+genes$V4<-substr(genes$V3,1,9)
+colnames(genes)<-c('gene_no','file','nex','gene_id')
+
+range_string = strsplit(genes$nex,split="_") %>% sapply(., "[[", 4) 
+genes$len<- as.numeric(strsplit(range_string,split="to") %>% sapply(., "[[", 2)) - as.numeric(strsplit(range_string,split="to") %>% sapply(., "[[", 1))
+head(genes)
+nrow(genes)
+
+dat=genes
+head(dat)
+nrow(dat)
+summary(dat)
+
+ggplot(dat)+
+  geom_histogram(aes(x=len,y=..count..))+scale_x_log10()
+```
+
+```{r}
+x=readLines(paste0(path_to_files,prefix,'.gene'))
+closeAllConnections()
+
+start <- grep("^Gene", x)
+mark <- vector('integer', length(x))
+mark[start] <- 1
+# determine limits of each table
+mark <- cumsum(mark)
+# mark<-mark[1:302]
+# split the data for reading
+df <- lapply(split(x, mark), function(.data){
+  .input <- read.table(textConnection(.data), skip=2, header=TRUE)
+  attr(.input, 'name') <- .data[1]  # save the name
+  .input})
+# rename the list
+names(df) <- sapply(df, attr, 'name')
+
+
+
+maxtopo=setNames(data.frame(matrix(ncol = 5, nrow = 0)), c("index", "topology", "single", "joint",'gene_no'))
+for(gene in names(df)){
+  gene_no=gsub('Gene ','',gene) %>% substr(.,1,nchar(.)-1)
+
+  subtable=as.data.frame(df[gene],col.names = '')
+  subtable=subtable[which.max(subtable$joint),] # looking for max prob in joint
+  subtable$gene_no=gene_no
+  maxtopo=rbind(maxtopo,subtable)
+}
+
+colnames(maxtopo)[1]='topo_index'
+nrow(maxtopo)
+table=merge(dat,maxtopo,by='gene_no',all.x=T)
+head(table)
+
+topo_len=aggregate(len~topo_index, table,FUN='sum')
+totlen=sum(topo_len$len)
+totlen # total length (in bp) of core LCBs > 100bp
+```
+
+## Get basic stats
+A total of 36 different topologies are necessary to represent all LCBs 
+10 topologies are necessary to represent 75% of the LCBs, 4 topologies are necessary to represent 50% of the LCBs
+```{r}
+most.common.trees=summary(as.factor(table$topo_index)) %>% sort(.,decreasing = T) %>% data.frame(.) # sort topologies by number of represented LCBs represented by them (decreasing order)
+
+colnames(most.common.trees)[1]='LCB_count' # # of LCB with that topology
+most.common.trees$topo_index=row.names(most.common.trees)
+most.common.trees$pgen=most.common.trees$LCB_count/nLCBs #pgen= LCB relative abundance
+
+most.common.trees$cumsum=cumsum(most.common.trees$pgen) # LCB cumulative abundance
+
+most.common.trees$n_gen=as.numeric(seq(1,nrow(most.common.trees))) # continuous axis
+most.common.trees=merge(topo_len,most.common.trees,by='topo_index',all.y=T)
+
+most.common.trees$plen=most.common.trees$len/totlen
+most.common.trees= most.common.trees[order(most.common.trees$plen, decreasing = T),]
+
+rowlist=c(rownames(subset(most.common.trees, topo_index != '(Other)')),
+rownames(subset(most.common.trees, topo_index == '(Other)')))
+most.common.trees=most.common.trees[rowlist,]
+most.common.trees$plencumsum=cumsum(as.numeric(most.common.trees$plen))
+
+
+most.common.trees=most.common.trees[order(most.common.trees$n_gen),]
+N50=most.common.trees[most.common.trees$cumsum>0.5,][1,'n_gen']
+N75=most.common.trees[most.common.trees$cumsum>0.75,][1,'n_gen']
+
+qplot(x=n_gen,y=cumsum,data=most.common.trees)+
+  geom_vline(xintercept = N50, color='red',size=1)+
+  geom_vline(xintercept = N75, color='green',size=1)+
+  theme_bw() # 10 topologies are necessary to represent 75% of the LCBs, 4 topologies are necessary to represent 50% of the LCBs
+
+
+most.common.trees= most.common.trees[order(most.common.trees$plencumsum),] 
+most.common.trees$n_len=seq(1,nrow(most.common.trees),)
+
+most.common.trees=most.common.trees[order(most.common.trees$n_len),]
+L50=most.common.trees[most.common.trees$plencumsum>0.5,][1,'n_len']
+L75=most.common.trees[most.common.trees$plencumsum>0.75,][1,'n_len']
+
+qplot(x=n_len,y=plencumsum,data=most.common.trees)+
+  geom_vline(xintercept = L50, color='red',size=1)+
+  geom_vline(xintercept = L75, color='green',size=1)+
+  theme_bw() # 8 topologies are necessary to represent 75% of the core genome length, 3 topologies are necessary to represent 50% of the core genome length
+
+most.common.trees %>% head(LCB_count,n = 20)
+qplot(x=plen,y=pgen,data=most.common.trees)+scale_y_log10()+scale_x_log10()
+
+###                                                     
+ggplot(subset(table, topo_index <5))+
+  geom_histogram(aes(x=topo_index+1))
+
+# table[,c('topology','topo_index')] %>% unique()
+
+```
+
+
+
+# Clade I
+## Get data
+```{r}
+prefix='a0.001_gigas'
+
+nLCBs=793
+
+genes=read.table(paste0(path_to_files,prefix,'.input'),skip =2,nrows=nLCBs,sep="")
+genes$V2<-strsplit(as.character(genes$V2),split="/") %>% sapply(., "[[", 2)
+genes$V3<-gsub('.in','',genes$V2)
+genes$V4<-substr(genes$V3,1,9)
+colnames(genes)<-c('gene_no','file','nex','gene_id')
+
+range_string = strsplit(genes$nex,split="_") %>% sapply(., "[[", 4) 
+genes$len<- as.numeric(strsplit(range_string,split="to") %>% sapply(., "[[", 2)) - as.numeric(strsplit(range_string,split="to") %>% sapply(., "[[", 1))
+head(genes)
+nrow(genes)
+
+dat=genes
+head(dat)
+nrow(dat)
+summary(dat)
+
+ggplot(dat)+
+  geom_histogram(aes(x=len,y=..count..))+scale_x_log10()
+```
+
+```{r}
+x=readLines(paste0(path_to_files,prefix,'.gene'))
+closeAllConnections()
+
+start <- grep("^Gene", x)
+mark <- vector('integer', length(x))
+mark[start] <- 1
+# determine limits of each table
+mark <- cumsum(mark)
+# mark<-mark[1:302]
+# split the data for reading
+df <- lapply(split(x, mark), function(.data){
+  .input <- read.table(textConnection(.data), skip=2, header=TRUE)
+  attr(.input, 'name') <- .data[1]  # save the name
+  .input})
+# rename the list
+names(df) <- sapply(df, attr, 'name')
+
+
+
+maxtopo=setNames(data.frame(matrix(ncol = 5, nrow = 0)), c("index", "topology", "single", "joint",'gene_no'))
+for(gene in names(df)){
+  gene_no=gsub('Gene ','',gene) %>% substr(.,1,nchar(.)-1)
+
+  subtable=as.data.frame(df[gene],col.names = '')
+  subtable=subtable[which.max(subtable$joint),] # looking for max prob in joint
+  subtable$gene_no=gene_no
+  maxtopo=rbind(maxtopo,subtable)
+}
+
+colnames(maxtopo)[1]='topo_index'
+nrow(maxtopo)
+table=merge(dat,maxtopo,by='gene_no',all.x=T)
+head(table)
+table$topo_index %>% unique # 11 different topologies in total
+
+topo_len=aggregate(len~topo_index, table,FUN='sum')
+totlen=sum(topo_len$len)
+totlen # total length (in bp) of core LCBs > 100bp
+```
+
+## Get basic stats
+A total of 11 different topologies are necessary to represent all LCBs 
+4 topologies are necessary to represent 75% of the LCBs, 2 topologies are necessary to represent 50% of the LCBs
+```{r}
+most.common.trees=summary(as.factor(table$topo_index)) %>% sort(.,decreasing = T) %>% data.frame(.) # sort topologies by number of represented LCBs represented by them (decreasing order)
+colnames(most.common.trees)[1]='LCB_count' # # of LCB with that topology
+most.common.trees$topo_index=row.names(most.common.trees)
+most.common.trees$pgen=most.common.trees$LCB_count/nLCBs #pgen= LCB relative abundance
+
+# most.common.trees=most.common.trees[c(rownames(most.common.trees)[-1],rownames(most.common.trees)[1]),] # Place the "Others" category at the end as it lumps all the rare topologies
+
+
+most.common.trees$cumsum=cumsum(most.common.trees$pgen) # LCB cumulative abundance
+
+most.common.trees$n_gen=as.numeric(seq(1,nrow(most.common.trees))) # continuous axis
+most.common.trees=merge(topo_len,most.common.trees,by='topo_index',all.y=T)
+
+most.common.trees$plen=most.common.trees$len/totlen
+most.common.trees= most.common.trees[order(most.common.trees$plen, decreasing = T),]
+
+rowlist=c(rownames(subset(most.common.trees, topo_index != '(Other)')),
+rownames(subset(most.common.trees, topo_index == '(Other)')))
+most.common.trees=most.common.trees[rowlist,]
+most.common.trees$plencumsum=cumsum(as.numeric(most.common.trees$plen))
+
+
+most.common.trees=most.common.trees[order(most.common.trees$n_gen),]
+N50=most.common.trees[most.common.trees$cumsum>0.5,][1,'n_gen']
+N75=most.common.trees[most.common.trees$cumsum>0.75,][1,'n_gen']
+
+qplot(x=n_gen,y=cumsum,data=most.common.trees)+
+  geom_vline(xintercept = N50, color='red',size=1)+
+  geom_vline(xintercept = N75, color='green',size=1)+
+  theme_bw() # 4 topologies are necessary to represent all of the LCBs, 2 topologies are necessary to represent 50% of the LCBs
+
+
+most.common.trees= most.common.trees[order(most.common.trees$plencumsum),] 
+most.common.trees$n_len=seq(1,nrow(most.common.trees),)
+
+most.common.trees=most.common.trees[order(most.common.trees$n_len),]
+L50=most.common.trees[most.common.trees$plencumsum>0.5,][1,'n_len']
+L75=most.common.trees[most.common.trees$plencumsum>0.75,][1,'n_len']
+
+qplot(x=n_len,y=plencumsum,data=most.common.trees)+
+  geom_vline(xintercept = L50, color='red',size=1)+
+  geom_vline(xintercept = L75, color='green',size=1)+
+  theme_bw() # 8 topologies are necessary to represent 75% of the core genome length, 3 topologies are necessary to represent 50% of the core genome length
+
+most.common.trees %>% head(LCB_count,n = 20)
+qplot(x=plen,y=pgen,data=most.common.trees)+scale_y_log10()+scale_x_log10()
+
+###                                                     
+ggplot(subset(table, topo_index <5))+
+  geom_histogram(aes(x=topo_index+1))
+
+# table[,c('topology','topo_index')] %>% unique()
+
+```
+
+

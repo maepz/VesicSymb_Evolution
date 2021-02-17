@@ -196,14 +196,15 @@ core_sel=read.table(paste0('./absrel_results_pval_',pval_thresh,'.txt'),header=T
 
 colSums(core_sel)
 
-# core_sel=read.table('./absrel_results_pval_0.05.txt',header=T,sep='\t',row.names = 1)
-core_sel[core_sel>0]=1 # presence/absence of selection in that gene (not counting multiple episodes of diversifying selection within a particular group)
-colSums(core_sel)
+# core_sel[core_sel>0]=1 # presence/absence of selection in that gene (not counting multiple episodes of diversifying selection within a particular group)
 
 core_sel$gene_id=rownames(core_sel)
 core_sel=subset(core_sel, !(gene_id %in% recombining_genes)) # remove recombining genes
+
+colSums(core_sel[,-ncol(core_sel)])
+
 core_sel=merge(core_sel,seed,by = 'gene_id',all.x=T)
-core_sel$All<-1
+# core_sel$All<-1
 head(core_sel)
 nrow(core_sel)
 
@@ -247,22 +248,34 @@ df=df[,c('gene_id',"Core", "All", "All.groups", "Sym", "Gigas", "Ruthia",
 "i", "j", 'k','l','m','n', "R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
 "R.rectimargo","R.fausta", "R.southwardae", "V.gigas1","V.gigas2", "V.okutanii",  "V.soyoae1", "V.soyoae2","V.marissinica","Bathy","SUP05", "SEED_level_1","SEED_level_2","SEED_level_3","SEED_long_name")]
 
+
+
+# df[df>0]=1 # presence/absence of selection in that gene (not counting multiple episodes of diversifying selection within a particular group)
+
+count_cols=c("Core", "All", "All.groups", "Sym", "Gigas", "Ruthia", 
+"FL", "allbranches", "a", "b", "c", "d", "e", "f", "g", "h", 
+"i", "j", 'k','l','m','n', "R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", "R.rectimargo","R.fausta", "R.southwardae", "V.gigas1","V.gigas2", "V.okutanii",  "V.soyoae1", "V.soyoae2","V.marissinica","Bathy","SUP05")
+
+df[count_cols][is.na(df[count_cols])] <-0
+df
+
+df_events=df
+df=df_events
+
+df[count_cols][df[count_cols]>0] <-1 # reduce df to presence/absence
+
 # df[!is.na(df$'SEED_level_1') & df[, 'SEED_level_1']=='',c('SEED_level_1')]<-
 df %>% head()
-summary(df)
-subset(df,gene_id=='Rmag_0006')
-str(df)
-df[is.na(df)]<-0
+
 colSums(df[,c("Core", "All", "All.groups", "Sym", "Gigas", "Ruthia", 
 "FL", "allbranches", "a", "b", "c", "d", "e", "f", "g", "h", 
 "i", "j", 'k','l','m','n', "R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
 "R.rectimargo","R.fausta", "R.southwardae", "V.gigas1","V.gigas2", "V.okutanii",  "V.soyoae1", "V.soyoae2","V.marissinica","Bathy","SUP05")])
 
-df[df$All==1,'gene_id'] %>% unique %>% length
-df[df$Core==1,'gene_id'] %>% unique %>% length
-df[df$All.groups==1,'gene_id'] %>% unique %>% length
-df[df$allbranches==1,'gene_id'] %>% unique %>% length
-
+colSums(df_events[,c("Core", "All", "All.groups", "Sym", "Gigas", "Ruthia", 
+"FL", "allbranches", "a", "b", "c", "d", "e", "f", "g", "h", 
+"i", "j", 'k','l','m','n', "R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
+"R.rectimargo","R.fausta", "R.southwardae", "V.gigas1","V.gigas2", "V.okutanii",  "V.soyoae1", "V.soyoae2","V.marissinica","Bathy","SUP05")])
 ```
 
 ## Run hypergeometric tests and format data frame for figure
@@ -521,21 +534,31 @@ plot_Selection
 
 print("Selection count summary")
 summary=df[,c('gene_id',"Core", "All", "All.groups", "Gigas", "Ruthia", 
-"FL", "allbranches", "a", "b", "c")] %>% unique 
+"FL", "allbranches", "a", "b", "c",'Bathy','SUP05')] %>% unique 
+
+subset(df,All==1 & !(is.na(SEED_level_1)))$gene_id %>% unique %>% length
+
+subset(df,All==1 & !(is.na(SEED_level_1)))$gene_id %>% unique %>% length /sum(summary['All']) # of selected genes for which functional annotation was present
+  
 print(colSums(summary[,-1]))
 ```
 
 ```{r}
 # ggsave(file=paste0('plot_Selection',pval_thresh,'.svg'),plot=plot_Selection,width=8.53,height=8.36,units='in',dpi=600,device='svg')
 
-ggsave(file=paste0('plot_Selection',pval_thresh,'.svg'),plot=plot_Selection,width=10.53,height=8.36,units='in',dpi=600,device='svg')
+ggsave(file=paste0('./figures/','plot_Selection',pval_thresh,'.svg'),plot=plot_Selection,width=10.53,height=8.36,units='in',dpi=600,device='svg')
 ```
 
 ## Get genes for specific categories
 ```{r}
-t1<-subset(df,SEED_level_1 %in% c('Stress Response') & a>0 ) %>% .[!duplicated(.[,c('gene_id')]),]
-
+t1<-subset(df,SEED_level_1 %in% c('Nucleosides and Nucleotides') & b>0 ) %>% .[!duplicated(.[,c('gene_id')]),]
 t1
+
+t2<-subset(df,SEED_level_1 %in% c('Virulence, Disease and Defense') & c>0 ) %>% .[!duplicated(.[,c('gene_id')]),]
+t2
+
+t2<-subset(df_events,All.groups>1) %>% .[!duplicated(.[,c('gene_id')]),]
+t2
 ```
 
 # Relaxation: RELAX
@@ -893,6 +916,6 @@ plot_RELAX<-grid.arrange(plot_Core,plot_SymvsFL_rela, plot_SymvsFL_inten, plot_R
 plot_RELAX
 
 
-ggsave(file=paste0('plot_Relaxation',pval_thresh,'.svg'),plot=plot_RELAX,width=27.5,units='cm',dpi=600,device='svg')
+ggsave(file=paste0('./figures/plot_Relaxation',pval_thresh,'.svg'),plot=plot_RELAX,width=27.5,units='cm',dpi=600,device='svg')
 
 ```
