@@ -17,7 +17,12 @@ library(RColorBrewer)
 library(tidyr)
 library(plyr) ##
 library(dplyr)
-library(reshape2) ##
+library(reshape2) 
+library(rsvg)
+library(magick)
+require('cowplot')
+theme_set(theme_cowplot())
+##
 # install.packages(c('gridExtra','RColorBrewer','tidyr','plyr','dplyr','reshape2','vegan','ape'), dep = TRUE)
 # install.packages(c('data.table','grid','gtable','scales'), dep = TRUE)
 
@@ -26,14 +31,17 @@ library(reshape2) ##
 ```
 
 
-```{r load function to run hyptergeometric tests}
-run_multihypergeometric_tests<- function(dat){
+```{r load function to run Fisher tests}
+# dat=d
+# branch='All'
+run_chisq_tests<- function(dat){
 library("extraDistr")
   pval<-data.frame(p.value=as.numeric(numeric())) 
   for(br in colnames(dat)[-c(1,2)]){
-    dat[,2]
     data<-cbind(dat[,2],dat[,br]) %>% replace(., is.na(.), 0)
-    p.value<-dmvhyper(x = data[,2], n = data[,1], k=sum(data[,2]))
+    # p.value<-dmvhyper(x = data[,2], n = data[,1], k=sum(data[,2]))
+    # print(br)
+    p.value<-chisq.test(data[,2],data[,1])$p.value
     new_pval<-as.data.frame(p.value, row.names=br, col.names='p.value')
     pval<-rbind(pval,new_pval)
   }
@@ -46,17 +54,81 @@ library("extraDistr")
 return(pval)
 }
 
-run_multihypergeometric_tests_coreref<- function(dat){
+run_fisher_tests<- function(dat){
 library("extraDistr")
-  pval<-data.frame(p.value=as.numeric(numeric())) 
+  pval<-data.frame(p.value=as.numeric(numeric()))
   for(br in colnames(dat)[-c(1,2)]){
-    dat[,2]
-    data<-cbind(dat[,br],dat[,2]) %>% replace(., is.na(.), 0)
-    p.value<-dmvhyper(x = data[,2], n = data[,1], k=sum(data[,2]))
+    data<-cbind(dat[,2],dat[,br]) %>% replace(., is.na(.), 0)
+    p.value<-fisher.test(data[,1],data[,2])$p.value
     new_pval<-as.data.frame(p.value, row.names=br, col.names='p.value')
     pval<-rbind(pval,new_pval)
   }
+
+  pval$comp<-row.names(pval)
+  pval$symbol<-ifelse(pval$p.value<=0.01,'***',
+                ifelse(pval$p.value<=0.05,'**',
+                ifelse(pval$p.value<=0.1,'*','')))
+
+return(pval)
+} ## not good
+
+run_multihypergeometric_tests<- function(dat){
+library("extraDistr")
+  pval<-data.frame(p.value=as.numeric(numeric()))
+  for(br in colnames(dat)[-c(1,2)]){
+    data<-cbind(dat[,2],dat[,br]) %>% replace(., is.na(.), 0)
+    dhyper(n=data[,1],x=data[,2],k=sum(data[,2]))
+    ?dmvhyper
+    rmvhyper(1,data[,1],sum(data[,2]))
+    p.value<-dmvhyper(n=data[,1],x=data[,2],k=sum(data[,2]))
+    new_pval<-as.data.frame(p.value, row.names=br, col.names='p.value')
+    pval<-rbind(pval,new_pval)
+  }
+
+  pval$comp<-row.names(pval)
+  pval$symbol<-ifelse(pval$p.value<=0.01,'***',
+                ifelse(pval$p.value<=0.05,'**',
+                ifelse(pval$p.value<=0.1,'*','')))
+
+return(pval)
+} ## Not good
+
+montecarlo_test_pval<-function(df,branch,SEED_level){
+  ecdf_fun <- function(x,perc) ecdf(x)(perc) # determine the quantile of a value against a distribution
+
+  test=branch
+  #generate random subsample with same number of genes as in test category
+  df1=df[,c('gene_id','Core',test,SEED_level)]
+  len_core=df1[df1[,'Core']==1,]$gene_id %>% unique %>% length
+  len_selected=df1[df1[,test]==1,]$gene_id %>% unique %>% length
   
+  pval_distrib=c()
+  n=0
+  while (n<100) {
+    # pick len_selected genes from core at random
+    random_gene_set=sample((subset(df1,Core==1)$gene_id %>% unique), len_selected)
+    # add random column to 
+    dd=cbind(df1,'random'=as.numeric(df1$gene_id %in% random_gene_set))
+    formula=as.formula(paste0(".~ ",SEED_level))
+    d<-aggregate(formula,dd,FUN = function(x) {sum(x > 0, na.rm = F)}, na.action = na.pass) 
+    pval_distrib<-rbind(pval_distrib,c(dmvhyper(n=d[,c('Core')],x=d[,c('random')],k=sum(d[,c('random')]))))
+    n=n+1}
+  pval_test=dmvhyper(n=d[,c('Core')],x=d[,c(test)],k=sum(d[,c(test)]))
+  
+  final_pval<-ecdf_fun(sort(pval_distrib),pval_test)
+  return(final_pval)} ## compare prop of distribution if test data to that of 100 trials of randomly sampled genes (same sample size as test data)
+
+run_multihypergeometric_montecarlo_tests<- function(df,SEED_level){
+library("extraDistr")
+  branches_to_test=names(df)[which(sapply(df, is.numeric))]
+
+  pval<-data.frame(p.value=as.numeric(numeric()))
+  for(br in branches_to_test){
+    p.value<-montecarlo_test_pval(df,br,SEED_level)
+    new_pval<-as.data.frame(p.value, row.names=br, col.names='p.value')
+    pval<-rbind(pval,new_pval)
+  }
+
   pval$comp<-row.names(pval)
   pval$symbol<-ifelse(pval$p.value<=0.01,'***',
                 ifelse(pval$p.value<=0.05,'**',
@@ -73,15 +145,17 @@ differences<-data.frame(matrix(ncol = length(colnames(dat)[-c(1,2)]), nrow = len
 colnames(differences) <- colnames(dat)[-c(1,2)]
 
 for(br in colnames(dat)[-c(1,2)]){
-  print(br)
   data<-dat[,c(colnames(dat)[2],br)] %>% replace(., is.na(.), 0)
   for (category in rownames(data)){
-
     success_in_sample<-data[rownames(data)==category,br]
     success_in_left_part<-data[rownames(data)==category,colnames(dat)[2]]-success_in_sample
     failure_in_sample<-sum(data[,br])-success_in_sample
     failure_in_left_part<-sum(data[rownames(data)!=category,colnames(dat)[2]])+success_in_sample
     p.value<-fisher.test(matrix(c(success_in_sample, success_in_left_part, failure_in_sample, failure_in_left_part), 2, 2),alternative = "two.sided")
+    
+    p.adjust(fisher[,br],
+               method = "holm")
+
     fisher[category,br]=p.value
     differences[category,br]=(data[rownames(data)==category,br]/sum(data))-(sum(data[rownames(data)==category,])/sum(data))*(sum(data[,br])/sum(data))
   }
@@ -100,47 +174,8 @@ breakdown$symbol<-ifelse(breakdown$pvalue<=0.01,'***',
 breakdown$sign<-ifelse(breakdown$diff<0,'depletion' ,'enrichment')
 
 return(breakdown)
-}
+} # runs fisher test for enrichment on each category
 
-
-run_fisher_tests2_coreref<- function(dat){
-fisher<-data.frame(matrix(ncol = length(colnames(dat)[-c(1,2)]), nrow = length(row.names(dat))),row.names=rownames(dat))
-colnames(fisher) <- colnames(dat)[-c(1,2)]
-
-differences<-data.frame(matrix(ncol = length(colnames(dat)[-c(1,2)]), nrow = length(row.names(dat))),row.names=rownames(dat))
-colnames(differences) <- colnames(dat)[-c(1,2)]
-
-for(br in colnames(dat)[-c(1,2)]){
-  print(br)
-  data<-dat[,c(br,colnames(dat)[2])] %>% replace(., is.na(.), 0)
-  for (category in rownames(data)){
-
-    success_in_sample<-data[rownames(data)==category,2]
-    success_in_left_part<-data[rownames(data)==category,1]-success_in_sample
-    failure_in_sample<-sum(data[,2])-success_in_sample
-    failure_in_left_part<-sum(data[rownames(data)!=category,1])+success_in_sample
-    p.value<-fisher.test(matrix(c(success_in_sample, success_in_left_part, failure_in_sample, failure_in_left_part), 2, 2),alternative = "two.sided")
-    fisher[category,br]=p.value
-    differences[category,br]=(data[rownames(data)==category,1]/sum(data))-(sum(data[rownames(data)==category,])/sum(data))*(sum(data[,1])/sum(data))
-  }
-  }
-
-fisher$categories<-rownames(fisher)
-differences$categories<-rownames(differences)
-breakdown<-cbind(melt(fisher, id.vars='categories',value.name='pvalue'), melt(differences, id.vars=c('categories'))[,3])
-colnames(breakdown)[2]='comp'
-colnames(breakdown)[4]='diff'
-breakdown$pvalue<-as.numeric(breakdown$pvalue)
-breakdown$diff<-as.numeric(breakdown$diff)*100 # expresses the difference in pobability of the event happening
-breakdown$symbol<-ifelse(breakdown$pvalue<=0.01,'***',
-              ifelse(breakdown$pvalue<=0.05,'**',
-              ifelse(breakdown$pvalue<=0.1,'*','')))
-breakdown$sign<-ifelse(breakdown$diff<0,'depletion' ,'enrichment')
-
-return(breakdown)
-}
-
-#
 
 plot_breakdown_with_counts2<-function(breakdown,dat){
 level<-colnames(dat)[1]
@@ -175,8 +210,7 @@ plot<-ggplot(data=subset(breakdown_w_counts,comp!='Pan'))+
 
 # Selection: absREL
 ## Import data
-
-```{r echo=FALSE}
+```{r import data, echo=FALSE}
 # Import list of genes with significant evidence for recombinaiton according to the AICc test.
 
 recombining_genes= read.table('core_genes_with_recomb_AICc.txt',header=F)$V1
@@ -185,7 +219,7 @@ recombining_genes
 
 # Import SEED annotations for all genes
 
-seed<-read.csv('SEED_annotations.txt',header=T,sep='\t', na.strings = '',stringsAsFactors = T)
+seed<-read.csv('./SEED_annotations_all.tsv',header=T,sep='\t', na.strings = '',stringsAsFactors = T)
 seed=seed[,c("locus_tag","SEED_level_1","SEED_level_2","SEED_level_3" ,"SEED_long_name")]
 colnames(seed)[1]='gene_id'
 seed = seed[!duplicated(seed),]
@@ -267,20 +301,56 @@ df[count_cols][df[count_cols]>0] <-1 # reduce df to presence/absence
 # df[!is.na(df$'SEED_level_1') & df[, 'SEED_level_1']=='',c('SEED_level_1')]<-
 df %>% head()
 
-colSums(df[,c("Core", "All", "All.groups", "Sym", "Gigas", "Ruthia", 
-"FL", "allbranches", "a", "b", "c", "d", "e", "f", "g", "h", 
-"i", "j", 'k','l','m','n', "R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
-"R.rectimargo","R.fausta", "R.southwardae", "V.gigas1","V.gigas2", "V.okutanii",  "V.soyoae1", "V.soyoae2","V.marissinica","Bathy","SUP05")])
+# colSums(df[,c("Core", "All", "All.groups", "Sym", "Gigas", "Ruthia",
+# "FL", "allbranches", "a", "b", "c", "d", "e", "f", "g", "h",
+# "i", "j", 'k','l','m','n', "R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia",
+# "R.rectimargo","R.fausta", "R.southwardae", "V.gigas1","V.gigas2", "V.okutanii",  "V.soyoae1", "V.soyoae2","V.marissinica","Bathy","SUP05")])
 
-colSums(df_events[,c("Core", "All", "All.groups", "Sym", "Gigas", "Ruthia", 
-"FL", "allbranches", "a", "b", "c", "d", "e", "f", "g", "h", 
-"i", "j", 'k','l','m','n', "R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
-"R.rectimargo","R.fausta", "R.southwardae", "V.gigas1","V.gigas2", "V.okutanii",  "V.soyoae1", "V.soyoae2","V.marissinica","Bathy","SUP05")])
+ 
+# colSums(df_events[,c("Core", "All", "All.groups", "Sym", "Gigas", "Ruthia", 
+# "FL", "allbranches", "a", "b", "c", "d", "e", "f", "g", "h", 
+# "i", "j", 'k','l','m','n', "R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
+# "R.rectimargo","R.fausta", "R.southwardae", "V.gigas1","V.gigas2", "V.okutanii",  "V.soyoae1", "V.soyoae2","V.marissinica","Bathy","SUP05")])
+
+print("Selection gene count summary")
+summary=df[,c('gene_id',"Core", "All", "All.groups", "Gigas", "Ruthia", 
+"FL", "allbranches", "a", "b", "c",'Bathy','SUP05')] %>% unique 
+print(colSums(summary[,-1]))
+
+print("Selection events count summary")
+summary=df_events[,c("gene_id", "a", "b", "c", "d", "e", "f", "g", "h",
+"i", "j", 'k','l','m','n', "R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia","R.rectimargo","R.fausta", "R.southwardae", "V.gigas1","V.gigas2", "V.okutanii",  "V.soyoae1", "V.soyoae2","V.marissinica","Bathy","SUP05")] %>% unique
+print(colSums(summary[,-1]))
+
+### Genes selected multiple times throughout the phylogeny
+rep_sel=subset(df_events,All>1)
+rep_sel$gene_id %>% unique %>% length
+### Genes selected multiple times throughout the symbiont phylogeny
+rep_sel=subset(df_events,Sym>1 )
+rep_sel$gene_id %>% unique %>% length
+
+df$SymMulti<-as.numeric(df$gene_id %in% (rep_sel$gene_id %>% unique))
+
+
+get_non_empty_column <- function(x){
+    if(is.numeric(x)){
+        sum(x) >0
+    } else {
+        TRUE
+    }
+}
+
+df =df[, sapply(df,  get_non_empty_column)]
+
+ 
 ```
+## Run enrichment tests
+### SEED_level_1
+```{r run tests and format data frame for figure}
+# #### 1) run hypergeometric montecarlo test ####
+pval<-run_multihypergeometric_montecarlo_tests(df,'SEED_level_1')
 
-## Run hypergeometric tests and format data frame for figure
-
-```{r}
+#### 2) fisher test for over-representation of certain categories ####
 
 dd = df[!duplicated(df[,c("gene_id",'Core',"SEED_level_1")]),]
 
@@ -294,13 +364,19 @@ colSums(d[,-1])
 
 row.names(d)<-d$SEED_level_1
 d=d[setdiff(colnames(d), c("gene_id",'SEED_level_2',"SEED_level_3","SEED_long_name"))]
-#### 1) run hypergeometric test ####
-pval<-run_multihypergeometric_tests(d)
 
-#### 2) fisher test for overrepresentationof certain categories ####
+colnames(d) %in% list(colSums(d[,-1])<2)
+d=cbind('SEED_level_1'=d[,1],d[,2:ncol(d)][,colSums(d[,2:ncol(d)]) > 1])
+
 breakdown<-run_fisher_tests2(d)
 # bk<-plot_breakdown_with_counts2(breakdown,d)
+# bk
 
+## Comparing different test assessing if distribution of genes in branch is different from that in core
+
+# pval2<-run_chisq_tests(d)
+# pval3<-run_fisher_tests(d)
+# cbind(pval,pval2,pval3)
 
 #### Create dataframe for figure construction ####
 
@@ -329,13 +405,13 @@ dput(levels(dat$comp))
 
 
 
-dat$comp <- factor(dat$comp,levels = c( "All", "Sym",  "FL", "Ruthia","Gigas", 
+dat$comp <- factor(dat$comp,levels = c( "SymMulti","All", "Sym",  "FL", "Ruthia","Gigas", 
  "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 'k','l','m','n',"Bathy", 
 "SUP05","R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
 "R.rectimargo", "R.fausta", "R.southwardae", "V.gigas1", "V.gigas2", 
 "V.okutanii", "V.soyoae1", "V.soyoae2", "V.marissinica","All.groups","allbranches","Core"))
 
-Group_labels=c("All", "Sym", "FL", "Clade II", "Clade I", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 'k','l','m','n',"Bathy", "SUP05","R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
+Group_labels=c("SymMulti","All", "Sym", "FL", "Clade II", "Clade I", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 'k','l','m','n',"Bathy", "SUP05","R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
 "R.rectimargo", "R.fausta", "R.southwardae", "V.gigas1", "V.gigas2", 
 "V.okutanii", "V.soyoae1", "V.soyoae2", "V.marissinica","All.groups","allbranches","Core")
 
@@ -345,11 +421,90 @@ names(Group_labels)=c( "All", "Sym",  "FL", "Ruthia","Gigas",
 "R.rectimargo", "R.fausta", "R.southwardae", "V.gigas1", "V.gigas2", 
 "V.okutanii", "V.soyoae1", "V.soyoae2", "V.marissinica","All.groups","allbranches","Core")
 
+dat
 ```
-## Create Selection Figure
+### SEED_level_2
 
-```{r  Core vs groups}
-subset(dat,(comp %in% c('All.groups')))
+```{r run tests and format data frame for figure}
+# #### 1) run hypergeometric montecarlo test ####
+pval<-run_multihypergeometric_montecarlo_tests(df,'SEED_level_2')
+
+#### 2) fisher test for over-representation of certain categories ####
+
+dd = df[!duplicated(df[,c("gene_id",'Core',"SEED_level_2")]),]
+
+dd$SEED_level_2 <- factor(dd$SEED_level_2, levels = levels(addNA(dd$SEED_level_2)), labels = c(levels(dd$SEED_level_2), 'NA'), exclude = NULL)
+
+
+dd[,c(-1,-length(colnames(dd)))][is.na(dd[,c(-1,-length(colnames(dd)))])] <-0
+
+d<-aggregate(.~SEED_level_2,dd,FUN = function(x) {sum(x > 0, na.rm = F)}, na.action = na.pass) 
+colSums(d[,-1])
+
+row.names(d)<-d$SEED_level_2
+d=d[setdiff(colnames(d), c("gene_id",'SEED_level_1',"SEED_level_3","SEED_long_name"))]
+
+colnames(d) %in% list(colSums(d[,-1])<2)
+d=cbind('SEED_level_2'=d[,1],d[,2:ncol(d)][,colSums(d[,2:ncol(d)]) > 1])
+
+breakdown<-run_fisher_tests2(d)
+bk<-plot_breakdown_with_counts2(breakdown,d)
+bk
+
+## Comparing different test assessing if distribution of genes in branch is different from that in core
+
+# pval2<-run_chisq_tests(d)
+# pval3<-run_fisher_tests(d)
+# cbind(pval,pval2,pval3)
+
+#### Create dataframe for figure construction ####
+
+core_lvl_order<-d[order(d$Core),]$SEED_level_2
+core_lvl_order<-union(core_lvl_order[core_lvl_order!='NA'],'NA')
+
+
+d$SEED_level_2 <- factor(d$SEED_level_2,levels = core_lvl_order)
+# d$SEED_level_2 <- factor(d$SEED_level_2,levels = )
+
+dat<-melt(d)
+colnames(dat)[1]='categories'
+colnames(dat)[2]='comp'
+colnames(dat)[3]='count'
+dat<-merge(breakdown,dat,by=c('categories','comp'),all=T)
+
+dat$categories <- factor(dat$categories,levels =core_lvl_order)
+dat$sign[dat$pvalue>=0.05] <- 'NS'
+dat$symbol[is.na(dat$symbol)] <- ''
+tot<-aggregate(count~comp,dat, function(x) sum(x))
+colnames(tot)[2]='tot'
+dat<-merge(dat,tot, by=c('comp'),all=T)
+head(dat)
+dput(levels(dat$comp))
+
+
+
+
+dat$comp <- factor(dat$comp,levels = c( "SymMulti","All", "Sym",  "FL", "Ruthia","Gigas", 
+ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 'k','l','m','n',"Bathy", 
+"SUP05","R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
+"R.rectimargo", "R.fausta", "R.southwardae", "V.gigas1", "V.gigas2", 
+"V.okutanii", "V.soyoae1", "V.soyoae2", "V.marissinica","All.groups","allbranches","Core"))
+
+Group_labels=c("SymMulti","All", "Sym", "FL", "Clade II", "Clade I", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 'k','l','m','n',"Bathy", "SUP05","R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
+"R.rectimargo", "R.fausta", "R.southwardae", "V.gigas1", "V.gigas2", 
+"V.okutanii", "V.soyoae1", "V.soyoae2", "V.marissinica","All.groups","allbranches","Core")
+
+names(Group_labels)=c( "All", "Sym",  "FL", "Ruthia","Gigas", 
+ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 'k','l','m','n',"Bathy", 
+"SUP05","R.magnifica", "R.pacifica", "R.phaseoliformis", "R.pliocardia", 
+"R.rectimargo", "R.fausta", "R.southwardae", "V.gigas1", "V.gigas2", 
+"V.okutanii", "V.soyoae1", "V.soyoae2", "V.marissinica","All.groups","allbranches","Core")
+
+dat
+```
+## Create figure
+```{r  create Selection Figure: Core vs groups}
+
 plot_Core<-ggplot(subset(dat,(comp %in% c('Core'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories),fill='grey20',stat='identity',color='black')+
@@ -365,6 +520,22 @@ plot_Core<-ggplot(subset(dat,(comp %in% c('Core'))))+
         )
 plot_Core
 
+plot_multi<-ggplot(subset(dat,(comp %in% c('SymMulti'))))+
+  theme_bw()+
+  geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
+  scale_y_continuous(limits=c(0,max(subset(dat,(comp %in% c('SymMulti')))$count)),
+                     breaks=c(seq(0,10,2),seq(10,20,5)),
+                     minor_breaks = c(seq(0,10,1),seq(10,20,2.5)),
+                     position='left',
+                     sec.axis = sec_axis(~./subset(dat,(comp %in% c('a')))$tot*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
+  # scale_fill_gradient2(low = "blue", high = "red", mid = 'grey20',na.value= 'grey20',limits=c(-0.5, 0.5), oob=squish)+
+  scale_fill_manual(values=c('depletion'='blue','enrichment'='red','NS'='grey50'))+
+  coord_flip()+
+  labs( x = "SEED categories", y='Gene count in a')+
+  theme(axis.title.x = element_text(size=8))
+plot_multi
+
+
 plot_FL<-ggplot(subset(dat,(comp %in% c('FL'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
@@ -375,7 +546,7 @@ plot_FL<-ggplot(subset(dat,(comp %in% c('FL'))))+
                      sec.axis = sec_axis(~./subset(dat,(comp %in% c('FL')))$tot*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
   scale_fill_manual(values=c('depletion'='blue','enrichment'='red','NS'='grey50','NA'='white'))+
   coord_flip()+
-  labs( x = "SEED categories", y='Gene count in FL')+
+  labs( x = "SEED categories", y='Gene count in Free-living')+
   theme(axis.title.x = element_text(size=8))
 plot_FL
 
@@ -445,7 +616,7 @@ plot1
 # ggsave(file='plot_Selection_Core_vs_groups.svg',plot=plot1,width=40,units='cm',dpi=600,device='svg')
 ```
 
-```{r  Core vs branches }
+```{r  create Selection Figure: Core vs branches }
 
 plot_Core<-ggplot(subset(dat,(comp %in% c('Core'))))+
   theme_bw()+
@@ -462,6 +633,7 @@ plot_Core<-ggplot(subset(dat,(comp %in% c('Core'))))+
         # axis.text.x.bottom = element_text(angle=50,vjust=1,hjust = 1)
         )
 plot_Core
+
 
 plot_a<-ggplot(subset(dat,(comp %in% c('a'))))+
   theme_bw()+
@@ -532,9 +704,7 @@ plot2
 plot_Selection<-grid.arrange(plot1,plot2,nrow=2,ncol=1)
 plot_Selection
 
-print("Selection count summary")
-summary=df[,c('gene_id',"Core", "All", "All.groups", "Gigas", "Ruthia", 
-"FL", "allbranches", "a", "b", "c",'Bathy','SUP05')] %>% unique 
+
 
 subset(df,All==1 & !(is.na(SEED_level_1)))$gene_id %>% unique %>% length
 
@@ -543,28 +713,57 @@ subset(df,All==1 & !(is.na(SEED_level_1)))$gene_id %>% unique %>% length /sum(su
 print(colSums(summary[,-1]))
 ```
 
-```{r}
-# ggsave(file=paste0('plot_Selection',pval_thresh,'.svg'),plot=plot_Selection,width=8.53,height=8.36,units='in',dpi=600,device='svg')
+```{r save figure}
 
-ggsave(file=paste0('./figures/','plot_Selection',pval_thresh,'.svg'),plot=plot_Selection,width=10.53,height=8.36,units='in',dpi=600,device='svg')
+# ggsave(file=paste0('plot_Selection',pval_thresh,'.svg'),plot=plot_Selection,width=8.53,height=8.36,units='in',dpi=600,device='svg')
+filename=paste0('./figures/','plot_Selection_',pval_thresh,format(Sys.time(), "%F-%H%M"))
+                
+ggsave(file=paste0(filename,'.svg'),plot=plot_Selection,width=10.53,height=8.36,units='in',dpi=600,device='svg')
+
+# p5<-ggdraw() +
+#   draw_plot(plot_Selection)+
+#   draw_image(magick::image_read_svg("./figures/plot_Selection_extralayer.svg"))
+# p5
+# 
+# 
+# img<-draw_image(magick::image_read_svg("./figures/plot_Selection_grouplayer.svg"))
+# img<-png::readPNG('./figures/g12577.png') 
+# ggdraw()+img
+# library(ggpubr)
+# 
+# ggplot() +
+#   background_image(img)
+# 
+# library('grImport2')
+# install.packages('grConvert')
+# 
+# simple <- readPicture("./figures/plot_Selection_extralayer.svg")
+# 
+# library(grid)
+# simpleGrob <- gTree(children=gList(pictureGrob(simple)))
+
+# ggsave(file=paste0(filename,'.png'),plot=p5,width=10.53,height=8.36,units='in',dpi=600)
+
 ```
 
-## Get genes for specific categories
-```{r}
+## Inspect enriched categories
+```{r get genes for specific categories}
 t1<-subset(df,SEED_level_1 %in% c('Nucleosides and Nucleotides') & b>0 ) %>% .[!duplicated(.[,c('gene_id')]),]
 t1
 
 t2<-subset(df,SEED_level_1 %in% c('Virulence, Disease and Defense') & c>0 ) %>% .[!duplicated(.[,c('gene_id')]),]
 t2
 
-t2<-subset(df_events,All.groups>1) %>% .[!duplicated(.[,c('gene_id')]),]
-t2
+t3<-subset(df_events,Sym>1) %>% .[!duplicated(.[,c('gene_id')]),]
+t3
+
+t3<-subset(df, Sym>0 ) %>% .[!duplicated(.[,c('gene_id','SEED_level_1','SEED_level_2')]),]
+t3
 ```
 
 # Relaxation: RELAX
 
-##import data
-```{r echo=FALSE}
+```{r import data, echo=FALSE}
 # Import list of genes with significant evidence for recombinaiton according to the AICc test.
 
 recombining_genes= read.table('core_genes_with_recomb_AICc.txt',header=F)$V1
@@ -573,7 +772,7 @@ recombining_genes
 
 # Import SEED annotations for all genes
 
-seed<-read.csv('SEED_annotations.txt',header=T,sep='\t', na.strings = '',stringsAsFactors = T)
+seed<-read.csv('./SEED_annotations_all.txt',header=T,sep='\t', na.strings = '',stringsAsFactors = T)
 seed=seed[,c("locus_tag","SEED_level_1","SEED_level_2","SEED_level_3" ,"SEED_long_name")]
 colnames(seed)[1]='gene_id'
 seed = seed[!duplicated(seed),]
@@ -581,7 +780,7 @@ seed = seed[!duplicated(seed),]
 pval_thresh=0.05
 
 relax=read.table('./relax_results.txt',header=T,sep='\t')
-relax=as.data.table(relax)
+relax=data.table::as.data.table(relax)
 relax=subset(relax,!(gene %in% recombining_genes)) # remove genes with evidence of recombination
 nrow(relax)
 core_relax=relax[,c(1,2)] %>% unique
@@ -613,14 +812,21 @@ new_rows$k<-999
 new_rows$pval<-0
 nrow(new_rows)
 
-df_relax = rbind(df_relax,new_rows)
+df_relax = rbind(df_rel,new_rows)
 
 d<-dcast(subset(df_relax,(!is.na(SEED_level_1) | is.na(SEED_long_name)) & pval<0.05 & (k<1 | k==999)),SEED_level_1~branches, value.var= 'gene_id', function(x) length(unique(x)))
 d 
 colSums(d[,-1])
+
+print("Relaxation count summary")
+summary=dcast(subset(df_relax,(pval<0.05 & (k<1 | k==999)))[,c('gene_id','branches')],gene_id~branches,value.var='gene_id',function(x) length(unique(x)) )
+print(colSums(summary[,-1]))
+
+df=dcast(subset(df_relax,(pval<0.05 & (k<1 | k==999)))[,c('gene_id','branches')],gene_id~branches,value.var='gene_id')
+df=merge(df,)
 ```
 
-```{r Run hypergeometric tests and format data frame for figure}
+```{r run hypergeometric tests and format data frame for figure}
 
 d$SEED_level_1 <- factor(d$SEED_level_1, levels = levels(addNA(d$SEED_level_1)), labels = c(levels(d$SEED_level_1), 'NA'), exclude = NULL)
 
@@ -665,66 +871,90 @@ dat$comp <- factor(dat$comp,levels = c( "Core", 'SymbAll','SymvsFL', 'RuvsFL','G
 dat_relax<-dat
 ```
 
-```{r Plot relax}
-dat<-dat_relax
-head(dat)
-plot_Core_relax<-ggplot(subset(dat,(comp %in% c('Core'))))+
-  theme_bw()+
-  geom_bar(aes(y=(count+count*0.5)/2,x=categories),fill='grey20',stat='identity',color='black')+
-  geom_bar(data=subset(dat,(comp %in% c('SymbAll'))), aes(y=count,x=categories),fill='grey50',stat='identity',color='black')+
-  # scale_x_discrete(position='top')+
-  scale_y_reverse(limits=c(),
-                  breaks=c(seq(0,50,10),seq(50,100,25)),
-                  position='left',
-                  sec.axis = sec_axis(~./834*100, name = 'Relative abundance (%)',breaks=c(seq(0,10,2))))+
-  coord_flip()+
-  # scale_y_reverse()+
-  labs( x = "SEED categories", y='Gene count in core genome')+
-  theme(axis.title.x = element_text(size=8))
-plot_Core_relax
+```{r plot relax}
+thresh1=25
 
+dat<-dat_relax
+# tot_Core_relax<-subset(dat,(comp %in% c('Core')))$tot[1]
+# plot_Core_relax<-ggplot(subset(dat,(comp %in% c('Core'))))+
+#   theme_bw()+
+#   geom_bar(aes(y=(count+count*0.5)/2,x=categories),fill='grey20',stat='identity',color='black')+
+#   geom_bar(data=subset(dat,(comp %in% c('SymbAll'))), aes(y=count,x=categories),fill='grey50',stat='identity',color='black')+
+#   # scale_x_discrete(position='top')+
+#   scale_y_reverse(limits=c(),
+#                   breaks=c(seq(0,50,10),seq(50,100,25)),
+#                   position='left',
+#                   sec.axis = sec_axis(~./tot_Core_relax*100, name = 'Relative abundance (%)',breaks=c(seq(0,10,2))))+
+#   coord_flip()+
+#   # scale_y_reverse()+
+#   labs( x = "SEED categories", y='Gene count in core genome')+
+#   theme(axis.title.x = element_text(size=8))
+# plot_Core_relax
+
+tot_SymvsFL_relax<-subset(dat,(comp %in% c('SymvsFL')))$tot[1]
 plot_SymvsFL_relax<-ggplot(subset(dat,(comp %in% c('SymvsFL'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
   scale_y_reverse(expand = c(0,0),
-                  limits=c(95,0),
-                     breaks=c(seq(0,100,25)),
-                     # minor_breaks = c(seq(0,10,1),seq(10,20,2.5)),
+                  limits=c(thresh1/100*tot_SymvsFL_relax,0),
+                     breaks=c(seq(0,thresh1/100*tot_SymvsFL_relax,20)),
+                     minor_breaks = c(seq(0,thresh1/100*tot_SymvsFL_relax,2)),
                      position='left',
-                     sec.axis = sec_axis(~./364*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
+                     sec.axis = sec_axis(~./tot_SymvsFL_relax*100, name = 'Relative abundance (%)',breaks=c(seq(0,thresh1,10))))+
   scale_fill_manual(values=c('depletion'='blue','enrichment'='red','NS'='grey50'))+
   coord_flip()+
   labs( x = "SEED categories", y='Gene count in SymvsFL')+
   theme(axis.title.x = element_text(size=8))
 plot_SymvsFL_relax
 
+tot_RuvsFL_relax<-subset(dat,(comp %in% c('RuvsFL')))$tot[1]
 plot_RuvsFL_relax<-ggplot(subset(dat,(comp %in% c('RuvsFL'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
-  scale_y_reverse(limits=c(160,0),
+  scale_y_reverse(limits=c(thresh1/100*tot_RuvsFL_relax,0),
                   expand=c(0,0),
                      # breaks=c(seq(0,10,2),seq(10,25,5)),
+                     breaks=c(seq(0,thresh1/100*tot_RuvsFL_relax,20)),
+                     minor_breaks = c(seq(0,thresh1/100*tot_SymvsFL_relax,2)),
                      position='left',
-                     sec.axis = sec_axis(~./386*100, name = 'Relative abundance (%)',breaks=c(seq(0,41,10))))+
+                     sec.axis = sec_axis(~./tot_RuvsFL_relax*100, name = 'Relative abundance (%)',breaks=c(seq(0,thresh1,10))))+
   scale_fill_manual(values=c('depletion'='blue','enrichment'='red','NS'='grey50'))+
   coord_flip()+
   labs( x = "SEED categories", y='Gene count in RuvsFL')+
   theme(axis.title.x = element_text(size=8))
 plot_RuvsFL_relax
 
+tot_GivsFL_relax<-subset(dat,(comp %in% c('GivsFL')))$tot[1]
 plot_GivsFL_relax<-ggplot(subset(dat,(comp %in% c('GivsFL'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
-  scale_y_reverse(limits=c(99,0),
+  scale_y_reverse(limits=c(thresh1/100*tot_GivsFL_relax,0),
                   expand=c(0,0),
-                     # breaks=c(seq(0,5,1)),
+                     breaks=c(seq(0,thresh1/100*tot_GivsFL_relax,20)),
+                     minor_breaks = c(seq(0,thresh1/100*tot_GivsFL_relax,2)),
                      position='left',
-                     sec.axis = sec_axis(~./427*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
+                     sec.axis = sec_axis(~./tot_GivsFL_relax*100, name = 'Relative abundance (%)',breaks=c(seq(0,thresh1,10))))+
   scale_fill_manual(values=c('depletion'='blue','enrichment'='red','NS'='grey50'))+
   coord_flip()+
   labs( x = "SEED categories", y='Gene count in GivsFL')+
   theme(axis.title.x = element_text(size=8))
 plot_GivsFL_relax
+
+tot_GivsRu_relax<-subset(dat,(comp %in% c('GivsRu')))$tot[1]
+plot_GivsRu_relax<-ggplot(subset(dat,(comp %in% c('GivsRu'))))+
+  theme_bw()+
+  geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
+  scale_y_reverse(limits=c(thresh1/100*tot_GivsRu_relax,0),
+                  expand=c(0,0),
+                     breaks=c(seq(0,thresh1/100*tot_GivsRu_relax,5)),
+                     minor_breaks = c(seq(0,thresh1/100*tot_GivsRu_relax,2)),
+                     position='left',
+                     sec.axis = sec_axis(~./tot_GivsRu_relax*100, name = 'Relative abundance (%)',breaks=c(seq(0,thresh1,10))))+
+  scale_fill_manual(values=c('depletion'='blue','enrichment'='red','NS'='grey50'))+
+  coord_flip()+
+  labs( x = "SEED categories", y='Gene count in GivsRu')+
+  theme(axis.title.x = element_text(size=8))
+plot_GivsRu_relax
 
 ```
 
@@ -748,6 +978,10 @@ df_intens = rbind(df_rel,new_rows)
 d<-dcast(subset(df_intens,(!is.na(SEED_level_1) | is.na(SEED_long_name)) & (k>1 | k==999)),SEED_level_1~branches, value.var= 'gene_id', function(x) length(unique(x)))
 d 
 colSums(d[,-1])
+
+print("Intensification count summary")
+summary=dcast(subset(df_intens,(pval<0.05 & (k>1 | k==999)))[,c('gene_id','branches')],gene_id~branches,value.var='gene_id',function(x) length(unique(x)) )
+print(colSums(summary[,-1]))
 ```
 
 ```{r Run hypergeometric tests and format data frame for figure}
@@ -798,62 +1032,87 @@ dat_intens<-dat
 
 ```{r Plot intens}
 dat<-dat_intens
-head(dat)
-plot_Core_intens<-ggplot(subset(dat,(comp %in% c('Core'))))+
-  theme_bw()+
-  geom_bar(aes(y=(count-count*0.5)/2,x=categories),fill='grey20',stat='identity',color='black')+
-  geom_bar(data=subset(dat,(comp %in% c('SymbAll'))), aes(y=count,x=categories),fill='grey50',stat='identity',color='black')+
-  scale_y_continuous(limits=c(0,75),
-                  breaks=c(seq(0,50,10),seq(50,250,25)),
-                  position='left',
-                  sec.axis = sec_axis(~./834*100, name = 'Relative abundance (%)',breaks=c(seq(0,10,2))))+
-  coord_flip()+
-  labs( x = "SEED categories", y='Gene count in core genome')+
-  theme(axis.title.x = element_text(size=8))
-plot_Core_intens
 
+merge(subset(dat_intens,comp=='SymvsFL'),subset(dat_relax,comp=='SymvsFL'),by=c('comp','categories'))
+
+head(dat)
+
+thresh2=50
+# tot_Core_intens<-subset(dat,(comp %in% c('Core')))$tot[1]
+# plot_Core_intens<-ggplot(subset(dat,(comp %in% c('Core'))))+
+#   theme_bw()+
+#   geom_bar(aes(y=(count-count*0.5)/2,x=categories),fill='grey20',stat='identity',color='black')+
+#   geom_bar(data=subset(dat,(comp %in% c('SymbAll'))), aes(y=count,x=categories),fill='grey50',stat='identity',color='black')+
+#   scale_y_continuous(limits=c(0,75),
+#                   breaks=c(seq(0,50,10),seq(50,250,25)),
+#                   position='left',
+#                   sec.axis = sec_axis(~./tot_Core_intens*100, name = 'Relative abundance (%)',breaks=c(seq(0,10,2))))+
+#   coord_flip()+
+#   labs( x = "SEED categories", y='Gene count in core genome')+
+#   theme(axis.title.x = element_text(size=8))
+# plot_Core_intens
+
+tot_SymvsFL_intens<-subset(dat,(comp %in% c('SymvsFL')))$tot[1]
 plot_SymvsFL_intens<-ggplot(subset(dat,(comp %in% c('SymvsFL'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
-  scale_y_continuous(limits=c(0,12),
+  scale_y_continuous(limits=c(0,(thresh2+2)/100*tot_SymvsFL_intens),
                      expand = c(0,0),
-                     breaks=c(seq(0,10,2),seq(10,20,5)),
-                     minor_breaks = c(seq(0,10,1),seq(10,20,2.5)),
+                     breaks=c(seq(0,thresh2/100*tot_SymvsFL_intens,2)),
+                     # minor_breaks = c(seq(0,10,1),seq(10,thresh2/100*tot_SymvsFL_intens,2.5)),
                      position='left',
-                     sec.axis = sec_axis(~./48*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
+                     sec.axis = sec_axis(~./tot_SymvsFL_intens*100, name = 'Relative abundance (%)',breaks=c(seq(0,thresh2,20))))+
   scale_fill_manual(values=c('depletion'='blue','enrichment'='red','NS'='grey80'))+
   coord_flip()+
   labs( x = "SEED categories", y='Gene count in SymvsFL')+
   theme(axis.title.x = element_text(size=8))
 plot_SymvsFL_intens
 
+tot_RuvsFL_intens<-subset(dat,(comp %in% c('RuvsFL')))$tot[1]
 plot_RuvsFL_intens<-ggplot(subset(dat,(comp %in% c('RuvsFL'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
-  scale_y_continuous(limits=c(0,4.2),
+  scale_y_continuous(limits=c(0,(thresh2+1)/100*tot_RuvsFL_intens),
                      expand=c(0,0),
+                     breaks=c(seq(0,thresh2/100*tot_RuvsFL_intens,2)),
                      position='left',
-                     sec.axis = sec_axis(~./10*100, name = 'Relative abundance (%)',breaks=c(seq(0,41,10))))+
+                     sec.axis = sec_axis(~./tot_RuvsFL_intens*100, name = 'Relative abundance (%)',breaks=c(seq(0,thresh2,20))))+
   scale_fill_manual(values=c('depletion'='blue','enrichment'='red','NS'='grey80'))+
   coord_flip()+
   labs( x = "SEED categories", y='Gene count in RuvsFL')+
   theme(axis.title.x = element_text(size=8))
 plot_RuvsFL_intens
 
+
+tot_GivsFL_intens<-subset(dat,(comp %in% c('GivsFL')))$tot[1]
 plot_GivsFL_intens<-ggplot(subset(dat,(comp %in% c('GivsFL'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
-  scale_y_continuous(limits=c(0,4.2),
+  scale_y_continuous(limits=c(0,(thresh2+1)/100*tot_GivsFL_intens),
                      expand=c(0,0),
-                     breaks=c(seq(0,5,1)),
+                     breaks=c(seq(0,thresh2/100*tot_GivsFL_intens,2)),
                      position='left',
-                     sec.axis = sec_axis(~./18*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
+                     sec.axis = sec_axis(~./tot_GivsFL_intens*100, name = 'Relative abundance (%)',breaks=c(seq(0,thresh2,20))))+
   scale_fill_manual(values=c('depletion'='blue','enrichment'='red','NS'='grey80'))+
   coord_flip()+
   labs( x = "SEED categories", y='Gene count in GivsFL')+
   theme(axis.title.x = element_text(size=8))
 plot_GivsFL_intens
 
+tot_GivsRu_intens<-subset(dat,(comp %in% c('GivsRu')))$tot[1]
+plot_GivsRu_intens<-ggplot(subset(dat,(comp %in% c('GivsRu'))))+
+  theme_bw()+
+  geom_bar(aes(y=count,x=categories,fill=sign),stat='identity',color='black')+
+  scale_y_continuous(limits=c(0,(thresh2+1)/100*tot_GivsRu_intens),
+                     expand=c(0,0),
+                     breaks=c(seq(0,thresh2/100*tot_GivsRu_intens,10)),
+                     position='left',
+                     sec.axis = sec_axis(~./tot_GivsRu_intens*100, name = 'Relative abundance (%)',breaks=c(seq(0,thresh2,20))))+
+  scale_fill_manual(values=c('depletion'='blue','enrichment'='red','NS'='grey80'))+
+  coord_flip()+
+  labs( x = "SEED categories", y='Gene count in GivsRu')+
+  theme(axis.title.x = element_text(size=8))
+plot_GivsRu_intens
 ```
 
 
@@ -866,6 +1125,7 @@ library(gtable)
 library(grid)
 library(gridExtra)
 
+tot_Core<-subset(dat,(comp %in% c('Core')))$tot[1]
 plot_Core<-ggplot(subset(dat_relax,(comp %in% c('Core'))))+
   theme_bw()+
   geom_bar(aes(y=count,x=categories),fill='grey20',stat='identity',color='black')+
@@ -874,7 +1134,7 @@ plot_Core<-ggplot(subset(dat_relax,(comp %in% c('Core'))))+
   scale_y_continuous(limits=c(0,150),
                   breaks=c(seq(0,250,25)),
                   position='left',
-                  sec.axis = sec_axis(~./834*100, name = 'Relative abundance (%)',breaks=c(seq(0,20,2))))+
+                  sec.axis = sec_axis(~./tot_Core*100, name = 'Relative abundance (%)',breaks=c(seq(0,25,5))))+
   coord_flip()+
   labs( x = "SEED categories", y='Gene count in core genome')+
   theme(axis.title.x = element_text(size=8),
@@ -889,7 +1149,8 @@ plot_SymvsFL_inten<-plot_SymvsFL_intens+theme(legend.position="none",
                                          axis.text.y = element_blank(),
                                          axis.ticks.y = element_blank(),
                                          axis.title.y= element_blank(),
-                                         plot.margin=unit(c(0,0.25,0,0), "cm"))
+                                         plot.margin=unit(c(0,0.25,0,0), "cm"),
+                                         panel.grid.minor.x = element_blank())
 
 plot_RuvsFL_rela<-plot_RuvsFL_relax+theme(plot.margin=unit(c(0,0,0,0.25), "cm"),
                                             legend.position="none",
@@ -899,7 +1160,8 @@ plot_RuvsFL_inten<-plot_RuvsFL_intens+theme(legend.position="none",
                                          axis.text.y = element_blank(),
                                          axis.ticks.y = element_blank(),
                                          axis.title.y= element_blank(),
-                                         plot.margin=unit(c(0,0.25,0,0), "cm"))
+                                         plot.margin=unit(c(0,0.25,0,0), "cm"),
+                                         panel.grid.minor.x = element_blank())
 
 plot_GivsFL_rela<-plot_GivsFL_relax+theme(plot.margin=unit(c(0,0,0,0.25), "cm"),
                                           legend.position="none",
@@ -909,13 +1171,51 @@ plot_GivsFL_inten<-plot_GivsFL_intens+theme(legend.position="none",
                                          axis.text.y = element_blank(),
                                          axis.ticks.y = element_blank(),
                                          axis.title.y= element_blank(),
-                                         plot.margin=unit(c(0,0.25,0,0), "cm"))
+                                         plot.margin=unit(c(0,0.25,0,0), "cm"),
+                                         panel.grid.minor.x = element_blank())
+
+plot_GivsRu_rela<-plot_GivsRu_relax+theme(plot.margin=unit(c(0,0,0,0.25), "cm"),
+                                          legend.position="none",
+                                          axis.text.y = element_blank(),
+                                          axis.title.y= element_blank())
+plot_GivsRu_inten<-plot_GivsRu_intens+theme(legend.position="none",
+                                         axis.text.y = element_blank(),
+                                         axis.ticks.y = element_blank(),
+                                         axis.title.y= element_blank(),
+                                         plot.margin=unit(c(0,0.25,0,0), "cm"),
+                                         panel.grid.minor.x = element_blank())
 
 
-plot_RELAX<-grid.arrange(plot_Core,plot_SymvsFL_rela, plot_SymvsFL_inten, plot_RuvsFL_rela, plot_RuvsFL_inten,plot_GivsFL_rela, plot_GivsFL_inten,nrow=1,widths=c(5,1,1,1,1,1,1))
+plot_RELAX<-grid.arrange(plot_Core,plot_SymvsFL_rela, plot_SymvsFL_inten, plot_RuvsFL_rela, plot_RuvsFL_inten,plot_GivsFL_rela, plot_GivsFL_inten,plot_GivsRu_rela,plot_GivsRu_inten,nrow=1,widths=c(6,1,1,1,1,1,1,1,1))
 plot_RELAX
 
 
-ggsave(file=paste0('./figures/plot_Relaxation',pval_thresh,'.svg'),plot=plot_RELAX,width=27.5,units='cm',dpi=600,device='svg')
+ggsave(file=paste0('./figures/plot_Relaxation_',pval_thresh,format(Sys.time(), "%F-%H%M"),'.svg'),plot=plot_RELAX,width=30.5,units='cm',dpi=600,device='svg')
 
+```
+## fetch data
+```{r get genes for specific categories}
+t1<-subset(df_rel,SEED_level_1 %in% c('Respiration') & branches %in% c('SymbvsFL','RuvsFL') & k>1 & pval<0.05) %>% .[!duplicated(.[,c('gene_id')]),]
+t1
+
+t2<-subset(df_rel,SEED_level_1 %in% c('Sulfur Metabolism') & branches %in% c('SymbvsFL','GivsFL') & k>1 & pval<0.05) %>% .[!duplicated(.[,c('gene_id')]),]
+t2
+
+t3<-subset(df_rel,SEED_level_1 %in% c('Protein Metabolism') & branches %in% c('SymbvsFL','GivsFL','RuvsFL') & k<1 & pval<0.05) %>% .[!duplicated(.[,c('gene_id')]),]
+t3
+
+t4<-subset(df_rel,SEED_level_1 %in% c('Amino Acids and Derivatives') & branches %in% c('SymbvsFL','GivsFL','RuvsFL') & k<1 & pval<0.05) %>% .[!duplicated(.[,c('gene_id')]),]
+t4
+
+t5<-subset(df_rel,SEED_level_1 %in% c('Carbohydrates') & branches %in% c('SymbvsFL','RuvsFL') & k<1 & pval<0.05) %>% .[!duplicated(.[,c('gene_id')]),]
+t5
+
+t5<-subset(df_rel,SEED_level_1 %in% c('Nucleosides and Nucleotides') & branches %in% c('SymbvsFL','GivsFL','RuvsFL') & k<1 & pval<0.05) %>% .[!duplicated(.[,c('gene_id')]),]
+t5
+
+t5<-subset(df_rel,SEED_level_1 %in% c('DNA Metabolism') & branches %in% c('SymbvsFL','GivsFL','RuvsFL') & k<1 & pval<0.05) %>% .[!duplicated(.[,c('gene_id')]),]
+t5
+
+t5<-subset(df_rel,SEED_level_1 %in% c('Cell Division and Cell Cycle') & branches %in% c('SymbvsFL','GivsFL','RuvsFL') & k<1 & pval<0.05) %>% .[!duplicated(.[,c('gene_id')]),]
+t5
 ```

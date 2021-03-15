@@ -78,8 +78,14 @@ ggplot(long, aes(color=Groups))+
 ggplot(long)+
   geom_point(aes(x=f84,y=ts,color='ts'))+
   geom_point(aes(x=f84,y=tv,color='tv'))+
-  facet_wrap(genome~., scales='free')
+  facet_wrap(genome~., scales='free')+
+  ylab('Ts and Tv')
 
+
+ggplot(long)+
+  geom_point(aes(x=f84,y=tv/ts,color=Groups))+
+  facet_wrap(genome~., scales='free')+
+  ylab('Ts/Tv')
 ```
 
 # Ds in mito vs symbionts
@@ -123,7 +129,7 @@ ds_plot=ggplot(data=subset(wide, Groups %in% c('V-V','R-V','R-R') &sameIsolate==
 
 ds_plot
 
-ggsave(file='plot_dsNuclMito.svg',plot=ds_plot,width=5,height=2.665,units='in',dpi=600,device='svg')
+ggsave(file=paste0('figures/plot_dsNuclMito_',format(Sys.time(), "%F-%H%M"),'.svg'),plot=ds_plot,width=5,height=2.665,units='in',dpi=600,device='svg')
 ```
 
 # Other plots

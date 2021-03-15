@@ -20,16 +20,19 @@ library(tidyr)
 library(grid)
 require(gtable)
 library('scales')
-# library(plyr)
-# library(reshape2)
+library(rsvg)
+library(magick)
+require('cowplot')
+theme_set(theme_cowplot())
 library(data.table)
 ```
 
 # Import data
 ```{r}
 recombining_genes=read.table('core_genes_with_recomb_AICc.txt')$V1
-pseudogenes = ('') # to add pseudogene list
-  
+pseudogenes = read.table('./pseudogenes.txt')$V1
+length(pseudogenes)  
+
 relax=read.table('./relax_results.txt',header=T,sep='\t')
 relax=as.data.table(relax)
 core_nopseudo=relax$gene
@@ -50,6 +53,7 @@ levels(relax2$comp)<-c('SymvsFL','RuvsFL','GivsFL','GivsRu')
 
 
 df_all=read.csv('codonbias_results.csv',sep='\t',row.names = 1,header=T,na.strings = '')
+df_all$ispseudo<-as.numeric(df$locus_tag %in% pseudogenes)
 df_all$Group<-ifelse(df_all$Genome %in% c('Bathy','SUP05'),'FL',
                  ifelse(df_all$Genome %in% c('V.okutanii','V.soyoae1','V.soyoae2','V.diagonalis','V.extenta','V.gigas1','V.gigas2','V.marissinica'),'Gigas','Ruthia'))
 colnames(df_all)
@@ -60,6 +64,9 @@ head(df)
 
 subset(df, !(coregene_id %in% recombining_genes ))$coregene_id %>% unique %>% length
 
+df_nopseudo=subset(df,ispseudo==0)
+
+# write.table(df_nopseudo,'codonbias_results_nopseudo.txt',quote=F,row.names=F,sep='\t')
 
 ```
 # Plots
@@ -68,7 +75,7 @@ subset(df, !(coregene_id %in% recombining_genes ))$coregene_id %>% unique %>% le
 only the K parameter values with a p-value <0.05 are present in the table
 ```{r}
 head(relax)
-
+write.table(relax,'relax_results_norecomb.txt',header=T,row.names = F,sep='\t')
 relax2$comp<-factor(relax2$comp, levels=rev(c("SymvsFL", "RuvsFL","GivsFL","GivsRu")))
 
 
@@ -88,41 +95,12 @@ Kdistrib<-ggplot(subset(relax2,comp %in% c('SymvsFL','GivsFL','RuvsFL','GivsRu')
 Kdistrib
 ```
 
-## Distribution of GC%
-```{r distribution GC content}
-
-# qplot(as.numeric(GC),data=df,geom='density',fill=Genome,alpha=0.05)+facet_grid(Genome~.)
-# qplot(as.numeric(GC1),data=df,geom='density',fill=Genome,alpha=0.05)+facet_grid(Genome~.)
-# qplot(as.numeric(GC2),data=df,geom='density',fill=Genome,alpha=0.05)+facet_grid(Genome~.)
-# qplot(as.numeric(GC3),data=df,geom='density',fill=Genome,alpha=0.05)+facet_grid(Genome~.)
-
-colors=list(Gi='#606E96',Ru='#68C47F',FL='#F6EFA1')
-levels(df$Group) <- c("Free-living", "Gigas", "Ruthia")
-group_names <- c(`FL` = "Free-living",
-                    `Gigas` = "Clade I",
-                    `Ruthia` = "Clade II")
-colors_fill=c(Bathy = "#ffa800", SUP05 = "#ff006d", R.magnifica = "#287C8EFF", 
-R.phaseoliformis = "#21908CFF", R.pacifica = "#20A486FF", R.rectimargo = "#35B779FF", 
-R.pliocardia = "#5DC863FF", R.southwardae = "#8FD744FF", V.okutanii = "#440154FF", 
-V.soyoae1 = "#331f70",V.soyoae2 = "#481F70FF", V.diagonalis = "#443A83FF", V.extenta = "#3B528BFF", 
-V.gigas2 = "#31688EFF",V.gigas1 = "#308d8d",V.marissinica = "#33701f", R.fausta = "#68C47F")
-
-df$Group<-factor(df$Group,levels = c('FL','Ruthia','Gigas'))
-df$Genome<-factor(df$Genome,levels = c("Bathy", "SUP05", "R.magnifica", "R.fausta", "R.pacifica", 
-"R.phaseoliformis", "R.pliocardia", "R.rectimargo", "R.southwardae", "V.diagonalis", "V.extenta", "V.gigas1", "V.gigas2", "V.marissinica", "V.soyoae1", "V.soyoae2","V.okutanii"))
-dput(unique(df$Genome))
-
-qplot(as.numeric(GC3),data=df,geom='density',fill=Genome,alpha=0.05)+facet_grid(Group~.)+scale_fill_manual(values=colors_fill)
-
-
-
-ggplot(data=subset(df))+geom_hex(aes(x=GC3,y=GC1,fill=..count..),bins=30)+facet_wrap(~Genome)+xlim(c(0,0.6))+ylim(c(0,0.6))
-
-```
-
 ## Distribution of CDCs
 
 ```{r}
+
+colors=list(Gi='#606E96',Ru='#68C47F',FL='#F6EFA1')
+
 colors_fill=c(Bathy = "#ffa800", SUP05 = "#ff006d", R.magnifica = "#287C8EFF", 
 R.phaseoliformis = "#21908CFF", R.pacifica = "#20A486FF", R.rectimargo = "#35B779FF", 
 R.pliocardia = "#5DC863FF", R.southwardae = "#8FD744FF", V.okutanii = "#440154FF", 
@@ -161,6 +139,7 @@ CDC_spectra
 ## Biplot: CDC in Symbiont as function of CSC in free-living
 
 ```{r}
+colors=list(Gi='#606E96',Ru='#68C47F',FL='#F6EFA1')
 
 bipl<-data.table::dcast(as.data.table(subset(df, coregene_id %in% core_nopseudo)), coregene_id ~ Group, value.var = 'CDC', fun=mean,subset=.(P.CDC. < 0.05 & coregene_id %in% core_nopseudo))
 
@@ -182,12 +161,78 @@ Bi_plot
 
 #### Arrange plots ###
 p3<-grid.arrange(CDC_spectra + theme(legend.position="none"), Bi_plot+ theme(legend.position="none"), nrow=1, widths = unit(c(10,9), "cm"), heights = unit(rep(10, 1), "cm"))
-p3
+
 
 p4<-grid.arrange(p3,Kdistrib,nrow=2,heights = unit(c(10,7), "cm"), widths = unit(c(15), "cm"))
-p4
-ggsave(file="plot_CDCk.svg", plot=p4,width = 20,height = 20,units = 'cm')
+```
+## Save plot
+```{r}
+filename=paste0("figures/plot_CDCk",format(Sys.time(), "%F-%H%M"))
+ggsave(file=paste0(filename,'.svg'), plot=p4,width = 20,height = 20,units = 'cm',dpi = 1200)
 
+p5<-ggdraw() +
+  draw_image(magick::image_read_pdf("./figures/plot_CDCk_extralayer.pdf",density=1200))+
+  draw_plot(p4)
+
+ggsave(file=paste0(filename,'.png'), plot=p5,width = 20,height = 20,units = 'cm',dpi = 600)
+
+
+# library(png)
+# library(grid)
+# install.packages('svglite')
+# img <- magick::image_read_pdf("./figures/plot_CDCk_extralayer.pdf",density=1200)
+# g <- rasterGrob(img, interpolate=TRUE)
+# 
+# pp<-qplot(geom="blank") +
+#   annotation_custom(g, xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)
+# pp
+# 
+# ggsave(file=paste0("figures/plot_CDCk.svg"), plot=p4,width = 20,height = 20,units = 'cm',dpi = 1200)
+# 
+# 
+# p6<-ggdraw() +
+#   draw_image( magick::image_read_pdf("./figures/plot_CDCk_extralayer.pdf",density=1200))+
+#   draw_plot(p5)
+# p6
+
+# ggsave(file=paste0("figures/plot_CDCk",format(Sys.time(), "%F-%H%M"),".svg"), plot=p6,width = 20,height = 20,units = 'cm',dpi = 1200)
+
+# image_write(p5, path = paste0("figures/plot_CDCk",format(Sys.time(), "%F-%H%M"),".svg"), format = "svg")
+
+
+# print(magick::image_read_svg("./figures/plot_CDCk_extralayer.svg",width = 1772,height = 1772))
+# print(magick::image.read("./figures/plot_CDCk_extralayer.svg"){ |opts| opts.size = '1772x1772' }.first)
+# print(magick::image.read("./figures/plot_CDCk_extralayer.svg",density=1200))
+# print(magick::image_read_pdf("./figures/plot_CDCk_extralayer.pdf"))
+
+
+```
+
+## Distribution of GC%
+```{r distribution GC content}
+
+colors=list(Gi='#606E96',Ru='#68C47F',FL='#F6EFA1')
+
+levels(df$Group) <- c("Free-living", "Gigas", "Ruthia")
+group_names <- c(`FL` = "Free-living",
+                    `Gigas` = "Clade I",
+                    `Ruthia` = "Clade II")
+colors_fill=c(Bathy = "#ffa800", SUP05 = "#ff006d", R.magnifica = "#287C8EFF", 
+R.phaseoliformis = "#21908CFF", R.pacifica = "#20A486FF", R.rectimargo = "#35B779FF", 
+R.pliocardia = "#5DC863FF", R.southwardae = "#8FD744FF", V.okutanii = "#440154FF", 
+V.soyoae1 = "#331f70",V.soyoae2 = "#481F70FF", V.diagonalis = "#443A83FF", V.extenta = "#3B528BFF", 
+V.gigas2 = "#31688EFF",V.gigas1 = "#308d8d",V.marissinica = "#33701f", R.fausta = "#68C47F")
+
+df$Group<-factor(df$Group,levels = c('FL','Ruthia','Gigas'))
+df$Genome<-factor(df$Genome,levels = c("Bathy", "SUP05", "R.magnifica", "R.fausta", "R.pacifica", 
+"R.phaseoliformis", "R.pliocardia", "R.rectimargo", "R.southwardae", "V.diagonalis", "V.extenta", "V.gigas1", "V.gigas2", "V.marissinica", "V.soyoae1", "V.soyoae2","V.okutanii"))
+dput(unique(df$Genome))
+
+qplot(as.numeric(GC3),data=df,geom='density',fill=Genome,alpha=0.05)+facet_grid(Group~.)+scale_fill_manual(values=colors_fill)
+
+
+
+ggplot(data=subset(df))+geom_hex(aes(x=GC3,y=GC1,fill=..count..),bins=30)+facet_wrap(~Genome)+xlim(c(0,0.6))+ylim(c(0,0.6))
 
 ```
 
