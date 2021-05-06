@@ -101,8 +101,33 @@ aggregate(len~topo_index, table,FUN='sum',subset = gene_id %in% subset(table,top
 subset(table,topo_index<11)$gene_id %>% unique(.) # 217/793 LCBs (385426/762629 bp) are represented by the first 10 topologies.
 
 # table$topo_index %>% unique
+
+aggregate(len~topo_index, table,FUN='sum',subset = gene_id %in% subset(table,topo_index<1)$gene_id %>% unique(.) )$len %>% sum # len in bp of genes represented by fist 10 topologies
+
+table
 ```
 
+```{r}
+library(ape)
+rename_labels <- function(tree, vec) {
+ tree$tip.label <- vec
+ return(tree)
+}
+topo_leaves=c('Bathy','R.fausta','R.magnifica','R.pacifica', 'R.phaseoliformis','R.pliocardia','R.rectimargo','R.southwardae','SUP05','V.diagonalis','V.extenta','V.gigas1','V.gigas2','V.marissinica','V.okutanii','V.soyoae1','V.soyoae2')
+names(topo_leaves)=as.character(c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17))
+
+tree.pop<-ape::read.tree(text = '(((((1,9),((((2,7),4),5),(3,(6,8)))),(((10,11),14),(12,13))),15),16,17);')
+tree.pop$tip.label<-topo_leaves[tree.pop$tip.label]
+plot(root(tree.pop, c('SUP05','Bathy'))) 
+  
+tree.0 <- ape::read.tree(text = subset(table,topo_index==0)$topology %>% unique())
+tree.0$tip.label<-topo_leaves[tree.0$tip.label]
+plot(root(tree.0, c('SUP05','Bathy')))
+
+tree.7 <- ape::read.tree(text = subset(table,topo_index==7)$topology %>% unique())
+tree.7$tip.label<-topo_leaves[tree.7$tip.label]
+plot(root(tree.7, c('SUP05','Bathy')))
+```
 
 ```{r}
 as.factor(table$topo_index) %>% unique %>% length
@@ -567,7 +592,7 @@ L75=most.common.trees[most.common.trees$plencumsum>0.75,][1,'n_len']
 qplot(x=n_len,y=plencumsum,data=most.common.trees)+
   geom_vline(xintercept = L50, color='red',size=1)+
   geom_vline(xintercept = L75, color='green',size=1)+
-  theme_bw() # 8 topologies are necessary to represent 75% of the core genome length, 3 topologies are necessary to represent 50% of the core genome length
+  theme_bw() # 4 topologies are necessary to represent 75% of the core genome length, 2 topologies are necessary to represent 50% of the core genome length
 
 most.common.trees %>% head(LCB_count,n = 20)
 qplot(x=plen,y=pgen,data=most.common.trees)+scale_y_log10()+scale_x_log10()

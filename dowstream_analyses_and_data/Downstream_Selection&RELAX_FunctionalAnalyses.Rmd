@@ -759,8 +759,19 @@ t3
 
 t3<-subset(df, Sym>0 ) %>% .[!duplicated(.[,c('gene_id','SEED_level_1','SEED_level_2')]),]
 t3
+
+t4<-subset(df,SEED_level_1 %in% c('Sulfur Metabolism') & All>0 ) %>% .[!duplicated(.[,c('gene_id')]),]
+t4
 ```
 
+
+Rmag_0156   
+474 Rmag_0607    
+579 Rmag_0807    
+628 Rmag_0858  
+631 Rmag_0862   
+637 Rmag_0867  
+641 Rmag_0870 
 # Relaxation: RELAX
 
 ```{r import data, echo=FALSE}
@@ -833,8 +844,8 @@ d$SEED_level_1 <- factor(d$SEED_level_1, levels = levels(addNA(d$SEED_level_1)),
 row.names(d)<-d$SEED_level_1
 d=d[setdiff(colnames(d), c("gene_id",'SEED_level_2',"SEED_level_3","SEED_long_name"))]
 
-#### 1) run hypergeometric test ####
-pval<-run_multihypergeometric_tests(d)
+#### 1) run hypergeometric test DEPRECATED Needs to be updated to include MonteCarlo test####
+# pval<-run_multihypergeometric_tests(d)
 
 #### 2) fisher test for overrepresentationof certain categories ####
 breakdown<-run_fisher_tests2(d)
@@ -992,8 +1003,8 @@ d$SEED_level_1 <- factor(d$SEED_level_1, levels = levels(addNA(d$SEED_level_1)),
 row.names(d)<-d$SEED_level_1
 d=d[setdiff(colnames(d), c("gene_id",'SEED_level_2',"SEED_level_3","SEED_long_name"))]
 
-#### 1) run hypergeometric test ####
-pval<-run_multihypergeometric_tests(d)
+#### 1) run hypergeometric test DEPRECATED Needs to be updated to include MonteCarlo test####
+# pval<-run_multihypergeometric_tests(d)
 
 #### 2) fisher test for overrepresentationof certain categories ####
 breakdown<-run_fisher_tests2(d)
