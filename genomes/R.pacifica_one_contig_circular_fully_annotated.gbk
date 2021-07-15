@@ -3,7 +3,7 @@ DEFINITION  Ruthia pac mt I 8 S14 241
 ACCESSION   .
 VERSION     .
 KEYWORDS    .
-SOURCE      Ruthia pac mt I 8 S14 241
+SOURCE      Candidatus Ruthia pacifica
   ORGANISM  Ruthia pac mt I 8 S14 241 Bacteria.
             .
 FEATURES             Location/Qualifiers
@@ -13,7 +13,7 @@ FEATURES             Location/Qualifiers
                      /genome_md5=""
                      /project="cryoungiii_6666666"
                      /genome_id="6666666.212553"
-                     /organism="Ruthia pac mt I 8 S14 241"
+                     /organism="Candidatus Ruthia pacifica"
      gene            21..1322
                      /locus_tag="Rpac_peg_230"
      CDS             21..1322

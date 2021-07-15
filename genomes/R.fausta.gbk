@@ -70,7 +70,7 @@ COMMENT     REFSEQ INFORMATION: The reference sequence is identical to
             COMPLETENESS: full length.
 FEATURES             Location/Qualifiers
      source          1..1188809
-                     /organism="Candidatus Ruthia endofausta"
+                     /organism="Candidatus Ruthia fausta"
                      /mol_type="genomic DNA"
                      /isolate="JDF_Ridge"
                      /isolation_source="gill tissue"

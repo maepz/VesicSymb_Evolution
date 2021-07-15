@@ -9,7 +9,7 @@ SOURCE
             .
 FEATURES             Location/Qualifiers
      source          2..15758
-                     /organism="Archivesica gigas"
+                     /organism="Archivesica gigas 2"
                      /organelle="mitochondrion"
                      /mol_type="genomic DNA"
      gene            50..529

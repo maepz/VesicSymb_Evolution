@@ -43,7 +43,7 @@ COMMENT     GeSeq Version 2.03
             Finished      14 Jan 2021 04:02:15 GMT
 FEATURES             Location/Qualifiers
      source          2..17079
-                     /organism="MT528632.1 mitochondrion"
+                     /organism="Calyptogena fausta"
                      /organelle="mitochondrion"
                      /mol_type="genomic DNA"
      gene            203..682

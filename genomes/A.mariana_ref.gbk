@@ -36,7 +36,7 @@ COMMENT     GeSeq Version 1.80
             Finished      14 Apr 2020 20:00:55 GMT
 FEATURES             Location/Qualifiers
      source          1..15927
-                     /organism="ref_Amaria"
+                     /organism="Abyssogena mariana"
                      /organelle="mitochondrion"
                      /mol_type="genomic DNA"
      gene            20..499

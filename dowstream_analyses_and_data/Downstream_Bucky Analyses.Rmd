@@ -160,6 +160,9 @@ most.common.trees=most.common.trees[order(most.common.trees$n_gen),]
 N50=most.common.trees[most.common.trees$cumsum>0.5,][1,'n_gen']
 N75=most.common.trees[most.common.trees$cumsum>0.75,][1,'n_gen']
 
+most.common.trees$clade='All species'
+df_all=most.common.trees
+
 qplot(x=n_gen,y=cumsum,data=most.common.trees)+
   geom_vline(xintercept = N50, color='red',size=1)+
   geom_vline(xintercept = N75, color='green',size=1)+
@@ -446,6 +449,7 @@ most.common.trees$plencumsum=cumsum(as.numeric(most.common.trees$plen))
 most.common.trees=most.common.trees[order(most.common.trees$n_gen),]
 N50=most.common.trees[most.common.trees$cumsum>0.5,][1,'n_gen']
 N75=most.common.trees[most.common.trees$cumsum>0.75,][1,'n_gen']
+most.common.trees$topo_count<-seq(1,nrow(most.common.trees))
 
 qplot(x=n_gen,y=cumsum,data=most.common.trees)+
   geom_vline(xintercept = N50, color='red',size=1)+
@@ -460,9 +464,14 @@ most.common.trees=most.common.trees[order(most.common.trees$n_len),]
 L50=most.common.trees[most.common.trees$plencumsum>0.5,][1,'n_len']
 L75=most.common.trees[most.common.trees$plencumsum>0.75,][1,'n_len']
 
-qplot(x=n_len,y=plencumsum,data=most.common.trees)+
-  geom_vline(xintercept = L50, color='red',size=1)+
-  geom_vline(xintercept = L75, color='green',size=1)+
+most.common.trees$clade='Clade II'
+df_clade2=most.common.trees
+
+qplot(x=n_len,y=plencumsum,data=most.common.trees,color='Clade II')+
+  #geom_vline(xintercept = L50, color='red',size=1)+
+  #geom_vline(xintercept = L75, color='green',size=1)+
+  xlab("Topologies")+
+  ylab("Cummulative fraction of syntenic blocs")+
   theme_bw() # 8 topologies are necessary to represent 75% of the core genome length, 3 topologies are necessary to represent 50% of the core genome length
 
 most.common.trees %>% head(LCB_count,n = 20)
@@ -589,6 +598,9 @@ most.common.trees=most.common.trees[order(most.common.trees$n_len),]
 L50=most.common.trees[most.common.trees$plencumsum>0.5,][1,'n_len']
 L75=most.common.trees[most.common.trees$plencumsum>0.75,][1,'n_len']
 
+most.common.trees$clade='Clade I'
+df_clade1=most.common.trees
+
 qplot(x=n_len,y=plencumsum,data=most.common.trees)+
   geom_vline(xintercept = L50, color='red',size=1)+
   geom_vline(xintercept = L75, color='green',size=1)+
@@ -605,4 +617,22 @@ ggplot(subset(table, topo_index <5))+
 
 ```
 
+# plot
+```{r}
+sum(df_clade2$len)
+sum(df_clade1$len)
+sum(df_all$len)
 
+df=rbind(df_clade2[,colnames(df_clade1)],df_clade1,df_all[,colnames(df_clade1)])
+df
+
+df=df[order(df$n_len),]
+
+qplot(y=n_len,x=plencumsum,data=subset(df,clade != 'All species'),color=clade)+
+  ylab("Topologies")+
+  xlab("Cummulative fraction of core genome (762 629 bp)")+
+  scale_color_manual(values=c('#606E96','#68C47F'))+
+  theme_bw()+
+  theme(legend.title=element_blank())
+  
+```

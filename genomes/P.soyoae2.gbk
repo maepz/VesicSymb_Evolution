@@ -9,7 +9,7 @@ SOURCE      .
             .
 FEATURES             Location/Qualifiers
      source          2..19268
-                     /organism="Gill metagenome"
+                     /organism="Phreagena soyoae 2"
                      /organelle="mitochondrion"
                      /mol_type="genomic DNA"
      gene            1954..2433

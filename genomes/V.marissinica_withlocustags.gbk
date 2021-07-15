@@ -15,7 +15,7 @@ FEATURES             Location/Qualifiers
                      /genome_md5=""
                      /project="maepz_2732590"
                      /genome_id="2732590.4"
-                     /organism="Candidatus Vesicomyosocius sp. SY067_SCS001"
+                     /organism="Candidatus Vesicomyosocius marissinica"
      gene            1..1293
                      /locus_tag="Vmar_0001"
      CDS             1..1293

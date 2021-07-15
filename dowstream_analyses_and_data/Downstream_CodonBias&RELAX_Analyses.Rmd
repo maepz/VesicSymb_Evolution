@@ -95,6 +95,16 @@ Kdistrib<-ggplot(subset(relax2,comp %in% c('SymvsFL','GivsFL','RuvsFL','GivsRu')
 Kdistrib
 ```
 
+```{r Statistical test}
+# Are k values for Givs FL smaller than for Ruvs FL? Yes
+
+df1=subset(relax2,comp %in% c('GivsFL','RuvsFL') & pval<0.05)
+df1=as.data.frame(dcast(df1, gene~comp,value.var='k'))
+wilcox.test(df1$GivsFL,df1$RuvsFL,alternative = 'less') # overall
+wilcox.test(df1$GivsFL,df1$RuvsFL,alternative = 'less',paired=T) # respective of each gene
+
+```
+
 ## Distribution of CDCs
 
 ```{r}
@@ -208,6 +218,38 @@ ggsave(file=paste0(filename,'.png'), plot=p5,width = 20,height = 20,units = 'cm'
 
 ```
 
+```{r Statistical test}
+bipl %>% head
+
+# are the CDC values the same amongst all three groups?
+kruskal.test(bipl)
+
+# Are the cdc values smaller in Ruthia than FL?
+wilcox.test(bipl$Ruthia,bipl$FL,alternative = 'less',paired=T) # respective of each gene
+
+# Are the cdc values smaller in RutGigashia than FL?
+wilcox.test(bipl$Gigas,bipl$FL,alternative = 'less',paired=T) # respective of each gene
+
+# Are the cdc values smaller in Gigas than Ruthia?
+wilcox.test(bipl$Gigas,bipl$Ruthia,alternative = 'less',paired=T) # respective of each gene
+
+##### cdc spectra per genome ########
+cdc_spectra=subset(df,P.CDC.<0.05 & ispseudo==0)
+
+kruskal.test(cdc_spectra$CDC~cdc_spectra$Group) # differences amongst the treegroups
+
+levels(df$Group)
+
+cdc_flvsru=subset(df,P.CDC.<0.05 & ispseudo==0 & Group != 'Gigas')
+wilcox.test(cdc_flvsru$CDC~cdc_flvsru$Group, alternative='greater') # differences amongst the treegroups
+
+cdc_flvsgi=subset(df,P.CDC.<0.05 & ispseudo==0 & Group != 'Ruthia')
+wilcox.test(cdc_flvsgi$CDC~cdc_flvsgi$Group, alternative='greater') # differences amongst the treegroups
+
+cdc_givsru=subset(df,P.CDC.<0.05 & ispseudo==0 & Group != 'FL')
+wilcox.test(cdc_givsru$CDC~cdc_givsru$Group, alternative='greater') # differences amongst the treegroups
+
+```
 ## Distribution of GC%
 ```{r distribution GC content}
 

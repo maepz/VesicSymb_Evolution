@@ -38,7 +38,7 @@ COMMENT     GeSeq Version 1.80
             Finished      14 Apr 2020 20:00:16 GMT
 FEATURES             Location/Qualifiers
      source          1..19738
-                     /organism="ref_Cmagni"
+                     /organism="Calyptogena magnifica"
                      /organelle="mitochondrion"
                      /mol_type="genomic DNA"
      gene            1..1806

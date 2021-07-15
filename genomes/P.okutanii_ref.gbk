@@ -36,7 +36,7 @@ COMMENT     GeSeq Version 1.80
             Finished      14 Apr 2020 20:00:45 GMT
 FEATURES             Location/Qualifiers
      source          1..16336
-                     /organism="ref_Pokuta"
+                     /organism="Phreagena okutanii"
                      /organelle="mitochondrion"
                      /mol_type="genomic DNA"
      gene            651..1130

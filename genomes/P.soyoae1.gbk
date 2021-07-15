@@ -8,7 +8,7 @@ SOURCE      .
             .
 FEATURES             Location/Qualifiers
      source          2..19298
-                     /organism="Phreagena soyoae"
+                     /organism="Phreagena soyoae 1"
                      /organelle="mitochondrion"
                      /mol_type="genomic DNA"
      gene            1944..2423
