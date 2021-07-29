@@ -1,5 +1,5 @@
-      seqfile = ../cat_mitoch_genes_with_bathy.pml
-     treefile = ../cat_mito_genes_nonrecombonly-NJ_tree.Labeled_H1.txt
+      seqfile = ../cat_symb_genes_nonrecombonly.pml
+     treefile =  ../cat_symb_genes_nonrecombonly-NJ_tree.Labeled_H1.txt
       outfile = BM1_mlc
 
         noisy = 9   * 0,1,2,3,9: how much rubbish on the screen
@@ -19,7 +19,7 @@
                     * 5:gamma;6:2gamma;7:beta;8:beta&w;9:beta&gamma;
                     * 10:beta&gamma+1;11:beta&normal>1;12:0&2normal>1;
                     * 13:3normal>0
-        icode = 4
+        icode = 0
         Mgene = 0
 
     fix_kappa = 0   * 1: kappa fixed, 0: kappa to be estimated
