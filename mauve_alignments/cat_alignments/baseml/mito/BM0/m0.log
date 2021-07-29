@@ -1,0 +1,26 @@
+BASEML in paml version 4.9, March 2015
+
+ns = 18  	ls = 12858
+Reading sequences, sequential format..
+Reading seq # 1: Adiagonalis     Reading seq # 2: Agigas1     Reading seq # 3: Agigas2     Reading seq # 4: Amariana_ref     Reading seq # 5: Aphaseoliformis_ref     Reading seq # 6: Aphaseoliformis     Reading seq # 7: Asouthwardae     Reading seq # 8: Bthermophilus     Reading seq # 9: Cmagnifica     Reading seq #10: Cpacifica     Reading seq #11: Crectimargo     Reading seq #12: MK948426     Reading seq #13: MT5286321     Reading seq #14: Pextenta     Reading seq #15: Pokutanii_ref     Reading seq #16: Psoyoae1     Reading seq #17: Psoyoae2     Reading seq #18: Xpliocardia     
+Sequences read..
+Counting site patterns..  0:00
+        2129 patterns at     9526 /     9526 sites (100.0%),  0:00
+Counting frequencies..
+
+     1836 bytes for distance 
+  1158176 bytes for conP
+        0 bytes for fhK
+  8000000 bytes for space
+
+TREE #  1: (((((((4, (5, 6)), 7), (10, (11, 13))), 18), 9), ((12, (14, (15, (16, 17)))), (1, (2, 3)))), 8); MP score: 10956.00
+
+ntime & nrate & np:    17     5    22
+
+lnL0 = -62078.933970
+Out...
+lnL  = -57073.422793
+
+end of tree file.
+
+Time used:  0:02

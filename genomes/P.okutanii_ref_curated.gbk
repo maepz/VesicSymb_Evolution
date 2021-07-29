@@ -1,0 +1,687 @@
+LOCUS       AP014555.1             16336 bp    DNA              UNK 14-APR-2020
+DEFINITION  P.okutanii_ref mitochondrion.
+ACCESSION   ref_Pokuta
+VERSION     ref_Pokuta
+KEYWORDS    .
+SOURCE      mitochondrion ref_Pokuta
+  ORGANISM  ref_Pokuta ref_Pokuta.
+            .
+REFERENCE   1  (bases 1 to 16336)
+  AUTHORS   Tillich,M., Lehwark,P., Pellizzer,T., Ulbricht-Jones, E.S., Fischer,
+            A., Bock, R. and Greiner,S.
+  TITLE     GeSeq - versatile and accurate annotation of organelle genomes
+  JOURNAL   Nucleic Acids Res. 45 (W1), W6-W11 (2017)
+   PUBMED   28486635
+COMMENT     GeSeq Version 1.80
+            Job           Geneious_mitoch
+            Subjob        ref_Pokutanii
+            Creator       anonymous
+            Program       blat
+            blatxcutoff=60                 blatncutoff=85
+            blatxmaxintron=750000          blatnmaxintron=0
+            annotate_ir=false              shortmatches=false
+            mpimpchlororefset=false
+            ncbirefs=NC_028724.1
+            Program       HMMER disabled
+            Program       ARAGORN v1.2.38 disabled
+            Program       ARWEN v1.2.3
+            searchmode=metazoan            gcode=gcinvert
+            circular=true
+            Program       MFannot v1.34 disabled
+            Program       tRNAscan-SE v1.3.1 disabled
+            Program       tRNAscan-SE v2.0.3 disabled
+            Program       RNA Editing disabled
+            Submitted     14 Apr 2020 19:59:10 GMT
+            Started       14 Apr 2020 20:00:43 GMT
+            Finished      14 Apr 2020 20:00:45 GMT
+FEATURES             Location/Qualifiers
+     source          1..16336
+                     /organism="Phreagena okutanii"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+     gene            651..1130
+                     /note="blatX_hit ND6_NC_028724.1, position 1 - 480, psl
+                     score 84.2, coverage 100.00%, match 84.17%"
+                     /gene="ND6"
+                     /locus_tag="Poku_01"
+     CDS             651..1130
+                     /gene="ND6"
+                     /translation="MAEVFVLVFLLLCSNFSIWVEHPLILGSGLLGVSIVSLPLMVSVG
+                     SLFGFSFFIVVVGGVLIVFAYSVSLISVTKSDLLLKYFTRGMGVIGKFWIVFLYLSLVF
+                     LLSSWVVGSGVFCWSDVLYFSKGWGLGVVLLGFLLLAIMVMAISLASKFKGALIK"
+                     /locus_tag="Poku_01"
+     gene            1149..1418
+                     /note="blatX_hit ND4L_NC_028724.1, position 1 - 270, psl
+                     score 88.2, coverage 100.00%, match 88.15%"
+                     /gene="ND4L"
+                     /locus_tag="Poku_02"
+     CDS             1149..1418
+                     /gene="ND4L"
+                     /translation="MFVFFSLIHFLTHFNFFMNLLLVFELMGFCVFLFCMNLSFISFSG
+                     AGLYFSIVILTFSVCETVLGMALLVSAARYTGRMNVKSFSFLGF"
+                     /locus_tag="Poku_02"
+     gene            1419..1482
+                     /note="blatN_hit trnG_NC_028724.1, position 1 - 64, psl
+                     score 92.2, coverage 100.00%, match 92.19%"
+                     /gene="trnG"
+                     /locus_tag="Poku_04"
+     tRNA            1419..1482
+                     /gene="trnG"
+                     /locus_tag="Poku_04"
+     gene            1506..1572
+                     /note="annotated by ARWEN v1.2.3, score: 100.6"
+                     /gene="trnM-UAU"
+                     /locus_tag="Poku_05"
+     tRNA            1506..1572
+                     /gene="trnM-UAU"
+                     /locus_tag="Poku_05"
+     gene            1554..2585
+                     /note="blatX_hit ND2_NC_028724.1, position 1 - 1022, psl
+                     score 83.2, coverage 99.03%, match 82.36%"
+                     /gene="ND2"
+                     /locus_tag="Poku_06"
+     CDS             1554..2585
+                     /gene="ND2"
+                     /locus_tag="Poku_06"
+                     /translation="MLIGWFVPMATIIGGYIMVGGIFVCVYSVGLLGMWVGMELSFFGA
+                     ISVLGGSSVEEVEGVQKYFIVQVFSSIFLLIGFLLVVNFYSGGWLVEFILVVGLMVKLG
+                     LFPFYFWIPSVMGVVSWVGCFVVSVAQKFNPIWILVNLMLEGYLQQVIEFSACLTGLVG
+                     CIGGIGVLQFRVLLAFSSMVHLGYMVFMSLIGWDVFLSYMGLYFCLSFSLMMSLWVCGV
+                     YSFLDLMKSNSGGEMNLFMISLYMFSFAGVPPLSGCFMKAVFLMSCWELFPIGCVILFL
+                     SSGVSLFYYSSFFMYLNLYWGSVLKWEFVSGKFGDLKVFLFFVSVLLNVAMGFSLFLLI
+                     VLV"
+     gene            2595..2656
+                     /note="annotated by ARWEN v1.2.3, score: 103.2; blatN_hit
+                     trnD_NC_028724.1, position 1 - 62, psl score 90.4, coverage
+                     100.00%, match 90.32%; merged"
+                     /gene="trnD-GUC"
+                     /locus_tag="Poku_07"
+     tRNA            2595..2656
+                     /gene="trnD-GUC"
+                     /locus_tag="Poku_07"
+     gene            2657..2718
+                     /note="annotated by ARWEN v1.2.3, score: 94.9"
+                     /gene="trnT-UGU"
+                     /locus_tag="Poku_08"
+     tRNA            2657..2718
+                     /gene="trnT-UGU"
+                     /locus_tag="Poku_08"
+     gene            2857..3601
+                     /note="blatN_hit rrn12_NC_028724.1, position 8 - 85, psl
+                     score 93.6, coverage 8.34%, match 7.81%"
+                     /gene="rrn12"
+                     /locus_tag="Poku_10"
+     rRNA            2857..3601
+                     /gene="rrn12"
+                     /locus_tag="Poku_10"
+     gene            3597..3663
+                     /note="annotated by ARWEN v1.2.3, score: 102.2; blatN_hit
+                     trnM_NC_028724.1, position 1 - 67, psl score 94.1, coverage
+                     100.00%, match 94.03%; merged"
+                     /gene="trnM-CAU"
+                     /locus_tag="Poku_11"
+     tRNA            3597..3663
+                     /gene="trnM-CAU"
+                     /locus_tag="Poku_11"
+     gene            3666..3725
+                     /note="annotated by ARWEN v1.2.3, score: 106.9"
+                     /gene="trnC-GCA"
+                     /locus_tag="Poku_12"
+     tRNA            3666..3725
+                     /gene="trnC-GCA"
+                     /locus_tag="Poku_12"
+     gene            3734..3797
+                     /note="annotated by ARWEN v1.2.3, score: 100.4"
+                     /gene="trnY-GUA"
+                     /locus_tag="Poku_13"
+     tRNA            3734..3797
+                     /gene="trnY-GUA"
+                     /locus_tag="Poku_13"
+     gene            3873..4724
+                     /note="blatX_hit COX3_NC_028724.1, position 1 - 951, psl
+                     score 88.6, coverage 99.89%, match 87.91%"
+                     /gene="COX3"
+                     /locus_tag="Poku_15"
+     CDS             3873..4724
+                     /gene="COX3"
+                     /locus_tag="Poku_15"
+                     /translation="MARTGYSKVQMSPWPIVISASVFGVAIGLIWYLTDEVSFSMYSYL
+                     GVVSFFLGMALTGWWSDIIEESTFLGNHTSHVVLNLRWGFYLFILSEAWFFFSLFWAFF
+                     TASVGEISMQGVGAQWPPVGMEGMYPWGVPFLNTVVLVSSGLWATTAHKAVKVHSSIGL
+                     DNPESVALSVKWWKLGLLCLGITIVLGVYFTYLQIHEYYSSSFSMSDGAYGSVFFVLTG
+                     FHGLHVVIGSVYLMVCWIRLLKKHFTYKHHHFGLDSCMWYWHFVDAVWIVVFLSVYVWG
+                     NQ"
+     gene            4724..4787
+                     /note="annotated by ARWEN v1.2.3, score: 103.5"
+                     /gene="trnF-GAA"
+                     /locus_tag="Poku_17"
+     tRNA            4724..4787
+                     /gene="trnF-GAA"
+                     /locus_tag="Poku_17"
+     gene            4802..4869
+                     /note="annotated by ARWEN v1.2.3, score: 104.9"
+                     /gene="trnA-UGC"
+                     /locus_tag="Poku_18"
+     tRNA            4802..4869
+                     /gene="trnA-UGC"
+                     /locus_tag="Poku_18"
+     gene            4977..6782
+                     /note="blatX_hit COX1_NC_028724.1, position 1 - 1806, psl
+                     score 87.7, coverage 100.00%, match 87.65%"
+                     /gene="COX1"
+                     /locus_tag="Poku_20"
+     CDS             4977..6782
+                     /gene="COX1"
+                     /locus_tag="Poku_20"
+                     /translation="MFVVERVAKSLMSVYKFVFFYTFSSLSTYVKSLFFVLVLGVREVL
+                     LDLKGMIWSFSSVSSVPFYKRSVIRRWLFSSNHKDIGTLYFFFSIWAGLMGTAFSIIIR
+                     FELAMPGAGVLGDSHLYQVVVTAHGLLMIFFLVMPMMIGGFGNWLVPLMLQIPDMAFPR
+                     MNNLSFWLMPSSVLMLLGSAYVESGAGTGWTIYPPLSSIMGHAGPSVDFVILSLHLGGV
+                     SSILASINFVVTSLCMRVEALSLLRVTMFVWCVAVTGFLLIIAMPVLAGSLTMLLTDRN
+                     FNTSFFDPAGLGDPILFVHLFWFFGHPEVYILILPGFGIISHVVKVGSSKLELFGKVPM
+                     IYAVLSIGFLGFIVWGHHMFTVGMNVDSRAYFSTVTLIIAIPTGVKVFSWLATMSGGYV
+                     RWWPMMYWAMGFLFLFTVGGITGIVLASASLDVMMHDSYYVIAHFHYVLSMGAVFSLFA
+                     GFHFWYPLVTGLGLHPLWSRGQFWTMFIGVNVTFFPQHLMGLLGMPRRYSDYSDSLHGL
+                     NLFSSWGSTVSLVSLFTFLFIIWESMLSQRCLVFPLVYGTEAEWSFRGYPLRFHNRSQN
+                     SFGFNAKDIKKKLLWWMKMDRHTAV"
+     gene            6803..6866
+                     /note="annotated by ARWEN v1.2.3, score: 108.8; blatN_hit
+                     trnP_NC_028724.1, position 1 - 64, psl score 90.7, coverage
+                     100.00%, match 90.62%; merged"
+                     /gene="trnP-UGG"
+                     /locus_tag="Poku_21"
+     tRNA            6803..6866
+                     /gene="trnP-UGG"
+                     /locus_tag="Poku_21"
+     gene            6867..7883
+                     /note="blatX_hit COX2_NC_028724.1, position 1 - 1092, psl
+                     score 86.5, coverage 93.13%, match 68.77%"
+                     /gene="COX2"
+                     /locus_tag="Poku_22"
+     CDS             6867..7883
+                     /gene="COX2"
+                     /translation="MGSWNKLWFFDMNTVVGQELILYNDLVMVVAVAVLVVVGWFMLLF
+                     LNSRTFFGGKMNKYVYHNELLEIMWTMVPAFMLCFLGYVSLMNLYIMEVGDHVENGMKV
+                     TAHQWYWEYSYIVDFSSKEKEMDELWLSNWFEQLDFYFEIKPELVEVAKEDGVFVGGNW
+                     FKGAKVENMDCLSEVLKGEMAGGEEMKLLESISSWVPHVFLNCKWNYSYEVYEVFNSSV
+                     LDQGNFRGYTVTDACYLMSSVKNEMLISTMDVMHSWGVGSLGVKCDAVPGRVNSLGISP
+                     LRSGVFYGNCYELCGEGHSMMPISVAVMTPEDVSLVLKQGVLGTSDCVSTLESVVMK"
+                     /locus_tag="Poku_22"
+     gene            7890..7954
+                     /note="annotated by ARWEN v1.2.3, score: 106.0"
+                     /gene="trnR-UCG"
+                     /locus_tag="Poku_25"
+     tRNA            7890..7954
+                     /gene="trnR-UCG"
+                     /locus_tag="Poku_25"
+     gene            7959..9092
+                     /note="blatX_hit CYTB_NC_028724.1, position 1 - 1133, psl
+                     score 86.4, coverage 99.91%, match 86.24%"
+                     /gene="CYTB"
+                     /locus_tag="Poku_26"
+     CDS             7959..9092
+                     /gene="CYTB"
+                     /locus_tag="Poku_26"
+                     /translation="MGNHDGKGILYSMKSALYDLPVPLNLSNFWNFGSLLGVCLTSQLI
+                     TGLLMAAHYTPDTELAFSSVAHIMRDVNGGWFIRSMHATGASFFFVCIYIHIGRGIYYQ
+                     SYYMSNTWWSGCTILMLLMAISFTGYVLPWGQMSFWAATVITSMFSAIPYVGSFLVEWL
+                     WGGFCVGDGTLKRFYVFHFVGPFIMVVLVAFHIMNLHETGSSNSLGVSSDADITCFHSL
+                     YTFKDLVWIVIMLYCLVMVCLWSPDLFINPYNYIPASSLKTPQHIEPEWYFLFAYCILR
+                     SVPNKMGGVLALVGSVFVLYLMPLFPRKNALKGFAHNFIARMFFWDFVAGFVMLSVLGG
+                     CSIDMPLSTLGPLATVSYFGFFVIVPFLFIDWGFYKK"
+     gene            9179..9408
+                     /note="blatN_hit rrn16_NC_028724.1, position 72 - 301, psl
+                     score 93.5, coverage 18.87%, match 17.64%"
+                     /gene="rrn16"
+                     /locus_tag="Poku_27"
+     rRNA            9179..9408
+                     /gene="rrn16"
+                     /locus_tag="Poku_27"
+     gene            9086..10347
+                     /note="blatN_hit rrn16-fragment_NC_028724.1, position 371 -
+                     509, psl score 89.3, coverage 11.40%, match 10.17%,
+                     fragment match 89.21%"
+                     /gene="rrn16-fragment"
+                     /locus_tag="Poku_28"
+     rRNA            9086..10347
+                     /gene="rrn16-fragment"
+                     /locus_tag="Poku_28"
+     gene            10329..10445
+                     /note="blatX_hit ATP8_NC_028724.1, position 2 - 111, psl
+                     score 91.0, coverage 96.49%, match 87.72%"
+                     /gene="ATP8"
+                     /locus_tag="Poku_29"
+     CDS             10329..10445
+                     /gene="ATP8"
+                     /locus_tag="Poku_29"
+                     /translation="MPQFSPLFVDFIFLFYWAVFISVFCMLYWVSKREYSFK"
+     gene            10458..11804
+                     /note="blatX_hit ND4_NC_028724.1, position 1 - 1347, psl
+                     score 83.3, coverage 100.00%, match 83.22%"
+                     /gene="ND4"
+                     /locus_tag="Poku_30"
+     CDS             10458..11804
+                     /gene="ND4"
+                     /translation="MGTVISCSAAYCIPNSGILGSVAWGFSSVFIVLDLVGLSWFYCMV
+                     SGWMGFDGVSLLMAMLVILVPMMSLVSSVGDYKFSDMMSNGKDMSEVIYLISLVCIIFF
+                     LMSNWMDFYFFFEFSLLPTFWLILKWGYQPERLQAGVLMLMYTVCGSLPLLVVILSIWN
+                     ESFTDSFLLMKLMSGNWGYFQSWVCILALLGFLIKLPVYLVHGWLPKAHVEAPLSGSMI
+                     LAGILLKLGGYGLFRFVWVFEMGMSGVLMFIVMMSLWGGFMSGLYCLTQSDLKALIAYS
+                     SISHMALGLGGILSFYECGKMAGMCLFFAHGLCSPALFSLAASVYDWSHSRSVLLSKGI
+                     LRVFPLFSVFWFLMCIVNMGIPPSLNFFSEIFCVGSLVYLSVFFVVPLAFMCLFTGVYC
+                     MFLYSVVNHGACSEMVKPMFNLSERYLYSLVYSLSILMGGFLFLSCFMM"
+                     /locus_tag="Poku_30"
+     gene            11825..11886
+                     /note="blatN_hit trnH_NC_028724.1, position 1 - 62, psl
+                     score 95.2, coverage 100.00%, match 95.16%"
+                     /gene="trnH"
+                     /locus_tag="Poku_32"
+     tRNA            11825..11886
+                     /gene="trnH"
+                     /locus_tag="Poku_32"
+     gene            11886..11951
+                     /note="annotated by ARWEN v1.2.3, score: 102.1"
+                     /gene="trnE-UUC"
+                     /locus_tag="Poku_34"
+     tRNA            11886..11951
+                     /gene="trnE-UUC"
+                     /locus_tag="Poku_34"
+     gene            11948..12012
+                     /note="annotated by ARWEN v1.2.3, score: 103.4"
+                     /gene="trnS-UGA"
+                     /locus_tag="Poku_36"
+     tRNA            11948..12012
+                     /gene="trnS-UGA"
+                     /locus_tag="Poku_36"
+     gene            12012..12725
+                     /note="blatX_hit ATP6_NC_028724.1, position 1 - 714, psl
+                     score 88.3, coverage 100.00%, match 88.24%"
+                     /gene="ATP6"
+                     /locus_tag="Poku_37"
+     CDS             12012..12725
+                     /gene="ATP6"
+                     /translation="MTSDIFTFMDCFMGGFSVLELGMWTASVAWPIYSVLMSTFWYGNS
+                     WVETMLFEGAMGFSSSFPIGAKKFGGLVHLNFSLLYFLLAVNLAGVLAYSYPVNCHYAL
+                     TLGFSFPFWFATVSLNFNKNWWMFFISHVEGDMGIAVVAMLVASQWFSLLVRPFTLSMR
+                     MSTNLFMGKLLVNLTFYMAEEFIFPFMDFWGLSSLIMFFMGTALYVIEGCLASLQSMIF
+                     VGLLSFYCEEAQFKL"
+                     /locus_tag="Poku_37"
+     gene            12823..13143
+                     /note="blatX_hit ND3_NC_028724.1, position 4 - 297, psl
+                     score 86.4, coverage 98.99%, match 85.52%"
+                     /gene="ND3"
+                     /locus_tag="Poku_38"
+     CDS             12823..13143
+                     /gene="ND3"
+                     /locus_tag="Poku_38"
+                     /translation="MGLVILGVVVSQNWRFEWAKLTSFECGFDPMSSSRSPFSMQFFLL
+                     ALLFLIFDMEIILLFPIVMSLKMVFTLMPMVGKGLAFLFLSILLGGLIHEFNEGTLDWV
+                     KG"
+     gene            13154..13220
+                     /note="annotated by ARWEN v1.2.3, score: 104.7; blatN_hit
+                     trnQ_NC_028724.1, position 1 - 67, psl score 100.0,
+                     coverage 100.00%, match 100.00%; merged"
+                     /gene="trnQ-UUG"
+                     /locus_tag="Poku_39"
+     tRNA            13154..13220
+                     /gene="trnQ-UUG"
+                     /locus_tag="Poku_39"
+     gene            13225..13291
+                     /note="annotated by ARWEN v1.2.3, score: 105.6; blatN_hit
+                     trnI_NC_028724.1, position 1 - 67, psl score 98.6, coverage
+                     100.00%, match 98.51%; merged"
+                     /gene="trnI-GAU"
+                     /locus_tag="Poku_40"
+     tRNA            13225..13291
+                     /gene="trnI-GAU"
+                     /locus_tag="Poku_40"
+     gene            13291..13359
+                     /note="annotated by ARWEN v1.2.3, score: 106.9"
+                     /gene="trnK-UUU"
+                     /locus_tag="Poku_41"
+     tRNA            13291..13359
+                     /gene="trnK-UUU"
+                     /locus_tag="Poku_41"
+     gene            13360..13422
+                     /note="annotated by ARWEN v1.2.3, score: 107.6"
+                     /gene="trnL-UAA"
+                     /locus_tag="Poku_44"
+     tRNA            13360..13422
+                     /gene="trnL-UAA"
+                     /locus_tag="Poku_44"
+     gene            13423..14334
+                     /note="blatX_hit ND1_NC_028724.1, position 1 - 911, psl
+                     score 85.3, coverage 99.89%, match 85.20%"
+                     /gene="ND1"
+                     /locus_tag="Poku_45"
+     CDS             13423..14334
+                     /gene="ND1"
+                     /locus_tag="Poku_45"
+                     /translation="MVSGMIVVIIMMMSVAFYIVVERKGLGMIQLRQGPNKVSFKGILQ
+                     PISDGVKLFKKEVSFPFSSTRFMFLLGPFLCFFCAYCLWLVFPGSFRYSNFELGLLFFQ
+                     CISSFSVFGVFLSGWVCDSRYGFLGAMRAVAQSVSYEVFLSTCLYCPLLLIGSFDLVVI
+                     REFPLWFFWVGQEVMILWLVATLAETNRAPFDFVESESELVAGYSVEYGGVGFALMALA
+                     EYSNMLFMSLLVSVLFFSGMSGFELISDVMFIFFLLVVSYFMVWVRGALPRFRYDLLMG
+                     LCWEILLPLSLCEFMVLLCVSL"
+     gene            14351..14400
+                     /note="blatN_hit trnV_NC_028724.1, position 1 - 50, psl
+                     score 96.0, coverage 80.65%, match 77.42%"
+                     /gene="trnV"
+                     /locus_tag="Poku_46"
+     tRNA            14351..14400
+                     /gene="trnV"
+                     /locus_tag="Poku_46"
+     gene            14414..14475
+                     /note="annotated by ARWEN v1.2.3, score: 101.8"
+                     /gene="trnN-GUU"
+                     /locus_tag="Poku_49"
+     tRNA            14414..14475
+                     /gene="trnN-GUU"
+                     /locus_tag="Poku_49"
+     gene            14503..16176
+                     /note="blatX_hit ND5_NC_028724.1, position 1 - 1674, psl
+                     score 83.9, coverage 100.00%, match 83.87%"
+                     /gene="ND5"
+                     /locus_tag="Poku_50"
+     CDS             14503..16176
+                     /gene="ND5"
+                     /locus_tag="Poku_50"
+                     /translation="MKIVLMILVGVIIIFFIWSKGWLCEYLVLELGSTDCDRFPSVRFH
+                     VVMDTMSLLMGFTVMYISAVVMLYSWFYMSHEVYFKRFMLLLCLFVMAMLLLVFVPGFL
+                     PMMIGWDFLGVISYLLVIYRMNKPSLSAGTLTFVSNRVGDACFIMGIVFLMTSMAFDCY
+                     SMWSSSSQFIIAGAVSLGSLTKSAQVPFSAWLPAAMAAPTPVSTLVHSSTLVAAGVYVM
+                     LRYPDLVDEAWDLAVFVSACSTVLIAGSSSAGEMDLKKVLALSTLSQVASMMLFLAMGA
+                     IQVAFFHMVVHSFLKALLFMAVGSIIFYSGGLQDVRLMGGLAWKAPLLYLWLVISILSL
+                     IGLPFMAGFYSKEYMIAFLVAGNFPMVSAMMVILGMASTLYYSGRVLVLLLVSSGGFPA
+                     RHYSDGGLVLSVSCFLLMLGAVFSGGLIHSVLKLSRGFTSLEVGGFYMKLTYVTLSILV
+                     VSCLFSLYQKMWFKIQIKEFLGKMWFFKGLSGNHLSSGVLVGCSALIKVVENGWVGDFL
+                     WGSGMKSVMLGLMSITRGLNYNFIGVMLFIMASCVFVFTF"
+     gene            16191..16253
+                     /note="annotated by ARWEN v1.2.3, score: 106.4"
+                     /gene="trnL-UAG"
+                     /locus_tag="Poku_51"
+     tRNA            16191..16253
+                     /gene="trnL-UAG"
+                     /locus_tag="Poku_51"
+     gene            16253..16317
+                     /note="annotated by ARWEN v1.2.3, score: 107.0"
+                     /gene="trnW-UCA"
+                     /locus_tag="Poku_53"
+     tRNA            16253..16317
+                     /gene="trnW-UCA"
+                     /locus_tag="Poku_53"
+ORIGIN
+        1 ggagattttt taggtttagg ggttatttct ttagggtttt tagtggtatt tataaggggg
+       61 ttttttgaat tgtgacaggg ttagacttta aaaatttata ctaaatggag gagatttttt
+      121 aggtttaggg gttatttctt tagggttttt agtggtactt ataagggggg ttttttgaat
+      181 tgtgacaggg ttagacttta aaaatttata ctaaatggag gagatttttt aggtttaggg
+      241 gttatttctt tagggttttt agtagtattt ataagggggt tttttgaatt gtgacagggt
+      301 tagactttaa aaatttatac taaatggagg agatttttta ggtttagggg ttatttcttt
+      361 agggttttta gtggtattta taagggggat ttttgaattg tgacagggtt agactttaaa
+      421 aatttatact aaatggagga gattttttag gtttaggggt tatttcttta gggtttttag
+      481 tggtatttat aagggggatt tttgaattgt gacagggtta gactttaaaa atttatacta
+      541 aatggaggag attttttagg tttaggggtt atttctttag ggtttttagt ggtatttata
+      601 agggggtttt ttgaattgtg acagggttag actttaaaaa tttatactaa atggctgaag
+      661 tatttgtttt ggtatttttg cttttatgta gaaatttttc aatttgggta gagcatcctc
+      721 ttattttggg tagaggttta ttgggggtga gaattgtgag gttacctcta atagtttctg
+      781 taggtagtct ttttggtttt aggtttttta ttgtggtggt tggaggagtt ttaattgttt
+      841 ttgcttattc tgtatcttta atttctgtga caaagagaga tctgttgttg aaatatttta
+      901 ctcgggggat gggggtaatt gggaaatttt gaattgtttt tttatatctt aggttagttt
+      961 ttttattgtc taggtgggtg gtgggaaggg gggttttttg ttgaagggat gttttgtatt
+     1021 ttaggaaggg gtggggatta ggggtagttt tgcttgggtt tttattatta gctattatag
+     1081 tgatggctat taggttggcg aggaaattta aaggtgcgtt aattaagtaa aagtgtgaat
+     1141 ggtaataagt gtttgttttt ttttctttaa ttcatttttt gactcatttt aattttttta
+     1201 taaatttatt gttggttttt gagctgatgg gattttgtgt ttttttattt tgtataaatt
+     1261 tatcttttat ttcttttagg ggggcaggtt tatattttag aattgttatt ttaactttta
+     1321 gggtgtgcga gactgtttta ggtatggctc tgttagtgag ggctgcgcgt tatacaggtc
+     1381 gaataaatgt gaagtccttt agatttttag ggttttaagt agcaggagta tgataagtat
+     1441 atttgttttc cacacaaaag gttcgtgttt aggattgtta ctaaaaattt atatggtaaa
+     1501 ttagtaaatt attatttaaa gagggtttaa agaggccttt atggggttta cttatgctaa
+     1561 ttgggtgatt tgtgcctata gccaccatta ttgggggtta tattatggtc ggggggattt
+     1621 tcgtttgtgt ttacagggtt ggcttgctag gtatatgggt gggaatggag ttaagttttt
+     1681 ttggggctat cagggttttg ggggggtcga gggtagagga ggtagagggt gtccaaaagt
+     1741 attttattgt ccaggttttt agatcgattt ttttgctaat tggatttttg ttggttgtta
+     1801 atttttatag ggggggttgg ttggttgagt ttattttagt ggtgggttta atagtaaaat
+     1861 tgggtttatt tcctttttat ttttgaattc cttctgttat aggggttgtg tcttgggtgg
+     1921 ggtgttttgt tgtttctgta gctcaaaaat ttaaccctat ttgaattttg gtgaacctaa
+     1981 tattggaagg gtatcttcaa caggtaattg agttttcggc ttgtttaact ggtttagttg
+     2041 ggtgtattgg gggtattggg gttttgcagt ttcgagtttt attagctttt tcttcaatgg
+     2101 ttcatttagg gtatatagtt tttataagct taattgggtg agatgtattc ttgtcttaca
+     2161 tagggttata tttttgcctt agttttagct taataatgag actttgagtt tgtggggttt
+     2221 ataggttttt ggatttgata aagtctaata ggggtgggga aatgaattta tttataattt
+     2281 cgctatacat attttctttt gctggtgttc cccctttaag gggttgtttt atgaaagcag
+     2341 tttttttaat atcttgttga gagcttttcc ctattggttg tgtgatttta ttcttaagct
+     2401 ctggggttag cttattttat tatagtaggt ttttcatata tttaaattta tattgaggaa
+     2461 gggtattaaa atgagaattt gttaggggga aattcgggga tttaaaagta ttcttatttt
+     2521 ttgtgagagt tttattaaat gtagcaatgg ggtttaggct atttttgtta attgtgctgg
+     2581 tttagggtta aaaggtaaaa gtagtttaag aagaatgaaa atttgtcata tttttggtgc
+     2641 tagtgggtct tttattggga ctatagttta aaaagaataa gaattttgta aatttttggt
+     2701 aaagtatgtt tggtccttga tattcgaagg attagtttat tagcttctgg taatatgtta
+     2761 gctatgtgtt taagtaatac atggtattaa aagagtggga gagaggaata tgcttttttt
+     2821 agttaatgat ttaatagggt taaatagaat aggtgttaaa tcgattaggg ggtttataat
+     2881 aggttaatta atatctctac accagtagtt agggttgatt aatatataga aatatagact
+     2941 aagtaattta tgaaagagga gaataataaa gtgccagcat tcgcggtcag tctttatacc
+     3001 tcaagttaat agtcttgtaa aagagtaagg ttataataaa gtattggttt tggcttatag
+     3061 cggtcaaatg tgtagtaagt ttaaaaatta agggttactt aaaaacctaa tctgtaaagg
+     3121 ctgtaacaaa gacaaggatt tgataccctt ttatttatgc tgtcaaataa tttacgggga
+     3181 ctacgggcta taattgctta aaacttaaag aagttggcgg tgctctataa ccattaaggg
+     3241 gaacttggcg gttaaattga tgatcctcaa attacctcac ctttagtagt ctttatatac
+     3301 cgccgttgag aggtaatttt gaagaaaaaa gatatgggcg taatgtatat tagatggatt
+     3361 tatacaggaa ttcaggtaca cgtataggat ctaaagggtt tagctgagtt acaattataa
+     3421 aataagacgg atttattagt gaaacattaa ataggaaggt gtacttatta gtaaattttt
+     3481 ataagagagg aaagttgaat agggtaattg gagtgcgtac aaatcgcccg ataccctacg
+     3541 tatttaaagt cgaggtaagt cgtaacatag taatgctagt ataaattggt gttgtataaa
+     3601 agataaacta agtaaagtta tttggttcat acccacatta tagaattaat attcttcttt
+     3661 ttatagctct gtagctcata agagttttaa gttgcaaact tgaaggtgga ttaattcccg
+     3721 gggcatggta gattgaatag gcggctgtag aagtgttaag ttgtaacctt aattataggt
+     3781 gttcacctcc tttttatagg gatgaaaaac gatggctaca tagtgagatt tctaatcttt
+     3841 tctgtttgcg gttcaattcc gtttgttttt ttatggctcg aacggggtat agtaaggtgc
+     3901 aaatgaggcc ttggccgatt gttatttctg caagggtttt cggcgtagca attggtttaa
+     3961 tttggtattt aactgatgag gtttctttta ggatgtattc gtatttggga gtagtttctt
+     4021 tttttcttgg gatggcttta acagggtgat gaagtgatat tattgaggag aggacttttt
+     4081 tggggaatca tacctcacat gtggtgttaa atctacgatg ggggttttat ttatttattt
+     4141 tgtctgaagc ttggtttttt tttagtcttt tttgagcttt ttttactgct agtgtggggg
+     4201 aaatttctat acaaggcgtg ggagcacagt ggccaccagt ggggatggag gggatgtacc
+     4261 cttgaggtgt ccccttttta aacactgttg tgttggttag atctgggcta tgggcaacaa
+     4321 cagcgcataa agctgtcaag gttcatagtt caattggttt agataaccca gaaagggttg
+     4381 ctttaagagt aaaatggtgg aaattagggt tgctatgttt ggggattact attgttttag
+     4441 gggtgtattt tacttattta caaattcacg agtattattc ttcttctttc tctatgtcgg
+     4501 atggggctta tggtagagta ttttttgtat tgacaggttt tcatgggcta catgtggtta
+     4561 ttgggagtgt ttatttaata gtttgttgaa ttcggctttt gaagaaacat tttacttaca
+     4621 aacatcacca ttttggtttg gatagttgca tatggtattg gcattttgtg gatgcagttt
+     4681 gaattgtagt gttcctttct gtttatgtgt ggggaaacca atagtttcag tagtttaaga
+     4741 agaacatagt tttgaagtag ctaaggtaat gtgatatttt gagatacgtg ctggatgttt
+     4801 aaggtggatt actttaagtg tagaaggtta agtttgcaac ttacatagtg tgatttccat
+     4861 gtccacttgg tagataattt gatggtagtt tgaaaaatta taagaatgtg ttgagaaaga
+     4921 attataaata ttttacttga aaaaggtcta tgtggaattg agtgagttga ttatttatat
+     4981 ttgtggttga gcgtgtagct aaaagtctta tatctgttta taaatttgta tttttttata
+     5041 ctttttcttc tttgagcact tatgttaagt ctcttttttt tgtcttagtg ttaggtgttc
+     5101 gtgaggtttt attagatttg aaaggcatga tttggtcttt tagaagggtg tctagtgtgc
+     5161 ctttctataa gcgatctgtt atccgtcggt ggttgttcag gagtaaccat aaagatattg
+     5221 ggactcttta tttttttttt tctatttgag cagggttaat ggggactgct tttaggatta
+     5281 ttattcgttt tgaattagct atacctggcg ctggagtttt aggggatagc catttgtacc
+     5341 aagtagtggt tactgctcat gggttgttga taattttctt tttagtaata cctatgataa
+     5401 ttggggggtt tggtaattgg ttagtacctt taatgttgca gattcctgat atagctttcc
+     5461 cacgaataaa caatttaaga ttttggttga tacctaggtc agttttaatg ttgcttggtt
+     5521 ctgcttatgt agaaagtgga gcaggtactg ggtgaactat ttatcctccg ttatctagaa
+     5581 ttatggggca tgctggccct tctgtggatt ttgtgatttt gtctttacat ttaggtggtg
+     5641 tgtcttctat tttagcttct attaattttg tagttacttc tctttgcatg cgtgttgagg
+     5701 ctttatcttt gttacgtgtg actatgtttg tgtgatgtgt tgctgttact ggtttcctat
+     5761 taattattgc catacctgtt ttagccggta gattgaccat actattaact gatcgtaatt
+     5821 ttaacactag gttctttgat cctgctggtt tgggtgaccc tattcttttt gtacatttgt
+     5881 tttggttctt tgggcatcct gaggtttata ttttaatttt gcctggtttt ggtattattt
+     5941 ctcatgttgt caaagttggg aggagaaaac ttgaattgtt tggtaaggtt cctatgattt
+     6001 atgcggtgtt atctattggg tttttaggat ttattgtttg agggcaccac atattcacag
+     6061 tagggataaa tgttgatagt cgtgcatatt ttagcacggt tacattaatt attgctattc
+     6121 cgactggggt aaaggttttt aggtggctag caacaataag aggaggctat gttcgttggt
+     6181 ggccgatgat gtattgagct ataggttttt tatttttatt tactgtgggg ggaattactg
+     6241 gaattgtgtt agctagtgct tctttagatg taatgataca tgattcttac tatgtaattg
+     6301 cacattttca ttatgtctta aggatggggg cagttttttc tttatttgct gggtttcatt
+     6361 tctggtaccc gctagttacg gggctgggtt tacatcctct ttgaaggcgg ggccagtttt
+     6421 gaacgatatt tattggtgta aatgttactt tttttcctca acatttaata gggcttcttg
+     6481 gaataccacg tcgttacagc gattataggg ataggttgca cggtttaaat ttattctcaa
+     6541 ggtggggttc tactgtttct ttagtgagtc tttttacttt tttatttatt atttgggaga
+     6601 gaatattgag acagcgatgt ttagtatttc ctttagttta tggcactgaa gcagaatgat
+     6661 ctttccgagg ttatcccctt cgattccata atcgttcgca gaataggttt gggtttaatg
+     6721 ctaaggatat taaaaagaaa cttttatggt gaatgaaaat agatcgccat acagcggttt
+     6781 aagagggtgt attgttattt agcaaaatat agtttaataa aaattctaat tttgggaatt
+     6841 agtgatgcca ttattggcta ttttgaatgg ggtcttgaaa taagttatgg ttttttgata
+     6901 taaatactgt tgttgggcag gaattaattt tatataatga tttggtaata gtggttgcgg
+     6961 ttgcggtttt ggtggtggtt gggtggttta tacttttatt tttaaatagg cgaacctttt
+     7021 ttggtggtaa aataaataaa tatgtttatc ataacgaatt gttggagatt atgtggacta
+     7081 tagttcctgc ttttatgctt tgttttttag gttatgtctc gttgataaat ttatatatta
+     7141 tagaggttgg tgatcatgtt gaaaatggga taaaagtgac tgctcaccaa tggtattggg
+     7201 agtacagcta tattgttgat ttctctagaa aagaaaagga aatagatgaa ttatggttat
+     7261 ctaattggtt tgagcaattg gatttttatt ttgaaattaa gcctgaatta gtcgaggtag
+     7321 ctaaggaaga tggggttttt gtgggtggaa attgatttaa gggtgcaaaa gttgaaaata
+     7381 tagattgttt gtcagaggtt ttaaaggggg aaatagcggg tggagaagaa ataaaattat
+     7441 tagagagaat tagtagctgg gttcctcatg tttttttaaa ttgtaaatga aattactctt
+     7501 atgaagttta tgaggttttt aatagttcgg ttttggacca ggggaatttt cgtggttaca
+     7561 ctgtgacgga tgcttgttat ttaatatcct cggttaagaa tgaaatgtta atttcgacta
+     7621 tagatgtaat acattcttga ggtgttggga gtttaggggt aaagtgtgat gctgttcctg
+     7681 gccgagtaaa ttctttaggg atttctccgc tacgaagtgg cgttttttat ggtaattgtt
+     7741 acgagctatg tggggaaggg cataggatga tacctatttc agtggctgta atgactcctg
+     7801 aggatgtgtc cttagtgtta aaacaagggg ttttagggac aagagattgt gtctctacat
+     7861 tggagagggt tgttataaaa taaaaatgta aatagttggc gtagggagcg tatgcgattt
+     7921 cgggtcgtaa gggaaacgta aagtttacta tttgtgagat gggaaaccac gatggaaaag
+     7981 gaattcttta taggataaag agagctttat atgatttacc tgtcccttta aatttgagga
+     8041 atttttgaaa ttttggatct ttattgggag tttgcttaac taggcagttg attacagggt
+     8101 tactaatggc tgctcactac accccagata cggaattggc cttttcttct gttgcccaca
+     8161 tcatgcggga tgtaaatggg ggttgattta ttcgtagaat acacgctact ggggcatcat
+     8221 ttttttttgt gtgtatttat attcatatcg ggcggggtat ttattatcag tcttactata
+     8281 tgagaaatac ttggtgaagc gggtgcacta ttttaatatt gttaatggct atttctttta
+     8341 ctgggtatgt gttaccttgg gggcagatat ctttctgagc tgcgactgta attactagaa
+     8401 tatttagggc tatcccatat gtggggtctt tcctggtgga gtggttgtgg gggggcttct
+     8461 gtgtcgggga tgggactcta aagcgttttt atgtgtttca ttttgttggc ccttttatta
+     8521 tggttgtcct tgttgctttt cacattataa accttcatga aactgggtct agaaattctc
+     8581 taggagtcag gagagatgcc gatattactt gtttccatag tctttacact tttaaggatt
+     8641 tagtgtggat tgttattatg ctttattgtt tagtgatggt ttgtctatgg aggcctgatt
+     8701 tatttattaa tccctataat tatatccctg cttcttcttt gaagactccc caacacattg
+     8761 agccggagtg atattttttg tttgcttatt gtattttgcg tagggtacct aataaaatgg
+     8821 ggggggtctt agcattagtg ggatctgttt ttgtgctgta tttaatgcct ttgttcccac
+     8881 gtaagaatgc cttaaaaggt tttgcacaca attttattgc tcgaatgttt ttttgggatt
+     8941 ttgttgctgg gtttgtgata ttaagggtgc ttggggggtg ctctattgat atacccctct
+     9001 caactcttgg gcctttagct acagtgaggt attttggttt ttttgttatt gttccttttt
+     9061 tgttcattga ttggggattt tataagaagt aattagataa ttaaaggtat attgtggaga
+     9121 aatctgttta aagttagtat tgtgaaagag tagaggatta agatttcgtg agagatgctt
+     9181 atacgaatag aaatttttaa ttagtgttct ttttgtatca tgatttgtaa agagtgtatg
+     9241 aaaattttgt atcctgaaaa ttttagagtg attcttttgt atttctaatg tttcaaaatt
+     9301 agggtaaaga ttagaatggt aatgatatgt ttttcgagaa aattgatagc tggtttgagg
+     9361 ggaaatatat ttaagtatag ataaaattta tttattgaag ttatagttta tgtaacttta
+     9421 atgagatttt agttcagatt ttaggggtaa gctctaaggt aaaaagaaat gggatagtta
+     9481 ataagtaggg ttgatattgg ccacctataa gaagtattat tacaaagtaa ttgcagagaa
+     9541 atttttgatt aagtaccttc atatttatag taattattaa taaagaactt agtataaaat
+     9601 cagtaataaa tgtggtataa agtgaatatt atctaaatga agagttatag gtgttgattt
+     9661 tcgacaaagg tttattttta tatatgtttt taaaaggaat tcggctaatt ttttttacgc
+     9721 ctgtttatca aaaacatggc cttttggttt gtgtaaaata tgaaaggttt gacctgccca
+     9781 gtggttttgt ctaaacggct gcagtgaata actgtacaaa ggtagcgaaa tcagttgtcc
+     9841 tttaaatggg gaaaggtatg aaaggtttga cgataaaaaa gctgtctctt aaaaatatta
+     9901 tgaagtttcc gtttaagtga aaaggcttaa atttttgaaa aagacgagaa gaccctattg
+     9961 agcttgatta tattttttta ttaggggagg attgaagttt tattggggca ataggaagct
+    10021 aaaaagaacg cttcttttta gagtaaggat ccttcatggg agaaataagc aaaagctacc
+    10081 atagggataa cagcgttatc tttcttaaga gttctgatta agggaaaggt ttgcgacctc
+    10141 gatgttggat taagatatct ttttggtgca gcagctaaaa aagtaagact gttcgtcttt
+    10201 taaaatttta catgaactga gttaagaccg gtgtgaacta ggtcggtttc tatctttttt
+    10261 ttatgtcagc tttgtacgaa aggatcggct ggtaatgttt tacttttttc ctaatacaat
+    10321 tattaggtgt gcctcagttt tcacctcttt ttgttgattt tatttttttg ttttattggg
+    10381 cggtgtttat tagggtgttt tgtatgttgt actgggtttc gaaacgggag tatagtttta
+    10441 agtaggtggg ggggattatg ggtacagtga tttcttgttc tgcagcttat tgtatcccta
+    10501 ataggggtat tttagggagt gtggcttgag ggttttctag tgtttttatt gtgttagatt
+    10561 tggttggttt atcttgattt tattgtatag tgaggggttg aataggtttt gacggggtgt
+    10621 ctttactaat agctatgttg gttattttag tccctataat aaggttagtt tctagtgtgg
+    10681 gggactataa atttagggat ataataagaa acgggaagga tatgagagaa gttatttatt
+    10741 taatttcgtt ggtttgtatt atttttttct taatatctaa ttgaatagat ttttattttt
+    10801 tttttgaatt ttccttattg ccgactttct ggttgatttt aaagtggggg tatcaaccag
+    10861 aacggcttca ggcaggtgta ttaatattaa tatatactgt ttgtgggtct ttacctttac
+    10921 ttgttgttat cttaagtatt tgaaatgaaa gatttacaga tagatttttg ttaataaaat
+    10981 taataagggg taattgggga tattttcaaa gatgagtttg tattttggct cttttggggt
+    11041 tcctaattaa gttgccggtg tatttagttc atggttggtt gcctaaggct catgtggagg
+    11101 ctcccctaag gggctctata attttagcgg ggattctatt gaagctgggg ggttatggcc
+    11161 tgtttcgttt tgtgtgggta tttgagatag ggataagggg ggtgttaata tttattgtga
+    11221 taatgagctt gtgggggggc tttataaggg gcttgtattg tttaactcaa agggacttaa
+    11281 aggcattaat tgcttactct tcaattaggc acatagcttt gggtttaggg ggaattctaa
+    11341 gattttatga atgtgggaag atggcaggga tgtgcttatt ttttgctcac gggctatgtt
+    11401 ctccagcttt attttctttg gctgcaagag tttatgattg atcccactct cgtagggtgc
+    11461 ttttaagaaa gggaattctt cgtgttttcc ccctattttc agtattttga tttttgatgt
+    11521 gtattgttaa tatgggaatt cccccctcgt taaatttttt cagtgaaatt ttttgtgttg
+    11581 gttctttagt ttatttgtca gttttttttg ttgtgccttt ggcctttatg tgcttgttta
+    11641 ctggggttta ttgtatattt ttatacaggg tcgttaatca tggggcctgt agggagatag
+    11701 taaaaccaat atttaatttg agagagcgtt atttatattc tttagtttat tcattgagaa
+    11761 ttttaatagg gggattttta tttttaagtt gttttataat gtaattagga aaatttagtt
+    11821 ggtagtcaat ttagtttaag taaaatgtta ttttgtggaa atagagaaat cagtagttaa
+    11881 ttgatttttt aatagtgtaa ctaaaacgtt gatttttcga gtcagagatg ggattaaatt
+    11941 ctcttaaagg ctttgttggg aaatgattat tttgaaatta atttaggaac gttcgattcg
+    12001 tttaggggct tatgactagg gatattttta cttttatgga ttgttttata ggtggattta
+    12061 gagtgcttga attggggatg tggactgcta gtgtggcatg gccaatttat tcagtattga
+    12121 tgagcacttt ttgatatggc aattcttggg ttgagactat gctttttgaa ggagctatag
+    12181 ggttttcatc aaggtttcca attggcgcta aaaaatttgg ggggctagtg catttgaatt
+    12241 tttctttatt gtatttctta ttagcagtga atttggctgg ggttttagct tactcttatc
+    12301 ctgtaaattg tcactatgct ttaactttag gtttttcatt tcctttttga tttgccactg
+    12361 tttctttgaa ttttaataag aattggtgaa tgttttttat caggcatgtg gagggggata
+    12421 tggggattgc ggtagtagca atgctagtgg catctcaatg gtttagattg ttagtacgcc
+    12481 ctttcacatt atctatgcgg ataaggacta atttatttat agggaaatta cttgttaatt
+    12541 taacttttta tatagctgaa gagtttattt ttccgtttat agatttttga gggctatcta
+    12601 gtcttattat attttttata gggacagcgt tgtacgttat tgaaggttgc ttagcttctt
+    12661 tgcagtcgat gatttttgtg gggttattgt ctttttattg tgaggaagct caatttaaat
+    12721 tgtaattaac tttatttgtg agcaactatg aaagattatg agtggtaata tgtttttagt
+    12781 gagaaatagg tttatttatt ttaatgagta tttttttttt ctattggctt agttattttg
+    12841 ggagttgtag ttaggcaaaa ttggcggttt gagtgggcaa agcttacttc ttttgagtgt
+    12901 ggctttgacc cgataagaag ttcacgatct ccattttcta tgcaattttt tttattggca
+    12961 cttttgtttt taatttttga tatggagatt attttattat tcccaattgt aataagattg
+    13021 aaaatagtat ttactttaat gcctatggta gggaaaggtt tggctttttt gtttttgagt
+    13081 attcttttgg ggggcttaat ccatgagttt aatgagggga ctttagattg agtaaagggt
+    13141 taagttgaat aggagtaaag tggtgtatgg gcacgaagga ttttgggttc ttaggaaact
+    13201 ctttataagg ttttttacta aggggatgtt atgccagaaa aattgggtta tcttgatggg
+    13261 gtaaaatatg agattattat ctttaacatt tgcttctata gcttatataa agtgaagagc
+    13321 ttttaactct ttgaaacaga tagtttatgt tggaggtaaa ttaaaatggc agataatatg
+    13381 cattagattt aaaacctaaa gatgagtaat actcttttaa tagtggttag ggggataatt
+    13441 gtagttatta ttataataat atctgtagct ttttatatcg tggtagaacg aaaggggcta
+    13501 ggcatgattc aattacggca ggggcctaat aaagttagtt ttaaaggtat tctccagcct
+    13561 attagggatg gagttaagct ttttaagaag gaggttagat ttccattctc tagaactcgg
+    13621 tttatatttt tgttaggtcc ttttctttgt tttttttgcg cgtactgcct ctgattagtt
+    13681 ttcccgggct catttcgtta ttcaaacttt gaattagggt tgttgttttt tcaatgtatt
+    13741 tcttctttta gtgtgtttgg ggttttttta tctggttggg tttgtgactc tcgctatggg
+    13801 tttttagggg cgatacgggc tgtagcccaa agggtttcat acgaagtgtt tttgagaact
+    13861 tgtctatact gtcctcttct attgattgga agttttgatt tagtagtcat tcgtgaattt
+    13921 ccactatggt ttttttgggt tggccaagag gtaatgattt tatggcttgt ggctacattg
+    13981 gcagagacta atcgagcgcc atttgatttt gtagagagag agtctgagtt agtagcgggg
+    14041 tatagggttg agtatggtgg agttgggttt gctttaatag ctttggcgga gtacagaaat
+    14101 atactattta taagtttact ggtctctgtc ctatttttta gtggtataag ggggtttgag
+    14161 ttgattaggg atgtaatgtt catttttttc ttattggtgg tgtcttattt tatagtgtgg
+    14221 gtgcgtgggg ctttgcctcg atttcgttat gatttattaa tgggtttatg ttgagaaatt
+    14281 ttactacctt taagattatg tgaatttata gttttattgt gtgttagatt atagtaagtt
+    14341 taaattgaag tgaagagtag catataaagt gtatcttgtt tacaccaaga aggtgagttt
+    14401 tgatcctctt tattaagcct tagtttaagg agaattatcg actgttaatc gaagggtata
+    14461 agtgtatagg tttaggtgaa agaatataaa ctggcggggg ccataaaaat tgtgttaata
+    14521 attttagtgg gggtgattat tattttcttt atttggagaa aagggtggct ttgtgagtat
+    14581 ttagtattag agttagggtc taccgattgt gatcgtttcc caagtgttcg atttcatgtg
+    14641 gtaatggata ctatgtcttt attgatgggg tttactgtta tatacatttc tgcagtagta
+    14701 atgttatatt cttgatttta catgagtcat gaggtgtatt ttaagcgttt tatgttgtta
+    14761 ttatgtttat ttgttatagc aatactactt ttagtttttg tccctgggtt tttacctata
+    14821 ataattgggt gagatttcct aggtgtaatt tcttatttat tagtaattta ccggataaat
+    14881 aagccgtcct taagtgctgg aacgttaaca tttgtttcta atcgtgttgg tgatgcttgc
+    14941 tttattatgg gaattgtatt tttgatgacc tctatggctt ttgattgtta ctcgatgtgg
+    15001 tcaagaagaa gccaatttat cattgcaggg gcagtgagat taggctcgtt aactaaaaga
+    15061 gctcaggtcc ccttttctgc ttgactacca gcggctatag ctgccccaac tcctgtctcc
+    15121 actttagtgc actcatctac tttagtggca gcaggggttt acgtgatact tcgttatcct
+    15181 gatttggtcg atgaagcatg ggatttagca gtgtttgtat ctgcatgtag aactgttttg
+    15241 attgcgggtt caagttctgc aggagaaata gatttaaaaa aggtactggc attatcaact
+    15301 ttgagccaag tggcgaggat aatacttttt ttggcgatgg gggctattca agttgcgttt
+    15361 tttcacatag tggttcactc ttttttaaaa gctttgctgt ttatggctgt agggagaatt
+    15421 attttttata gcggggggct tcaagatgtt cgactgatgg ggggtttggc gtgaaaagcg
+    15481 cccctcctat atttgtggtt agtgatttct attttatctt taattggtct cccatttatg
+    15541 gctggatttt actctaagga gtacataatt gcttttttag tggctggtaa ttttcccata
+    15601 gtgagggcta taatagtaat tttaggaatg gccagaactc tttactacag tggtcgagtg
+    15661 ttagttttat tgttagttag gtctgggggg tttcccgctc ggcactattc ggatgggggg
+    15721 ttagttttaa gtgttagttg tttcttatta atattagggg ctgtgtttag cggggggtta
+    15781 attcacagtg ttctcaagtt gtcccggggt ttcacttcac tggaagtggg gggattttat
+    15841 ataaagctta cttatgtgac tttaaggatt ttagttgtgt cttgtttatt ttccctctat
+    15901 caaaagatgt ggtttaaaat ccaaattaaa gaatttttag gtaaaatgtg gttttttaag
+    15961 ggtttgaggg ggaatcattt aaggaggggt gttttagtgg ggtgttcagc attgattaaa
+    16021 gttgtggaaa atgggtgggt tggggatttc ctgtggggaa gggggatgaa aagtgtaatg
+    16081 ttagggctaa taagtatcac acgaggattg aattataatt ttattggggt catattattt
+    16141 attatggcta gttgtgtatt tgtttttact ttttaagtgg gtgagtagcg actagattag
+    16201 cagatgtaat gtattcaact taggattgaa aggaaatttt taattattta gtggggtatt
+    16261 aagttaaaca gactatagta tttcaagtat taaagtaaaa cagagtttta taccccggga
+    16321 tttttttttt tttttt
+//

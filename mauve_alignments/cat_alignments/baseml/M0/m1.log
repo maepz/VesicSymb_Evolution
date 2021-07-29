@@ -1,0 +1,28 @@
+BASEML in paml version 4.9, March 2015
+
+ns = 17  	ls = 484320
+Reading sequences, sequential format..
+Reading seq # 1: Bathy     Reading seq # 2: R.fausta     Reading seq # 3: R.magnifica     Reading seq # 4: R.pacifica     Reading seq # 5: R.phaseoliformis     Reading seq # 6: R.pliocardia     Reading seq # 7: R.rectimargo     Reading seq # 8: R.southwardae     Reading seq # 9: SUP05     Reading seq #10: V.diagonalis     Reading seq #11: V.extenta     Reading seq #12: V.gigas1     Reading seq #13: V.gigas2     Reading seq #14: V.marissinica     Reading seq #15: V.okutanii     Reading seq #16: V.soyoae1     Reading seq #17: V.soyoae2     
+Sequences read..
+Counting site patterns..  0:01
+        1987 patterns at    10000 /   461013 sites (2.2%),  0:01        3378 patterns at    20000 /   461013 sites (4.3%),  0:01        4289 patterns at    30000 /   461013 sites (6.5%),  0:01        5367 patterns at    40000 /   461013 sites (8.7%),  0:01        6228 patterns at    50000 /   461013 sites (10.8%),  0:01        7038 patterns at    60000 /   461013 sites (13.0%),  0:01        7814 patterns at    70000 /   461013 sites (15.2%),  0:01        8619 patterns at    80000 /   461013 sites (17.4%),  0:01        9081 patterns at    90000 /   461013 sites (19.5%),  0:01        9818 patterns at   100000 /   461013 sites (21.7%),  0:01       10413 patterns at   110000 /   461013 sites (23.9%),  0:01       11096 patterns at   120000 /   461013 sites (26.0%),  0:01       11719 patterns at   130000 /   461013 sites (28.2%),  0:01       12431 patterns at   140000 /   461013 sites (30.4%),  0:01       13045 patterns at   150000 /   461013 sites (32.5%),  0:01       13716 patterns at   160000 /   461013 sites (34.7%),  0:01       14193 patterns at   170000 /   461013 sites (36.9%),  0:01       14786 patterns at   180000 /   461013 sites (39.0%),  0:01       15497 patterns at   190000 /   461013 sites (41.2%),  0:01       16044 patterns at   200000 /   461013 sites (43.4%),  0:01       16516 patterns at   210000 /   461013 sites (45.6%),  0:01       17026 patterns at   220000 /   461013 sites (47.7%),  0:01       17488 patterns at   230000 /   461013 sites (49.9%),  0:01       18015 patterns at   240000 /   461013 sites (52.1%),  0:01       18540 patterns at   250000 /   461013 sites (54.2%),  0:01       19004 patterns at   260000 /   461013 sites (56.4%),  0:01       19497 patterns at   270000 /   461013 sites (58.6%),  0:01       19940 patterns at   280000 /   461013 sites (60.7%),  0:01       20384 patterns at   290000 /   461013 sites (62.9%),  0:01       20895 patterns at   300000 /   461013 sites (65.1%),  0:01       21356 patterns at   310000 /   461013 sites (67.2%),  0:01       21943 patterns at   320000 /   461013 sites (69.4%),  0:01       22512 patterns at   330000 /   461013 sites (71.6%),  0:01       22924 patterns at   340000 /   461013 sites (73.8%),  0:01       23242 patterns at   350000 /   461013 sites (75.9%),  0:01       23683 patterns at   360000 /   461013 sites (78.1%),  0:01       24166 patterns at   370000 /   461013 sites (80.3%),  0:01       24536 patterns at   380000 /   461013 sites (82.4%),  0:01       24955 patterns at   390000 /   461013 sites (84.6%),  0:01       25375 patterns at   400000 /   461013 sites (86.8%),  0:01       25862 patterns at   410000 /   461013 sites (88.9%),  0:01       26286 patterns at   420000 /   461013 sites (91.1%),  0:01       26726 patterns at   430000 /   461013 sites (93.3%),  0:01       27171 patterns at   440000 /   461013 sites (95.4%),  0:01       27578 patterns at   450000 /   461013 sites (97.6%),  0:01       27988 patterns at   460000 /   461013 sites (99.8%),  0:01       28036 patterns at   461013 /   461013 sites (100.0%),  0:01
+Counting frequencies..
+
+     1632 bytes for distance 
+ 14354432 bytes for conP
+        0 bytes for fhK
+  8000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1: ((((14, (11, 10)), ((17, 16), 15)), (13, 12)), (((8, 6), (((7, 2), 4), 5)), 3), (9, 1)); MP score: 397447.00
+2 sets of frequency parameters
+
+ntime & nrate & np:    15   155   176
+
+lnL0 = -3174163.680925
+Out...
+lnL  = -2405585.208301
+
+end of tree file.
+
+Time used: 40:02

@@ -146,6 +146,27 @@ CDC_spectra
 
 ```
 
+```{r}
+df1=subset(df,P.CDC.<0.05 & ispseudo==0)
+
+# testing for normality...
+library(ggpubr)
+for (genome in unique(df1$Genome)){
+ggqqplot(subset(df1, Genome == genome)$CDC)
+}
+
+# Non-parametric tests because CDC distributions are not normal
+# Ru vs FL
+d=subset(df1, Group != 'Gigas')
+wilcox.test(d$CDC ~ d$Group, alternative='greater')
+# Gi vs FL
+d=subset(df1, Group != 'Ruthia')
+wilcox.test(d$CDC ~ d$Group, alternative='greater')
+# Gi vs Ru
+d=subset(df1, Group != 'FL')
+wilcox.test(d$CDC ~ d$Group, alternative='greater')
+
+```
 ## Biplot: CDC in Symbiont as function of CSC in free-living
 
 ```{r}
