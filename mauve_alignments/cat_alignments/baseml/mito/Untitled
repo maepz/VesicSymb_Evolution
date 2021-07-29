@@ -1,0 +1,4 @@
+#NEXUS
+begin trees;
+	tree tree_1 = [&R] ((((((('Amariana_ref #1':0.017952,('Aphaseoliformis_ref #1':0.005672,'Aphaseoliformis #1':0.00721):0.018195):0.007047,'Asouthwardae #1':0.017331):0.08871,('Cpacifica #1':0.073989,('Crectimargo #1':0.002344,'MT5286321 #1':6.65E-4):0.086315):0.068906):0.018074,'Xpliocardia #1':0.170169):0.018275,'Cmagnifica #1':0.098549):0.098721,(('MK948426 #1':0.058982,('Pextenta #1':0.051426,('Pokutanii_ref #1':0.01684,('Psoyoae1 #1':1.4E-4,'Psoyoae2 #1':6.0E-5):0.015641):0.028664):0.005609):0.013888,('Adiagonalis #1':0.054895,('Agigas1 #1':0.002389,'Agigas2 #1':0.002209):0.04714):0.022683):0.098854):3.223349,Bthermophilus:3.223349);
+end;

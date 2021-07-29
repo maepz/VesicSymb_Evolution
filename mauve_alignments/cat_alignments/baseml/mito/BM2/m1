@@ -51,21 +51,21 @@ Psoyoae2           0.1038(10.5142)  0.0959( 9.6679)  0.0953( 9.9482)  0.1627( 8.
 Xpliocardia        0.1901( 6.1313)  0.1842( 6.0928)  0.1834( 6.1453)  0.1475( 5.3608)  0.1463( 5.1787)  0.1471( 5.1231)  0.1447( 5.1406)  0.7878( 1.3711)  0.1600( 6.5590)  0.1600( 5.2023)  0.1693( 5.3350)  0.1906( 6.1351)  0.1691( 5.2915)  0.1819( 6.0153)  0.1861( 6.5805)  0.1883( 6.7473)  0.1882( 6.7389)
 
 TREE #  1:  (((((((4, (5, 6)), 7), (10, (11, 13))), 18), 9), ((12, (14, (15, (16, 17)))), (1, (2, 3)))), 8);  MP score: 10956.00
-lnL(ntime: 19  np: 24): -57055.492599    +0.000000
+lnL(ntime: 20  np: 25): -57055.492599    +0.000000
   19..20   20..21   21..22   22..23   23..24   24..25   25..4    25..26   26..5    26..6    24..7    23..27   27..10   27..28   28..11   28..13   22..18   21..9    20..29   29..30   30..12   30..31   31..14   31..32   32..15   32..33   33..16   33..17   29..34   34..1    34..35   35..2    35..3    19..8  
- 0.644241 0.177786 0.134322 0.119847 0.103332 0.029084 0.023157 0.006703 0.056038 0.001939 0.117359 0.092662 0.079123 0.029718 0.000103 0.080686 0.004696 0.707728 0.506813 0.639107 0.157993 0.136467 0.140363 0.165041
+ 0.619261 0.177786 0.134322 0.119847 0.103332 0.029084 0.023157 0.006703 0.056038 0.001939 0.117359 0.092662 0.079123 0.029718 0.000103 0.080686 0.004696 0.707728 0.506813 1.047099 0.639107 0.157993 0.136467 0.140363 0.165041
 
 Warning: branch rates are not yet applied in tree length and branch lengths
-tree length =   2.34504
+tree length =   2.29508
 
 (((((((Amariana_ref, (Aphaseoliformis_ref, Aphaseoliformis)), Asouthwardae), (Cpacifica, (Crectimargo, MT5286321))), Xpliocardia), Cmagnifica), ((MK948426, (Pextenta, (Pokutanii_ref, (Psoyoae1, Psoyoae2)))), (Adiagonalis, (Agigas1, Agigas2)))), Bthermophilus);
 
-(((((((Amariana_ref: 0.023157, (Aphaseoliformis_ref: 0.006703, Aphaseoliformis: 0.006703): 0.016454): 0.005927, Asouthwardae: 0.029084): 0.074248, (Cpacifica: 0.056038, (Crectimargo: 0.001939, MT5286321: 0.001939): 0.054099): 0.047294): 0.016515, Xpliocardia: 0.119847): 0.014475, Cmagnifica: 0.134322): 0.043464, ((MK948426: 0.092662, (Pextenta: 0.079123, (Pokutanii_ref: 0.029718, (Psoyoae1: 0.000103, Psoyoae2: 0.000103): 0.029615): 0.049405): 0.013539): 0.024697, (Adiagonalis: 0.080686, (Agigas1: 0.004696, Agigas2: 0.004696): 0.075990): 0.036673): 0.060428): 0.466455, Bthermophilus: 0.644241);
+(((((((Amariana_ref: 0.023157, (Aphaseoliformis_ref: 0.006703, Aphaseoliformis: 0.006703): 0.016454): 0.005927, Asouthwardae: 0.029084): 0.074248, (Cpacifica: 0.056038, (Crectimargo: 0.001939, MT5286321: 0.001939): 0.054099): 0.047294): 0.016515, Xpliocardia: 0.119847): 0.014475, Cmagnifica: 0.134322): 0.043464, ((MK948426: 0.092662, (Pextenta: 0.079123, (Pokutanii_ref: 0.029718, (Psoyoae1: 0.000103, Psoyoae2: 0.000103): 0.029615): 0.049405): 0.013539): 0.024697, (Adiagonalis: 0.080686, (Agigas1: 0.004696, Agigas2: 0.004696): 0.075990): 0.036673): 0.060428): 0.441475, Bthermophilus: 0.619261);
 
 (((((((4_Amariana_ref, (5_Aphaseoliformis_ref, 6_Aphaseoliformis) 26 ) 25 , 7_Asouthwardae) 24 , (10_Cpacifica, (11_Crectimargo, 13_MT5286321) 28 ) 27 ) 23 , 18_Xpliocardia) 22 , 9_Cmagnifica) 21 , ((12_MK948426, (14_Pextenta, (15_Pokutanii_ref, (16_Psoyoae1, 17_Psoyoae2) 33 ) 32 ) 31 ) 30 , (1_Adiagonalis, (2_Agigas1, 3_Agigas2) 35 ) 34 ) 29 ) 20 , 8_Bthermophilus) 19 ;
 
 Detailed output identifying parameters
-rates for branches:    1  0.70773  0.50681
+rates for branches:    1  0.70773  0.50681  1.04710
 Parameters  in the rate matrix (REV) (Yang 1994 J Mol Evol 39:105-111):
 
 

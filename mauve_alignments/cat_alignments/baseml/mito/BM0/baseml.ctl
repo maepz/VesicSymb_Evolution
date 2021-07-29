@@ -14,7 +14,7 @@
 
 *        ndata = 1
 *clock= 0 means no clock and rates are entirely free to vary from branch to branch. An unrooted tree should be used under this model. For clock = 1, 2, or 3, a rooted tree should be used. clock = 1 means the global clock, with all branches having the same rate. 
-        clock = 1   * 0:no clock, 1:clock; 2:local clock; 3:CombinedAnalysis
+        clock = 2   * 0:no clock, 1:clock; 2:local clock; 3:CombinedAnalysis
     fix_kappa = 0   * 0: estimate kappa; 1: fix kappa at value below
         kappa = 5  * initial or fixed kappa
 
