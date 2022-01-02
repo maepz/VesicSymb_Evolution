@@ -13,16 +13,16 @@
 PATH=$PATH:/home/maeperez/software/bin/
 source ~/virtualenv/py36/bin/activate
 
-mkdir /home/maeperez/scratch/Clams/codon_bias
+mkdir /home/maeperez/scratch/VesicSymb_Evolution/codon_bias
 
-PATH_GBK="/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/genomes"
-PATH_CUB="/home/maeperez/scratch/Clams/codon_bias"
+PATH_GBK="/home/maeperez/VesicSymb_Evolution/genomes/additional_genomes"
+PATH_CUB="/home/maeperez/scratch/VesicSymb_Evolution/codon_bias"
 
 #SAMPLE=$(sed 's/,.*//' $PATH_ALN/filelist | sed -n "${SLURM_ARRAY_TASK_ID}p" | sed 's/aligned_//' | sed 's/.fna//')
 
 genomefile=$(sed -n "${SLURM_ARRAY_TASK_ID}p" $PATH_GBK/symbfiles)
 
-SAMPLE=$(echo $genomefile | awk -F"/" '{print $NF}' | awk -F"_" '{print $1}')
+SAMPLE=$(echo $genomefile | awk -F"/" '{print $NF}' | awk -F"\." '{print $1}')
 
 echo "Starting task $SLURM_ARRAY_TASK_ID on $SAMPLE"
 
