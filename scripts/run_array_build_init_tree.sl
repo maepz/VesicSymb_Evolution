@@ -13,13 +13,13 @@ module load gcc/7.3.0
 module load openmpi/3.1.4
 module load hyphy/2.3.14
 
-cd /home/maeperez/scratch/Clams/
-mkdir init_trees
+cd /home/maeperez/scratch/VesicSymb_Evolution/
 
-PATH_ALN="/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/mauve_alignments/fna"
-PATH_PHYLOGENY="/home/maeperez/scratch/Clams/init_trees"
-PATH_GARD="/home/maeperez/scratch/Clams/gard"
-PATH_ABSREL="/home/maeperez/scratch/Clams/absrel"
+#PATH_ALN="/home/maeperez/VesicSymb_Evolution/mauve_alignments/fna"
+PATH_ALN="/home/maeperez/VesicSymb_Evolution/mauve_alignments/Outgroup/fna"
+PATH_PHYLOGENY="/home/maeperez/scratch/VesicSymb_Evolution/init_trees"
+PATH_GARD="/home/maeperez/scratch/VesicSymb_Evolution/gard"
+PATH_ABSREL="/home/maeperez/scratch/VesicSymb_Evolution/absrel"
 
 
 #SAMPLE="Rmag_0001"
