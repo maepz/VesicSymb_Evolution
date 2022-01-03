@@ -6,7 +6,7 @@
 #SBATCH --mem-per-cpu=500M
 #SBATCH --error=%A'.err' 
 #SBATCH --output=%A'.out' 
-#SBATCH --array=11-702%50 
+#SBATCH --array=1-336 
 
 module load nixpkgs/16.09
 module load gcc/7.3.0
@@ -18,8 +18,6 @@ cd /home/maeperez/scratch/VesicSymb_Evolution/
 #PATH_ALN="/home/maeperez/VesicSymb_Evolution/mauve_alignments/fna"
 PATH_ALN="/home/maeperez/VesicSymb_Evolution/mauve_alignments/Outgroup/fna"
 PATH_PHYLOGENY="/home/maeperez/scratch/VesicSymb_Evolution/init_trees"
-PATH_GARD="/home/maeperez/scratch/VesicSymb_Evolution/gard"
-PATH_ABSREL="/home/maeperez/scratch/VesicSymb_Evolution/absrel"
 
 
 #SAMPLE="Rmag_0001"

@@ -12,19 +12,21 @@ from os.path import isfile, join
 
 def add_labels_to_tree(input_tree_file):
     '''This function adds labels (symbiont genera or host-association) to terminal branches and internal nodes of a tree'''
-    dic={'MS2017':'{fl}','SP60':'{fl}','Vmar':'{gigas}','HUE58':'{ruthia}','Vgig1':'{gigas}','Vgig2':'{gigas}','COSY':'{gigas}','Vdia':'{gigas}','Vext':'{gigas}','Vsoy1':'{gigas}','Vsoy2':'{gigas}','Rmag':'{ruthia}','Rpli':'{ruthia}','Rsou':'{ruthia}','Rpac':'{ruthia}','Rrec':'{ruthia}','Rpha':'{ruthia}','W908':'{fl}','CRN91','{fl}','BSEPE':'{fl}','Gsub':'{fl}','Tper':'{fl}','EYG05':'{fl}','BGC33':'{fl}','H8D41':'{fl}','AZO1586R':'{fl}'}
-    dic2={'MS2017':'{fl}','SP60':'{fl}','Vmar':'{sym}','HUE58':'{sym}','Vgig1':'{sym}','Vgig2':'{sym}','COSY':'{sym}','Vdia':'{sym}','Vext':'{sym}','Vsoy1':'{sym}','Vsoy2':'{sym}','Rmag':'{sym}','Rpli':'{sym}','Rsou':'{sym}','Rpac':'{sym}','Rrec':'{sym}','Rpha':'{sym}','W908':'{fl}','CRN91','{fl}','BSEPE':'{fl}','Gsub':'{fl}','Tper':'{fl}','EYG05':'{fl}','BGC33':'{fl}','H8D41':'{fl}','AZO1586R':'{fl}'}
-    dic3={'MS2017':'{hsym}','SP60':'{fl}','Vmar':'{sym}','HUE58':'{sym}','Vgig1':'{sym}','Vgig2':'{sym}','COSY':'{sym}','Vdia':'{sym}','Vext':'{sym}','Vsoy1':'{sym}','Vsoy2':'{sym}','Rmag':'{sym}','Rpli':'{sym}','Rsou':'{sym}','Rpac':'{sym}','Rrec':'{sym}','Rpha':'{sym}','W908':'{fl}','CRN91','{fl}','BSEPE':'{hsym}','Gsub':'{hsym}','Tper':'{fl}','EYG05':'{fl}','BGC33':'{hsym}','H8D41':'{fl}','AZO1586R':'{hsym}'}
+    dic={'MS2017':'{fl}','SP60':'{fl}','Vmar':'{gigas}','HUE58':'{ruthia}','Vgig1':'{gigas}','Vgig2':'{gigas}','COSY':'{gigas}','Vdia':'{gigas}','Vext':'{gigas}','Vsoy1':'{gigas}','Vsoy2':'{gigas}','Rmag':'{ruthia}','Rpli':'{ruthia}','Rsou':'{ruthia}','Rpac':'{ruthia}','Rrec':'{ruthia}','Rpha':'{ruthia}','W908':'{fl}','CRN91':'{fl}','BSEPE':'{fl}','Gsub':'{fl}','Tper':'{fl}','EYG05':'{fl}','BGC33':'{fl}','H8D41':'{fl}','AZO1586R':'{fl}'}
+    dic2={'MS2017':'{fl}','SP60':'{fl}','Vmar':'{sym}','HUE58':'{sym}','Vgig1':'{sym}','Vgig2':'{sym}','COSY':'{sym}','Vdia':'{sym}','Vext':'{sym}','Vsoy1':'{sym}','Vsoy2':'{sym}','Rmag':'{sym}','Rpli':'{sym}','Rsou':'{sym}','Rpac':'{sym}','Rrec':'{sym}','Rpha':'{sym}','W908':'{fl}','CRN91':'{fl}','BSEPE':'{fl}','Gsub':'{fl}','Tper':'{fl}','EYG05':'{fl}','BGC33':'{fl}','H8D41':'{fl}','AZO1586R':'{fl}'}
+    dic3={'MS2017':'{hsym}','SP60':'{fl}','Vmar':'{sym}','HUE58':'{sym}','Vgig1':'{sym}','Vgig2':'{sym}','COSY':'{sym}','Vdia':'{sym}','Vext':'{sym}','Vsoy1':'{sym}','Vsoy2':'{sym}','Rmag':'{sym}','Rpli':'{sym}','Rsou':'{sym}','Rpac':'{sym}','Rrec':'{sym}','Rpha':'{sym}','W908':'{fl}','CRN91':'{fl}','BSEPE':'{hsym}','Gsub':'{hsym}','Tper':'{fl}','EYG05':'{fl}','BGC33':'{hsym}','H8D41':'{fl}','AZO1586R':'{hsym}'}
     
     tree=Tree(input_tree_file,format=1)
     tree2=Tree(input_tree_file,format=1)
     tree3=Tree(input_tree_file,format=1)
 
-#     fl_leafs=[leaf for leaf in tree.iter_leaf_names() if ('Bathy' in leaf) or ('SP60' in leaf)]
-#     ancestor = tree.get_common_ancestor(fl_leafs)
-#     tree.set_outgroup(ancestor)
-#     tree2.set_outgroup(ancestor)
-    
+#    fl_leafs=[leaf for leaf in tree.iter_leaf_names() if ('ThioNP1' in leaf) or ('Thiosingularis' in leaf)]
+#    print(fl_leafs)
+#    ancestor = tree.get_common_ancestor(fl_leafs)
+#    tree.set_outgroup(ancestor)
+#    tree2.set_outgroup(ancestor)
+#    tree3.set_outgroup(ancestor)
+
     for leaf in tree.iter_leaf_names():
         for item in leaf.split('_')[1:]:
             try:
@@ -60,9 +62,9 @@ def add_labels_to_tree(input_tree_file):
             if len(node.name) ==0:
                 node.name=[l.name.split('_')[-1] for l in node.get_leaves()][0]
 
-    tree3_output= tree3.write(format=1)
+    tree2_output= tree2.write(format=1)
 
-        for node in tree3.traverse():
+    for node in tree3.traverse():
         if len(set([l.name.split('_')[-1] for l in node.get_leaves()]))==1:
             if len(node.name) ==0:
                 node.name=[l.name.split('_')[-1] for l in node.get_leaves()][0]
