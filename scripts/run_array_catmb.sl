@@ -2,8 +2,8 @@
 #SBATCH --job-name=run_catmb
 #SBATCH --account=def-bacc
 #SBATCH --time=24:0:0
-#SBATCH --ntasks=10
-#SBATCH --mem-per-cpu=600M
+#SBATCH --ntasks=4
+#SBATCH --mem-per-cpu=1G
 #SBATCH --error=%x-%A_%a'.err' 
 #SBATCH --output=%x-%A_%a'.out' 
 #SBATCH --array=6

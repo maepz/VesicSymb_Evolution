@@ -41,7 +41,7 @@ echo "running sample # ${SLURM_ARRAY_TASK_ID}  : $SAMPLE, $COMP"
 mkdir ${PATH_RELAX}/${SAMPLE}_${COMP}
 cp ${PATH_ALN}/aligned_${SAMPLE}.fna ${PATH_RELAX}/${SAMPLE}_${COMP}/aligned_${SAMPLE}.fna
 
-echo ${PATH_RELAX}/${SAMPLE}_RuvsFL/aligned_${SAMPLE}.fna
+echo ${PATH_RELAX}/${SAMPLE}_${COMP}/aligned_${SAMPLE}.fna
 echo ${PATH_PHYLOGENY}/${SAMPLE}.genera.labeled_tree
 #### run relax 
 
