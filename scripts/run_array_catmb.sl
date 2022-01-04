@@ -6,7 +6,7 @@
 #SBATCH --mem-per-cpu=600M
 #SBATCH --error=%x-%A_%a'.err' 
 #SBATCH --output=%x-%A_%a'.out' 
-#SBATCH --array=1-5
+#SBATCH --array=6
 
 module load perl
 module load StdEnv/2020
@@ -16,10 +16,10 @@ module load intel/2020.1.217
 module load mrbayes/3.2.7
 source /home/maeperez/virtualenv/py36/bin/activate
 
-#scriptdir="/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/scripts/"
+#scriptdir="/home/maeperez/VesicSymb_Evolution/scripts/"
 
-datadir="/home/maeperez/projects/def-bacc/maeperez/Clams/VesicSymb_Evolution/mauve_alignments/cat_alignments/"
-mbdir="/home/maeperez/scratch/Clams/bucky/mrbayes_CAT/"
+datadir="/home/maeperez/VesicSymb_Evolution/mauve_alignments/cat_alignments/"
+mbdir="/home/maeperez/scratch/VesicSymb_Evolution/mrbayes_CAT/"
 
 
 cd $mbdir
@@ -61,5 +61,5 @@ printf "filename=${SAMPLE};\nquit;\nend;\n" >> input_${SAMPLE}.nex
 mpirun -np $SLURM_NTASKS mb input_${SAMPLE}.nex >> ${SAMPLE}.nohup
 
 # Run mbsum
-mbsum -n ${mbsumburnin} -o ${SAMPLE}.in ${SAMPLE}.run*.t >> ${SAMPLE}.nohup
+/home/maeperez/software/bin/mbsum -n ${mbsumburnin} -o ${SAMPLE}.in ${SAMPLE}.run*.t >> ${SAMPLE}.nohup
 
